@@ -1,0 +1,7 @@
+The files were obtained from Shilpa, after she run HAMMER
+
+genome.wustl.edu_Homo_sapiens.fa - the raw sequnces used 
+
+allhmmresbyprot.txt - the results of the hammer run
+
+allhmm_parsed.csv - a parsing I did to the hmm results
