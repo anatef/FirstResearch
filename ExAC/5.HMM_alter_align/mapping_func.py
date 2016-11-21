@@ -11,7 +11,7 @@ def correct_exons_frameshift(exon_df, targetid):
     """
     
     #Get the frameshifts index and length of the exons
-    with open(curr_dir[0]+"/../3.parse_HMMER/domains_frameshifts/exons_index_length.pik", 'rb') as handle:
+    with open("/home/anat/Research/ExAC/3.parse_HMMER/domains_frameshifts/exons_index_length.pik", 'rb') as handle:
         exons_frameshifts = pickle.load(handle)
     
     idx = exons_frameshifts[targetid+".exons.txt"][0]

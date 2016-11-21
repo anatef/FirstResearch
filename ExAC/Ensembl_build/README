@@ -1,0 +1,48 @@
+1. Download Ensembl proteins sequences from: ftp://ftp.ensembl.org/pub/grch37/release-86/fasta/homo_sapiens/pep/Homo_sapiens.GRCh37.pep.all.fa.gz
+
+2. Download Ensembl cDNA sequnces from: ftp://ftp.ensembl.org/pub/grch37/release-86/fasta/homo_sapiens/cds/Homo_sapiens.GRCh37.cds.all.fa.gz
+
+3. Download Ensembl DNA sequences from: ftp://ftp.ensembl.org/pub/grch37/release-86/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.dna_sm.toplevel.fa.gz
+
+4. Go to: http://grch37.ensembl.org/biomart/
+   Select "Ensembl Gene" database
+   Select "Homo sapiens genes (GRCh37.p13)" dataset
+   Go to "Attributes" and open the "structures" tab
+   Select the following: "Ensembl Gene ID", "Ensembl Transcript ID", "Ensembl Protein ID", "Chromosome Name", "Strand", 
+   "Exon Rank in Transcript", "Genomic coding start", "Genomic coding end".
+   Save the results (check Unique results only) to: "Homo_sapiens.GRCh37.genelocs.tsv".
+
+5. Go to: http://grch37.ensembl.org/biomart/
+   Select "Ensembl Gene" database
+   Select "Homo sapiens genes (GRCh37.p13)" dataset
+   Go to "Attributes" and open the "features" tab
+   Select the following: "Ensembl Gene ID", "Ensembl Protein ID", "HGNC ID", "HGNC Symbol", "Associated Gene Name".
+   Save the results (check Unique results only) to: "Homo_sapiens.GRCh37.toHGNC.tsv".
+
+6. Go to: http://grch37.ensembl.org/biomart/
+   Select "Ensembl Gene" database
+   Select "Homo sapiens genes (GRCh37.p13)" dataset
+   Go to "Attributes" and open the "features" tab
+   Select the following: "Ensembl Protein ID", "EntrezGene ID".
+   Save the results (check Unique results only) to: "Homo_sapiens.GRCh37.toEntrez.tsv".
+
+7. Go to: http://grch37.ensembl.org/biomart/
+   Select "Ensembl Gene" database
+   Select "Homo sapiens genes (GRCh37.p13)" dataset
+   Go to "Attributes" and open the "features" tab
+   Select the following: "Ensembl Protein ID", "RefSeq Protein ID",  "RefSeq Predicted Protein ID"
+   Save the results (check Unique results only) to: "Homo_sapiens.GRCh37.toRefSeq.tsv".
+
+8. Run the genAllProts.py code: "python genAllProts.py".
+   Each run set "True/False" for one code section in "MAIN" 
+   In the order written in the code:
+   1) Update FASTA file with alternate IDs.
+   2) Process the big FASTA file of the "dna_sm.toplevel".
+   3) Verify all sequnces againds the gene locations.
+   Note: #3 takes a long time (several hours).
+
+9. Run the script: "prot.pa_concate.ipynb" to create a big file of all the prot.pa files.
+
+10. Run the script: "exons.txt_concate.ipynb" to create a zip of all the exons within their gene directories.
+
+
