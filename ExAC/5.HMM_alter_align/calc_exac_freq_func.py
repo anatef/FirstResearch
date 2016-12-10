@@ -150,8 +150,11 @@ def exac_validation_checks(chrom_alter, protein_pos, aa, alt_codon_pos, chrom_po
             exac_ref_aa = exac_aa
         exac_alt_aa = exac_aa[exac_aa.find("/")+1:]
         if (exac_ref_aa != aa):
-            print functionNameAsString+" "+ str(chrom_pos)+" Error: ExAC amino acid identity "+exac_ref_aa+" doesn't match HMMER amino-acid "+aa
-            error_flag = True
+            if (exac_ref_aa == ""): 
+                print functionNameAsString+" "+ str(chrom_pos)+" ExAC amino acid is blank" 
+            else:
+                print functionNameAsString+" "+ str(chrom_pos)+" Error: ExAC amino acid identity "+exac_ref_aa+" doesn't match HMMER amino-acid "+aa
+                error_flag = True
 
         #Extracting aa codon data if exist
         exac_codons = chrom_alter["codons"]
