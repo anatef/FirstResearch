@@ -1,0 +1,1408 @@
+Summary of parameters and input files.
+Please check that all is correct while calculation is starting...
+
+There are 198 loci.
+
+There are 7 populations.
+
+Burn in: 50000
+Thining interval: 10
+Sample size: 5000
+Resulting total number of iterations: 100000
+Nb of pilot runs: 20
+Length of each pilot run: 5000
+
+Allele counts:
+Pop. 1 locus 1 :   0   0 10322 
+Pop. 1 locus 2 :   0 10302 
+Pop. 1 locus 3 :   0 10298 
+Pop. 1 locus 4 :   0   0 10382 
+Pop. 1 locus 5 :   0   0 10394 
+Pop. 1 locus 6 :   0 10384 
+Pop. 1 locus 7 :   0   0 10406 
+Pop. 1 locus 8 :   0 10276 
+Pop. 1 locus 9 :   0 7714 
+Pop. 1 locus 10 :   6 10380 
+Pop. 1 locus 11 :   0   0 10385 
+Pop. 1 locus 12 :   0   0 7808 
+Pop. 1 locus 13 :   0 10298 
+Pop. 1 locus 14 :   0 7786 
+Pop. 1 locus 15 :   0   0 10406 
+Pop. 1 locus 16 :   0 10234 
+Pop. 1 locus 17 :   0   0 10363 
+Pop. 1 locus 18 :   9 10325 
+Pop. 1 locus 19 :   0   0 7738 
+Pop. 1 locus 20 :   0 10406 
+Pop. 1 locus 21 :   2 10394 
+Pop. 1 locus 22 :   1 10243 
+Pop. 1 locus 23 :   0   0 10310 
+Pop. 1 locus 24 :   5 10401 
+Pop. 1 locus 25 :   0 10402 
+Pop. 1 locus 26 :   0 10290 
+Pop. 1 locus 27 :   0   0   0 7618 
+Pop. 1 locus 28 :   0  11 10395 
+Pop. 1 locus 29 :   0 7546 
+Pop. 1 locus 30 :  13 10393 
+Pop. 1 locus 31 :   0 10390 
+Pop. 1 locus 32 :   0   0 7529 
+Pop. 1 locus 33 :   0 10406 
+Pop. 1 locus 34 :   0   0 10352 
+Pop. 1 locus 35 :   0   3 10401 
+Pop. 1 locus 36 :   2   0 10402 
+Pop. 1 locus 37 :   0   0 7456 
+Pop. 1 locus 38 :   3 10377 
+Pop. 1 locus 39 :   0 10402 
+Pop. 1 locus 40 :   2 10404 
+Pop. 1 locus 41 :   0 10404 
+Pop. 1 locus 42 :  13 7429 
+Pop. 1 locus 43 :   1   0 10405 
+Pop. 1 locus 44 :   0 10380 
+Pop. 1 locus 45 :   0 10362 
+Pop. 1 locus 46 :   0 10406 
+Pop. 1 locus 47 :   0 10406 
+Pop. 1 locus 48 :   0 10406 
+Pop. 1 locus 49 :   0 7234 
+Pop. 1 locus 50 :   0   0 9989 
+Pop. 1 locus 51 :   0   0 10322 
+Pop. 1 locus 52 :   0 10324 
+Pop. 1 locus 53 :   2 6862 
+Pop. 1 locus 54 : 504 9802 
+Pop. 1 locus 55 :   0 10406 
+Pop. 1 locus 56 :   1   0 10345 
+Pop. 1 locus 57 :   1   0 10405 
+Pop. 1 locus 58 :   0 10406 
+Pop. 1 locus 59 :   0 10242 
+Pop. 1 locus 60 :   0 10396 
+Pop. 1 locus 61 :   0 10392 
+Pop. 1 locus 62 : 112 10112 
+Pop. 1 locus 63 :   0 10396 
+Pop. 1 locus 64 :   0 10396 
+Pop. 1 locus 65 :   0   0 10253 
+Pop. 1 locus 66 :   0   0   0   0 10136 
+Pop. 1 locus 67 :  15   1   0 10379 
+Pop. 1 locus 68 :   0 10326 
+Pop. 1 locus 69 :   0   0   0 10392 
+Pop. 1 locus 70 :   0   0   1 10346 
+Pop. 1 locus 71 :   0   0 10074 
+Pop. 1 locus 72 :   0 10396 
+Pop. 1 locus 73 :   0   0   0   0 10404 
+Pop. 1 locus 74 :   5 10011 
+Pop. 1 locus 75 :   0   0 10395 
+Pop. 1 locus 76 :   0 10404 
+Pop. 1 locus 77 :   0 10406 
+Pop. 1 locus 78 :   0 10398 
+Pop. 1 locus 79 :   0 10344 
+Pop. 1 locus 80 :   4   0   6 10282 
+Pop. 1 locus 81 :   0 10260 
+Pop. 1 locus 82 :   0   0 10161 
+Pop. 1 locus 83 :   0   0 10404 
+Pop. 1 locus 84 :   3   0 10179 
+Pop. 1 locus 85 :   0   0 10344 
+Pop. 1 locus 86 :   0 10194 
+Pop. 1 locus 87 :   2 10402 
+Pop. 1 locus 88 :   0 10394 
+Pop. 1 locus 89 :   0 10328 
+Pop. 1 locus 90 :   0 10296 
+Pop. 1 locus 91 :   0 10402 
+Pop. 1 locus 92 :   1 10385 
+Pop. 1 locus 93 :   0 10218 
+Pop. 1 locus 94 :   0 10402 
+Pop. 1 locus 95 :   0 10388 
+Pop. 1 locus 96 :   0   0 10255 
+Pop. 1 locus 97 :   0 10328 
+Pop. 1 locus 98 :   0 10320 
+Pop. 1 locus 99 :   0  91 10241 
+Pop. 1 locus 100 :   0 10336 
+Pop. 1 locus 101 :   1 10103 
+Pop. 1 locus 102 :   0   1   0 10251 
+Pop. 1 locus 103 :   0 10340 
+Pop. 1 locus 104 :   0 10272 
+Pop. 1 locus 105 :   0   0   0 10250 
+Pop. 1 locus 106 :   0   0 10348 
+Pop. 1 locus 107 :   1   0 10338 
+Pop. 1 locus 108 :   1 10279 
+Pop. 1 locus 109 :   0   2 10344 
+Pop. 1 locus 110 :   0 10332 
+Pop. 1 locus 111 :   0 10350 
+Pop. 1 locus 112 :   0   0 10364 
+Pop. 1 locus 113 :   0 10342 
+Pop. 1 locus 114 :   0   0 10247 
+Pop. 1 locus 115 :   0   0 10260 
+Pop. 1 locus 116 :   0 10288 
+Pop. 1 locus 117 :   0 220 10136 
+Pop. 1 locus 118 :   0   0 10350 
+Pop. 1 locus 119 :   0 10404 
+Pop. 1 locus 120 :   0 10358 
+Pop. 1 locus 121 :   0   0 10406 
+Pop. 1 locus 122 :   0   0 10406 
+Pop. 1 locus 123 :   0 10398 
+Pop. 1 locus 124 :   0 9254 
+Pop. 1 locus 125 :   0 10404 
+Pop. 1 locus 126 :   0   0 10315 
+Pop. 1 locus 127 :   0 10360 
+Pop. 1 locus 128 :   0 10406 
+Pop. 1 locus 129 :   0   0 10310 
+Pop. 1 locus 130 :   0 10406 
+Pop. 1 locus 131 :   0 10304 
+Pop. 1 locus 132 :   0   0 10325 
+Pop. 1 locus 133 :   0 10006 
+Pop. 1 locus 134 :   6 10358 
+Pop. 1 locus 135 :   0   0   0 10282 
+Pop. 1 locus 136 :   1 9503 
+Pop. 1 locus 137 :   0   0 10406 
+Pop. 1 locus 138 :   0 10396 
+Pop. 1 locus 139 :   0 10406 
+Pop. 1 locus 140 :   0 10354 
+Pop. 1 locus 141 :   0   0   0 10358 
+Pop. 1 locus 142 :   0   0 9641 
+Pop. 1 locus 143 :   0   1 10385 
+Pop. 1 locus 144 :   0 4524 
+Pop. 1 locus 145 :   1   0 10395 
+Pop. 1 locus 146 :   0   0 9696 
+Pop. 1 locus 147 :   6 10400 
+Pop. 1 locus 148 :   0 9828 
+Pop. 1 locus 149 :   0   2 5198 
+Pop. 1 locus 150 :   4 9910 
+Pop. 1 locus 151 :   3 10403 
+Pop. 1 locus 152 :   1   0 10396 
+Pop. 1 locus 153 :   0   0 10398 
+Pop. 1 locus 154 :   0 10402 
+Pop. 1 locus 155 :   0 10406 
+Pop. 1 locus 156 :   0 10406 
+Pop. 1 locus 157 :   0 10406 
+Pop. 1 locus 158 :   1 6165 
+Pop. 1 locus 159 :   1 10395 
+Pop. 1 locus 160 :   0 10404 
+Pop. 1 locus 161 :  14 10392 
+Pop. 1 locus 162 :   0   0   0 6257 
+Pop. 1 locus 163 :   0 10306 
+Pop. 1 locus 164 :   0 10402 
+Pop. 1 locus 165 :   0 10406 
+Pop. 1 locus 166 :   0 10394 
+Pop. 1 locus 167 :  42 10262 
+Pop. 1 locus 168 :   0 10398 
+Pop. 1 locus 169 :   0 10226 
+Pop. 1 locus 170 :   0   0 10406 
+Pop. 1 locus 171 :   0   0   0 7124 
+Pop. 1 locus 172 :   0   1 10109 
+Pop. 1 locus 173 :   0 10398 
+Pop. 1 locus 174 :   1   0 10405 
+Pop. 1 locus 175 :   0   0 10392 
+Pop. 1 locus 176 :   0 10270 
+Pop. 1 locus 177 :   0 10398 
+Pop. 1 locus 178 :   2 10150 
+Pop. 1 locus 179 :   0   0 10406 
+Pop. 1 locus 180 :   3 7591 
+Pop. 1 locus 181 :   1 7815 
+Pop. 1 locus 182 :   0   9 10397 
+Pop. 1 locus 183 :   0   0 10398 
+Pop. 1 locus 184 :   0 10248 
+Pop. 1 locus 185 :   1 10395 
+Pop. 1 locus 186 :   0 10338 
+Pop. 1 locus 187 :   0 10298 
+Pop. 1 locus 188 :   0 10406 
+Pop. 1 locus 189 :   0 2115 6225 
+Pop. 1 locus 190 :   0   0   0 10216 
+Pop. 1 locus 191 :   0 10402 
+Pop. 1 locus 192 :   0   0   0 10336 
+Pop. 1 locus 193 :   0 8316 
+Pop. 1 locus 194 :   0   0 10406 
+Pop. 1 locus 195 :   0 10398 
+Pop. 1 locus 196 :   0 10400 
+Pop. 1 locus 197 :   0   0 8330 
+Pop. 1 locus 198 :   0 10362 
+
+Pop. 2 locus 1 :   0   0 11428 
+Pop. 2 locus 2 :   0 11500 
+Pop. 2 locus 3 :   0 11484 
+Pop. 2 locus 4 :   0   0 11522 
+Pop. 2 locus 5 :   0   0 11564 
+Pop. 2 locus 6 :   0 11462 
+Pop. 2 locus 7 :   0   0 11578 
+Pop. 2 locus 8 :   0 11332 
+Pop. 2 locus 9 :   0 6614 
+Pop. 2 locus 10 :   0 11562 
+Pop. 2 locus 11 :   0   0 11448 
+Pop. 2 locus 12 :   1   0 6753 
+Pop. 2 locus 13 :   0 11372 
+Pop. 2 locus 14 :   0 6692 
+Pop. 2 locus 15 :   0   2 11576 
+Pop. 2 locus 16 :   7 11373 
+Pop. 2 locus 17 :   0   0 11412 
+Pop. 2 locus 18 :   1 11395 
+Pop. 2 locus 19 :   0   0 6479 
+Pop. 2 locus 20 :   0 11578 
+Pop. 2 locus 21 :   2 11484 
+Pop. 2 locus 22 :   3 11395 
+Pop. 2 locus 23 :   0   0 11449 
+Pop. 2 locus 24 :   0 11578 
+Pop. 2 locus 25 :   0 11486 
+Pop. 2 locus 26 :   0 11352 
+Pop. 2 locus 27 :   0   0   0 6293 
+Pop. 2 locus 28 :   0   1 11577 
+Pop. 2 locus 29 :   2 6222 
+Pop. 2 locus 30 :   0 11578 
+Pop. 2 locus 31 :   0 11572 
+Pop. 2 locus 32 :   0   0 6133 
+Pop. 2 locus 33 :   2 11576 
+Pop. 2 locus 34 :   0   0 11438 
+Pop. 2 locus 35 :   0   0 11555 
+Pop. 2 locus 36 :   0   0 11575 
+Pop. 2 locus 37 :   0   0 6008 
+Pop. 2 locus 38 :   1 11549 
+Pop. 2 locus 39 :   1 11497 
+Pop. 2 locus 40 :   0 11578 
+Pop. 2 locus 41 :   0 11538 
+Pop. 2 locus 42 :   1 6003 
+Pop. 2 locus 43 :   0   0 11578 
+Pop. 2 locus 44 :   1 11545 
+Pop. 2 locus 45 :   0 11448 
+Pop. 2 locus 46 :   0 11556 
+Pop. 2 locus 47 :   0 11578 
+Pop. 2 locus 48 :   0 11554 
+Pop. 2 locus 49 :   1 5691 
+Pop. 2 locus 50 :   0   0 11005 
+Pop. 2 locus 51 :   0   0 11466 
+Pop. 2 locus 52 :   2 11490 
+Pop. 2 locus 53 :   0 5086 
+Pop. 2 locus 54 :  30 11414 
+Pop. 2 locus 55 :   1 11573 
+Pop. 2 locus 56 :   0   0 11564 
+Pop. 2 locus 57 :   1   0 11572 
+Pop. 2 locus 58 :   0 11578 
+Pop. 2 locus 59 :   0 11398 
+Pop. 2 locus 60 :   0 11548 
+Pop. 2 locus 61 :   1 11571 
+Pop. 2 locus 62 : 165 11335 
+Pop. 2 locus 63 :   0 11548 
+Pop. 2 locus 64 :   0 11572 
+Pop. 2 locus 65 :   0   0 11512 
+Pop. 2 locus 66 :   0   0   0   0 11343 
+Pop. 2 locus 67 :  13   0   0 11536 
+Pop. 2 locus 68 :   0 11562 
+Pop. 2 locus 69 :   0   1   1 11570 
+Pop. 2 locus 70 :   0   0   0 11500 
+Pop. 2 locus 71 :   0   0 11304 
+Pop. 2 locus 72 :   0 11550 
+Pop. 2 locus 73 :   1   0   0   0 11539 
+Pop. 2 locus 74 :   0 11274 
+Pop. 2 locus 75 :   0   0 11550 
+Pop. 2 locus 76 :   0 11538 
+Pop. 2 locus 77 :   0 11578 
+Pop. 2 locus 78 :   0 11518 
+Pop. 2 locus 79 :   0 11498 
+Pop. 2 locus 80 :   5   0   0 11524 
+Pop. 2 locus 81 :   0 11510 
+Pop. 2 locus 82 :   0   0 11397 
+Pop. 2 locus 83 :   0   0 11530 
+Pop. 2 locus 84 :   0   1 11413 
+Pop. 2 locus 85 :   0   1 11555 
+Pop. 2 locus 86 :   0 11422 
+Pop. 2 locus 87 :   3 11529 
+Pop. 2 locus 88 :   4 11518 
+Pop. 2 locus 89 :   0 11564 
+Pop. 2 locus 90 :   2 11512 
+Pop. 2 locus 91 :   0 11514 
+Pop. 2 locus 92 :   0 11574 
+Pop. 2 locus 93 :   0 11466 
+Pop. 2 locus 94 :   0 11510 
+Pop. 2 locus 95 :   0 11574 
+Pop. 2 locus 96 :   0   0 11502 
+Pop. 2 locus 97 :   0 11526 
+Pop. 2 locus 98 :   0 11524 
+Pop. 2 locus 99 :   0   9 11557 
+Pop. 2 locus 100 :   0 11566 
+Pop. 2 locus 101 :   0 11554 
+Pop. 2 locus 102 :   0   0   0 11502 
+Pop. 2 locus 103 :   0 11570 
+Pop. 2 locus 104 :   1 11489 
+Pop. 2 locus 105 :   0   3   2 11496 
+Pop. 2 locus 106 :   0   0 11534 
+Pop. 2 locus 107 :   0   0 11569 
+Pop. 2 locus 108 :   0 11500 
+Pop. 2 locus 109 :   0   0 11544 
+Pop. 2 locus 110 :   0 11544 
+Pop. 2 locus 111 :   6 11538 
+Pop. 2 locus 112 :   0   0 11550 
+Pop. 2 locus 113 :   0 11568 
+Pop. 2 locus 114 :   0   1 11566 
+Pop. 2 locus 115 :   1   0 11567 
+Pop. 2 locus 116 :   0 11508 
+Pop. 2 locus 117 :   0 616 10790 
+Pop. 2 locus 118 :   1   0 11557 
+Pop. 2 locus 119 :   0 11562 
+Pop. 2 locus 120 :   0 11560 
+Pop. 2 locus 121 :   2   0 11572 
+Pop. 2 locus 122 :   0   0 11578 
+Pop. 2 locus 123 :   0 11566 
+Pop. 2 locus 124 :   0 11504 
+Pop. 2 locus 125 :   0 11562 
+Pop. 2 locus 126 :   0   0 11560 
+Pop. 2 locus 127 :   0 11560 
+Pop. 2 locus 128 :   0 11574 
+Pop. 2 locus 129 :   0   0 11560 
+Pop. 2 locus 130 :   0 11574 
+Pop. 2 locus 131 :   0 11558 
+Pop. 2 locus 132 :   0   0 11555 
+Pop. 2 locus 133 :   0 11502 
+Pop. 2 locus 134 :   0 11560 
+Pop. 2 locus 135 :   0   9   1 11548 
+Pop. 2 locus 136 :   1 11517 
+Pop. 2 locus 137 :   0   0 11573 
+Pop. 2 locus 138 :   0 11576 
+Pop. 2 locus 139 :   2 11574 
+Pop. 2 locus 140 :   0 11564 
+Pop. 2 locus 141 :   0   0   0 11562 
+Pop. 2 locus 142 :   1   0 11522 
+Pop. 2 locus 143 :  85   0 11483 
+Pop. 2 locus 144 :   0 2536 
+Pop. 2 locus 145 :   0   0 11576 
+Pop. 2 locus 146 :   0   0 11524 
+Pop. 2 locus 147 :   0 11570 
+Pop. 2 locus 148 :   2 11532 
+Pop. 2 locus 149 :   0   0 3508 
+Pop. 2 locus 150 :   0 11532 
+Pop. 2 locus 151 :   2 11562 
+Pop. 2 locus 152 :   0   0 11576 
+Pop. 2 locus 153 :   0   0 11576 
+Pop. 2 locus 154 :   2 11572 
+Pop. 2 locus 155 :   0 11568 
+Pop. 2 locus 156 :   0 11570 
+Pop. 2 locus 157 :   0 11570 
+Pop. 2 locus 158 :   0 4860 
+Pop. 2 locus 159 :   2 11574 
+Pop. 2 locus 160 :   0 11576 
+Pop. 2 locus 161 :  45 11525 
+Pop. 2 locus 162 :   0   0   1 5032 
+Pop. 2 locus 163 :   0 11470 
+Pop. 2 locus 164 :   0 11578 
+Pop. 2 locus 165 :  27 11545 
+Pop. 2 locus 166 :   0 11576 
+Pop. 2 locus 167 :   2 11464 
+Pop. 2 locus 168 :   0 11570 
+Pop. 2 locus 169 :   0 11542 
+Pop. 2 locus 170 :   0   0 11570 
+Pop. 2 locus 171 :   0   0   0 6443 
+Pop. 2 locus 172 :   0   0 11548 
+Pop. 2 locus 173 :   0 11572 
+Pop. 2 locus 174 :   0   0 11570 
+Pop. 2 locus 175 :   0   0 11576 
+Pop. 2 locus 176 :   0 11442 
+Pop. 2 locus 177 :   1 11575 
+Pop. 2 locus 178 :   0 11554 
+Pop. 2 locus 179 :   1   0 11575 
+Pop. 2 locus 180 :   0 7310 
+Pop. 2 locus 181 :  68 7734 
+Pop. 2 locus 182 :   0   1 11577 
+Pop. 2 locus 183 :   0   0 11576 
+Pop. 2 locus 184 :   3 11541 
+Pop. 2 locus 185 :   1 11575 
+Pop. 2 locus 186 :   0 11450 
+Pop. 2 locus 187 :   0 11438 
+Pop. 2 locus 188 :   0 11576 
+Pop. 2 locus 189 :   0 4655 4496 
+Pop. 2 locus 190 :   1   2   1 11550 
+Pop. 2 locus 191 :   0 11576 
+Pop. 2 locus 192 :   0   0   0 11455 
+Pop. 2 locus 193 :   0 9428 
+Pop. 2 locus 194 :   0   0 11578 
+Pop. 2 locus 195 :   0 11576 
+Pop. 2 locus 196 :   0 11576 
+Pop. 2 locus 197 :   0   2 9444 
+Pop. 2 locus 198 :   0 11462 
+
+Pop. 3 locus 1 :   0   0 8589 
+Pop. 3 locus 2 :   0 8592 
+Pop. 3 locus 3 :   0 8588 
+Pop. 3 locus 4 :   0   0 8652 
+Pop. 3 locus 5 :   1   0 8648 
+Pop. 3 locus 6 :   2 8594 
+Pop. 3 locus 7 :   0   0 8654 
+Pop. 3 locus 8 :   0 8542 
+Pop. 3 locus 9 :   0 6494 
+Pop. 3 locus 10 :   0 8648 
+Pop. 3 locus 11 :   0   0 8614 
+Pop. 3 locus 12 :   0   0 6524 
+Pop. 3 locus 13 :   0 8564 
+Pop. 3 locus 14 :   0 6500 
+Pop. 3 locus 15 :   0   0 8654 
+Pop. 3 locus 16 :   0 8572 
+Pop. 3 locus 17 :   0   0 8598 
+Pop. 3 locus 18 :   0 8594 
+Pop. 3 locus 19 :   0   0 6428 
+Pop. 3 locus 20 :   0 8654 
+Pop. 3 locus 21 :   0 8614 
+Pop. 3 locus 22 :   0 8578 
+Pop. 3 locus 23 :   0   0 8582 
+Pop. 3 locus 24 :   1 8653 
+Pop. 3 locus 25 :   0 8618 
+Pop. 3 locus 26 :   0 8580 
+Pop. 3 locus 27 :   0   0   0 6318 
+Pop. 3 locus 28 :   0   0 8654 
+Pop. 3 locus 29 :   0 6278 
+Pop. 3 locus 30 :   1 8653 
+Pop. 3 locus 31 :   0 8642 
+Pop. 3 locus 32 :   0   0 6254 
+Pop. 3 locus 33 :   0 8654 
+Pop. 3 locus 34 :   0   0 8606 
+Pop. 3 locus 35 :   0   0 8654 
+Pop. 3 locus 36 :   0   0 8654 
+Pop. 3 locus 37 :   0   0 6175 
+Pop. 3 locus 38 :   0 8646 
+Pop. 3 locus 39 :   0 8626 
+Pop. 3 locus 40 :   0 8654 
+Pop. 3 locus 41 :   0 8654 
+Pop. 3 locus 42 :   0 6162 
+Pop. 3 locus 43 :   0   0 8654 
+Pop. 3 locus 44 :   0 8646 
+Pop. 3 locus 45 :   0 8608 
+Pop. 3 locus 46 :   0 8654 
+Pop. 3 locus 47 :   0 8654 
+Pop. 3 locus 48 :   0 8654 
+Pop. 3 locus 49 :   0 5972 
+Pop. 3 locus 50 :  53   0 8411 
+Pop. 3 locus 51 :   0   0 8626 
+Pop. 3 locus 52 :   0 8592 
+Pop. 3 locus 53 :   0 5586 
+Pop. 3 locus 54 :   0 8622 
+Pop. 3 locus 55 :   0 8652 
+Pop. 3 locus 56 :   0   0 8640 
+Pop. 3 locus 57 :   1   0 8651 
+Pop. 3 locus 58 :   0 8654 
+Pop. 3 locus 59 :   5 8607 
+Pop. 3 locus 60 :  15 8625 
+Pop. 3 locus 61 :   0 8654 
+Pop. 3 locus 62 :   3 8615 
+Pop. 3 locus 63 :   0 8642 
+Pop. 3 locus 64 :   3 8651 
+Pop. 3 locus 65 :   0   0 8624 
+Pop. 3 locus 66 :   0   1   1   1 8585 
+Pop. 3 locus 67 :   0   0   0 8642 
+Pop. 3 locus 68 :   1 8637 
+Pop. 3 locus 69 :   0   0   0 8650 
+Pop. 3 locus 70 :   0   0   0 8607 
+Pop. 3 locus 71 :   0   0 8566 
+Pop. 3 locus 72 :   0 8642 
+Pop. 3 locus 73 :   0   0   0   0 8653 
+Pop. 3 locus 74 :   0 8550 
+Pop. 3 locus 75 :   1   0 8642 
+Pop. 3 locus 76 :   0 8654 
+Pop. 3 locus 77 :   0 8654 
+Pop. 3 locus 78 :   0 8630 
+Pop. 3 locus 79 :   0 8608 
+Pop. 3 locus 80 :   1   0   0 8638 
+Pop. 3 locus 81 :   0 8618 
+Pop. 3 locus 82 :   0   0 8600 
+Pop. 3 locus 83 :   0   1 8653 
+Pop. 3 locus 84 :   0   0 8606 
+Pop. 3 locus 85 :   0   0 8646 
+Pop. 3 locus 86 :   0 8610 
+Pop. 3 locus 87 :   0 8652 
+Pop. 3 locus 88 :   0 8636 
+Pop. 3 locus 89 :   0 8642 
+Pop. 3 locus 90 :   0 8618 
+Pop. 3 locus 91 :   2 8648 
+Pop. 3 locus 92 :   0 8654 
+Pop. 3 locus 93 :   0 8624 
+Pop. 3 locus 94 :  54 8596 
+Pop. 3 locus 95 :   0 8654 
+Pop. 3 locus 96 :   0   0 8601 
+Pop. 3 locus 97 :   0 8598 
+Pop. 3 locus 98 :   2 8646 
+Pop. 3 locus 99 :   0   0 8638 
+Pop. 3 locus 100 :   0 8636 
+Pop. 3 locus 101 :   6 8618 
+Pop. 3 locus 102 :   0   0   0 8594 
+Pop. 3 locus 103 :   2 8636 
+Pop. 3 locus 104 :   0 8630 
+Pop. 3 locus 105 :   0   0   0 8589 
+Pop. 3 locus 106 :   0   0 8610 
+Pop. 3 locus 107 :   0   0 8636 
+Pop. 3 locus 108 :   0 8630 
+Pop. 3 locus 109 :   0   0 8650 
+Pop. 3 locus 110 :   0 8628 
+Pop. 3 locus 111 :   0 8650 
+Pop. 3 locus 112 :   0   0 8625 
+Pop. 3 locus 113 :   0 8638 
+Pop. 3 locus 114 :   1   0 8625 
+Pop. 3 locus 115 :   0   0 8627 
+Pop. 3 locus 116 :   0 8630 
+Pop. 3 locus 117 :   0 1145 7483 
+Pop. 3 locus 118 :   0   0 8630 
+Pop. 3 locus 119 :   0 8650 
+Pop. 3 locus 120 :   2 8632 
+Pop. 3 locus 121 :   0   0 8654 
+Pop. 3 locus 122 :   0   0 8654 
+Pop. 3 locus 123 :   0 8648 
+Pop. 3 locus 124 :   0 8540 
+Pop. 3 locus 125 :   2 8650 
+Pop. 3 locus 126 :   7   0 8625 
+Pop. 3 locus 127 :   0 8634 
+Pop. 3 locus 128 :   0 8654 
+Pop. 3 locus 129 :   0   1 8631 
+Pop. 3 locus 130 :   0 8654 
+Pop. 3 locus 131 :   2 8626 
+Pop. 3 locus 132 :   0   0 8587 
+Pop. 3 locus 133 :   0 8552 
+Pop. 3 locus 134 :   0 8634 
+Pop. 3 locus 135 :   0   5   0 8624 
+Pop. 3 locus 136 :  38 8518 
+Pop. 3 locus 137 :   0   0 8654 
+Pop. 3 locus 138 :   0 8644 
+Pop. 3 locus 139 :   0 8654 
+Pop. 3 locus 140 :   2 8598 
+Pop. 3 locus 141 :   0   1   0 8602 
+Pop. 3 locus 142 :   0   0 8561 
+Pop. 3 locus 143 :   0   0 8632 
+Pop. 3 locus 144 :   4 2686 
+Pop. 3 locus 145 :   0   0 8646 
+Pop. 3 locus 146 :   1   0 8561 
+Pop. 3 locus 147 :   0 8654 
+Pop. 3 locus 148 :   0 8572 
+Pop. 3 locus 149 :   1   0 3480 
+Pop. 3 locus 150 :   0 8580 
+Pop. 3 locus 151 :   0 8650 
+Pop. 3 locus 152 :   0   0 8636 
+Pop. 3 locus 153 :   0   0 8636 
+Pop. 3 locus 154 :   0 8652 
+Pop. 3 locus 155 :   0 8654 
+Pop. 3 locus 156 :   0 8654 
+Pop. 3 locus 157 :   2 8652 
+Pop. 3 locus 158 :   0 4594 
+Pop. 3 locus 159 :   0 8644 
+Pop. 3 locus 160 :   0 8652 
+Pop. 3 locus 161 :   1 8653 
+Pop. 3 locus 162 :   0   0   4 4723 
+Pop. 3 locus 163 :   0 8554 
+Pop. 3 locus 164 :   0 8654 
+Pop. 3 locus 165 :   0 8654 
+Pop. 3 locus 166 :   0 8644 
+Pop. 3 locus 167 :   0 8546 
+Pop. 3 locus 168 :   1 8645 
+Pop. 3 locus 169 :   0 8610 
+Pop. 3 locus 170 :   0   0 8654 
+Pop. 3 locus 171 :   0   0   0 5855 
+Pop. 3 locus 172 :   0   0 8604 
+Pop. 3 locus 173 :   0 8646 
+Pop. 3 locus 174 :   0   0 8654 
+Pop. 3 locus 175 :   0   0 8646 
+Pop. 3 locus 176 :   0 8524 
+Pop. 3 locus 177 :   3 8647 
+Pop. 3 locus 178 :   0 8604 
+Pop. 3 locus 179 :   0   0 8654 
+Pop. 3 locus 180 :   0 6432 
+Pop. 3 locus 181 :   2 6770 
+Pop. 3 locus 182 :   0   0 8654 
+Pop. 3 locus 183 :   1   0 8647 
+Pop. 3 locus 184 :   0 8610 
+Pop. 3 locus 185 :   0 8648 
+Pop. 3 locus 186 :   0 8624 
+Pop. 3 locus 187 :   0 8586 
+Pop. 3 locus 188 :   2 8652 
+Pop. 3 locus 189 :   0 2766 4661 
+Pop. 3 locus 190 :   0   0   0 8613 
+Pop. 3 locus 191 :   0 8654 
+Pop. 3 locus 192 :   1   0   0 8627 
+Pop. 3 locus 193 :   0 7644 
+Pop. 3 locus 194 :   0   0 8654 
+Pop. 3 locus 195 :   0 8646 
+Pop. 3 locus 196 :   2 8652 
+Pop. 3 locus 197 :   0   0 7674 
+Pop. 3 locus 198 :   0 8634 
+
+Pop. 4 locus 1 :   0   0 6595 
+Pop. 4 locus 2 :   2 6590 
+Pop. 4 locus 3 :   0 6590 
+Pop. 4 locus 4 :   0   0 6590 
+Pop. 4 locus 5 :   0   0 6614 
+Pop. 4 locus 6 :   0 6574 
+Pop. 4 locus 7 :   0   0 6610 
+Pop. 4 locus 8 :   0 6584 
+Pop. 4 locus 9 :   0 3296 
+Pop. 4 locus 10 :   0 6586 
+Pop. 4 locus 11 :   0   0 6556 
+Pop. 4 locus 12 :   0   0 3364 
+Pop. 4 locus 13 :   0 6590 
+Pop. 4 locus 14 :   0 3324 
+Pop. 4 locus 15 :   0   0 6612 
+Pop. 4 locus 16 :   0 6586 
+Pop. 4 locus 17 :   0   0 6535 
+Pop. 4 locus 18 :   0 6514 
+Pop. 4 locus 19 :   0   0 3215 
+Pop. 4 locus 20 :   0 6612 
+Pop. 4 locus 21 :   5 6591 
+Pop. 4 locus 22 :   0 6588 
+Pop. 4 locus 23 :   0   0 6589 
+Pop. 4 locus 24 :   0 6612 
+Pop. 4 locus 25 :   0 6598 
+Pop. 4 locus 26 :   0 6504 
+Pop. 4 locus 27 :   0   0   0 3037 
+Pop. 4 locus 28 :   0   0 6613 
+Pop. 4 locus 29 :   0 2954 
+Pop. 4 locus 30 :   0 6614 
+Pop. 4 locus 31 :   0 6614 
+Pop. 4 locus 32 :   0   0 2895 
+Pop. 4 locus 33 :   0 6614 
+Pop. 4 locus 34 :   0   0 6606 
+Pop. 4 locus 35 :   0   0 6601 
+Pop. 4 locus 36 :   1   0 6613 
+Pop. 4 locus 37 :   0   0 2806 
+Pop. 4 locus 38 :   0 6548 
+Pop. 4 locus 39 :   0 6592 
+Pop. 4 locus 40 :   0 6614 
+Pop. 4 locus 41 :   0 6610 
+Pop. 4 locus 42 :   0 2782 
+Pop. 4 locus 43 :   0   0 6613 
+Pop. 4 locus 44 :   0 6546 
+Pop. 4 locus 45 :   0 6608 
+Pop. 4 locus 46 :   0 6610 
+Pop. 4 locus 47 :   0 6614 
+Pop. 4 locus 48 :   1 6609 
+Pop. 4 locus 49 :   0 2566 
+Pop. 4 locus 50 :   1   0 6375 
+Pop. 4 locus 51 :   0   0 6347 
+Pop. 4 locus 52 :   0 6598 
+Pop. 4 locus 53 :   0 2208 
+Pop. 4 locus 54 :   0 6326 
+Pop. 4 locus 55 :   0 6614 
+Pop. 4 locus 56 :   0   0 6612 
+Pop. 4 locus 57 :   0   0 6614 
+Pop. 4 locus 58 :   0 6614 
+Pop. 4 locus 59 :   0 6242 
+Pop. 4 locus 60 :   0 6608 
+Pop. 4 locus 61 :   0 6534 
+Pop. 4 locus 62 : 663 5717 
+Pop. 4 locus 63 :   0 6608 
+Pop. 4 locus 64 :   0 6536 
+Pop. 4 locus 65 :   0   0 6409 
+Pop. 4 locus 66 :   0   0   0   0 6111 
+Pop. 4 locus 67 :   3   0   0 6605 
+Pop. 4 locus 68 :   6 6606 
+Pop. 4 locus 69 :   0   0   0 6514 
+Pop. 4 locus 70 :   0   0   0 6602 
+Pop. 4 locus 71 :   1   0 6033 
+Pop. 4 locus 72 :   0 6608 
+Pop. 4 locus 73 :   0   0   0   0 6606 
+Pop. 4 locus 74 :   0 5996 
+Pop. 4 locus 75 :   0   0 6608 
+Pop. 4 locus 76 :   1 6603 
+Pop. 4 locus 77 :   0 6614 
+Pop. 4 locus 78 :   0 6594 
+Pop. 4 locus 79 :   0 6600 
+Pop. 4 locus 80 :   0   0   2 6464 
+Pop. 4 locus 81 :   0 6614 
+Pop. 4 locus 82 :   0   0 6598 
+Pop. 4 locus 83 :   0   0 6596 
+Pop. 4 locus 84 :   0   0 6598 
+Pop. 4 locus 85 :   0   0 6437 
+Pop. 4 locus 86 :   0 6598 
+Pop. 4 locus 87 :   1 6593 
+Pop. 4 locus 88 :   0 6588 
+Pop. 4 locus 89 :   0 6530 
+Pop. 4 locus 90 :   0 6590 
+Pop. 4 locus 91 :   0 6588 
+Pop. 4 locus 92 :   0 6602 
+Pop. 4 locus 93 :   0 6602 
+Pop. 4 locus 94 :   0 6588 
+Pop. 4 locus 95 :   0 6602 
+Pop. 4 locus 96 :   0   0 6614 
+Pop. 4 locus 97 :   0 6602 
+Pop. 4 locus 98 :   0 6584 
+Pop. 4 locus 99 :   0   0 6536 
+Pop. 4 locus 100 :   0 6534 
+Pop. 4 locus 101 :   0 6582 
+Pop. 4 locus 102 :   0   0   0 6614 
+Pop. 4 locus 103 :   0 6550 
+Pop. 4 locus 104 :   0 6608 
+Pop. 4 locus 105 :   0   0   0 6614 
+Pop. 4 locus 106 :   0   0 6610 
+Pop. 4 locus 107 :   0   0 6556 
+Pop. 4 locus 108 :   0 6610 
+Pop. 4 locus 109 :   0   0 6592 
+Pop. 4 locus 110 :   0 6610 
+Pop. 4 locus 111 :   0 6596 
+Pop. 4 locus 112 :   0   0 6603 
+Pop. 4 locus 113 :   0 6564 
+Pop. 4 locus 114 :   0   0 6606 
+Pop. 4 locus 115 :   0   0 6608 
+Pop. 4 locus 116 :   0 6612 
+Pop. 4 locus 117 :   0 293 6217 
+Pop. 4 locus 118 :   0   0 6613 
+Pop. 4 locus 119 :   0 6612 
+Pop. 4 locus 120 :   0 6614 
+Pop. 4 locus 121 :   0   0 6614 
+Pop. 4 locus 122 :   0   0 6614 
+Pop. 4 locus 123 :   0 6608 
+Pop. 4 locus 124 :   0 6612 
+Pop. 4 locus 125 :   0 6612 
+Pop. 4 locus 126 :   0   0 6567 
+Pop. 4 locus 127 :   0 6614 
+Pop. 4 locus 128 :   0 6614 
+Pop. 4 locus 129 :   0   0 6568 
+Pop. 4 locus 130 :   0 6614 
+Pop. 4 locus 131 :   0 6566 
+Pop. 4 locus 132 :   0   0 6608 
+Pop. 4 locus 133 :   2 6612 
+Pop. 4 locus 134 :   0 6614 
+Pop. 4 locus 135 :   0   0   0 6565 
+Pop. 4 locus 136 : 238 6374 
+Pop. 4 locus 137 :   0   0 6614 
+Pop. 4 locus 138 :   0 6614 
+Pop. 4 locus 139 :   0 6614 
+Pop. 4 locus 140 :   0 6608 
+Pop. 4 locus 141 :   0   0   0 6605 
+Pop. 4 locus 142 :   0   0 6614 
+Pop. 4 locus 143 :   0   0 6612 
+Pop. 4 locus 144 :   0 1168 
+Pop. 4 locus 145 :   0   0 6614 
+Pop. 4 locus 146 :   0   0 6614 
+Pop. 4 locus 147 :   0 6614 
+Pop. 4 locus 148 :   0 6614 
+Pop. 4 locus 149 :   0   0 1616 
+Pop. 4 locus 150 :   2 6612 
+Pop. 4 locus 151 :   4 6610 
+Pop. 4 locus 152 :   0   0 6614 
+Pop. 4 locus 153 :   0   0 6614 
+Pop. 4 locus 154 :   0 6614 
+Pop. 4 locus 155 :   0 6614 
+Pop. 4 locus 156 :   0 6612 
+Pop. 4 locus 157 :   0 6614 
+Pop. 4 locus 158 :   0 2294 
+Pop. 4 locus 159 :   0 6614 
+Pop. 4 locus 160 :   0 6614 
+Pop. 4 locus 161 :  98 6514 
+Pop. 4 locus 162 :   0   0   0 2353 
+Pop. 4 locus 163 :   0 6568 
+Pop. 4 locus 164 :   0 6614 
+Pop. 4 locus 165 :   0 6612 
+Pop. 4 locus 166 :   0 6614 
+Pop. 4 locus 167 :   0 6566 
+Pop. 4 locus 168 :   0 6614 
+Pop. 4 locus 169 :   0 6526 
+Pop. 4 locus 170 :   0   0 6612 
+Pop. 4 locus 171 :   0   0   0 2937 
+Pop. 4 locus 172 :   0   0 6614 
+Pop. 4 locus 173 :   0 6614 
+Pop. 4 locus 174 :   0   0 6612 
+Pop. 4 locus 175 :   0   0 6614 
+Pop. 4 locus 176 :   0 6558 
+Pop. 4 locus 177 :   0 6614 
+Pop. 4 locus 178 :   0 6614 
+Pop. 4 locus 179 :   0   0 6614 
+Pop. 4 locus 180 :   0 3232 
+Pop. 4 locus 181 :   0 3418 
+Pop. 4 locus 182 :   0   0 6614 
+Pop. 4 locus 183 :   0   0 6614 
+Pop. 4 locus 184 :   0 6572 
+Pop. 4 locus 185 :   0 6614 
+Pop. 4 locus 186 :   0 6602 
+Pop. 4 locus 187 :   1 6559 
+Pop. 4 locus 188 :   0 6614 
+Pop. 4 locus 189 :   0 1244 2700 
+Pop. 4 locus 190 :   0   0   0 6614 
+Pop. 4 locus 191 :   0 6614 
+Pop. 4 locus 192 :   0   0   0 6602 
+Pop. 4 locus 193 :   0 3882 
+Pop. 4 locus 194 :   0   0 6614 
+Pop. 4 locus 195 :   0 6614 
+Pop. 4 locus 196 :   0 6614 
+Pop. 4 locus 197 :   0   0 3886 
+Pop. 4 locus 198 :   0 6606 
+
+Pop. 5 locus 1 :   1   2 66270 
+Pop. 5 locus 2 :   2 66414 
+Pop. 5 locus 3 :   2 66372 
+Pop. 5 locus 4 :   1   0 66577 
+Pop. 5 locus 5 :   0   0 66669 
+Pop. 5 locus 6 :   0 66286 
+Pop. 5 locus 7 :   1   1 66707 
+Pop. 5 locus 8 :   2 65992 
+Pop. 5 locus 9 :   2 50024 
+Pop. 5 locus 10 :   0 66606 
+Pop. 5 locus 11 :   2   0 66435 
+Pop. 5 locus 12 :   2   1 50409 
+Pop. 5 locus 13 :  12 66144 
+Pop. 5 locus 14 :   5 50037 
+Pop. 5 locus 15 :   0   0 66722 
+Pop. 5 locus 16 :   0 66000 
+Pop. 5 locus 17 :   0   3 66356 
+Pop. 5 locus 18 :   5 66281 
+Pop. 5 locus 19 :   1   1 49149 
+Pop. 5 locus 20 :   4 66722 
+Pop. 5 locus 21 :   4 66540 
+Pop. 5 locus 22 :   6 66074 
+Pop. 5 locus 23 :   1   1 66091 
+Pop. 5 locus 24 :   0 66732 
+Pop. 5 locus 25 :   2 66554 
+Pop. 5 locus 26 :   4 66144 
+Pop. 5 locus 27 :   1   2   0 47926 
+Pop. 5 locus 28 :   0   0 66731 
+Pop. 5 locus 29 :   1 47393 
+Pop. 5 locus 30 :   9 66725 
+Pop. 5 locus 31 :  11 66527 
+Pop. 5 locus 32 :   2   1 46900 
+Pop. 5 locus 33 :   0 66734 
+Pop. 5 locus 34 :   0   5 66441 
+Pop. 5 locus 35 :   3   2 66681 
+Pop. 5 locus 36 :  11   1 66719 
+Pop. 5 locus 37 :   2   0 46275 
+Pop. 5 locus 38 :   1 66563 
+Pop. 5 locus 39 :   8 66574 
+Pop. 5 locus 40 :   1 66731 
+Pop. 5 locus 41 :   2 66706 
+Pop. 5 locus 42 :   0 46142 
+Pop. 5 locus 43 :   0  27 66706 
+Pop. 5 locus 44 :   1 66535 
+Pop. 5 locus 45 :   0 66496 
+Pop. 5 locus 46 :   5 66681 
+Pop. 5 locus 47 :   1 66735 
+Pop. 5 locus 48 :   2 66688 
+Pop. 5 locus 49 :   0 44178 
+Pop. 5 locus 50 :   9   7 64946 
+Pop. 5 locus 51 :   1   1 66217 
+Pop. 5 locus 52 :   0 66362 
+Pop. 5 locus 53 :   0 40618 
+Pop. 5 locus 54 :  19 66135 
+Pop. 5 locus 55 :   2 66730 
+Pop. 5 locus 56 :   0   2 66543 
+Pop. 5 locus 57 :   0   2 66729 
+Pop. 5 locus 58 :   2 66728 
+Pop. 5 locus 59 :   0 65962 
+Pop. 5 locus 60 :   2 66686 
+Pop. 5 locus 61 :   1 66665 
+Pop. 5 locus 62 : 4166 61914 
+Pop. 5 locus 63 :   4 66688 
+Pop. 5 locus 64 :   0 66670 
+Pop. 5 locus 65 :   3   1 66151 
+Pop. 5 locus 66 :   2   1   0   2 65577 
+Pop. 5 locus 67 : 325   1   4 66360 
+Pop. 5 locus 68 :   3 66489 
+Pop. 5 locus 69 :   0   1   1 66634 
+Pop. 5 locus 70 :   2   1   0 66393 
+Pop. 5 locus 71 :   1   2 65337 
+Pop. 5 locus 72 :   2 66688 
+Pop. 5 locus 73 :   0   1   1   1 66703 
+Pop. 5 locus 74 :   0 65084 
+Pop. 5 locus 75 :   0   0 66689 
+Pop. 5 locus 76 :   1 66707 
+Pop. 5 locus 77 :   0 66728 
+Pop. 5 locus 78 :   4 66596 
+Pop. 5 locus 79 :   0 66368 
+Pop. 5 locus 80 :  46   0   5 66247 
+Pop. 5 locus 81 :   1 64733 
+Pop. 5 locus 82 :   1   1 65989 
+Pop. 5 locus 83 :   1   0 66702 
+Pop. 5 locus 84 :   0   0 66092 
+Pop. 5 locus 85 :   1   1 66467 
+Pop. 5 locus 86 :   2 66118 
+Pop. 5 locus 87 :  34 66660 
+Pop. 5 locus 88 :   0 66586 
+Pop. 5 locus 89 :   2 66442 
+Pop. 5 locus 90 :   1 66415 
+Pop. 5 locus 91 :   0 66672 
+Pop. 5 locus 92 :   1 66691 
+Pop. 5 locus 93 :   2 66266 
+Pop. 5 locus 94 :   0 66674 
+Pop. 5 locus 95 :   1 66687 
+Pop. 5 locus 96 :   0   1 64624 
+Pop. 5 locus 97 :   2 66408 
+Pop. 5 locus 98 :   0 66596 
+Pop. 5 locus 99 :   9  29 66418 
+Pop. 5 locus 100 :   3 66459 
+Pop. 5 locus 101 :   0 65956 
+Pop. 5 locus 102 :   2   0   1 64522 
+Pop. 5 locus 103 :   0 66472 
+Pop. 5 locus 104 :   1 66399 
+Pop. 5 locus 105 :   1   1   0 64491 
+Pop. 5 locus 106 :   1   1 66574 
+Pop. 5 locus 107 :   0   5 66447 
+Pop. 5 locus 108 :   1 66425 
+Pop. 5 locus 109 :   1   0 66642 
+Pop. 5 locus 110 :   2 66546 
+Pop. 5 locus 111 :   0 66648 
+Pop. 5 locus 112 :   1   1 66578 
+Pop. 5 locus 113 :   3 66453 
+Pop. 5 locus 114 :   0   1 66274 
+Pop. 5 locus 115 :   0   1 66306 
+Pop. 5 locus 116 :   0 66466 
+Pop. 5 locus 117 :   2 2536 63797 
+Pop. 5 locus 118 :   0   0 66568 
+Pop. 5 locus 119 :   0 66730 
+Pop. 5 locus 120 :   0 66562 
+Pop. 5 locus 121 :   1   0 66710 
+Pop. 5 locus 122 :   1   1 66737 
+Pop. 5 locus 123 :   3 66665 
+Pop. 5 locus 124 :   2 62888 
+Pop. 5 locus 125 :   0 66734 
+Pop. 5 locus 126 :   0   7 66345 
+Pop. 5 locus 127 :   6 66538 
+Pop. 5 locus 128 :   4 66714 
+Pop. 5 locus 129 :   1   0 66343 
+Pop. 5 locus 130 :   7 66711 
+Pop. 5 locus 131 :   0 66298 
+Pop. 5 locus 132 :  14   5 66481 
+Pop. 5 locus 133 :   1 65117 
+Pop. 5 locus 134 :   0 66534 
+Pop. 5 locus 135 :   1   1   4 66273 
+Pop. 5 locus 136 : 261 63053 
+Pop. 5 locus 137 :   2   3 66712 
+Pop. 5 locus 138 :   0 66678 
+Pop. 5 locus 139 :   0 66720 
+Pop. 5 locus 140 :   0 66594 
+Pop. 5 locus 141 :   4  19   2 66572 
+Pop. 5 locus 142 :   0   3 63631 
+Pop. 5 locus 143 :   0   0 66574 
+Pop. 5 locus 144 :   0 23988 
+Pop. 5 locus 145 :  27   1 66656 
+Pop. 5 locus 146 :   3   1 63737 
+Pop. 5 locus 147 :   0 66694 
+Pop. 5 locus 148 :   0 64076 
+Pop. 5 locus 149 :   2   0 29624 
+Pop. 5 locus 150 :  41 64273 
+Pop. 5 locus 151 : 239 66499 
+Pop. 5 locus 152 :   0   1 66702 
+Pop. 5 locus 153 :   0   1 66714 
+Pop. 5 locus 154 :   1 66725 
+Pop. 5 locus 155 :   1 66699 
+Pop. 5 locus 156 :   7 66647 
+Pop. 5 locus 157 :   0 66698 
+Pop. 5 locus 158 :  17 37001 
+Pop. 5 locus 159 :   1 66681 
+Pop. 5 locus 160 :   2 66730 
+Pop. 5 locus 161 : 774 65874 
+Pop. 5 locus 162 :   1   0   0 37912 
+Pop. 5 locus 163 :   0 66404 
+Pop. 5 locus 164 :   2 66696 
+Pop. 5 locus 165 :   0 66626 
+Pop. 5 locus 166 :   2 66684 
+Pop. 5 locus 167 :   0 66380 
+Pop. 5 locus 168 :   1 66727 
+Pop. 5 locus 169 :   2 65612 
+Pop. 5 locus 170 :   1   1 66584 
+Pop. 5 locus 171 :   0   1   1 45216 
+Pop. 5 locus 172 :   1   0 65072 
+Pop. 5 locus 173 :   2 66726 
+Pop. 5 locus 174 :   0   1 66570 
+Pop. 5 locus 175 :   1   1 66690 
+Pop. 5 locus 176 :   2 66308 
+Pop. 5 locus 177 :   0 66724 
+Pop. 5 locus 178 :   2 65300 
+Pop. 5 locus 179 :   0   1 66736 
+Pop. 5 locus 180 :   0 49162 
+Pop. 5 locus 181 :   1 51319 
+Pop. 5 locus 182 :   1   4 66709 
+Pop. 5 locus 183 :   0   1 66726 
+Pop. 5 locus 184 :   0 65632 
+Pop. 5 locus 185 :   0 66730 
+Pop. 5 locus 186 :   2 66426 
+Pop. 5 locus 187 :   1 65643 
+Pop. 5 locus 188 :   5 66731 
+Pop. 5 locus 189 :   0 12718 42684 
+Pop. 5 locus 190 :   1   1   0 65655 
+Pop. 5 locus 191 :   2 66726 
+Pop. 5 locus 192 :   0   0   1 66455 
+Pop. 5 locus 193 :   2 56682 
+Pop. 5 locus 194 :   1   1 66727 
+Pop. 5 locus 195 :   4 66718 
+Pop. 5 locus 196 :   0 66732 
+Pop. 5 locus 197 :   1   0 56941 
+Pop. 5 locus 198 :   2 66536 
+
+Pop. 6 locus 1 :   0   0 898 
+Pop. 6 locus 2 :   0 904 
+Pop. 6 locus 3 :   0 904 
+Pop. 6 locus 4 :   0   0 908 
+Pop. 6 locus 5 :   0   0 908 
+Pop. 6 locus 6 :   0 904 
+Pop. 6 locus 7 :   0   0 904 
+Pop. 6 locus 8 :   1 891 
+Pop. 6 locus 9 :   0 596 
+Pop. 6 locus 10 :   0 906 
+Pop. 6 locus 11 :   0   0 906 
+Pop. 6 locus 12 :   0   0 610 
+Pop. 6 locus 13 :   0 894 
+Pop. 6 locus 14 :   0 608 
+Pop. 6 locus 15 :   0   0 906 
+Pop. 6 locus 16 :   0 904 
+Pop. 6 locus 17 :   0   0 904 
+Pop. 6 locus 18 :   0 898 
+Pop. 6 locus 19 :   0   0 608 
+Pop. 6 locus 20 :   0 906 
+Pop. 6 locus 21 :   0 906 
+Pop. 6 locus 22 :   0 904 
+Pop. 6 locus 23 :   0   0 904 
+Pop. 6 locus 24 :   0 906 
+Pop. 6 locus 25 :   0 906 
+Pop. 6 locus 26 :   0 896 
+Pop. 6 locus 27 :   0   0   0 584 
+Pop. 6 locus 28 :   0   0 906 
+Pop. 6 locus 29 :   0 570 
+Pop. 6 locus 30 :   0 906 
+Pop. 6 locus 31 :   1 903 
+Pop. 6 locus 32 :   0   0 565 
+Pop. 6 locus 33 :   0 906 
+Pop. 6 locus 34 :   0   0 902 
+Pop. 6 locus 35 :   0   0 908 
+Pop. 6 locus 36 :   0   0 908 
+Pop. 6 locus 37 :   0   0 558 
+Pop. 6 locus 38 :   0 904 
+Pop. 6 locus 39 :   0 906 
+Pop. 6 locus 40 :   0 908 
+Pop. 6 locus 41 :   0 908 
+Pop. 6 locus 42 :   0 558 
+Pop. 6 locus 43 :   0   0 906 
+Pop. 6 locus 44 :   0 904 
+Pop. 6 locus 45 :   0 902 
+Pop. 6 locus 46 :   0 906 
+Pop. 6 locus 47 :   0 906 
+Pop. 6 locus 48 :   0 906 
+Pop. 6 locus 49 :   1 527 
+Pop. 6 locus 50 :   1   0 857 
+Pop. 6 locus 51 :   0   0 894 
+Pop. 6 locus 52 :   0 902 
+Pop. 6 locus 53 :   0 504 
+Pop. 6 locus 54 :   3 889 
+Pop. 6 locus 55 :   0 908 
+Pop. 6 locus 56 :   0   0 906 
+Pop. 6 locus 57 :   0   0 908 
+Pop. 6 locus 58 :   0 906 
+Pop. 6 locus 59 :   0 876 
+Pop. 6 locus 60 :   0 906 
+Pop. 6 locus 61 :   1 899 
+Pop. 6 locus 62 :  44 846 
+Pop. 6 locus 63 :   0 906 
+Pop. 6 locus 64 :   0 898 
+Pop. 6 locus 65 :   0   0 891 
+Pop. 6 locus 66 :   0   0   0   0 860 
+Pop. 6 locus 67 :   1   0   0 905 
+Pop. 6 locus 68 :   0 906 
+Pop. 6 locus 69 :   0   0   0 898 
+Pop. 6 locus 70 :   0   0   0 900 
+Pop. 6 locus 71 :   0   0 854 
+Pop. 6 locus 72 :   0 906 
+Pop. 6 locus 73 :   0   0   1   0 907 
+Pop. 6 locus 74 :   0 848 
+Pop. 6 locus 75 :   0   0 906 
+Pop. 6 locus 76 :   0 908 
+Pop. 6 locus 77 :   0 906 
+Pop. 6 locus 78 :   0 906 
+Pop. 6 locus 79 :   0 898 
+Pop. 6 locus 80 :   0   0   0 894 
+Pop. 6 locus 81 :   0 824 
+Pop. 6 locus 82 :   0   0 890 
+Pop. 6 locus 83 :   0   0 906 
+Pop. 6 locus 84 :   0   0 892 
+Pop. 6 locus 85 :   0   0 893 
+Pop. 6 locus 86 :   0 892 
+Pop. 6 locus 87 :   0 906 
+Pop. 6 locus 88 :   0 906 
+Pop. 6 locus 89 :   0 898 
+Pop. 6 locus 90 :   0 898 
+Pop. 6 locus 91 :   0 902 
+Pop. 6 locus 92 :   0 906 
+Pop. 6 locus 93 :   0 900 
+Pop. 6 locus 94 :   0 904 
+Pop. 6 locus 95 :   0 906 
+Pop. 6 locus 96 :   0   0 827 
+Pop. 6 locus 97 :   0 898 
+Pop. 6 locus 98 :   0 908 
+Pop. 6 locus 99 :   0   1 894 
+Pop. 6 locus 100 :   0 896 
+Pop. 6 locus 101 :   0 900 
+Pop. 6 locus 102 :   0   0   0 813 
+Pop. 6 locus 103 :   0 896 
+Pop. 6 locus 104 :   0 900 
+Pop. 6 locus 105 :   0   0   0 811 
+Pop. 6 locus 106 :   0   0 902 
+Pop. 6 locus 107 :   0   0 895 
+Pop. 6 locus 108 :   0 900 
+Pop. 6 locus 109 :   0   0 908 
+Pop. 6 locus 110 :   0 900 
+Pop. 6 locus 111 :   0 908 
+Pop. 6 locus 112 :   0   0 904 
+Pop. 6 locus 113 :   1 893 
+Pop. 6 locus 114 :   0   0 904 
+Pop. 6 locus 115 :   0   0 904 
+Pop. 6 locus 116 :   0 900 
+Pop. 6 locus 117 :   0  51 843 
+Pop. 6 locus 118 :   0   0 904 
+Pop. 6 locus 119 :   0 908 
+Pop. 6 locus 120 :   0 904 
+Pop. 6 locus 121 :   0   0 908 
+Pop. 6 locus 122 :   0   0 908 
+Pop. 6 locus 123 :   0 908 
+Pop. 6 locus 124 :   0 850 
+Pop. 6 locus 125 :   0 908 
+Pop. 6 locus 126 :   0   0 896 
+Pop. 6 locus 127 :   0 902 
+Pop. 6 locus 128 :   0 908 
+Pop. 6 locus 129 :   0   0 896 
+Pop. 6 locus 130 :   0 908 
+Pop. 6 locus 131 :   0 898 
+Pop. 6 locus 132 :   0   0 902 
+Pop. 6 locus 133 :   0 888 
+Pop. 6 locus 134 :   0 902 
+Pop. 6 locus 135 :   1   1   0 896 
+Pop. 6 locus 136 :  19 837 
+Pop. 6 locus 137 :   0   0 908 
+Pop. 6 locus 138 :   0 908 
+Pop. 6 locus 139 :   0 908 
+Pop. 6 locus 140 :   0 902 
+Pop. 6 locus 141 :   0   0   0 902 
+Pop. 6 locus 142 :   0   0 865 
+Pop. 6 locus 143 :   0   0 908 
+Pop. 6 locus 144 :   0 332 
+Pop. 6 locus 145 :   0   0 908 
+Pop. 6 locus 146 :   0   0 865 
+Pop. 6 locus 147 :   0 908 
+Pop. 6 locus 148 :   0 872 
+Pop. 6 locus 149 :   0   0 379 
+Pop. 6 locus 150 :   0 878 
+Pop. 6 locus 151 :   3 905 
+Pop. 6 locus 152 :   0   0 906 
+Pop. 6 locus 153 :   0   0 906 
+Pop. 6 locus 154 :   0 908 
+Pop. 6 locus 155 :   0 908 
+Pop. 6 locus 156 :   0 906 
+Pop. 6 locus 157 :   0 908 
+Pop. 6 locus 158 :   0 470 
+Pop. 6 locus 159 :   0 908 
+Pop. 6 locus 160 :   0 908 
+Pop. 6 locus 161 :  10 896 
+Pop. 6 locus 162 :   0   0   0 478 
+Pop. 6 locus 163 :   0 902 
+Pop. 6 locus 164 :   0 908 
+Pop. 6 locus 165 :   0 906 
+Pop. 6 locus 166 :   0 908 
+Pop. 6 locus 167 :   0 902 
+Pop. 6 locus 168 :   0 908 
+Pop. 6 locus 169 :   0 884 
+Pop. 6 locus 170 :   0   0 904 
+Pop. 6 locus 171 :   0   0   0 567 
+Pop. 6 locus 172 :   0   0 888 
+Pop. 6 locus 173 :   0 908 
+Pop. 6 locus 174 :   0   0 904 
+Pop. 6 locus 175 :   0   0 908 
+Pop. 6 locus 176 :   0 902 
+Pop. 6 locus 177 :   0 908 
+Pop. 6 locus 178 :   0 892 
+Pop. 6 locus 179 :   0   0 908 
+Pop. 6 locus 180 :   0 606 
+Pop. 6 locus 181 :   0 628 
+Pop. 6 locus 182 :   0   0 908 
+Pop. 6 locus 183 :   0   0 908 
+Pop. 6 locus 184 :   0 886 
+Pop. 6 locus 185 :   0 908 
+Pop. 6 locus 186 :   0 900 
+Pop. 6 locus 187 :   1 895 
+Pop. 6 locus 188 :   0 908 
+Pop. 6 locus 189 :   0 211 490 
+Pop. 6 locus 190 :   0   0   0 897 
+Pop. 6 locus 191 :   0 908 
+Pop. 6 locus 192 :   0   0   0 900 
+Pop. 6 locus 193 :   0 704 
+Pop. 6 locus 194 :   0   0 908 
+Pop. 6 locus 195 :   0 908 
+Pop. 6 locus 196 :   0 908 
+Pop. 6 locus 197 :   0   0 704 
+Pop. 6 locus 198 :   0 906 
+
+Pop. 7 locus 1 :   0   0 16286 
+Pop. 7 locus 2 :   0 16408 
+Pop. 7 locus 3 :   0 16398 
+Pop. 7 locus 4 :   0   1 16405 
+Pop. 7 locus 5 :   0   4 16474 
+Pop. 7 locus 6 :   0 16430 
+Pop. 7 locus 7 :   0   0 16510 
+Pop. 7 locus 8 :   0 16152 
+Pop. 7 locus 9 :   0 12532 
+Pop. 7 locus 10 :   0 16512 
+Pop. 7 locus 11 :   0   3 16386 
+Pop. 7 locus 12 :   0   0 12682 
+Pop. 7 locus 13 :   0 16218 
+Pop. 7 locus 14 :   0 12654 
+Pop. 7 locus 15 :   1   0 16511 
+Pop. 7 locus 16 :   0 16244 
+Pop. 7 locus 17 :   1   0 16346 
+Pop. 7 locus 18 :   1 16299 
+Pop. 7 locus 19 :   0   0 12577 
+Pop. 7 locus 20 :   0 16512 
+Pop. 7 locus 21 :   5 16469 
+Pop. 7 locus 22 :   0 16252 
+Pop. 7 locus 23 :   0   0 16360 
+Pop. 7 locus 24 :   1 16511 
+Pop. 7 locus 25 :   0 16480 
+Pop. 7 locus 26 :   0 16154 
+Pop. 7 locus 27 :   0   1   1 12428 
+Pop. 7 locus 28 :   1   0 16511 
+Pop. 7 locus 29 :   0 12386 
+Pop. 7 locus 30 :   1 16511 
+Pop. 7 locus 31 :   0 16510 
+Pop. 7 locus 32 :   1   0 12326 
+Pop. 7 locus 33 :   0 16512 
+Pop. 7 locus 34 :   1   0 16309 
+Pop. 7 locus 35 :   0   1 16483 
+Pop. 7 locus 36 :   0   0 16509 
+Pop. 7 locus 37 :   0   4 12247 
+Pop. 7 locus 38 :   0 16510 
+Pop. 7 locus 39 :   0 16490 
+Pop. 7 locus 40 :   0 16510 
+Pop. 7 locus 41 :   0 16506 
+Pop. 7 locus 42 :   0 12240 
+Pop. 7 locus 43 :   0   0 16512 
+Pop. 7 locus 44 :   0 16508 
+Pop. 7 locus 45 :   2 16330 
+Pop. 7 locus 46 :   0 16474 
+Pop. 7 locus 47 :   1 16511 
+Pop. 7 locus 48 :   0 16474 
+Pop. 7 locus 49 :   0 11988 
+Pop. 7 locus 50 :   2   1 14887 
+Pop. 7 locus 51 :   0   0 16430 
+Pop. 7 locus 52 :   0 15952 
+Pop. 7 locus 53 :   0 11566 
+Pop. 7 locus 54 :   0 16408 
+Pop. 7 locus 55 :   0 16510 
+Pop. 7 locus 56 :   0   0 16508 
+Pop. 7 locus 57 :   0   4 16506 
+Pop. 7 locus 58 :   1 16511 
+Pop. 7 locus 59 :   0 16348 
+Pop. 7 locus 60 :   1 16475 
+Pop. 7 locus 61 :   1 16493 
+Pop. 7 locus 62 : 193 16257 
+Pop. 7 locus 63 :   0 16480 
+Pop. 7 locus 64 :   0 16492 
+Pop. 7 locus 65 :   0   2 16476 
+Pop. 7 locus 66 :   0   0   0   0 16255 
+Pop. 7 locus 67 :  52   0   0 16433 
+Pop. 7 locus 68 :   0 16504 
+Pop. 7 locus 69 :   1   0   0 16491 
+Pop. 7 locus 70 :   0   0   1 15933 
+Pop. 7 locus 71 :   0   0 16186 
+Pop. 7 locus 72 :   0 16488 
+Pop. 7 locus 73 :   0   0  45   0 16459 
+Pop. 7 locus 74 :   0 16120 
+Pop. 7 locus 75 :   0   1 16487 
+Pop. 7 locus 76 :   0 16502 
+Pop. 7 locus 77 :   2 16510 
+Pop. 7 locus 78 :   0 16496 
+Pop. 7 locus 79 :   2 15824 
+Pop. 7 locus 80 :   0   2   0 16496 
+Pop. 7 locus 81 :  20 11566 
+Pop. 7 locus 82 :   0   0 16323 
+Pop. 7 locus 83 :   0   0 16497 
+Pop. 7 locus 84 :   0   0 16346 
+Pop. 7 locus 85 :   0   0 16456 
+Pop. 7 locus 86 :   1 16355 
+Pop. 7 locus 87 :   3 16485 
+Pop. 7 locus 88 :   0 16502 
+Pop. 7 locus 89 :   0 16506 
+Pop. 7 locus 90 :   0 16428 
+Pop. 7 locus 91 :   0 16484 
+Pop. 7 locus 92 :   0 16500 
+Pop. 7 locus 93 :   0 16394 
+Pop. 7 locus 94 :   0 16484 
+Pop. 7 locus 95 :   1 16501 
+Pop. 7 locus 96 :   1   0 11173 
+Pop. 7 locus 97 :   0 16264 
+Pop. 7 locus 98 :   0 16482 
+Pop. 7 locus 99 :   0   4 16506 
+Pop. 7 locus 100 :   1 16509 
+Pop. 7 locus 101 :   1 16507 
+Pop. 7 locus 102 :   0   0   0 10852 
+Pop. 7 locus 103 :   0 16512 
+Pop. 7 locus 104 :   0 16444 
+Pop. 7 locus 105 :   0   1   0 10754 
+Pop. 7 locus 106 :   0   0 16494 
+Pop. 7 locus 107 :   0   0 16512 
+Pop. 7 locus 108 :   0 16452 
+Pop. 7 locus 109 :   0   0 16492 
+Pop. 7 locus 110 :   0 16460 
+Pop. 7 locus 111 :   0 16494 
+Pop. 7 locus 112 :   0   0 16477 
+Pop. 7 locus 113 :   0 16512 
+Pop. 7 locus 114 :   0   0 16512 
+Pop. 7 locus 115 :   0   0 16512 
+Pop. 7 locus 116 :   2 16456 
+Pop. 7 locus 117 :   0 1344 15003 
+Pop. 7 locus 118 :   0   1 16465 
+Pop. 7 locus 119 :   3 16507 
+Pop. 7 locus 120 :   1 16457 
+Pop. 7 locus 121 :   0   9 16496 
+Pop. 7 locus 122 :   2   0 16510 
+Pop. 7 locus 123 :   0 16508 
+Pop. 7 locus 124 :   0 14798 
+Pop. 7 locus 125 :   0 16512 
+Pop. 7 locus 126 :   0   1 16509 
+Pop. 7 locus 127 :   0 16436 
+Pop. 7 locus 128 :   0 16508 
+Pop. 7 locus 129 :   0   0 16510 
+Pop. 7 locus 130 :   0 16508 
+Pop. 7 locus 131 :   0 16508 
+Pop. 7 locus 132 :   0   0 16500 
+Pop. 7 locus 133 :   0 16408 
+Pop. 7 locus 134 :   0 16404 
+Pop. 7 locus 135 :   0   0  12 16494 
+Pop. 7 locus 136 :   9 14911 
+Pop. 7 locus 137 :   0   0 16510 
+Pop. 7 locus 138 :  35 16477 
+Pop. 7 locus 139 :   0 16510 
+Pop. 7 locus 140 :   0 16506 
+Pop. 7 locus 141 :   1   0   4 16502 
+Pop. 7 locus 142 :   0   0 14962 
+Pop. 7 locus 143 :   0   0 16472 
+Pop. 7 locus 144 :   1 9195 
+Pop. 7 locus 145 :   1   0 16511 
+Pop. 7 locus 146 :   1   0 14991 
+Pop. 7 locus 147 :   0 16508 
+Pop. 7 locus 148 :   0 15066 
+Pop. 7 locus 149 :   0   1 9966 
+Pop. 7 locus 150 :   0 15142 
+Pop. 7 locus 151 :   8 16504 
+Pop. 7 locus 152 :   0   0 16512 
+Pop. 7 locus 153 :   2   0 16510 
+Pop. 7 locus 154 :   3 16507 
+Pop. 7 locus 155 :   1 16499 
+Pop. 7 locus 156 :   0 16502 
+Pop. 7 locus 157 :   0 16498 
+Pop. 7 locus 158 :   0 10898 
+Pop. 7 locus 159 :   1 16511 
+Pop. 7 locus 160 :   0 16512 
+Pop. 7 locus 161 : 200 16278 
+Pop. 7 locus 162 :   5   1   0 11022 
+Pop. 7 locus 163 :   2 16412 
+Pop. 7 locus 164 :   0 16498 
+Pop. 7 locus 165 :   0 16448 
+Pop. 7 locus 166 :   0 16512 
+Pop. 7 locus 167 :   1 16413 
+Pop. 7 locus 168 :   0 16512 
+Pop. 7 locus 169 :   0 16504 
+Pop. 7 locus 170 :   1   0 16391 
+Pop. 7 locus 171 :   1   0   0 12034 
+Pop. 7 locus 172 :   0   0 15707 
+Pop. 7 locus 173 :   0 16512 
+Pop. 7 locus 174 :   0   0 16349 
+Pop. 7 locus 175 :   0   0 16512 
+Pop. 7 locus 176 :   0 16374 
+Pop. 7 locus 177 :   0 16512 
+Pop. 7 locus 178 :   0 15938 
+Pop. 7 locus 179 :   0   0 16512 
+Pop. 7 locus 180 :   2 12640 
+Pop. 7 locus 181 :   0 12966 
+Pop. 7 locus 182 :   0   1 16509 
+Pop. 7 locus 183 :   0   0 16512 
+Pop. 7 locus 184 :   0 16506 
+Pop. 7 locus 185 :   0 16512 
+Pop. 7 locus 186 :   0 16264 
+Pop. 7 locus 187 :   0 16200 
+Pop. 7 locus 188 :   0 16512 
+Pop. 7 locus 189 :   1 6549 7573 
+Pop. 7 locus 190 :   0   0   0 16189 
+Pop. 7 locus 191 :   2 16506 
+Pop. 7 locus 192 :   0   1   0 16294 
+Pop. 7 locus 193 :   0 13844 
+Pop. 7 locus 194 :   0   0 16512 
+Pop. 7 locus 195 :   0 16512 
+Pop. 7 locus 196 :   0 16508 
+Pop. 7 locus 197 :   0   0 13852 
+Pop. 7 locus 198 :   0 16360 
+
