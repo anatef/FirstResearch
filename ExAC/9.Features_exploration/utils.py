@@ -5,7 +5,7 @@ from dnds_func import calculate_ns, seq_ns
 
 # Calculates a normalized Shannon entropy (from Miller et al, 2015)
 def entropy(a):
-    a = np.asarray(a) / sum(a)
+    a = float(np.asarray(a)) / sum(a)
     entropy = 0
     for val in a:
         if val == 0 or np.isnan(val):
