@@ -12,12 +12,12 @@ class aa_charge(Enum):
     NEUTRAL = 0
     POSITIVE = 1
     NEGATIVE = -1
-    
+
 class aa_propensity(Enum):
     ALPHA_HELIX = 0
     BETA_SHEET = 1
     TURN = 2
-    
+
 aa_functional_group_dict = {'A': aa_functional_group.ALIPHATIC,
                        'C': aa_functional_group.POLAR,
                        'D': aa_functional_group.NEGATIVE,
@@ -38,7 +38,7 @@ aa_functional_group_dict = {'A': aa_functional_group.ALIPHATIC,
                        'V': aa_functional_group.ALIPHATIC,
                        'W': aa_functional_group.AROMATIC,
                        'Y': aa_functional_group.AROMATIC,
-                       '*': aa_functional_group.AROMATIC}
+                       '*': aa_functional_group.STOP}
 
 aa_charge_dict = {'A': aa_charge.NEUTRAL,
              'C': aa_charge.NEUTRAL,
@@ -107,3 +107,28 @@ propensity_chou_fasman = {'A': [1.42, 0.83, 0.66],
                           'W': [0.83, 1.19, 0.96],
                           'Y': [0.69, 1.47, 1.14],
                           '*': [0, 0, 0]}
+
+#Amino acid volume (A^3) from "Protein volume in solution", Zamyatnin, 1972
+volume = {'A': 88.6,
+          'C': 108.5,
+          'D': 111.1,
+          'E': 138.4,
+          'F': 189.9,
+          'G': 60.1,
+          'H': 153.2,
+          'I': 166.7,
+          'K': 168.6,
+          'L': 166.7,
+          'M': 162.9,
+          'N': 114.1,
+          'P': 112.7,
+          'Q': 143.8,
+          'R': 173.4,
+          'S': 89.0,
+          'T': 116.1,
+          'V': 140.0,
+          'W': 227.8,
+          'Y': 193.6,
+          '*': 0.0
+
+}
