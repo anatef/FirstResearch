@@ -5,7 +5,13 @@ from dnds_func import calculate_ns, seq_ns
 
 # Calculates a normalized Shannon entropy (from Miller et al, 2015)
 def entropy(a):
-    a = float(np.asarray(a)) / sum(a)
+    # Handle corner cases
+    if len(a) == 0 or sum(a) == 0:
+        return(np.nan)
+    if len(a) == 1:
+        return(0)
+    # Calculate normalized entropy
+    a = np.asarray(a) / float(sum(a))
     entropy = 0
     for val in a:
         if val == 0 or np.isnan(val):
@@ -22,6 +28,18 @@ def density(a,window):
     for i in range(0,len(a)+window-1):
         sums = np.append(sums,sum(norm[max(0,i-window+1):min(len(norm),i+1)]))
     return(entropy(sums))
+
+# Take mean but check if empty first
+def mean(a):
+    if len(a) == 0:
+        return(np.nan)
+    return(np.mean(a))
+
+# Take standard deviation but check if empty first
+def std(a):
+    if len(a) == 0:
+        return(np.nan)
+    return(np.std(a))
 
 # Calculate the dN/dS ratio
 def calc_dNdS(ref_seq,Nd,Sd):
