@@ -1,11 +1,14 @@
 # Swims up the GO tree
 #
-# Pre-req: freq_counts must be computed and saved in a csv at the path indicated
+# Pre-req: freq_counts must be computed and saved in a csv
+# 
+# instance_cutoff: Min number of instances for domain to be included (10, 50, or 100)
+# data_path: The path to freq_counts (not including the file itself)
 domain_go <- function(instance_cutoff,data_path) {
   # Get packages
-  source("http://bioconductor.org/biocLite.R")
-  biocLite(org.Sc.sgd.db)
-  biocLite(GO.db)
+  #source("http://bioconductor.org/biocLite.R")
+  #biocLite("GO.db")
+  library(GO.db)
   
   # Find file
   filename <- paste("freq_counts",instance_cutoff,".csv",sep="")
@@ -14,7 +17,7 @@ domain_go <- function(instance_cutoff,data_path) {
   freq_counts <- read.csv(paste0(data_path, filename), header = TRUE, sep = ',', row.names = 1, stringsAsFactors = FALSE)
   
   # Get GO hierarchy
-  master <- c(as.list(GOBPPARENTS), as.list(GOMFPARENTS), as.list(GOCCPARENTS))
+  master <- c(as.list(GOBPANCESTOR), as.list(GOMFANCESTOR), as.list(GOCCANCESTOR))
   
   # Combine terms where possible
   for (i in 1:20) {
@@ -22,7 +25,7 @@ domain_go <- function(instance_cutoff,data_path) {
       num = freq_counts$number[r]
       count = freq_counts$count[r]
       domains = freq_counts$domains[r]
-    
+      
       # Convert the GO term to the format used
       key <- toString(num)
       while (nchar(key) < 7) {
@@ -46,7 +49,7 @@ domain_go <- function(instance_cutoff,data_path) {
                 freq_counts$count[index] <- freq_counts$count[index] + 1
               }
             }
-          # Otherwise, create a new row and append it
+            # Otherwise, create a new row and append it
           } else {
             temp <- data.frame(parent_num, count, Term(parents[[p]]), domains)
             names(temp) <- c("number", "count", "name", "domains")
