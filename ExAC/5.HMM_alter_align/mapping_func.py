@@ -18,6 +18,10 @@ def correct_exons_frameshift(exon_df, targetid):
     length = exons_frameshifts[targetid+".exons.txt"][1]
     bps = exons_frameshifts[targetid+".exons.txt"][2]
     
+    print "idx = "+str(idx)
+    print "length = "+str(length)
+    print "bps = "+str(bps)
+    
     #Find the exon we need to add bps to
     first_bp_count = 1
     for index, exon in exon_df.iterrows():
@@ -28,10 +32,13 @@ def correct_exons_frameshift(exon_df, targetid):
         #Fixing start pos of the exon
         if (idx <= first_bp_count):
             exon_df.set_value(index, "start_pos", (ex_start - length))
+            print index
             break
         #Fixing end pos of the exon
-        elif (idx <= (first_bp_count + exon_len -1)):
+        elif (idx <= (first_bp_count + exon_len)):
             exon_df.set_value(index, "end_pos", (ex_end + length))
+            print "fix exon end"
+            print index
             break
         first_bp_count += exon_len
 #-------------------------------------------------------------------------------------------#
@@ -212,30 +219,19 @@ def protein_pos_to_hmm_state_and_aa(protein_pos, domain_gene_table):
             hmm_pos = (row["HMM_Pos"]).split(",")
             target_seq = list(row["Target_Seq"])
             index_inside_match = int(protein_pos - target_start)
-            orig_index = index_inside_match
             
-            #If original index is inside a deletion, advance index to the end of the deletion.
-            while (aa == "-"):
-                aa = (target_seq[index_inside_match]).upper()
-                if (aa == "-"):
-                    index_inside_match += 1
-
-            #Correct index_inside_match for previous deletions '-' inside the HMM alignment
-            for j in range(orig_index):
-                if (target_seq[j] == "-"):
-                    index_inside_match += 1
-                    
-            #Reading aa again in case index has changed
-            aa = (target_seq[index_inside_match]).upper()
+            #Get deletions indices
+            indices = [i for i, x in enumerate(target_seq) if x == "-"]
             
-            #If corrected counter led to a new deletion, advance counter to the end of the new deletion
-            while (aa == "-"):
-                aa = (target_seq[index_inside_match]).upper()
-                if (aa == "-"):
-                    index_inside_match += 1
-
+            #Remove deletions from bith lists
+            target_seq_no_del = [i for j, i in enumerate(target_seq) if j not in indices]
+            hmm_pos_no_del = [i for j, i in enumerate(hmm_pos) if j not in indices]
+            
+            #Get the aa
+            aa = (target_seq_no_del[index_inside_match]).upper()
+            
             #Find the HMM match state
-            hmm_state_text = hmm_pos[index_inside_match]
+            hmm_state_text = hmm_pos_no_del[index_inside_match]
             if (is_number(hmm_state_text) == True):
                 hmm_state = int(hmm_state_text)
             else:
@@ -246,7 +242,7 @@ def protein_pos_to_hmm_state_and_aa(protein_pos, domain_gene_table):
             return(hmm_state, aa)
             
     #The protein position isn't in any domain region        
-    return (-1,'-')
+    return (-1,'-')    
 #-------------------------------------------------------------------------------------------#
 
 
