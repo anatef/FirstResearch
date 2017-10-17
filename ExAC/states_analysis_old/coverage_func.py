@@ -13,7 +13,7 @@ def subplot_scatter(x_list, y_list, title, title_color):
     plt.plot(X_plot, m*X_plot + b, '-', color="black")
 
     plt.xlim(0, 0.5)
-    plt.ylim(0, max(y_list))
+    plt.ylim(50, max(y_list))
 
     #plt.xlabel("Adjusted AF", fontsize=10)
     #plt.ylabel("Mean Coverage", fontsize=10)
