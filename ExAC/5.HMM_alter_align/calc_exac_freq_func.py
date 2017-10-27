@@ -67,6 +67,8 @@ def create_alt_codon(exac_ref_bp, curr_alt_bp, ref_codon, alt_codon_pos, chrom_r
         print functionNameAsString+" Error: ExAC ref sequence "+exac_ref_bp_adj+" isn't found in hg19 retrieved codon sequence "+ref_codon
         
     new_alt_codon = ref_codon[:alt_codon_pos]+new_bp+ref_codon[alt_codon_pos+len(exac_ref_bp_adj):]
+    if (len(new_alt_codon) != 3):
+        print functionNameAsString+" Error: new alt codon length isn't 3: "+new_alt_codon
     
     return new_alt_codon
 #-------------------------------------------------------------------------------------------#
@@ -89,7 +91,7 @@ def retrieve_codon_seq(chrom_pos_list, chrom_raw_data, chrom):
     for chrom_pos in chrom_pos_list:
         seq_start = chrom_pos - 1
         #query = !./twoBitToFa hg19.2bit stdout -seq=$chromsome_name -start=$seq_start -end=$chrom_po #Jupyter syntax
-        query = subprocess.check_output("./twoBitToFa hg19.2bit stdout -seq=%s -start=%s -end=%s" %(chromsome_name, str(seq_start), str(chrom_pos)), shell=True)
+        query = subprocess.check_output("../5.HMM_alter_align/twoBitToFa ../5.HMM_alter_align/hg19.2bit stdout -seq=%s -start=%s -end=%s" %(chromsome_name, str(seq_start), str(chrom_pos)), shell=True)
         query = ' '.join(query.split()) #remove whitespaces and newlines
         seq = seq+query[-1] #The last char is the result
     
@@ -132,10 +134,17 @@ def exac_validation_checks(chrom_alter, protein_pos, aa, alt_codon_pos, chrom_po
         exac_prot_pos = chrom_alter["prot_pos"]
          #in case there's more than one position listed
         if (exac_prot_pos.find("-") != -1):
-            first_exac_prot_pos = int(exac_prot_pos[:exac_prot_pos.find("-")])
-            last_exac_prot_pos = int(exac_prot_pos[exac_prot_pos.find("-")+1:])
+            #Trying to converty to int, but leaving as string if its a question mark
+            try:
+                first_exac_prot_pos = int(exac_prot_pos[:exac_prot_pos.find("-")])
+            except:
+                first_exac_prot_pos = exac_prot_pos[:exac_prot_pos.find("-")]
+            try:
+                last_exac_prot_pos = int(exac_prot_pos[exac_prot_pos.find("-")+1:])
+            except: 
+                last_exac_prot_pos = exac_prot_pos[exac_prot_pos.find("-")+1:]
         else:
-            first_exac_prot_pos = int(exac_prot_pos)
+            first_exac_prot_pos = int(float(exac_prot_pos)) #float if for when number is listed in ExAC with dd.0
             last_exac_prot_pos = first_exac_prot_pos
         #Checking of the protein position isn't within the range described by ExAC
         if not(first_exac_prot_pos <= protein_pos <= last_exac_prot_pos):
