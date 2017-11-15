@@ -18,6 +18,12 @@ class aa_propensity(Enum):
     BETA_SHEET = 1
     TURN = 2
 
+class aa_volume_group(Enum):
+    TINY = 0
+    SMALL = 1
+    BIG = 2
+    STOP = 3
+
 aa_functional_group_dict = {'A': aa_functional_group.ALIPHATIC,
                        'C': aa_functional_group.POLAR,
                        'D': aa_functional_group.NEGATIVE,
@@ -109,7 +115,7 @@ propensity_chou_fasman = {'A': [1.42, 0.83, 0.66],
                           '*': [0, 0, 0]}
 
 #Amino acid volume (A^3) from "Protein volume in solution", Zamyatnin, 1972
-volume = {'A': 88.6,
+aa_volume = {'A': 88.6,
           'C': 108.5,
           'D': 111.1,
           'E': 138.4,
@@ -130,12 +136,34 @@ volume = {'A': 88.6,
           'W': 227.8,
           'Y': 193.6,
           '*': 0.0
-
 }
+
+#Amino acids volume in groups, according to "Scoring residue conservation" (Valdar 2002) - Fig 2. Fig 3.
+aa_volume_group_dict = {'A': aa_volume_group.TINY,
+             'C': aa_volume_group.TINY,
+             'D': aa_volume_group.SMALL,
+             'E': aa_volume_group.BIG,
+             'F': aa_volume_group.BIG,
+             'G': aa_volume_group.TINY,
+             'H': aa_volume_group.BIG,
+             'I': aa_volume_group.BIG,
+             'K': aa_volume_group.BIG,
+             'L': aa_volume_group.BIG,
+             'M': aa_volume_group.BIG,
+             'N': aa_volume_group.SMALL,
+             'P': aa_volume_group.SMALL,
+             'Q': aa_volume_group.BIG,
+             'R': aa_volume_group.BIG,
+             'S': aa_volume_group.TINY,
+             'T': aa_volume_group.SMALL,
+             'V': aa_volume_group.SMALL,
+             'W': aa_volume_group.BIG,
+             'Y': aa_volume_group.BIG,
+             '*': aa_volume_group.STOP}
 
 # Hydrogen bonding from "Satisfying Hydrogen Bonding Potential in Proteins",
 # McDonald and Thornton, 1994
-h_bond_donor = {
+aa_h_bond_donor = {
     'A': 0.95,
     'C': 0.96,
     'D': 0.89,
@@ -160,7 +188,7 @@ h_bond_donor = {
 
 }
 
-h_bond_acceptor = {
+aa_h_bond_acceptor = {
     'A': 1.16,
     'C': 1.12,
     'D': 4.84,
