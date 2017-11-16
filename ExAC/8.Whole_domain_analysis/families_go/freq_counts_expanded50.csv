@@ -1,0 +1,253 @@
+,number,count,name,domains
+1,5515,58,protein binding,zf-RING_2.zf-RING_5.TIG.EGF.Kazal_2.Kazal_1.Spectrin.Bromodomain.WW.PHD.Arm.SH3_9.Ank_3.fn3.Kelch_2.Kelch_1.F-box-like.SH3_1.F-box.Ig_2.Ldl_recept_a.WD40.C2.CH.PDZ.LRR_8.TPR_1.SPRY.Ank.ubiquitin.IQ.BTB.SAM_1.SAM_2.VWC.HLH.Ank_2.Ank_4.Ank_5.C2-set_2.Ig_3.Kelch_3.Kelch_4.Kelch_6.LRR_4.LRR_5.Ldl_recept_b.SH3_2.TPR_12.TPR_2.ig.zf-C2H2_4.zf-C3HC4_2.zf-C3HC4_3.zf-C3HC4_4.zf-H2C2_5.zf-RING_UBOX.zf-met
+2,5509,14,calcium ion binding,Annexin.Cadherin.EF-hand_1.EF-hand_5.EF-hand_7.EF-hand_6.EF-hand_8.EGF_CA.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail.EGF_2.EGF_3
+3,5524,7,ATP binding,DEAD.AAA_5.Pkinase.ABC_membrane.ABC_tran.ResIII.AAA
+4,46872,31,metal ion binding,zf-C2H2.zf-CCCH.zf-H2C2_2.zf-C2H2_6.zf-C3HC4.Annexin.Cadherin.EF-hand_1.EF-hand_5.EF-hand_7.EF-hand_6.EF-hand_8.EGF_CA.zf-RING_2.zf-RING_5.LIM.zf-B_box.p450.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail.EGF_2.EGF_3.zf-C2H2_4.zf-C3HC4_2.zf-C3HC4_3.zf-C3HC4_4.zf-H2C2_5.zf-RING_UBOX.zf-met
+5,6355,5,"regulation of transcription, DNA-templated",KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+6,5525,4,GTP binding,Ras.Arf.Roc.MMR_HSR1
+7,8270,11,zinc ion binding,zf-RING_2.zf-RING_5.LIM.zf-B_box.zf-C2H2_4.zf-C3HC4_2.zf-C3HC4_3.zf-C3HC4_4.zf-H2C2_5.zf-RING_UBOX.zf-met
+8,3677,5,DNA binding,Histone.Homeobox.Homeobox_KN.ResIII.Forkhead
+9,16021,6,integral component of membrane,MFS_1.7tm_1.ABC_membrane.TAS2R.7TM_GPCR_Srsx.7tm_4
+10,16020,14,membrane,SRCR.Ion_trans.Cadherin.MFS_1.7tm_1.ABC_membrane.TAS2R.7TM_GPCR_Srsx.7tm_4.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail.Ion_trans_2
+11,55085,4,transmembrane transport,Ion_trans.MFS_1.ABC_membrane.Ion_trans_2
+12,3676,9,nucleic acid binding,DEAD.KRAB.RRM_1.Histone.Homeobox.Homeobox_KN.ResIII.KH_1.Forkhead
+13,7186,4,G-protein coupled receptor signaling pathway,7tm_1.TAS2R.7TM_GPCR_Srsx.7tm_4
+14,3700,2,"transcription factor activity, sequence-specific DNA binding",Forkhead.SCAN
+15,4672,2,protein kinase activity,Pkinase_Tyr.Pkinase
+16,7264,3,small GTPase mediated signal transduction,Ras.Roc.RhoGEF
+17,4930,4,G-protein coupled receptor activity,7tm_1.TAS2R.7TM_GPCR_Srsx.7tm_4
+18,6468,2,protein phosphorylation,Pkinase_Tyr.Pkinase
+19,5622,5,intracellular,KRAB.zf-B_box.Plectin.Filament.Keratin_B2_2
+20,16887,3,ATPase activity,AAA_5.ABC_tran.ABC_membrane
+21,5506,1,iron ion binding,p450
+22,16705,1,"oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen",p450
+23,43401,1,steroid hormone mediated signaling pathway,Hormone_recep
+24,42626,1,"ATPase activity, coupled to transmembrane movement of substances",ABC_membrane
+25,43565,1,sequence-specific DNA binding,Forkhead
+26,16787,8,hydrolase activity,ResIII.UCH.ABC_membrane.Trypsin.AAA_5.ABC_tran.Y_phosphatase.UCH_1
+27,6810,4,transport,ABC_membrane.Ion_trans.MFS_1.Ion_trans_2
+28,6811,2,ion transport,Ion_trans.Ion_trans_2
+29,4252,1,serine-type endopeptidase activity,Trypsin
+30,45095,1,keratin filament,Keratin_B2_2
+31,5544,1,calcium-dependent phospholipid binding,Annexin
+32,46983,1,protein dimerization activity,HLH
+33,50909,1,sensory perception of taste,TAS2R
+34,5044,1,scavenger receptor activity,SRCR
+35,51260,1,protein homooligomerization,BTB_2
+36,3723,1,RNA binding,KH_1
+37,20037,1,heme binding,p450
+38,6470,1,protein dephosphorylation,Y_phosphatase
+39,55114,1,oxidation-reduction process,p450
+40,35023,1,regulation of Rho protein signal transduction,RhoGEF
+41,5856,3,cytoskeleton,Plectin.Filament.Keratin_B2_2
+42,5198,1,structural molecule activity,Filament
+43,5216,2,ion channel activity,Ion_trans.Ion_trans_2
+44,5089,1,Rho guanyl-nucleotide exchange factor activity,RhoGEF
+45,35556,5,intracellular signal transduction,C1_1.Ras.Roc.RhoGEF.C1-set
+46,16579,2,protein deubiquitination,UCH.UCH_1
+47,36459,2,thiol-dependent ubiquitinyl hydrolase activity,UCH.UCH_1
+48,6508,3,proteolysis,Trypsin.UCH.UCH_1
+49,7156,5,homophilic cell adhesion via plasma membrane adhesion molecules,Cadherin.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail
+50,4725,1,protein tyrosine phosphatase activity,Y_phosphatase
+51,5882,2,intermediate filament,Filament.Keratin_B2_2
+52,7165,11,signal transduction,RhoGAP.7tm_1.TAS2R.C1_1.Ras.Roc.Hormone_recep.RhoGEF.7TM_GPCR_Srsx.7tm_4.C1-set
+53,5488,97,binding,zf-RING_2.zf-RING_5.TIG.EGF.Kazal_2.Kazal_1.Spectrin.Bromodomain.WW.PHD.Arm.SH3_9.Ank_3.fn3.Kelch_2.Kelch_1.F-box-like.SH3_1.F-box.Ig_2.Ldl_recept_a.WD40.C2.CH.PDZ.LRR_8.TPR_1.SPRY.Ank.ubiquitin.IQ.BTB.SAM_1.SAM_2.VWC.HLH.DEAD.KRAB.RRM_1.Histone.Homeobox.Homeobox_KN.ResIII.KH_1.Forkhead.p450.zf-C2H2.zf-CCCH.zf-H2C2_2.zf-C2H2_6.zf-C3HC4.Annexin.Cadherin.EF-hand_1.EF-hand_5.EF-hand_7.EF-hand_6.EF-hand_8.EGF_CA.LIM.zf-B_box.AAA_5.Pkinase.ABC_membrane.ABC_tran.Ras.Arf.Roc.MMR_HSR1.Ank_2.Ank_4.Ank_5.C2-set_2.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail.EGF_2.EGF_3.Ig_3.Kelch_3.Kelch_4.Kelch_6.LRR_4.LRR_5.Ldl_recept_b.SH3_2.TPR_12.TPR_2.ig.zf-C2H2_4.zf-C3HC4_2.zf-C3HC4_3.zf-C3HC4_4.zf-H2C2_5.zf-RING_UBOX.zf-met
+54,32550,11,purine ribonucleoside binding,DEAD.AAA_5.Pkinase.ABC_membrane.ABC_tran.ResIII.AAA.Ras.Arf.Roc.MMR_HSR1
+55,32559,7,adenyl ribonucleotide binding,DEAD.AAA_5.Pkinase.ABC_membrane.ABC_tran.ResIII.AAA
+56,35639,11,purine ribonucleoside triphosphate binding,DEAD.AAA_5.Pkinase.ABC_membrane.ABC_tran.ResIII.AAA.Ras.Arf.Roc.MMR_HSR1
+57,43169,31,cation binding,zf-C2H2.zf-CCCH.zf-H2C2_2.zf-C2H2_6.zf-C3HC4.Annexin.Cadherin.EF-hand_1.EF-hand_5.EF-hand_7.EF-hand_6.EF-hand_8.EGF_CA.zf-RING_2.zf-RING_5.LIM.zf-B_box.p450.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail.EGF_2.EGF_3.zf-C2H2_4.zf-C3HC4_2.zf-C3HC4_3.zf-C3HC4_4.zf-H2C2_5.zf-RING_UBOX.zf-met
+58,10468,5,regulation of gene expression,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+59,1903506,5,regulation of nucleic acid-templated transcription,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+60,2000112,5,regulation of cellular macromolecule biosynthetic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+61,6351,5,"transcription, DNA-templated",KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+62,32561,4,guanyl ribonucleotide binding,Ras.Arf.Roc.MMR_HSR1
+63,46914,12,transition metal ion binding,zf-RING_2.zf-RING_5.LIM.zf-B_box.p450.zf-C2H2_4.zf-C3HC4_2.zf-C3HC4_3.zf-C3HC4_4.zf-H2C2_5.zf-RING_UBOX.zf-met
+64,31224,6,intrinsic component of membrane,MFS_1.7tm_1.ABC_membrane.TAS2R.7TM_GPCR_Srsx.7tm_4
+65,5575,19,cellular_component,SRCR.Ion_trans.Cadherin.KRAB.zf-B_box.MFS_1.7tm_1.ABC_membrane.TAS2R.Filament.Keratin_B2_2.Plectin.7TM_GPCR_Srsx.7tm_4.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail.Ion_trans_2
+66,44763,15,single-organism cellular process,Ion_trans.MFS_1.ABC_membrane.RhoGAP.7tm_1.TAS2R.C1_1.Ras.Roc.Hormone_recep.RhoGEF.7TM_GPCR_Srsx.7tm_4.C1-set.Ion_trans_2
+67,44765,4,single-organism transport,Ion_trans.MFS_1.ABC_membrane.Ion_trans_2
+68,97159,18,organic cyclic compound binding,DEAD.KRAB.RRM_1.Histone.Homeobox.Homeobox_KN.ResIII.KH_1.Forkhead.p450.AAA_5.Pkinase.ABC_membrane.ABC_tran.Ras.Arf.Roc.MMR_HSR1
+69,1901363,18,heterocyclic compound binding,DEAD.KRAB.RRM_1.Histone.Homeobox.Homeobox_KN.ResIII.KH_1.Forkhead.p450.AAA_5.Pkinase.ABC_membrane.ABC_tran.Ras.Arf.Roc.MMR_HSR1
+70,1071,2,nucleic acid binding transcription factor activity,Forkhead.SCAN
+71,16301,2,kinase activity,Pkinase_Tyr.Pkinase
+72,16773,2,"phosphotransferase activity, alcohol group as acceptor",Pkinase_Tyr.Pkinase
+73,4888,4,transmembrane signaling receptor activity,7tm_1.TAS2R.7TM_GPCR_Srsx.7tm_4
+74,6464,5,cellular protein modification process,Pkinase_Tyr.Pkinase.Y_phosphatase.UCH.UCH_1
+75,16310,2,phosphorylation,Pkinase_Tyr.Pkinase
+76,44464,5,cell part,KRAB.zf-B_box.Plectin.Filament.Keratin_B2_2
+77,17111,3,nucleoside-triphosphatase activity,AAA_5.ABC_tran.ABC_membrane
+78,16491,1,oxidoreductase activity,p450
+79,9755,1,hormone-mediated signaling pathway,Hormone_recep
+80,71383,1,cellular response to steroid hormone stimulus,Hormone_recep
+81,15405,1,P-P-bond-hydrolysis-driven transmembrane transporter activity,ABC_membrane
+82,16820,1,"hydrolase activity, acting on acid anhydrides, catalyzing transmembrane movement of substances",ABC_membrane
+83,43492,1,"ATPase activity, coupled to movement of substances",ABC_membrane
+84,3824,10,catalytic activity,ResIII.UCH.p450.ABC_membrane.Trypsin.Pkinase_Tyr.AAA_5.ABC_tran.Y_phosphatase.UCH_1
+85,51234,4,establishment of localization,ABC_membrane.Ion_trans.MFS_1.Ion_trans_2
+86,4175,1,endopeptidase activity,Trypsin
+87,8236,1,serine-type peptidase activity,Trypsin
+88,5543,1,phospholipid binding,Annexin
+89,7606,1,sensory perception of chemical stimulus,TAS2R
+90,38024,1,cargo receptor activity,SRCR
+91,51259,1,protein oligomerization,BTB_2
+92,46906,1,tetrapyrrole binding,p450
+93,16311,1,dephosphorylation,Y_phosphatase
+94,44710,1,single-organism metabolic process,p450
+95,46578,1,regulation of Ras protein signal transduction,RhoGEF
+96,7266,1,Rho protein signal transduction,RhoGEF
+97,43232,3,intracellular non-membrane-bounded organelle,Plectin.Filament.Keratin_B2_2
+98,3674,110,molecular_function,Filament.zf-RING_2.zf-RING_5.TIG.EGF.Kazal_2.Kazal_1.Spectrin.Bromodomain.WW.PHD.Arm.SH3_9.Ank_3.fn3.Kelch_2.Kelch_1.F-box-like.SH3_1.Ig_2.Ldl_recept_a.WD40.C2.CH.PDZ.LRR_8.TPR_1.SPRY.ubiquitin.IQ.BTB.SAM_1.SAM_2.VWC.HLH.Forkhead.SCAN.ResIII.UCH.p450.DEAD.KRAB.RRM_1.Histone.Homeobox.Homeobox_KN.KH_1.zf-C2H2.zf-CCCH.zf-H2C2_2.zf-C2H2_6.zf-C3HC4.Annexin.Cadherin.EF-hand_1.EF-hand_5.EF-hand_7.EF-hand_6.EF-hand_8.EGF_CA.LIM.zf-B_box.AAA_5.Pkinase.ABC_membrane.ABC_tran.Ras.Arf.Roc.MMR_HSR1.Trypsin.Ion_trans.SRCR.7tm_1.TAS2R.RhoGEF.Pkinase_Tyr.Y_phosphatase.7TM_GPCR_Srsx.7tm_4.Ank_2.Ank_4.Ank_5.C2-set_2.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail.EGF_2.EGF_3.Ig_3.Ion_trans_2.Kelch_3.Kelch_4.Kelch_6.LRR_4.LRR_5.Ldl_recept_b.SH3_2.TPR_12.TPR_2.UCH_1.ig.zf-C2H2_4.zf-C3HC4_2.zf-C3HC4_3.zf-C3HC4_4.zf-H2C2_5.zf-RING_UBOX.zf-met
+99,15075,2,ion transmembrane transporter activity,Ion_trans.Ion_trans_2
+100,22838,2,substrate-specific channel activity,Ion_trans.Ion_trans_2
+101,5088,1,Ras guanyl-nucleotide exchange factor activity,RhoGEF
+102,70646,2,protein modification by small protein removal,UCH.UCH_1
+103,19538,5,protein metabolic process,Trypsin.UCH.Pkinase_Tyr.Y_phosphatase.UCH_1
+104,98742,5,cell-cell adhesion via plasma-membrane adhesion molecules,Cadherin.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail
+105,4721,1,phosphoprotein phosphatase activity,Y_phosphatase
+106,43234,2,protein complex,Filament.Keratin_B2_2
+107,44430,2,cytoskeletal part,Filament.Keratin_B2_2
+108,45111,2,intermediate filament cytoskeleton,Filament.Keratin_B2_2
+109,50794,15,regulation of cellular process,RhoGAP.7tm_1.TAS2R.C1_1.Ras.Roc.Hormone_recep.RhoGEF.KRAB.Forkhead.Homeobox_KN.SCAN.7TM_GPCR_Srsx.7tm_4.C1-set
+110,7154,11,cell communication,RhoGAP.7tm_1.TAS2R.C1_1.Ras.Roc.Hormone_recep.RhoGEF.7TM_GPCR_Srsx.7tm_4.C1-set
+111,44700,11,single organism signaling,RhoGAP.7tm_1.TAS2R.C1_1.Ras.Roc.Hormone_recep.RhoGEF.7TM_GPCR_Srsx.7tm_4.C1-set
+112,51716,11,cellular response to stimulus,RhoGAP.7tm_1.TAS2R.C1_1.Ras.Roc.Hormone_recep.RhoGEF.7TM_GPCR_Srsx.7tm_4.C1-set
+113,1883,11,purine nucleoside binding,DEAD.AAA_5.Pkinase.ABC_membrane.ABC_tran.ResIII.AAA.Ras.Arf.Roc.MMR_HSR1
+114,32549,11,ribonucleoside binding,DEAD.AAA_5.Pkinase.ABC_membrane.ABC_tran.ResIII.AAA.Ras.Arf.Roc.MMR_HSR1
+115,30554,7,adenyl nucleotide binding,DEAD.AAA_5.Pkinase.ABC_membrane.ABC_tran.ResIII.AAA
+116,32555,11,purine ribonucleotide binding,DEAD.AAA_5.Pkinase.ABC_membrane.ABC_tran.ResIII.AAA.Ras.Arf.Roc.MMR_HSR1
+117,43168,12,anion binding,DEAD.AAA_5.Pkinase.ABC_membrane.ABC_tran.ResIII.AAA.Ras.Arf.Roc.MMR_HSR1.Annexin
+118,1901265,11,nucleoside phosphate binding,DEAD.AAA_5.Pkinase.ABC_membrane.ABC_tran.ResIII.AAA.Ras.Arf.Roc.MMR_HSR1
+119,43167,41,ion binding,zf-C2H2.zf-CCCH.zf-H2C2_2.zf-C2H2_6.zf-C3HC4.Annexin.Cadherin.EF-hand_1.EF-hand_5.EF-hand_7.EF-hand_6.EF-hand_8.EGF_CA.zf-RING_2.zf-RING_5.LIM.zf-B_box.p450.DEAD.AAA_5.Pkinase.ABC_membrane.ABC_tran.ResIII.Ras.Arf.Roc.MMR_HSR1.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail.EGF_2.EGF_3.zf-C2H2_4.zf-C3HC4_2.zf-C3HC4_3.zf-C3HC4_4.zf-H2C2_5.zf-RING_UBOX.zf-met
+120,60255,5,regulation of macromolecule metabolic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+121,10467,5,gene expression,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+122,2001141,5,regulation of RNA biosynthetic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+123,97659,5,nucleic acid-templated transcription,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+124,10556,5,regulation of macromolecule biosynthetic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+125,31326,5,regulation of cellular biosynthetic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+126,34645,5,cellular macromolecule biosynthetic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+127,19001,4,guanyl nucleotide binding,Ras.Arf.Roc.MMR_HSR1
+128,44425,6,membrane part,MFS_1.7tm_1.ABC_membrane.TAS2R.7TM_GPCR_Srsx.7tm_4
+129,9987,24,cellular process,Ion_trans.MFS_1.ABC_membrane.RhoGAP.7tm_1.TAS2R.C1_1.Ras.Roc.Hormone_recep.RhoGEF.KRAB.Forkhead.Homeobox_KN.SCAN.Pkinase_Tyr.Y_phosphatase.UCH.BTB_2.7TM_GPCR_Srsx.7tm_4.C1-set.Ion_trans_2.UCH_1
+130,44699,16,single-organism process,Ion_trans.MFS_1.ABC_membrane.p450.RhoGAP.7tm_1.TAS2R.C1_1.Ras.Roc.Hormone_recep.RhoGEF.7TM_GPCR_Srsx.7tm_4.C1-set.Ion_trans_2
+131,1902578,4,single-organism localization,Ion_trans.MFS_1.ABC_membrane.Ion_trans_2
+132,16772,2,"transferase activity, transferring phosphorus-containing groups",Pkinase_Tyr.Pkinase
+133,38023,4,signaling receptor activity,7tm_1.TAS2R.7TM_GPCR_Srsx.7tm_4
+134,36211,5,protein modification process,Pkinase_Tyr.Pkinase.Y_phosphatase.UCH.UCH_1
+135,44267,5,cellular protein metabolic process,Pkinase_Tyr.Pkinase.Y_phosphatase.UCH.UCH_1
+136,6796,3,phosphate-containing compound metabolic process,Pkinase_Tyr.Pkinase.Y_phosphatase
+137,5623,5,cell,KRAB.zf-B_box.Plectin.Filament.Keratin_B2_2
+138,16462,3,pyrophosphatase activity,AAA_5.ABC_tran.ABC_membrane
+139,32870,1,cellular response to hormone stimulus,Hormone_recep
+140,48545,1,response to steroid hormone,Hormone_recep
+141,71396,1,cellular response to lipid,Hormone_recep
+142,71407,1,cellular response to organic cyclic compound,Hormone_recep
+143,15399,1,primary active transmembrane transporter activity,ABC_membrane
+144,16817,3,"hydrolase activity, acting on acid anhydrides",ABC_membrane.AAA_5.ABC_tran
+145,22857,3,transmembrane transporter activity,ABC_membrane.Ion_trans.Ion_trans_2
+146,42623,1,"ATPase activity, coupled",ABC_membrane
+147,51179,4,localization,ABC_membrane.Ion_trans.MFS_1.Ion_trans_2
+148,70011,1,"peptidase activity, acting on L-amino acid peptides",Trypsin
+149,17171,1,serine hydrolase activity,Trypsin
+150,8289,1,lipid binding,Annexin
+151,7600,1,sensory perception,TAS2R
+152,4872,5,receptor activity,SRCR.7tm_1.TAS2R.7TM_GPCR_Srsx.7tm_4
+153,6461,1,protein complex assembly,BTB_2
+154,8152,11,metabolic process,p450.Trypsin.UCH.Pkinase_Tyr.Y_phosphatase.KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep.UCH_1
+155,51056,1,regulation of small GTPase mediated signal transduction,RhoGEF
+156,7265,1,Ras protein signal transduction,RhoGEF
+157,43228,3,non-membrane-bounded organelle,Plectin.Filament.Keratin_B2_2
+158,43229,3,intracellular organelle,Plectin.Filament.Keratin_B2_2
+159,22891,2,substrate-specific transmembrane transporter activity,Ion_trans.Ion_trans_2
+160,15267,2,channel activity,Ion_trans.Ion_trans_2
+161,5085,1,guanyl-nucleotide exchange factor activity,RhoGEF
+162,70647,2,protein modification by small protein conjugation or removal,UCH.UCH_1
+163,43170,10,macromolecule metabolic process,Trypsin.UCH.KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep.Pkinase_Tyr.Y_phosphatase.UCH_1
+164,44238,10,primary metabolic process,Trypsin.UCH.Pkinase_Tyr.Y_phosphatase.KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep.UCH_1
+165,98609,5,cell-cell adhesion,Cadherin.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail
+166,16791,1,phosphatase activity,Y_phosphatase
+167,32991,2,macromolecular complex,Filament.Keratin_B2_2
+168,44446,2,intracellular organelle part,Filament.Keratin_B2_2
+169,50789,15,regulation of biological process,RhoGAP.7tm_1.TAS2R.C1_1.Ras.Roc.Hormone_recep.RhoGEF.KRAB.Forkhead.Homeobox_KN.SCAN.7TM_GPCR_Srsx.7tm_4.C1-set
+170,23052,11,signaling,RhoGAP.7tm_1.TAS2R.C1_1.Ras.Roc.Hormone_recep.RhoGEF.7TM_GPCR_Srsx.7tm_4.C1-set
+171,50896,11,response to stimulus,RhoGAP.7tm_1.TAS2R.C1_1.Ras.Roc.Hormone_recep.RhoGEF.7TM_GPCR_Srsx.7tm_4.C1-set
+172,1882,11,nucleoside binding,DEAD.AAA_5.Pkinase.ABC_membrane.ABC_tran.ResIII.AAA.Ras.Arf.Roc.MMR_HSR1
+173,17076,11,purine nucleotide binding,DEAD.AAA_5.Pkinase.ABC_membrane.ABC_tran.ResIII.AAA.Ras.Arf.Roc.MMR_HSR1
+174,32553,11,ribonucleotide binding,DEAD.AAA_5.Pkinase.ABC_membrane.ABC_tran.ResIII.AAA.Ras.Arf.Roc.MMR_HSR1
+175,19222,5,regulation of metabolic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+176,51252,5,regulation of RNA metabolic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+177,32774,5,RNA biosynthetic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+178,9889,5,regulation of biosynthetic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+179,9059,5,macromolecule biosynthetic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+180,31323,5,regulation of cellular metabolic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+181,44249,5,cellular biosynthetic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+182,44260,9,cellular macromolecule metabolic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep.Pkinase_Tyr.Y_phosphatase.UCH.UCH_1
+183,8150,31,biological_process,Ion_trans.MFS_1.ABC_membrane.RhoGAP.7tm_1.TAS2R.C1_1.Ras.Roc.Hormone_recep.p450.RhoGEF.Trypsin.UCH.KRAB.Forkhead.Homeobox_KN.SCAN.Pkinase_Tyr.Y_phosphatase.Cadherin.BTB_2.7TM_GPCR_Srsx.7tm_4.C1-set.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail.Ion_trans_2.UCH_1
+184,16740,2,transferase activity,Pkinase_Tyr.Pkinase
+185,4871,4,signal transducer activity,7tm_1.TAS2R.7TM_GPCR_Srsx.7tm_4
+186,43412,5,macromolecule modification,Pkinase_Tyr.Pkinase.Y_phosphatase.UCH.UCH_1
+187,6793,3,phosphorus metabolic process,Pkinase_Tyr.Pkinase.Y_phosphatase
+188,16818,3,"hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides",AAA_5.ABC_tran.ABC_membrane
+189,9725,1,response to hormone,Hormone_recep
+190,71310,1,cellular response to organic substance,Hormone_recep
+191,71495,1,cellular response to endogenous stimulus,Hormone_recep
+192,14070,1,response to organic cyclic compound,Hormone_recep
+193,33993,1,response to lipid,Hormone_recep
+194,22804,1,active transmembrane transporter activity,ABC_membrane
+195,5215,3,transporter activity,ABC_membrane.Ion_trans.Ion_trans_2
+196,8233,1,peptidase activity,Trypsin
+197,50877,1,neurological system process,TAS2R
+198,60089,5,molecular transducer activity,SRCR.7tm_1.TAS2R.7TM_GPCR_Srsx.7tm_4
+199,65003,1,macromolecular complex assembly,BTB_2
+200,71822,1,protein complex subunit organization,BTB_2
+201,70271,1,protein complex biogenesis,BTB_2
+202,1902531,1,regulation of intracellular signal transduction,RhoGEF
+203,43226,3,organelle,Plectin.Filament.Keratin_B2_2
+204,44424,3,intracellular part,Plectin.Filament.Keratin_B2_2
+205,22892,2,substrate-specific transporter activity,Ion_trans.Ion_trans_2
+206,22803,2,passive transmembrane transporter activity,Ion_trans.Ion_trans_2
+207,98772,1,molecular function regulator,RhoGEF
+208,71704,10,organic substance metabolic process,Trypsin.UCH.KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep.Pkinase_Tyr.Y_phosphatase.UCH_1
+209,7155,5,cell adhesion,Cadherin.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail
+210,42578,1,phosphoric ester hydrolase activity,Y_phosphatase
+211,44422,2,organelle part,Filament.Keratin_B2_2
+212,65007,15,biological regulation,RhoGAP.7tm_1.TAS2R.C1_1.Ras.Roc.Hormone_recep.RhoGEF.KRAB.Forkhead.Homeobox_KN.SCAN.7TM_GPCR_Srsx.7tm_4.C1-set
+213,36094,11,small molecule binding,DEAD.AAA_5.Pkinase.ABC_membrane.ABC_tran.ResIII.AAA.Ras.Arf.Roc.MMR_HSR1
+214,97367,11,carbohydrate derivative binding,DEAD.AAA_5.Pkinase.ABC_membrane.ABC_tran.ResIII.AAA.Ras.Arf.Roc.MMR_HSR1
+215,166,11,nucleotide binding,DEAD.AAA_5.Pkinase.ABC_membrane.ABC_tran.ResIII.AAA.Ras.Arf.Roc.MMR_HSR1
+216,19219,5,regulation of nucleobase-containing compound metabolic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+217,16070,5,RNA metabolic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+218,34654,5,nucleobase-containing compound biosynthetic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+219,9058,5,biosynthetic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+220,1901576,5,organic substance biosynthetic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+221,44237,9,cellular metabolic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep.Pkinase_Tyr.Y_phosphatase.UCH.UCH_1
+222,9719,1,response to endogenous stimulus,Hormone_recep
+223,10033,1,response to organic substance,Hormone_recep
+224,70887,1,cellular response to chemical stimulus,Hormone_recep
+225,3008,1,system process,TAS2R
+226,22607,1,cellular component assembly,BTB_2
+227,43933,1,macromolecular complex subunit organization,BTB_2
+228,44085,1,cellular component biogenesis,BTB_2
+229,9966,1,regulation of signal transduction,RhoGEF
+230,22610,5,biological adhesion,Cadherin.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail
+231,16788,1,"hydrolase activity, acting on ester bonds",Y_phosphatase
+232,51171,5,regulation of nitrogen compound metabolic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+233,80090,5,regulation of primary metabolic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+234,6139,5,nucleobase-containing compound metabolic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+235,90304,5,nucleic acid metabolic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+236,18130,5,heterocycle biosynthetic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+237,19438,5,aromatic compound biosynthetic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+238,44271,5,cellular nitrogen compound biosynthetic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+239,1901362,5,organic cyclic compound biosynthetic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+240,42221,1,response to chemical,Hormone_recep
+241,44707,1,single-multicellular organism process,TAS2R
+242,16043,1,cellular component organization,BTB_2
+243,71840,1,cellular component organization or biogenesis,BTB_2
+244,10646,1,regulation of cell communication,RhoGEF
+245,23051,1,regulation of signaling,RhoGEF
+246,48583,1,regulation of response to stimulus,RhoGEF
+247,6807,5,nitrogen compound metabolic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+248,6725,5,cellular aromatic compound metabolic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+249,34641,5,cellular nitrogen compound metabolic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+250,46483,5,heterocycle metabolic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+251,1901360,5,organic cyclic compound metabolic process,KRAB.Forkhead.Homeobox_KN.SCAN.Hormone_recep
+252,32501,1,multicellular organismal process,TAS2R
