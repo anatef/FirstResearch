@@ -14,33 +14,27 @@ def correct_exons_frameshift(exon_df, targetid):
     with open("/home/anat/Research/ExAC/3.parse_HMMER/domains_frameshifts/exons_index_length.pik", 'rb') as handle:
         exons_frameshifts = pickle.load(handle)
     
-    idx = exons_frameshifts[targetid+".exons.txt"][0]
-    length = exons_frameshifts[targetid+".exons.txt"][1]
-    bps = exons_frameshifts[targetid+".exons.txt"][2]
+    for frameshift in exons_frameshifts[targetid+".exons.txt"]:
+        idx = frameshift[0]
+        length = frameshift[1]
+        bps = frameshift[2]
     
-    print "idx = "+str(idx)
-    print "length = "+str(length)
-    print "bps = "+str(bps)
-    
-    #Find the exon we need to add bps to
-    first_bp_count = 1
-    for index, exon in exon_df.iterrows():
-        ex_start = int(exon[0])
-        ex_end = int(exon[1])
-        exon_len = (ex_end - ex_start + 1)
-        
-        #Fixing start pos of the exon
-        if (idx <= first_bp_count):
-            exon_df.set_value(index, "start_pos", (ex_start - length))
-            print index
-            break
-        #Fixing end pos of the exon
-        elif (idx <= (first_bp_count + exon_len)):
-            exon_df.set_value(index, "end_pos", (ex_end + length))
-            print "fix exon end"
-            print index
-            break
-        first_bp_count += exon_len
+        #Find the exon we need to add bps to
+        first_bp_count = 1
+        for index, exon in exon_df.iterrows():
+            ex_start = int(exon[0])
+            ex_end = int(exon[1])
+            exon_len = (ex_end - ex_start + 1)
+
+            #Fixing start pos of the exon
+            if (idx <= first_bp_count):
+                exon_df.set_value(index, "start_pos", (ex_start - length))
+                break
+            #Fixing end pos of the exon
+            elif (idx <= (first_bp_count + exon_len)):
+                exon_df.set_value(index, "end_pos", (ex_end + length))
+                break
+            first_bp_count += exon_len
 #-------------------------------------------------------------------------------------------#
 
 def create_exon_pos_table(chrom_raw, targetid):
@@ -223,7 +217,7 @@ def protein_pos_to_hmm_state_and_aa(protein_pos, domain_gene_table):
             #Get deletions indices
             indices = [i for i, x in enumerate(target_seq) if x == "-"]
             
-            #Remove deletions from bith lists
+            #Remove deletions from both lists
             target_seq_no_del = [i for j, i in enumerate(target_seq) if j not in indices]
             hmm_pos_no_del = [i for j, i in enumerate(hmm_pos) if j not in indices]
             
