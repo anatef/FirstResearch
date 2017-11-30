@@ -1,6 +1,6 @@
 from enum import Enum
 
-class go_term(Enum):
+class go_term_group(Enum):
     NO_TERM = 0
     NUCLEIC_ACID_BINDING = 1
     PROTEIN_BINDING = 2
