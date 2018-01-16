@@ -10,15 +10,22 @@ plot_prob_feature <- function(filepath,feature) {
   
   # Check input
   if (!(feature %in% colnames(dat))) {
+    print(colnames(dat))
     stop("Feature not found")
   }
+  
+  
+  # Set color scheme
+  color_len <- length(unique(dat[[feature]]))
+  colors_list <- c("#ffffcc", "#ffeda0", "#fed976", "#feb24c", "#fd8d3c", "#fc4e2a",
+                   "#e31a1c", "#bd0026")
   
   # Plot
   ggplot(dat) +
     geom_histogram(aes(x=prob,fill=factor(dat[[feature]])),position="fill",binwidth=0.025) +
     xlab("Probability") +
     ylab("Fraction in Bin") +
-    scale_fill_discrete(name=feature) +
+    scale_fill_manual(name=feature,values=colorRampPalette(colors_list)(color_len)) +
     theme(axis.line = element_line(colour="black"),
           panel.grid.major = element_blank(),
           panel.grid.minor = element_blank(),
