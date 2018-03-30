@@ -137,8 +137,9 @@ def modelfit(alg, ligand_bind_features, ligand_negatives_features, ligand_name, 
     return alg,cvresult#,dtrain_predictions,dtrain_predprob,alg         
 
 
-currdir = getcwd()
-input_path = curr_dir[0]+"/domains_similarity/filtered_features_table/"
+curr_dir = getcwd()
+print curr_dir
+input_path = curr_dir+"/domains_similarity/filtered_features_table/"
 filename = "positions_features_mediode_filter_01.25.18.csv"
 
 #input_path = curr_dir[0]+"/../9.Features_exploration/binding_df/10/"
@@ -153,7 +154,7 @@ ligands = ["dna", "dnabase", "dnabackbone", "rna", "rnabase", "rnabackbone", "pe
 print "all samples positions #: "+str(features_all.shape[0])
 
 #lignd binding domains dictionary
-with open(curr_dir[0]+"/ligands_negatives_domains_dict.pik", 'rb') as handle:
+with open(curr_dir+"/ligands_negatives_domains_dict.pik", 'rb') as handle:
         negatives_dict = pickle.load(handle)
 
 #Create negatives datasets
