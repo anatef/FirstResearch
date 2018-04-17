@@ -20,10 +20,11 @@ colnames(pos_table_melted) <- c("ligand", "group", "num")
 neg_table_melted <- melt(neg_table, id="ligand")
 colnames(neg_table_melted) <- c("ligand", "group", "num")
 
-ggplot(neg_table_melted, aes(x=group, y=num)) +
-	geom_bar(stat="identity", aes(fill = ligand)) +
-	scale_fill_brewer(type="qual", palette = 8) +
-	ggtitle("groups negatives in the CV splits") +
+ggplot(neg_table_melted, aes(x=ligand, y=num)) +
+	geom_bar(stat="identity", aes(fill = group)) +
+	scale_fill_brewer(type="qual", palette = 3) +
+	#ggtitle("groups positives in the CV splits") +
+	ggtitle("ligands negatives in the CV splits") +
 	theme_bw() +
 	theme(plot.title = element_text(hjust = 0.5))
 
