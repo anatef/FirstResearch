@@ -118,6 +118,9 @@ def create_negatives_datasets(FILTER_DOMAIN, ABSOLUTE_NEGATIVES, FILTER_MAX_SCOR
 #====================================================================================================================#
 
 def create_positives_datasets(bind_th, features_all, features_cols):
+    """
+    Create the ligands positives datasets.
+    """
     
     ligands_features_df = {}
     
