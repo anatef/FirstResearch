@@ -38,7 +38,7 @@ sys.path.append(os.getcwd()+"/../utils")
 from CV_funcs import add_domain_name_from_table_idx, calc_CV_idx_iterative
 
 def test_model_iterative_fixed(pred_dict, auc_dict, auprc_dict, ligand_bind_features,
-        ligand_negatives_features, ligand_name, downsample_method, classifer, classifiers, features=[]):
+        ligand_negatives_features, ligand_name, downsample_method, classifer, classifiers, splits_dict, features=[]):
     """
     Test different models in 10-folds cross-validation.
     """
@@ -243,10 +243,42 @@ def test_model_iterative_fixed(pred_dict, auc_dict, auprc_dict, ligand_bind_feat
 
 # Create groups of features and print features in each group
 def create_groups(ligands_features_df):
-    group_names = ['population','conservation_genome','sub_matrix','selection','pfam','sub_predictor',
-                   'chemical_major_allele','chemical_substitution','spider','whole_domain_conservation','go_terms']
-    group_indices = [range(0,21),range(21,103),range(103,113),range(113,116)+range(149,166),range(116,138),range(138,149),
-                     range(166,232),range(232,355),range(355,386),range(386,390),range(390,397)]
+    group_names = ["population","dna-con","sub_matrix",'dn/ds','pfam','sift/poly', "ortho-para",
+               'chemical_major','chemical_substitution',"surface","whole-con", "go_terms","windowed"]
+
+    #Group features indices
+    POP_BEG = 0
+    POP_END = 21
+    CONGEN_BEG = 21
+    CONGEN_END = 103
+    SUBMAT_BEG = 103
+    SUBMAT_END = 113
+    DNDS_BEG = 113
+    DNDS_END = 116
+    PFAM_BEG = 116
+    PFAM_END = 138
+    SIFTPOLY_BEG = 138
+    SIFTPOLY_END = 149
+    ORTHOPARA_BEG = 149
+    ORTHOPARA_END = 166
+    MAJOR_BEG = 166
+    MAJOR_END = 232
+    SUB_BEG = 232
+    SUB_END = 355
+    SURFACE_BEG = 355
+    SURFACE_END = 386
+    WHOLECON_BEG = 386
+    WHOLECON_END = 390
+    GO_BEG = 390
+    GO_END = 397
+    WINDOW_BEG = 397
+    WINDOW_END = 637
+
+
+    group_indices = [range(POP_BEG,POP_END),range(CONGEN_BEG,CONGEN_END),range(SUBMAT_BEG,SUBMAT_END),range(DNDS_BEG,DNDS_END),
+                     range(PFAM_BEG,PFAM_END),range(SIFTPOLY_BEG,SIFTPOLY_END), range(ORTHOPARA_BEG,ORTHOPARA_END),range(MAJOR_BEG,MAJOR_END),
+                     range(SUB_BEG,SUB_END),range(SURFACE_BEG,SURFACE_END),range(WHOLECON_BEG,WHOLECON_END), range(GO_BEG,GO_END),
+                    range(WINDOW_BEG,WINDOW_END)]
 
     features_groups = dict(zip(group_names,group_indices))
 
