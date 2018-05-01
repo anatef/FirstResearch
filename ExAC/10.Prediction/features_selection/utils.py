@@ -244,7 +244,7 @@ def test_model_iterative_fixed(pred_dict, auc_dict, auprc_dict, ligand_bind_feat
 # Create groups of features and print features in each group
 def create_groups(ligands_features_df):
     group_names = ["population","dna-con","sub_matrix",'dn/ds','pfam','sift/poly', "ortho-para",
-               'chemical_major','chemical_substitution',"surface","whole-con", "go_terms","whole-len"]
+               'chemical_major','chemical_substitution',"surface","whole-domain"]
 
     #Group features indices
     POP_BEG = 0
@@ -267,12 +267,12 @@ def create_groups(ligands_features_df):
     SUB_END = 355
     SURFACE_BEG1 = 355
     SURFACE_END1 = 386
-    WHOLECON_BEG = 386
-    WHOLECON_END = 390
+    WHOLE_BEG1 = 386
+    WHOLE_END1 = 390
     GO_BEG = 390
     GO_END = 397
-    WHOLELEN_BEG = 397
-    WHOLELEN_END = 398
+    WHOLE_BEG2 = 397
+    WHOLE_END2 = 398
     CONGEN_BEG2 = 398
     CONGEN_END2 = 422
     SUBMAT_BEG2 = 422
@@ -294,7 +294,7 @@ def create_groups(ligands_features_df):
                      range(DNDS_BEG1,DNDS_END1)+range(DNDS_BEG2,DNDS_END2),range(PFAM_BEG1,PFAM_END1)+range(PFAM_BEG2,PFAM_END2),
                      range(SIFTPOLY_BEG1,SIFTPOLY_END1)+range(SIFTPOLY_BEG2,SIFTPOLY_END2),range(ORTHOPARA_BEG1,ORTHOPARA_END1)+range(ORTHOPARA_BEG2,ORTHOPARA_END2),
                      range(MAJOR_BEG1,MAJOR_END1)+range(MAJOR_BEG2,MAJOR_END2),range(SUB_BEG,SUB_END),range(SURFACE_BEG1,SURFACE_END1)+range(SURFACE_BEG2,SURFACE_END2),
-                     range(WHOLECON_BEG,WHOLECON_END),range(GO_BEG,GO_END),range(WHOLELEN_BEG,WHOLELEN_END)]
+                     range(WHOLE_BEG1,WHOLE_END1)+range(GO_BEG,GO_END)+range(WHOLE_BEG2,WHOLE_END2)]
 
     features_groups = dict(zip(group_names,group_indices))
 
