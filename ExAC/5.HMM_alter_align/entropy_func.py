@@ -1,5 +1,6 @@
 import math
 from enum import Enum
+import numpy as np
 
 #Amino acids constant
 amino_acids = ['A','R','N','D','C','Q','E','G','H','I','L','K','M','F','P','S',
@@ -51,27 +52,58 @@ def cons(residues, rand=False):
 
 #Constants to represent JSD background types
 class JSD_background(Enum):
-    PFAM_PROB = 2
-    MAJOR_ALLELE = 1
     BLOSUM62 = 0
-
+    UNIPROT = 1
+    HUMAN = 2
+    MAJOR_ALLELE = 3
+    PFAM_PROB = 4
 #-------------------------------------------------------------------------------------------#
 
-def JSD(alterations_af_dict, aa_ref, maf, hmm_state, background):
+def JSD_hist(aa_hist, background=JSD_background.BLOSUM62):
     """
-    Compute the Jensen-Shannon divergence of the aa frequencies, as described in the dictionary
-    with background frequency. 
+    Compute the Jensen-Shannon divergence of the aa frequencies, with background frequency. 
+    """
+        
+    if (background == JSD_background.BLOSUM62):
+        #Background frequencies of amino acids (BLOSUM62 matrix stationary distributions): 
+        q = [0.074, 0.052, 0.045, 0.054, 0.025, 0.034, 0.054, 0.074, 0.026, 0.068, 
+             0.099, 0.058, 0.025, 0.047, 0.039, 0.057, 0.051, 0.013, 0.032, 0.073, 0]
+    
+    elif (background == JSD_background.UNIPROT):
+        #Background frequencies of Uniprot (as of 25-Oct-2017): https://www.ebi.ac.uk/uniprot/TrEMBLstats
+        q = [0.0903, 0.0122, 0.0544, 0.0616, 0.0393, 0.0723, 0.0220, 0.0572, 0.0503, 0.0985, 
+             0.0239, 0.0391, 0.0485, 0.0380, 0.0569, 0.0673, 0.0558, 0.0686, 0.0129, 0.0294, 0]
+        
+    elif (background == JSD_background.HUMAN):
+        #Background frequencies from paper (Nathaniel Echols et al. 2002): https://academic.oup.com/bioinformatics/article/21/7/975/268909
+        q = [0.077, 0.024, 0.045, 0.064, 0.033, 0.071, 0.026, 0.037, 0.050, 0.099,
+             0.021, 0.031, 0.070, 0.048, 0.061, 0.066, 0.054, 0.060, 0.015, 0.023, 0.003]
+    
+    else:
+        print "Wrong background input"
+        return -1
+    
+    #Make sure it all sums to 1
+    q = [f/sum(q) for f in q]
+    
+    #Create the frequency vector according to the aa histogram
+    feqs_vector = [0.00001 + float(prob) for prob in aa_hist]
+    p = [f/sum(feqs_vector) for f in feqs_vector]
+    
+    assert str(sum(q))=='1.0' and str(sum(p))=='1.0', "Prob. vectors do not sum to 1"
+    
+    return JSdiv(p, q)
+#-------------------------------------------------------------------------------------------#    
+    
+
+def JSD(alterations_af_dict, aa_ref='*', maf=0, hmm_state=1, background=JSD_background.BLOSUM62):
+    """
+    Compute the Jensen-Shannon divergence of the aa frequencies, with background frequency. 
     """
     
     pfam_aa_order = ['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y']
-    
-    if (background == JSD_background.BLOSUM62):
-        #Background frequencies of amino acids (random or BLOSUM62 matrix): 
-        q = [0.074, 0.052, 0.045, 0.054, 0.025, 0.034, 0.054, 0.074,
-             0.026, 0.068, 0.099, 0.058, 0.025, 0.047, 0.039, 0.057,
-             0.051, 0.013, 0.032, 0.073, 0]
-        
-    elif (background == JSD_background.MAJOR_ALLELE):
+       
+    if (background == JSD_background.MAJOR_ALLELE):
         #Create the background frequency vector according to the major allele
         q = [0.00001]*len(amino_acids)
         q[amino_acids.index(aa_ref)] += 1     
@@ -128,6 +160,26 @@ def SE(alterations_af_dict, aa_ref,  maf):
             feqs_vector.append(0.00001 + (1 - maf))
         else:
             feqs_vector.append(0.00001)
+    
+    p = [f/sum(feqs_vector) for f in feqs_vector]
+    
+    assert str(sum(p))=='1.0', "Prob. vector do not sum to 1"
+    
+    #Compute the Shannon Entropy of residues
+    shannon_entropy = - sum(aa_prob*np.log2(aa_prob) for aa_prob in p)                  
+    
+    return shannon_entropy
+#-------------------------------------------------------------------------------------------#
+
+def SE_hist(aa_ref_hist):
+    """
+    Calculate the Shannon Entropy based on aa_ref list and retrieve the result.
+    """
+    
+    #Create the frequency vector according to the alterations dictionary
+    feqs_vector = []
+    for cnt in aa_ref_hist:
+        feqs_vector.append(0.00001+cnt)
     
     p = [f/sum(feqs_vector) for f in feqs_vector]
     
