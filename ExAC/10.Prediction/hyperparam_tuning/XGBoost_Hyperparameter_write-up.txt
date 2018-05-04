@@ -1,0 +1,103 @@
+XGBoost is a gradient boosting machine learning method using trees (can be used linearly as well). The main benefit over existing 
+gradient boosting methods is the scalability of XGBoost. This comes mostly from its sparsity-aware algorithm for parallel
+tree learning, theoretically justified weighted quantile sketch for efficient proposal for calculating splitting points, and optimizing
+how computations are done (out-of-core tree learning by cache-aware block structure).
+
+Relevent XGBClassifier Parameters with explanation:
+
+General parameters:
+    booster: type of model to use (default gbtree)
+        gbtree - tree-based 
+        gblinear - lienar model
+        
+    n_jobs: Number of parallel threads used to run xgboost (use -1 to use as many threads as possible)
+        NOTE: On a Windows computer, if n_jobs != 1 and you try to use GridSearchCV, it will hang. 
+              Only use n_jobs = 1 when using GridSearchCV on Windows (this includes the Windows Linux Subsystem).
+                
+    n_estimators: Max number of trees to be added during fitting. This is equivalent to the number of boosting rounds, meaning one tree
+                  is added per boosting round.
+        Can be tuned by just trying out a variety of values.
+        
+        Can also be tuned by using xgb.cv() which performs cross-validation with the given parameters on data xgtrain. Stops adding trees 
+        if score does not improve once within early_stopping_rounds number of rounds. This returns the evaluation history after adding each
+        tree (one boosting round. The number of rows of this object is was the best number of trees found. (See modelfit()
+        classification_generic-CV-XGB-Hyperparameter-Tuning-Ran_by_script_threaded.ipynb for example of usage). (I was getting weird results
+        that weren't making sense when I used this, but its another method to note.)
+
+Parameter for Imbalanced datasets:
+     scale_pos_weight: Gives more weight to positive examples. A common value is the ratio of number of negative examples to number of 
+                       positive examples (#neg/#pos). Helps with ranking.
+     max_delta_step: Maximum change to weight that can happen in one update (0 is unconstrained). Can help with predicting probability.
+                     I didn't play with this parameter, but it may also help with our imbalanced dataset.
+
+Parameters controling complexity:
+    max_depth: Max depth of a tree.
+        I had a weird result in the beginning where a max depth of one was best. I think it was due to low number of positive examples.
+    min_child_weight: The minimum sum of weights required in a child. If this value is too low, the tree can overfit and if it is too high
+                      it can over fit. 
+    gamma: minimum amount a split must improve the gain by.
+        A high gamma makes it harder to split, which can control overfitting.
+
+Parameters controlling robustness:
+    subsample: Sampling ratio of training data. 
+    colsample_bytree: Sampling of columns (features) for each tree.
+    
+ 
+    
+Note on early stopping:
+    Early stopping during fitting can be used to prevent overfitting by stopping the training once the validation score does not improve
+    within a given number of rounds.
+    This can be done with K-fold cross-validation for each fold, splitting the dataset first into the usual train and test datasets.
+    Then split the train dataset into a validation set and a sub_training set. The sub_training set will actually be used to train and
+    the validation set will the ran after each boosting round (addition of a tree) to see if the score improved. 
+    
+    In XGBoost this can be done by:
+    
+    model.fit(X_subtrain, y_subtrain, eval_set = [(X_valid,y_valid)],eval_metric = "map", early_stopping_rounds = num_early_stopping_rounds)
+    
+    To use the number of trees that had resulted in the early stopping, use model.best_ntree_limit to get that number rounds. 
+    
+    During prediction, use: 
+    probs = model.predict_proba(X_test, ntree_limit=model.best_ntree_limit)
+    
+    This needs to be done because model was trained up to best_ntree_limit + num_early_stopping_rounds. So you have to tell XGBoost to limit 
+    the number of trees used to model.best_ntree_limit.
+    
+    This being said, I didn't find much improvement with early stopping but further testing could be done. 
+
+
+Miscellaneous stuff:
+
+My last run on the cluster failed due to going over the time limit.
+
+Slurm job generator script: run_slurm_hyperparam_tune.py
+Code I ran on the cluster: classification_generic-CV-XGB-Hyperparameter-Tuning-Ran_by_script_threaded.ipynb
+Trying different parameters: classification_generic-CV-parallele_xgb.ipynb (its a total mess but most the combinations I tried by hand are there)
+
+Best parameters for DNA that I found:
+n_estimators=190
+max_depth=9, 
+min_child_weight=0,
+gamma = .1
+colsample_bytree=.2, 
+subsample=1.0, 
+scale_pos_weight = 76
+
+
+Helpful References:
+
+XGBoost: A Scalable Tree Boosting System
+https://arxiv.org/pdf/1603.02754.pdf
+
+Kaggle Winning Solution Xgboost Algorithm - Learn from Its Author, Tong He (Really good for understanding the parameters and the method)
+https://www.youtube.com/watch?v=ufHo8vbk6g4
+
+Notes on Parameter Tuning
+http://xgboost.readthedocs.io/en/latest/how_to/param_tuning.html
+
+Complete Guide to Parameter Tuning in XGBoost (with codes in Python)
+https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/
+
+Chapter 7  Regularization for Deep Learning
+See Section 7.8 and Algorithm 7.2 on Early stopping 
+http://egrcc.github.io/docs/dl/deeplearningbook-regularization.pdf
