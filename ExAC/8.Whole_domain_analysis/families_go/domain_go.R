@@ -62,5 +62,5 @@ domain_go <- function(instance_cutoff,data_path) {
   
   # Format data frame and save to csv
   row.names(freq_counts) <- 1:nrow(freq_counts)
-  write.csv(file=paste("freq_counts_broad",instance_cutoff,sep=""), x=freq_counts)
+  write.csv(file=paste(data_path,"/freq_counts_broad",instance_cutoff,".csv",sep=""), x=freq_counts)
 }

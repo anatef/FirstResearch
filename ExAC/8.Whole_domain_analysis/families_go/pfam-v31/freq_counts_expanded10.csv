@@ -1,0 +1,768 @@
+,number,count,name,domains
+1,5515,122,protein binding,SNARE.PCI.GST_N_3.GST_N_2.VWC.TPR_10.TPR_11.Fz.F-box.BAR.NHL.GRIP.Ig_2.HEAT.SAM_1.SAM_2.EGF.Kazal_2.Kazal_1.Spectrin.GAF.JAB.PHD.Sema.zf-RING_11.PAS_3.BTB.Ldl_recept_a.SET.PDZ.LRR_8.TIR_2.TPR_1.TPR_7.TPR_8.WW.Bromodomain.LRR_6.TIR.SH3_9.EMI.fn3.Kelch_2.Kelch_1.F-box-like.SH3_1.Ank_3.GST_N.Death.PID.TNFR_c6.C2.CH.SPRY.Ank.FHA.ubiquitin.IQ.PDZ_2.zf-RING_2.zf-RING_5.TIG.Ephrin_lbd.UBX.Arm.Tissue_fac.PTB.WD40.EF-hand_4.MIF4G.PLAT.PB1.WH2.Cofilin_ADF.Xin.TGF_beta.FGF.TGFb_propeptide.Microtub_bd.Kinesin.Interferon.Tubulin-binding.Fascin.IRS.G-alpha.HLH.IBN_N.IGFBP.IL8.wnt.Ank_2.Ank_4.Ank_5.Arm_2.BAR_3.C2-set_2.Ephrin_rec_like.GST_C.GST_C_2.GST_C_3.HEAT_2.HEAT_EZ.Ig_3.Kelch_3.Kelch_4.Kelch_5.Kelch_6.LRR_4.LRR_5.LRR_9.Ldl_recept_b.PAS_11.PAS_9.PHD_2.SH3_2.TPR_12.TPR_14.TPR_17.TPR_19.TPR_2.Tubulin_C.ig
+2,16020,65,membrane,Neur_chan_memb.SRCR.EamA.MAM.Cadherin.Syntaxin.Galactosyl_T.Neur_chan_LBD.RYDR_ITPR.Zip.AA_permease_2.MIP.HRM.Cys_rich_FGFR.SSF.Lig_chan-Glu_bd.Cadherin_C.Lig_chan.GPS.PSI.AA_permease.MHC_II_alpha.MARVEL.Ion_trans.Frizzled.OATP.TNF.MHC_II_beta.CD225.EMP24_GP25L.SNF.MFS_1.Sugar_tr.Sulfate_transp.Na_H_Exchanger.TRAM_LAG1_CLN8.7tm_2.7tm_3.7tm_1.Tetraspannin.CIMR.Calx-beta.Sulfotransfer_2.HlyIII.TMC.PMP22_Claudin.IRK.CD20.ABC_membrane.Na_Ca_ex.TAS2R.Claudin_2.G-gamma.Adaptin_N.7TM_GPCR_Srsx.7tm_4.Aa_trans.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail.Cys_knot.Ion_trans_2.PSI_integrin.Sulfotransfer_3
+3,8270,38,zinc ion binding,zf-C4.GATA.RINGv.ZZ.APOBEC_N.zf-TRAF.zf-AN1.Peptidase_M10.LIM.Peptidase_M14.TFIIS_C.zf-RING_11.Pre-SET.zf-NF-X1.Peptidase_M1.zf-C2HC.zf-RanBP.zf-B_box.zf-UBP.zf-RING_2.zf-RING_5.zf-FCS.zf-CXXC.zf-rbx1.zf-CCHC.zf-A20.APOBEC_C.Peptidase_C14.zf-C2H2_4.zf-C3HC4_2.zf-C3HC4_3.zf-C3HC4_4.zf-H2C2_5.zf-HC5HC2H.zf-HC5HC2H_2.zf-MYND.zf-RING_UBOX.zf-met
+4,16021,28,integral component of membrane,CD225.EMP24_GP25L.SNF.EamA.MFS_1.Sugar_tr.Sulfate_transp.Na_H_Exchanger.TRAM_LAG1_CLN8.7tm_2.7tm_3.7tm_1.Tetraspannin.CIMR.Calx-beta.Sulfotransfer_2.HlyIII.TMC.PMP22_Claudin.IRK.CD20.ABC_membrane.Na_Ca_ex.TAS2R.Claudin_2.7TM_GPCR_Srsx.7tm_4.Sulfotransfer_3
+5,6355,23,"regulation of transcription, DNA-templated",Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP
+6,5524,24,ATP binding,Myosin_head.Pkinase_C.ResIII.Cpn60_TCP1.tRNA-synt_1.ABC_tran.AAA.SNF2_N.AAA_5.Pkinase.MutS_V.DEAD.ABC_membrane.Kinesin.Myosin_N.AAA_11.AAA_12.AAA_17.AAA_18.AAA_33.AAA_6.AAA_7.AAA_8.AAA_9
+7,5634,15,nucleus,zf-C4.bZIP_Maf.Cyclin_C.Pre-SET.SSXRD.zf-NF-X1.zf-C2HC.Linker_histone.MBT.SAM_PNT.Med26.NAP.HSF_DNA-bind.T-box.Cyclin_N
+8,3677,24,DNA binding,Hairy_orange.CENP-B_N.Homeobox.ResIII.bZIP_Maf.CSD.ARID.Linker_histone.Histone.zf-CXXC.Homeobox_KN.CUT.zf-A20.zf-BED.zf-C4.GATA.bZIP_1.bZIP_2.SAM_PNT.Ets.Forkhead.HSF_DNA-bind.MutS_V.Histone_H2A_C
+9,3700,13,"transcription factor activity, sequence-specific DNA binding",zf-C4.GATA.bZIP_1.bZIP_2.zf-NF-X1.Pou.zf-C2HC.SCAN.Ets.Forkhead.HSF_DNA-bind.T-box.E2F_TDP
+10,5509,19,calcium ion binding,Cadherin.Gla.EGF_CA.Annexin.Cadherin_C.TSP_3.EF-hand_1.EF-hand_5.EF-hand_7.EF-hand_6.EF-hand_8.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail.EF-hand_like.EGF_2.EGF_3.TSP_1
+11,3676,41,nucleic acid binding,DDE_1.S1.R3H.TFIIS_C.G-patch.THAP.DEAD.KRAB.RRM_1.zf-CCHC.Hairy_orange.CENP-B_N.Homeobox.ResIII.bZIP_Maf.CSD.ARID.Linker_histone.Histone.zf-CXXC.Homeobox_KN.CUT.zf-A20.zf-BED.zf-C4.GATA.bZIP_1.bZIP_2.SAM_PNT.Ets.Forkhead.HSF_DNA-bind.S4.PUF.KH_1.MIF4G.MutS_V.Ribosomal_S4.G-patch_2.Histone_H2A_C.Ribosomal_L7Ae
+12,55114,14,oxidation-reduction process,2OG-FeII_Oxy_3.NAD_binding_1.ADH_zinc_N.Pyr_redox_2.Aldedh.Acyl-CoA_dh_N.Acyl-CoA_dh_M.Acyl-CoA_dh_1.p450.ADH_N.Acyl-CoA_dh_2.NAD_binding_8.adh_short.adh_short_C2
+13,5576,16,extracellular region,Gla.ANATO.A2M_recep.fn1.Defensin_beta_2.IGFBP.WAP.IL8.wnt.Interferon.Peptidase_M10.ADAM_spacer1.A2M_comp.Serum_albumin.A2M_N_2.ADAM_CR
+14,6810,32,transport,EMP24_GP25L.Neur_chan_LBD.MIP.NTF2.SSF.CIMR.AA_permease.OATP.ABC_membrane.MFS_1.Sugar_tr.Na_H_Exchanger.Zip.Ion_trans.Na_Ca_ex.IBN_N.Adaptin_N.Clathrin.Neur_chan_memb.HMA.Sulfate_transp.IRK.SNF.GRIP.AA_permease_2.Phospholip_A2_1.Ran_BP1.Snf7.RYDR_ITPR.Aa_trans.Clathrin_propel.Ion_trans_2
+15,46872,66,metal ion binding,HMA.zf-C2H2.zf-C2H2_6.zf-C3HC4.FYVE.E1-E2_ATPase.zf-CCCH.zf-H2C2_2.Metallothio.zf-C4.GATA.RINGv.ZZ.APOBEC_N.zf-TRAF.zf-AN1.Peptidase_M10.LIM.Peptidase_M14.TFIIS_C.zf-RING_11.Pre-SET.zf-NF-X1.zf-C2HC.zf-RanBP.zf-B_box.zf-UBP.zf-RING_2.zf-RING_5.zf-FCS.zf-CXXC.zf-rbx1.zf-CCHC.zf-A20.Cadherin.Gla.EGF_CA.Annexin.Cadherin_C.TSP_3.EF-hand_1.EF-hand_5.EF-hand_7.EF-hand_6.EF-hand_8.p450.APOBEC_C.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail.EF-hand_like.EGF_2.EGF_3.Peptidase_C14.TSP_1.zf-C2H2_4.zf-C3HC4_2.zf-C3HC4_3.zf-C3HC4_4.zf-H2C2_5.zf-HC5HC2H.zf-HC5HC2H_2.zf-MYND.zf-RING_UBOX.zf-met
+16,55085,13,transmembrane transport,MFS_1.Sugar_tr.Na_H_Exchanger.Zip.SSF.AA_permease.Ion_trans.ABC_membrane.Na_Ca_ex.AA_permease_2.RYDR_ITPR.Aa_trans.Ion_trans_2
+17,43565,8,sequence-specific DNA binding,zf-C4.GATA.bZIP_1.bZIP_2.SAM_PNT.Ets.Forkhead.HSF_DNA-bind
+18,8152,90,metabolic process,ECH_1.Methyltransf_11.Aldedh.Acyltransferase.Acyl-CoA_dh_N.AMP-binding.Sulfatase.UDPGT.Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.2OG-FeII_Oxy_3.NAD_binding_1.ADH_zinc_N.Pyr_redox_2.Acyl-CoA_dh_M.Acyl-CoA_dh_1.p450.ADH_N.Peptidase_C1.Peptidase_M10.Trypsin.Peptidase_M14.Peptidase_C2.Reprolysin.Pkinase_Tyr.Pkinase_C.tRNA-synt_1.Anticodon_1.Y_phosphatase.DSPc.Galactosyl_T.Glyco_transf_29.NDK.UCH.Pre-SET.TFIIS_C.TAF.Transglut_C.tRNA_int_endo.TTL.Glyco_hydro_31.Aminotran_1_2.Guanylate_cyc.Proteasome.MutS_V.PPTA.PI-PLC-Y.Pro_isomerase.Phospholip_A2_1.AMP-binding_C.Acyl-CoA_dh_2.Glyco_transf_7C.Guanylate_kin.Methyltransf_12.Methyltransf_23.Methyltransf_25.Methyltransf_31.NAD_binding_8.PI-PLC-X.Peptidase_C14.Pro-rich.Reprolysin_2.Reprolysin_3.Reprolysin_5.Transglut_core.Trypsin_2.UCH_1.adh_short.adh_short_C2
+19,7165,35,signal transduction,PI-PLC-Y.HR1.RA.TIR_2.RhoGAP.TIR.Death.PDEase_I.NCD3G.7tm_2.7tm_3.7tm_1.G-alpha.G-gamma.TAS2R.SOCS_box.Guanylate_cyc.DCX.C1_1.DEP.Ras.Roc.RasGEF.APC_r.wnt.Sec7.RhoGEF.Hormone_recep.Frizzled.7TM_GPCR_Srsx.7tm_4.C1-set.Guanylate_kin.PI-PLC-X.RasGEF_N
+20,7186,9,G-protein coupled receptor signaling pathway,NCD3G.7tm_2.7tm_3.7tm_1.G-alpha.G-gamma.TAS2R.7TM_GPCR_Srsx.7tm_4
+21,5525,8,GTP binding,Ras.Septin.MMR_HSR1.GBP.Arf.Roc.GTP_EFTU_D2.GTP_EFTU
+22,5622,40,intracellular,Cofilin_ADF.Peptidase_C2.NTF2.MH1.zf-B_box.Ribosomal_S4.KRAB.zf-C4.bZIP_Maf.Cyclin_C.Pre-SET.SSXRD.zf-NF-X1.zf-C2HC.Linker_histone.MBT.SAM_PNT.Med26.NAP.HSF_DNA-bind.T-box.Myosin_head.Myosin_tail_1.Myosin_N.BAR.CIMR.Involucrin.Keratin_B2_2.MyTH4.Plectin.E2F_TDP.G-gamma.Proteasome.Dynein_heavy.Filament.Adaptin_N.BAR_3.Cyclin_N.Keratin_2_head.Ribosomal_L7Ae
+23,35556,15,intracellular signal transduction,PI-PLC-Y.SOCS_box.Guanylate_cyc.DCX.C1_1.DEP.Ras.Roc.RasGEF.Sec7.RhoGEF.C1-set.Guanylate_kin.PI-PLC-X.RasGEF_N
+24,6955,8,immune response,Somatomedin_B.MHC_II_alpha.IL8.MHC_I_C.TNF.MHC_II_beta.Defensin_beta_2.MHC_I
+25,4930,8,G-protein coupled receptor activity,HRM.NCD3G.7tm_2.7tm_3.7tm_1.TAS2R.7TM_GPCR_Srsx.7tm_4
+26,6508,14,proteolysis,Peptidase_C1.Peptidase_M10.Trypsin.Peptidase_M14.Peptidase_C2.Reprolysin.UCH.Proteasome.Peptidase_C14.Reprolysin_2.Reprolysin_3.Reprolysin_5.Trypsin_2.UCH_1
+27,3824,101,catalytic activity,PP2C.Epimerase.ECH_1.AMP-binding.Prenyltrans.2OG-FeII_Oxy_3.NAD_binding_1.Pyr_redox_2.Aldedh.Peptidase_M10.Reprolysin.ADAM_spacer1.Myosin_head.Myosin_tail_1.Myosin_N.ResIII.NUDIX.Metallophos.GBP.G-alpha.Tubulin.Pkinase_Tyr.Dynein_heavy.Kinesin.Acyl-CoA_dh_N.Acyl-CoA_dh_1.DAGK_cat.PI3_PI4_kinase.Sulfotransfer_2.Sulfotransfer_1.ABC_tran.AAA_5.Phospholip_A2_1.PLAC.Peptidase_C1.Pkinase_C.Y_phosphatase.Peptidase_M14.Peptidase_C2.Pre-SET.Acyltransferase.UCH.PDEase_I.Pro_isomerase.Glyco_transf_29.Galactosyl_T.Glutaredoxin.Proteasome.tRNA-synt_1.tRNA_int_endo.Sulfatase.Transglut_C.HECT.PPTA.ABC_membrane.HA2.p450.NTP_transf_2.PI-PLC-Y.PARP.Methyltransf_11.UDPGT.Acetyltransf_1.Acyl-CoA_dh_M.Trypsin.APOBEC_N.ThiF.NDK.Glyco_hydro_31.DSPc.Guanylate_cyc.AAA_11.AAA_12.AAA_17.AAA_18.AAA_33.AAA_6.AAA_7.AAA_8.AAA_9.ADAM_CR.AMP-binding_C.APOBEC_C.Acyl-CoA_dh_2.Glyco_transf_7C.Guanylate_kin.Methyltransf_12.Methyltransf_23.Methyltransf_25.Methyltransf_31.NAD_binding_8.PI-PLC-X.Peptidase_C14.Pro-rich.Reprolysin_2.Reprolysin_3.Reprolysin_5.Sulfotransfer_3.Transglut_core.Trypsin_2.UCH_1
+28,5215,18,transporter activity,MIP.SSF.CIMR.OATP.Lig_chan-Glu_bd.Ion_trans.Neur_chan_LBD.IRK.RYDR_ITPR.SNF.Sulfate_transp.ABC_membrane.Zip.AA_permease_2.Sugar_tr.Na_H_Exchanger.Aa_trans.Ion_trans_2
+29,16491,11,oxidoreductase activity,2OG-FeII_Oxy_3.NAD_binding_1.Pyr_redox_2.Aldedh.Acyl-CoA_dh_N.Acyl-CoA_dh_1.Glutaredoxin.p450.Acyl-CoA_dh_M.Acyl-CoA_dh_2.NAD_binding_8
+30,3723,6,RNA binding,S4.PUF.KH_1.MIF4G.Ribosomal_S4.Ribosomal_L7Ae
+31,16459,3,myosin complex,Myosin_head.Myosin_tail_1.Myosin_N
+32,7264,6,small GTPase mediated signal transduction,Ras.Roc.RasGEF.Sec7.RhoGEF.RasGEF_N
+33,5737,5,cytoplasm,BAR.CIMR.Involucrin.Adaptin_N.BAR_3
+34,4222,7,metalloendopeptidase activity,Peptidase_M10.Reprolysin.ADAM_spacer1.ADAM_CR.Reprolysin_2.Reprolysin_3.Reprolysin_5
+35,166,36,nucleotide binding,tRNA-synt_1.E1-E2_ATPase.Anticodon_1.Myosin_head.Pkinase_C.ResIII.Cpn60_TCP1.ABC_tran.AAA.SNF2_N.AAA_5.MutS_V.DEAD.ABC_membrane.Kinesin.Myosin_N.Ras.Septin.MMR_HSR1.GBP.Arf.Roc.GTP_EFTU_D2.G-alpha.Acyl-CoA_dh_N.AAA_11.AAA_12.AAA_17.AAA_18.AAA_33.AAA_6.AAA_7.AAA_8.AAA_9.Acyl-CoA_dh_2.GTP_EFTU
+36,3774,5,motor activity,Myosin_head.Myosin_tail_1.Myosin_N.Dynein_heavy.Kinesin
+37,3779,4,actin binding,WH2.Cofilin_ADF.Xin.Fascin
+38,6886,5,intracellular protein transport,IBN_N.Adaptin_N.Clathrin.GRIP.Clathrin_propel
+39,6468,3,protein phosphorylation,Pkinase_Tyr.Pkinase_C.Pkinase
+40,16787,52,hydrolase activity,ResIII.NUDIX.Metallophos.Peptidase_M10.Reprolysin.ADAM_spacer1.Myosin_head.Myosin_tail_1.Myosin_N.GBP.G-alpha.Tubulin.Dynein_heavy.Kinesin.ABC_tran.AAA_5.Phospholip_A2_1.PLAC.Peptidase_C1.Y_phosphatase.Peptidase_M14.Peptidase_C2.UCH.PDEase_I.Proteasome.tRNA_int_endo.Sulfatase.ABC_membrane.HA2.PI-PLC-Y.Trypsin.APOBEC_N.Glyco_hydro_31.DSPc.AAA_11.AAA_12.AAA_17.AAA_18.AAA_33.AAA_6.AAA_7.AAA_8.AAA_9.ADAM_CR.APOBEC_C.PI-PLC-X.Peptidase_C14.Reprolysin_2.Reprolysin_3.Reprolysin_5.Trypsin_2.UCH_1
+41,8083,3,growth factor activity,TGF_beta.FGF.TGFb_propeptide
+42,19882,4,antigen processing and presentation,MHC_II_alpha.MHC_I_C.MHC_II_beta.MHC_I
+43,3924,3,GTPase activity,GBP.G-alpha.Tubulin
+44,45095,3,keratin filament,Keratin_B2_2.Keratin_B2.Keratin_2_head
+45,4871,11,signal transducer activity,G-alpha.G-gamma.HRM.NCD3G.7tm_2.7tm_3.7tm_1.TAS2R.Lig_chan-Glu_bd.7TM_GPCR_Srsx.7tm_4
+46,4672,3,protein kinase activity,Pkinase_Tyr.Pkinase.Pkinase_C
+47,20037,2,heme binding,Globin.p450
+48,5201,2,extracellular matrix structural constituent,C4.COLFI
+49,8289,4,lipid binding,LBP_BPI_CETP.START.PX.Annexin
+50,6334,2,nucleosome assembly,Linker_histone.NAP
+51,4970,2,ionotropic glutamate receptor activity,Lig_chan-Glu_bd.Lig_chan
+52,6811,12,ion transport,Neur_chan_memb.Ion_trans.Zip.HMA.Sulfate_transp.Na_H_Exchanger.IRK.AA_permease_2.Phospholip_A2_1.RYDR_ITPR.Aa_trans.Ion_trans_2
+53,16055,2,Wnt signaling pathway,APC_r.wnt
+54,42613,2,MHC class II protein complex,MHC_II_alpha.MHC_II_beta
+55,3777,2,microtubule motor activity,Dynein_heavy.Kinesin
+56,5856,9,cytoskeleton,MyTH4.Plectin.Myosin_head.Myosin_tail_1.Myosin_N.Keratin_B2_2.Dynein_heavy.Filament.Keratin_2_head
+57,16627,4,"oxidoreductase activity, acting on the CH-CH group of donors",Acyl-CoA_dh_N.Acyl-CoA_dh_1.Acyl-CoA_dh_M.Acyl-CoA_dh_2
+58,4866,4,endopeptidase inhibitor activity,A2M.A2M_N.Kunitz_BPTI.Cystatin
+59,6418,2,tRNA aminoacylation for protein translation,tRNA-synt_1.Anticodon_1
+60,31012,3,extracellular matrix,Peptidase_M10.ADAM_spacer1.ADAM_CR
+61,30001,4,metal ion transport,Zip.HMA.IRK.RYDR_ITPR
+62,6457,3,protein folding,FKBP_C.Pro_isomerase.Pro-rich
+63,6470,2,protein dephosphorylation,Y_phosphatase.DSPc
+64,8017,2,microtubule binding,Microtub_bd.Kinesin
+65,6486,3,protein glycosylation,Galactosyl_T.Glyco_transf_29.Glyco_transf_7C
+66,7018,2,microtubule-based movement,Dynein_heavy.Kinesin
+67,16192,4,vesicle-mediated transport,Adaptin_N.Clathrin.GRIP.Clathrin_propel
+68,45454,3,cell redox homeostasis,Glutaredoxin.Thioredoxin.Thioredoxin_6
+69,16301,5,kinase activity,DAGK_cat.PI3_PI4_kinase.Pkinase_Tyr.Pkinase_C.NDK
+70,5044,2,scavenger receptor activity,SRCR.Somatomedin_B
+71,8146,3,sulfotransferase activity,Sulfotransfer_2.Sulfotransfer_1.Sulfotransfer_3
+72,5198,4,structural molecule activity,Filaggrin.Filament.C4.COLFI
+73,42981,2,regulation of apoptotic process,Bcl-2.CARD
+74,5615,2,extracellular space,A2M_comp.Serum_albumin
+75,7155,9,cell adhesion,Xlink.TSP_3.Cadherin.Cadherin_C.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail.TSP_1
+76,7156,6,homophilic cell adhesion via plasma membrane adhesion molecules,Cadherin.Cadherin_C.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail
+77,16887,12,ATPase activity,ABC_tran.AAA_5.ABC_membrane.AAA_11.AAA_12.AAA_17.AAA_18.AAA_33.AAA_6.AAA_7.AAA_8.AAA_9
+78,5126,3,cytokine receptor binding,Interferon.TNF.IL8
+79,4623,1,phospholipase A2 activity,Phospholip_A2_1
+80,4867,1,serine-type endopeptidase inhibitor activity,Kunitz_BPTI
+81,6165,1,nucleoside diphosphate phosphorylation,NDK
+82,1558,1,regulation of cell growth,IGFBP
+83,45087,1,innate immune response,Defensin_beta_2
+84,5667,1,transcription factor complex,E2F_TDP
+85,30246,2,carbohydrate binding,Gal-bind_lectin.Somatomedin_B
+86,8233,17,peptidase activity,PLAC.Peptidase_M10.Reprolysin.ADAM_spacer1.Peptidase_C1.Peptidase_M14.Peptidase_C2.UCH.Proteasome.Trypsin.ADAM_CR.Peptidase_C14.Reprolysin_2.Reprolysin_3.Reprolysin_5.Trypsin_2.UCH_1
+87,8234,4,cysteine-type peptidase activity,Peptidase_C1.Peptidase_C2.UCH.UCH_1
+88,5164,1,tumor necrosis factor receptor binding,TNF
+89,19001,9,guanyl nucleotide binding,G-alpha.Ras.Septin.MMR_HSR1.GBP.Arf.Roc.GTP_EFTU_D2.GTP_EFTU
+90,51260,1,protein homooligomerization,BTB_2
+91,5216,6,ion channel activity,Ion_trans.Lig_chan-Glu_bd.Neur_chan_LBD.IRK.RYDR_ITPR.Ion_trans_2
+92,4674,1,protein serine/threonine kinase activity,Pkinase_C
+93,40007,2,growth,TGFb_propeptide.IGFBP
+94,32012,1,regulation of ARF protein signal transduction,Sec7
+95,4725,1,protein tyrosine phosphatase activity,Y_phosphatase
+96,8272,1,sulfate transport,Sulfate_transp
+97,6228,1,UTP biosynthetic process,NDK
+98,4181,2,metallocarboxypeptidase activity,Peptidase_M14.Peptidase_C14
+99,15631,4,tubulin binding,Tubulin-binding.Microtub_bd.Kinesin.Tubulin_C
+100,3682,1,chromatin binding,BAH
+101,7275,2,multicellular organism development,wnt.Involucrin
+102,4198,1,calcium-dependent cysteine-type endopeptidase activity,Peptidase_C2
+103,18024,1,histone-lysine N-methyltransferase activity,Pre-SET
+104,7276,1,gamete generation,Spin-Ssty
+105,786,1,nucleosome,Linker_histone
+106,5230,2,extracellular ligand-gated ion channel activity,Neur_chan_LBD.Lig_chan-Glu_bd
+107,5234,1,extracellular-glutamate-gated ion channel activity,Lig_chan-Glu_bd
+108,5242,1,inward rectifier potassium channel activity,IRK
+109,16746,4,"transferase activity, transferring acyl groups",Acyltransferase.Transglut_C.Acetyltransf_1.Transglut_core
+110,36459,2,thiol-dependent ubiquitinyl hydrolase activity,UCH.UCH_1
+111,5262,1,calcium channel activity,RYDR_ITPR
+112,16579,2,protein deubiquitination,UCH.UCH_1
+113,34968,1,histone lysine methylation,Pre-SET
+114,6812,5,cation transport,Na_H_Exchanger.Zip.HMA.IRK.RYDR_ITPR
+115,6813,1,potassium ion transport,IRK
+116,4114,1,"3',5'-cyclic-nucleotide phosphodiesterase activity",PDEase_I
+117,19825,1,oxygen binding,Globin
+118,3755,2,peptidyl-prolyl cis-trans isomerase activity,Pro_isomerase.Pro-rich
+119,6836,1,neurotransmitter transport,SNF
+120,8373,2,sialyltransferase activity,Glyco_transf_29.Glyco_transf_7C
+121,8378,1,galactosyltransferase activity,Galactosyl_T
+122,15035,1,protein disulfide oxidoreductase activity,Glutaredoxin
+123,5834,1,heterotrimeric G-protein complex,G-gamma
+124,31424,1,keratinization,Involucrin
+125,4298,1,threonine-type endopeptidase activity,Proteasome
+126,4812,1,aminoacyl-tRNA ligase activity,tRNA-synt_1
+127,30414,5,peptidase inhibitor activity,WAP.A2M.A2M_N.Kunitz_BPTI.Cystatin
+128,5839,1,proteasome core complex,Proteasome
+129,5328,1,neurotransmitter:sodium symporter activity,SNF
+130,213,1,tRNA-intron endonuclease activity,tRNA_int_endo
+131,8484,1,sulfuric ester hydrolase activity,Sulfatase
+132,6351,25,"transcription, DNA-templated",TFIIS_C.Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.TAF
+133,30286,1,dynein complex,Dynein_heavy
+134,50909,1,sensory perception of taste,TAS2R
+135,6352,1,"DNA-templated transcription, initiation",TAF
+136,3810,2,protein-glutamine gamma-glutamyltransferase activity,Transglut_C.Transglut_core
+137,18149,2,peptide cross-linking,Transglut_C.Transglut_core
+138,35023,1,regulation of Rho protein signal transduction,RhoGEF
+139,4842,1,ubiquitin-protein transferase activity,HECT
+140,30247,1,polysaccharide binding,Somatomedin_B
+141,30674,1,"protein binding, bridging",Fascin
+142,6388,1,"tRNA splicing, via endonucleolytic cleavage and ligation",tRNA_int_endo
+143,8318,1,protein prenyltransferase activity,PPTA
+144,5882,3,intermediate filament,Filament.Keratin_B2_2.Keratin_2_head
+145,42,1,protein targeting to Golgi,GRIP
+146,3333,2,amino acid transmembrane transport,AA_permease_2.Aa_trans
+147,30983,1,mismatched DNA binding,MutS_V
+148,15116,1,sulfate transmembrane transporter activity,Sulfate_transp
+149,42626,1,"ATPase activity, coupled to transmembrane movement of substances",ABC_membrane
+150,8237,10,metallopeptidase activity,Peptidase_M1.Peptidase_M10.Reprolysin.ADAM_spacer1.Peptidase_M14.ADAM_CR.Peptidase_C14.Reprolysin_2.Reprolysin_3.Reprolysin_5
+151,35091,1,phosphatidylinositol binding,PX
+152,46873,4,metal ion transmembrane transporter activity,Zip.IRK.RYDR_ITPR.SNF
+153,5158,1,insulin receptor binding,IRS
+154,4386,1,helicase activity,HA2
+155,6952,2,defense response,Interferon.Defensin_beta_2
+156,31683,1,G-protein beta/gamma-subunit complex binding,G-alpha
+157,46983,1,protein dimerization activity,HLH
+158,50482,1,arachidonic acid secretion,Phospholip_A2_1
+159,4869,1,cysteine-type endopeptidase inhibitor activity,Cystatin
+160,46907,6,intracellular transport,Ran_BP1.IBN_N.Adaptin_N.Clathrin.GRIP.Clathrin_propel
+161,6464,16,cellular protein modification process,TTL.Pkinase_Tyr.Pkinase_C.Y_phosphatase.DSPc.Galactosyl_T.Glyco_transf_29.UCH.Pre-SET.Transglut_C.PPTA.Pro_isomerase.Glyco_transf_7C.Pro-rich.Transglut_core.UCH_1
+162,16705,1,"oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen",p450
+163,15171,2,amino acid transmembrane transporter activity,AA_permease_2.Aa_trans
+164,51015,1,actin filament binding,Fascin
+165,22857,14,transmembrane transporter activity,Sugar_tr.Lig_chan-Glu_bd.Ion_trans.Neur_chan_LBD.IRK.RYDR_ITPR.SNF.Sulfate_transp.ABC_membrane.Zip.AA_permease_2.Na_H_Exchanger.Aa_trans.Ion_trans_2
+166,16779,1,nucleotidyltransferase activity,NTP_transf_2
+167,4435,2,phosphatidylinositol phospholipase C activity,PI-PLC-Y.PI-PLC-X
+168,30036,1,actin cytoskeleton organization,Xin
+169,5975,1,carbohydrate metabolic process,Glyco_hydro_31
+170,8536,1,Ran GTPase binding,IBN_N
+171,6183,1,GTP biosynthetic process,NDK
+172,9055,1,electron carrier activity,Glutaredoxin
+173,8544,2,epidermis development,LCE.Involucrin
+174,5520,1,insulin-like growth factor binding,IGFBP
+175,9058,34,biosynthetic process,Aminotran_1_2.Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.tRNA-synt_1.Anticodon_1.Galactosyl_T.Glyco_transf_29.NDK.TFIIS_C.TAF.Guanylate_cyc.Glyco_transf_7C.Guanylate_kin
+176,9190,2,cyclic nucleotide biosynthetic process,Guanylate_cyc.Guanylate_kin
+177,30054,1,cell junction,Xin
+178,3950,1,NAD+ ADP-ribosyltransferase activity,PARP
+179,8168,6,methyltransferase activity,Methyltransf_11.Pre-SET.Methyltransf_12.Methyltransf_23.Methyltransf_25.Methyltransf_31
+180,16758,2,"transferase activity, transferring hexosyl groups",UDPGT.Galactosyl_T
+181,7034,1,vacuolar transport,Snf7
+182,5506,1,iron ion binding,p450
+183,19843,2,rRNA binding,Ribosomal_S4.Ribosomal_L7Ae
+184,902,1,cell morphogenesis,MreB_Mbl
+185,9607,1,response to biotic stimulus,CD225
+186,43401,1,steroid hormone mediated signaling pathway,Hormone_recep
+187,8080,1,N-acetyltransferase activity,Acetyltransf_1
+188,51603,1,proteolysis involved in cellular protein catabolic process,Proteasome
+189,3995,1,acyl-CoA dehydrogenase activity,Acyl-CoA_dh_M
+190,6298,1,mismatch repair,MutS_V
+191,5540,1,hyaluronic acid binding,Xlink
+192,30117,1,membrane coat,Adaptin_N
+193,18342,1,protein prenylation,PPTA
+194,5544,1,calcium-dependent phospholipid binding,Annexin
+195,4252,2,serine-type endopeptidase activity,Trypsin.Trypsin_2
+196,6629,3,lipid metabolic process,PI-PLC-Y.Phospholip_A2_1.PI-PLC-X
+197,16814,2,"hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds, in cyclic amidines",APOBEC_N.APOBEC_C
+198,413,2,protein peptidyl-prolyl isomerization,Pro_isomerase.Pro-rich
+199,8009,1,chemokine activity,IL8
+200,6644,1,phospholipid metabolic process,Phospholip_A2_1
+201,70588,1,calcium ion transmembrane transport,RYDR_ITPR
+202,6241,1,CTP biosynthetic process,NDK
+203,8641,1,small protein activating enzyme activity,ThiF
+204,15299,1,solute:proton antiporter activity,Na_H_Exchanger
+205,4550,1,nucleoside diphosphate kinase activity,NDK
+206,4553,1,"hydrolase activity, hydrolyzing O-glycosyl compounds",Glyco_hydro_31
+207,8138,1,protein tyrosine/serine/threonine phosphatase activity,DSPc
+208,5581,1,collagen trimer,C4
+209,16849,2,phosphorus-oxygen lyase activity,Guanylate_cyc.Guanylate_kin
+210,30170,1,pyridoxal phosphate binding,Aminotran_1_2
+211,43087,1,regulation of GTPase activity,RasGAP
+212,5085,4,guanyl-nucleotide exchange factor activity,RasGEF.Sec7.RhoGEF.RasGEF_N
+213,5086,1,ARF guanyl-nucleotide exchange factor activity,Sec7
+214,5089,1,Rho guanyl-nucleotide exchange factor activity,RhoGEF
+215,50660,2,flavin adenine dinucleotide binding,Acyl-CoA_dh_N.Acyl-CoA_dh_2
+216,50662,3,coenzyme binding,Epimerase.Acyl-CoA_dh_N.Acyl-CoA_dh_2
+217,30695,2,GTPase regulator activity,GoLoco.ArfGap
+218,5096,1,GTPase activator activity,ArfGap
+219,5102,8,receptor binding,wnt.TGF_beta.FGF.TGFb_propeptide.Interferon.TNF.IRS.IL8
+220,7154,35,cell communication,Calx-beta.PI-PLC-Y.HR1.RA.TIR_2.RhoGAP.Death.PDEase_I.NCD3G.7tm_2.7tm_3.7tm_1.G-alpha.G-gamma.TAS2R.SOCS_box.Guanylate_cyc.DCX.C1_1.DEP.Ras.Roc.RasGEF.APC_r.wnt.Sec7.RhoGEF.Hormone_recep.Frizzled.7TM_GPCR_Srsx.7tm_4.C1-set.Guanylate_kin.PI-PLC-X.RasGEF_N
+221,7166,3,cell surface receptor signaling pathway,Frizzled.APC_r.wnt
+222,3674,374,molecular_function,SNARE.PCI.GST_N_3.GST_N_2.VWC.TPR_10.TPR_11.Fz.F-box.BAR.NHL.GRIP.Ig_2.HEAT.SAM_1.SAM_2.EGF.Kazal_2.Kazal_1.Spectrin.GAF.JAB.PHD.Sema.zf-RING_11.PAS_3.BTB.Ldl_recept_a.SET.PDZ.LRR_8.TIR_2.TPR_1.TPR_7.TPR_8.WW.Bromodomain.LRR_6.TIR.SH3_9.EMI.fn3.Kelch_2.Kelch_1.F-box-like.SH3_1.Ank_3.GST_N.Death.PID.TNFR_c6.C2.CH.SPRY.Ank.FHA.ubiquitin.IQ.PDZ_2.zf-RING_2.zf-RING_5.TIG.Ephrin_lbd.UBX.Arm.Tissue_fac.PTB.WD40.EF-hand_4.MIF4G.PLAT.PB1.zf-C4.GATA.RINGv.ZZ.APOBEC_N.zf-TRAF.zf-AN1.Peptidase_M10.LIM.Peptidase_M14.TFIIS_C.Pre-SET.zf-NF-X1.zf-C2HC.zf-RanBP.zf-B_box.zf-UBP.zf-FCS.zf-CXXC.zf-rbx1.zf-CCHC.zf-A20.Myosin_head.Pkinase_C.ResIII.Cpn60_TCP1.tRNA-synt_1.ABC_tran.AAA.SNF2_N.AAA_5.MutS_V.DEAD.ABC_membrane.Kinesin.Myosin_N.Hairy_orange.CENP-B_N.Homeobox.bZIP_Maf.CSD.ARID.Linker_histone.Histone.Homeobox_KN.CUT.zf-BED.bZIP_1.bZIP_2.Pou.SCAN.Ets.Forkhead.HSF_DNA-bind.T-box.E2F_TDP.Cadherin.Gla.EGF_CA.Annexin.Cadherin_C.TSP_3.EF-hand_1.EF-hand_5.EF-hand_7.EF-hand_6.EF-hand_8.DDE_1.S1.R3H.G-patch.THAP.KRAB.RRM_1.HMA.zf-C2H2.zf-C2H2_6.zf-C3HC4.FYVE.E1-E2_ATPase.zf-CCCH.zf-H2C2_2.Metallothio.SAM_PNT.Ras.Septin.MMR_HSR1.GBP.Arf.Roc.GTP_EFTU_D2.HRM.NCD3G.7tm_2.7tm_3.7tm_1.TAS2R.PP2C.Epimerase.ECH_1.AMP-binding.Prenyltrans.MIP.SSF.CIMR.OATP.2OG-FeII_Oxy_3.NAD_binding_1.Pyr_redox_2.Aldedh.S4.PUF.KH_1.Reprolysin.ADAM_spacer1.Anticodon_1.Myosin_tail_1.WH2.Cofilin_ADF.Xin.NUDIX.Metallophos.TGF_beta.FGF.TGFb_propeptide.G-alpha.Tubulin.G-gamma.Pkinase_Tyr.Globin.p450.COLFI.LBP_BPI_CETP.START.Lig_chan-Glu_bd.Dynein_heavy.Acyl-CoA_dh_N.Acyl-CoA_dh_1.A2M.A2M_N.Microtub_bd.DAGK_cat.PI3_PI4_kinase.SRCR.Somatomedin_B.Sulfotransfer_2.Sulfotransfer_1.Filaggrin.Filament.Interferon.Phospholip_A2_1.Kunitz_BPTI.Gal-bind_lectin.PLAC.Peptidase_C1.Ion_trans.Y_phosphatase.Tubulin-binding.BAH.Peptidase_C2.Neur_chan_LBD.IRK.Acyltransferase.UCH.RYDR_ITPR.PDEase_I.Pro_isomerase.Glyco_transf_29.Galactosyl_T.Glutaredoxin.Proteasome.WAP.tRNA_int_endo.Sulfatase.Transglut_C.HECT.Fascin.PPTA.Sulfate_transp.PX.Zip.IRS.HA2.HLH.Cystatin.AA_permease_2.Sugar_tr.NTP_transf_2.PI-PLC-Y.IBN_N.IGFBP.PARP.Methyltransf_11.UDPGT.Ribosomal_S4.Acetyltransf_1.Acyl-CoA_dh_M.Xlink.Trypsin.IL8.ThiF.Na_H_Exchanger.NDK.Glyco_hydro_31.DSPc.Guanylate_cyc.Aminotran_1_2.RasGEF.Sec7.RhoGEF.GoLoco.ArfGap.wnt.7TM_GPCR_Srsx.7tm_4.AAA_11.AAA_12.AAA_17.AAA_18.AAA_33.AAA_6.AAA_7.AAA_8.AAA_9.ADAM_CR.AMP-binding_C.APOBEC_C.Aa_trans.Acyl-CoA_dh_2.Ank_2.Ank_4.Ank_5.Arm_2.BAR_3.C2-set_2.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail.EF-hand_like.EGF_2.EGF_3.Ephrin_rec_like.G-patch_2.GST_C.GST_C_2.GST_C_3.GTP_EFTU.Glyco_transf_7C.Guanylate_kin.HEAT_2.HEAT_EZ.Histone_H2A_C.Ig_3.Ion_trans_2.Kelch_3.Kelch_4.Kelch_5.Kelch_6.LRR_4.LRR_5.LRR_9.Ldl_recept_b.Methyltransf_12.Methyltransf_23.Methyltransf_25.Methyltransf_31.NAD_binding_8.PAS_11.PAS_9.PHD_2.PI-PLC-X.Peptidase_C14.Pro-rich.RasGEF_N.Reprolysin_2.Reprolysin_3.Reprolysin_5.Ribosomal_L7Ae.SH3_2.Sulfotransfer_3.TPR_12.TPR_14.TPR_17.TPR_19.TPR_2.TSP_1.Transglut_core.Trypsin_2.Tubulin_C.UCH_1.ig.zf-C2H2_4.zf-C3HC4_2.zf-C3HC4_3.zf-C3HC4_4.zf-H2C2_5.zf-HC5HC2H.zf-HC5HC2H_2.zf-MYND.zf-RING_UBOX.zf-met
+223,5488,259,binding,SNARE.PCI.GST_N_3.GST_N_2.VWC.TPR_10.TPR_11.Fz.F-box.BAR.NHL.GRIP.Ig_2.HEAT.SAM_1.SAM_2.EGF.Kazal_2.Kazal_1.Spectrin.GAF.JAB.PHD.Sema.zf-RING_11.PAS_3.BTB.Ldl_recept_a.SET.PDZ.LRR_8.TIR_2.TPR_1.TPR_7.TPR_8.WW.Bromodomain.LRR_6.TIR.SH3_9.EMI.fn3.Kelch_2.Kelch_1.F-box-like.SH3_1.Ank_3.GST_N.Death.PID.TNFR_c6.C2.CH.SPRY.Ank.FHA.ubiquitin.IQ.PDZ_2.zf-RING_2.zf-RING_5.TIG.Ephrin_lbd.UBX.Arm.Tissue_fac.PTB.WD40.EF-hand_4.MIF4G.PLAT.PB1.zf-C4.GATA.RINGv.ZZ.APOBEC_N.zf-TRAF.zf-AN1.Peptidase_M10.LIM.Peptidase_M14.TFIIS_C.Pre-SET.zf-NF-X1.zf-C2HC.zf-RanBP.zf-B_box.zf-UBP.zf-FCS.zf-CXXC.zf-rbx1.zf-CCHC.zf-A20.Myosin_head.Pkinase_C.ResIII.Cpn60_TCP1.tRNA-synt_1.ABC_tran.AAA.SNF2_N.AAA_5.MutS_V.DEAD.ABC_membrane.Kinesin.Myosin_N.Hairy_orange.CENP-B_N.Homeobox.bZIP_Maf.CSD.ARID.Linker_histone.Histone.Homeobox_KN.CUT.zf-BED.Cadherin.Gla.EGF_CA.Annexin.Cadherin_C.TSP_3.EF-hand_1.EF-hand_5.EF-hand_7.EF-hand_6.EF-hand_8.DDE_1.S1.R3H.G-patch.THAP.KRAB.RRM_1.HMA.zf-C2H2.zf-C2H2_6.zf-C3HC4.FYVE.E1-E2_ATPase.zf-CCCH.zf-H2C2_2.Metallothio.bZIP_1.bZIP_2.SAM_PNT.Ets.Forkhead.HSF_DNA-bind.Ras.Septin.MMR_HSR1.GBP.Arf.Roc.GTP_EFTU_D2.S4.PUF.KH_1.Anticodon_1.WH2.Cofilin_ADF.Xin.TGF_beta.FGF.TGFb_propeptide.Globin.p450.LBP_BPI_CETP.START.Microtub_bd.Interferon.Gal-bind_lectin.G-alpha.Tubulin-binding.BAH.Somatomedin_B.Fascin.PX.IRS.HLH.IBN_N.IGFBP.Ribosomal_S4.Xlink.IL8.Aminotran_1_2.Acyl-CoA_dh_N.Epimerase.wnt.AAA_11.AAA_12.AAA_17.AAA_18.AAA_33.AAA_6.AAA_7.AAA_8.AAA_9.APOBEC_C.Acyl-CoA_dh_2.Ank_2.Ank_4.Ank_5.Arm_2.BAR_3.C2-set_2.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail.EF-hand_like.EGF_2.EGF_3.Ephrin_rec_like.G-patch_2.GST_C.GST_C_2.GST_C_3.GTP_EFTU.HEAT_2.HEAT_EZ.Histone_H2A_C.Ig_3.Kelch_3.Kelch_4.Kelch_5.Kelch_6.LRR_4.LRR_5.LRR_9.Ldl_recept_b.PAS_11.PAS_9.PHD_2.Peptidase_C14.Ribosomal_L7Ae.SH3_2.TPR_12.TPR_14.TPR_17.TPR_19.TPR_2.TSP_1.Tubulin_C.ig.zf-C2H2_4.zf-C3HC4_2.zf-C3HC4_3.zf-C3HC4_4.zf-H2C2_5.zf-HC5HC2H.zf-HC5HC2H_2.zf-MYND.zf-RING_UBOX.zf-met
+224,5575,119,cellular_component,Neur_chan_memb.SRCR.EamA.MAM.Cadherin.Syntaxin.Galactosyl_T.Neur_chan_LBD.RYDR_ITPR.Zip.AA_permease_2.MIP.HRM.Cys_rich_FGFR.SSF.Lig_chan-Glu_bd.Cadherin_C.Lig_chan.GPS.PSI.AA_permease.MHC_II_alpha.MARVEL.Ion_trans.Frizzled.OATP.TNF.MHC_II_beta.CD225.EMP24_GP25L.SNF.MFS_1.Sugar_tr.Sulfate_transp.Na_H_Exchanger.TRAM_LAG1_CLN8.7tm_2.7tm_3.7tm_1.Tetraspannin.CIMR.Calx-beta.Sulfotransfer_2.HlyIII.TMC.PMP22_Claudin.IRK.CD20.ABC_membrane.Na_Ca_ex.TAS2R.Claudin_2.zf-C4.bZIP_Maf.Cyclin_C.Pre-SET.SSXRD.zf-NF-X1.zf-C2HC.Linker_histone.MBT.SAM_PNT.Med26.NAP.HSF_DNA-bind.T-box.Gla.ANATO.A2M_recep.fn1.Defensin_beta_2.IGFBP.WAP.IL8.wnt.Interferon.Cofilin_ADF.Peptidase_C2.NTF2.MH1.zf-B_box.Ribosomal_S4.KRAB.Myosin_head.Myosin_tail_1.Myosin_N.BAR.Involucrin.Keratin_B2_2.MyTH4.Plectin.Peptidase_M10.ADAM_spacer1.A2M_comp.Serum_albumin.E2F_TDP.G-gamma.Proteasome.Dynein_heavy.Filament.Xin.Adaptin_N.7TM_GPCR_Srsx.7tm_4.A2M_N_2.ADAM_CR.Aa_trans.BAR_3.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail.Cyclin_N.Cys_knot.Ion_trans_2.Keratin_2_head.PSI_integrin.Ribosomal_L7Ae.Sulfotransfer_3
+225,43167,102,ion binding,zf-C4.GATA.RINGv.ZZ.APOBEC_N.zf-TRAF.zf-AN1.Peptidase_M10.LIM.Peptidase_M14.TFIIS_C.zf-RING_11.Pre-SET.zf-NF-X1.Peptidase_M1.zf-C2HC.zf-RanBP.zf-B_box.zf-UBP.zf-RING_2.zf-RING_5.zf-FCS.zf-CXXC.zf-rbx1.zf-CCHC.zf-A20.Myosin_head.Pkinase_C.ResIII.Cpn60_TCP1.tRNA-synt_1.ABC_tran.AAA.SNF2_N.AAA_5.MutS_V.DEAD.ABC_membrane.Kinesin.Myosin_N.Cadherin.Gla.EGF_CA.Annexin.Cadherin_C.TSP_3.EF-hand_1.EF-hand_5.EF-hand_7.EF-hand_6.EF-hand_8.HMA.zf-C2H2.zf-C2H2_6.zf-C3HC4.FYVE.E1-E2_ATPase.zf-CCCH.zf-H2C2_2.Metallothio.Ras.Septin.MMR_HSR1.GBP.Arf.Roc.GTP_EFTU_D2.PX.p450.Aminotran_1_2.Acyl-CoA_dh_N.AAA_11.AAA_12.AAA_17.AAA_18.AAA_33.AAA_6.AAA_7.AAA_8.AAA_9.APOBEC_C.Acyl-CoA_dh_2.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail.EF-hand_like.EGF_2.EGF_3.GTP_EFTU.Peptidase_C14.TSP_1.zf-C2H2_4.zf-C3HC4_2.zf-C3HC4_3.zf-C3HC4_4.zf-H2C2_5.zf-HC5HC2H.zf-HC5HC2H_2.zf-MYND.zf-RING_UBOX.zf-met
+226,43169,67,cation binding,zf-C4.GATA.RINGv.ZZ.APOBEC_N.zf-TRAF.zf-AN1.Peptidase_M10.LIM.Peptidase_M14.TFIIS_C.zf-RING_11.Pre-SET.zf-NF-X1.Peptidase_M1.zf-C2HC.zf-RanBP.zf-B_box.zf-UBP.zf-RING_2.zf-RING_5.zf-FCS.zf-CXXC.zf-rbx1.zf-CCHC.zf-A20.Cadherin.Gla.EGF_CA.Annexin.Cadherin_C.TSP_3.EF-hand_1.EF-hand_5.EF-hand_7.EF-hand_6.EF-hand_8.HMA.zf-C2H2.zf-C2H2_6.zf-C3HC4.FYVE.E1-E2_ATPase.zf-CCCH.zf-H2C2_2.Metallothio.p450.APOBEC_C.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail.EF-hand_like.EGF_2.EGF_3.Peptidase_C14.TSP_1.zf-C2H2_4.zf-C3HC4_2.zf-C3HC4_3.zf-C3HC4_4.zf-H2C2_5.zf-HC5HC2H.zf-HC5HC2H_2.zf-MYND.zf-RING_UBOX.zf-met
+227,46914,39,transition metal ion binding,zf-C4.GATA.RINGv.ZZ.APOBEC_N.zf-TRAF.zf-AN1.Peptidase_M10.LIM.Peptidase_M14.TFIIS_C.zf-RING_11.Pre-SET.zf-NF-X1.Peptidase_M1.zf-C2HC.zf-RanBP.zf-B_box.zf-UBP.zf-RING_2.zf-RING_5.zf-FCS.zf-CXXC.zf-rbx1.zf-CCHC.zf-A20.p450.APOBEC_C.Peptidase_C14.zf-C2H2_4.zf-C3HC4_2.zf-C3HC4_3.zf-C3HC4_4.zf-H2C2_5.zf-HC5HC2H.zf-HC5HC2H_2.zf-MYND.zf-RING_UBOX.zf-met
+228,31224,28,intrinsic component of membrane,CD225.EMP24_GP25L.SNF.EamA.MFS_1.Sugar_tr.Sulfate_transp.Na_H_Exchanger.TRAM_LAG1_CLN8.7tm_2.7tm_3.7tm_1.Tetraspannin.CIMR.Calx-beta.Sulfotransfer_2.HlyIII.TMC.PMP22_Claudin.IRK.CD20.ABC_membrane.Na_Ca_ex.TAS2R.Claudin_2.7TM_GPCR_Srsx.7tm_4.Sulfotransfer_3
+229,44425,32,membrane part,CD225.EMP24_GP25L.SNF.EamA.MFS_1.Sugar_tr.Sulfate_transp.Na_H_Exchanger.TRAM_LAG1_CLN8.7tm_2.7tm_3.7tm_1.Tetraspannin.CIMR.Calx-beta.Sulfotransfer_2.HlyIII.TMC.PMP22_Claudin.IRK.CD20.ABC_membrane.Na_Ca_ex.TAS2R.Claudin_2.MHC_II_alpha.MHC_II_beta.G-gamma.Adaptin_N.7TM_GPCR_Srsx.7tm_4.Sulfotransfer_3
+230,6139,32,nucleobase-containing compound metabolic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.tRNA-synt_1.Anticodon_1.NDK.TFIIS_C.TAF.tRNA_int_endo.Guanylate_cyc.MutS_V.Guanylate_kin
+231,6725,32,cellular aromatic compound metabolic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.tRNA-synt_1.Anticodon_1.NDK.TFIIS_C.TAF.tRNA_int_endo.Guanylate_cyc.MutS_V.Guanylate_kin
+232,6807,32,nitrogen compound metabolic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.tRNA-synt_1.Anticodon_1.NDK.TFIIS_C.TAF.tRNA_int_endo.Guanylate_cyc.MutS_V.Guanylate_kin
+233,8150,188,biological_process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.2OG-FeII_Oxy_3.NAD_binding_1.ADH_zinc_N.Pyr_redox_2.Aldedh.Acyl-CoA_dh_N.Acyl-CoA_dh_M.Acyl-CoA_dh_1.p450.ADH_N.EMP24_GP25L.Neur_chan_LBD.MIP.NTF2.SSF.CIMR.AA_permease.OATP.ABC_membrane.MFS_1.Sugar_tr.Na_H_Exchanger.Zip.Ion_trans.Na_Ca_ex.ECH_1.Methyltransf_11.Acyltransferase.AMP-binding.Sulfatase.UDPGT.PI-PLC-Y.HR1.TIR_2.RhoGAP.Death.PDEase_I.NCD3G.7tm_2.7tm_3.7tm_1.G-alpha.G-gamma.TAS2R.SOCS_box.Guanylate_cyc.DCX.C1_1.DEP.Somatomedin_B.MHC_II_alpha.IL8.MHC_I_C.TNF.MHC_II_beta.Peptidase_C1.Peptidase_M10.Trypsin.Peptidase_M14.Peptidase_C2.Reprolysin.Ras.Roc.RasGEF.IBN_N.Adaptin_N.Clathrin.Pkinase_Tyr.Pkinase_C.Linker_histone.NAP.Neur_chan_memb.APC_r.wnt.tRNA-synt_1.Anticodon_1.HMA.FKBP_C.Pro_isomerase.Y_phosphatase.DSPc.Galactosyl_T.Glyco_transf_29.Dynein_heavy.Kinesin.Glutaredoxin.Thioredoxin.Bcl-2.CARD.Xlink.TSP_3.Cadherin.Cadherin_C.NDK.IGFBP.Defensin_beta_2.BTB_2.TGFb_propeptide.Sec7.Sulfate_transp.Spin-Ssty.UCH.Pre-SET.IRK.SNF.Involucrin.TFIIS_C.TAF.Transglut_C.RhoGEF.tRNA_int_endo.GRIP.AA_permease_2.Interferon.Phospholip_A2_1.Ran_BP1.TTL.Xin.Glyco_hydro_31.LCE.Aminotran_1_2.Snf7.MreB_Mbl.CD225.Proteasome.MutS_V.PPTA.RYDR_ITPR.RasGAP.Calx-beta.Frizzled.7TM_GPCR_Srsx.7tm_4.AMP-binding_C.Aa_trans.Acyl-CoA_dh_2.C1-set.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail.Clathrin_propel.Glyco_transf_7C.Guanylate_kin.Ion_trans_2.MHC_I.Methyltransf_12.Methyltransf_23.Methyltransf_25.Methyltransf_31.NAD_binding_8.PI-PLC-X.Peptidase_C14.Pro-rich.RasGEF_N.Reprolysin_2.Reprolysin_3.Reprolysin_5.TSP_1.Thioredoxin_6.Transglut_core.Trypsin_2.UCH_1.adh_short.adh_short_C2
+234,9059,30,macromolecule biosynthetic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.tRNA-synt_1.Anticodon_1.Galactosyl_T.Glyco_transf_29.TFIIS_C.TAF.Glyco_transf_7C
+235,9889,23,regulation of biosynthetic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP
+236,9987,96,cellular process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.PI-PLC-Y.HR1.TIR_2.RhoGAP.Death.PDEase_I.NCD3G.7tm_2.7tm_3.7tm_1.G-alpha.G-gamma.TAS2R.SOCS_box.Guanylate_cyc.DCX.C1_1.DEP.Ras.Roc.RasGEF.Pkinase_Tyr.Pkinase_C.Linker_histone.NAP.APC_r.wnt.tRNA-synt_1.Anticodon_1.FKBP_C.Pro_isomerase.Y_phosphatase.DSPc.Galactosyl_T.Glyco_transf_29.Dynein_heavy.Kinesin.Glutaredoxin.Thioredoxin.Bcl-2.CARD.NDK.IGFBP.BTB_2.Sec7.UCH.Pre-SET.Involucrin.TFIIS_C.TAF.Transglut_C.RhoGEF.tRNA_int_endo.TTL.Xin.MreB_Mbl.Proteasome.MutS_V.PPTA.Phospholip_A2_1.Calx-beta.Frizzled.7TM_GPCR_Srsx.7tm_4.C1-set.Glyco_transf_7C.Guanylate_kin.PI-PLC-X.Pro-rich.RasGEF_N.Thioredoxin_6.Transglut_core.UCH_1
+237,10467,28,gene expression,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.tRNA-synt_1.Anticodon_1.TFIIS_C.TAF.tRNA_int_endo
+238,10468,23,regulation of gene expression,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP
+239,10556,23,regulation of macromolecule biosynthetic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP
+240,16070,28,RNA metabolic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.tRNA-synt_1.Anticodon_1.TFIIS_C.TAF.tRNA_int_endo
+241,18130,28,heterocycle biosynthetic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.NDK.TFIIS_C.TAF.Guanylate_cyc.Guanylate_kin
+242,19219,23,regulation of nucleobase-containing compound metabolic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP
+243,19222,23,regulation of metabolic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP
+244,19438,28,aromatic compound biosynthetic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.NDK.TFIIS_C.TAF.Guanylate_cyc.Guanylate_kin
+245,31323,23,regulation of cellular metabolic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP
+246,31326,23,regulation of cellular biosynthetic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP
+247,32774,25,RNA biosynthetic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.TFIIS_C.TAF
+248,34641,32,cellular nitrogen compound metabolic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.tRNA-synt_1.Anticodon_1.NDK.TFIIS_C.TAF.tRNA_int_endo.Guanylate_cyc.MutS_V.Guanylate_kin
+249,34645,30,cellular macromolecule biosynthetic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.tRNA-synt_1.Anticodon_1.Galactosyl_T.Glyco_transf_29.TFIIS_C.TAF.Glyco_transf_7C
+250,34654,28,nucleobase-containing compound biosynthetic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.NDK.TFIIS_C.TAF.Guanylate_cyc.Guanylate_kin
+251,43170,57,macromolecule metabolic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.Peptidase_C1.Peptidase_M10.Trypsin.Peptidase_M14.Peptidase_C2.Reprolysin.Pkinase_Tyr.Pkinase_C.tRNA-synt_1.Anticodon_1.Y_phosphatase.DSPc.Galactosyl_T.Glyco_transf_29.UCH.Pre-SET.TFIIS_C.TAF.Transglut_C.tRNA_int_endo.TTL.Proteasome.MutS_V.PPTA.Pro_isomerase.Glyco_transf_7C.Peptidase_C14.Pro-rich.Reprolysin_2.Reprolysin_3.Reprolysin_5.Transglut_core.Trypsin_2.UCH_1
+252,44237,50,cellular metabolic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.Pkinase_Tyr.Pkinase_C.tRNA-synt_1.Anticodon_1.Y_phosphatase.DSPc.Galactosyl_T.Glyco_transf_29.NDK.UCH.Pre-SET.TFIIS_C.TAF.Transglut_C.tRNA_int_endo.TTL.Guanylate_cyc.Proteasome.MutS_V.PPTA.Pro_isomerase.Phospholip_A2_1.Glyco_transf_7C.Guanylate_kin.Pro-rich.Transglut_core.UCH_1
+253,44238,64,primary metabolic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.Peptidase_C1.Peptidase_M10.Trypsin.Peptidase_M14.Peptidase_C2.Reprolysin.Pkinase_Tyr.Pkinase_C.tRNA-synt_1.Anticodon_1.Y_phosphatase.DSPc.Galactosyl_T.Glyco_transf_29.NDK.UCH.Pre-SET.TFIIS_C.TAF.Transglut_C.tRNA_int_endo.TTL.Glyco_hydro_31.Guanylate_cyc.Proteasome.MutS_V.PPTA.PI-PLC-Y.Pro_isomerase.Phospholip_A2_1.Glyco_transf_7C.Guanylate_kin.PI-PLC-X.Peptidase_C14.Pro-rich.Reprolysin_2.Reprolysin_3.Reprolysin_5.Transglut_core.Trypsin_2.UCH_1
+254,44249,33,cellular biosynthetic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.tRNA-synt_1.Anticodon_1.Galactosyl_T.Glyco_transf_29.NDK.TFIIS_C.TAF.Guanylate_cyc.Glyco_transf_7C.Guanylate_kin
+255,44260,46,cellular macromolecule metabolic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.Pkinase_Tyr.Pkinase_C.tRNA-synt_1.Anticodon_1.Y_phosphatase.DSPc.Galactosyl_T.Glyco_transf_29.UCH.Pre-SET.TFIIS_C.TAF.Transglut_C.tRNA_int_endo.TTL.Proteasome.MutS_V.PPTA.Pro_isomerase.Glyco_transf_7C.Pro-rich.Transglut_core.UCH_1
+256,44271,30,cellular nitrogen compound biosynthetic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.tRNA-synt_1.Anticodon_1.NDK.TFIIS_C.TAF.Guanylate_cyc.Guanylate_kin
+257,46483,32,heterocycle metabolic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.tRNA-synt_1.Anticodon_1.NDK.TFIIS_C.TAF.tRNA_int_endo.Guanylate_cyc.MutS_V.Guanylate_kin
+258,50789,61,regulation of biological process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.PI-PLC-Y.HR1.TIR_2.RhoGAP.Death.PDEase_I.NCD3G.7tm_2.7tm_3.7tm_1.G-alpha.G-gamma.TAS2R.SOCS_box.Guanylate_cyc.DCX.C1_1.DEP.Ras.Roc.RasGEF.APC_r.wnt.Glutaredoxin.Thioredoxin.Bcl-2.CARD.IGFBP.Sec7.RhoGEF.Frizzled.7TM_GPCR_Srsx.7tm_4.C1-set.Guanylate_kin.PI-PLC-X.RasGEF_N.Thioredoxin_6
+259,50794,61,regulation of cellular process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.PI-PLC-Y.HR1.TIR_2.RhoGAP.Death.PDEase_I.NCD3G.7tm_2.7tm_3.7tm_1.G-alpha.G-gamma.TAS2R.SOCS_box.Guanylate_cyc.DCX.C1_1.DEP.Ras.Roc.RasGEF.APC_r.wnt.Glutaredoxin.Thioredoxin.Bcl-2.CARD.IGFBP.Sec7.RhoGEF.Frizzled.7TM_GPCR_Srsx.7tm_4.C1-set.Guanylate_kin.PI-PLC-X.RasGEF_N.Thioredoxin_6
+260,51171,23,regulation of nitrogen compound metabolic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP
+261,51252,23,regulation of RNA metabolic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP
+262,60255,23,regulation of macromolecule metabolic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP
+263,65007,62,biological regulation,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.PI-PLC-Y.HR1.TIR_2.RhoGAP.Death.PDEase_I.NCD3G.7tm_2.7tm_3.7tm_1.G-alpha.G-gamma.TAS2R.SOCS_box.Guanylate_cyc.DCX.C1_1.DEP.Ras.Roc.RasGEF.APC_r.wnt.Glutaredoxin.Thioredoxin.Bcl-2.CARD.IGFBP.Sec7.RhoGEF.RasGAP.Frizzled.7TM_GPCR_Srsx.7tm_4.C1-set.Guanylate_kin.PI-PLC-X.RasGEF_N.Thioredoxin_6
+264,71704,64,organic substance metabolic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.Peptidase_C1.Peptidase_M10.Trypsin.Peptidase_M14.Peptidase_C2.Reprolysin.Pkinase_Tyr.Pkinase_C.tRNA-synt_1.Anticodon_1.Y_phosphatase.DSPc.Galactosyl_T.Glyco_transf_29.NDK.UCH.Pre-SET.TFIIS_C.TAF.Transglut_C.tRNA_int_endo.TTL.Glyco_hydro_31.Guanylate_cyc.Proteasome.MutS_V.PPTA.PI-PLC-Y.Pro_isomerase.Phospholip_A2_1.Glyco_transf_7C.Guanylate_kin.PI-PLC-X.Peptidase_C14.Pro-rich.Reprolysin_2.Reprolysin_3.Reprolysin_5.Transglut_core.Trypsin_2.UCH_1
+265,80090,23,regulation of primary metabolic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP
+266,90304,29,nucleic acid metabolic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.tRNA-synt_1.Anticodon_1.TFIIS_C.TAF.tRNA_int_endo.MutS_V
+267,97659,25,nucleic acid-templated transcription,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.TFIIS_C.TAF
+268,1901360,32,organic cyclic compound metabolic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.tRNA-synt_1.Anticodon_1.NDK.TFIIS_C.TAF.tRNA_int_endo.Guanylate_cyc.MutS_V.Guanylate_kin
+269,1901362,28,organic cyclic compound biosynthetic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.NDK.TFIIS_C.TAF.Guanylate_cyc.Guanylate_kin
+270,1901576,33,organic substance biosynthetic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP.tRNA-synt_1.Anticodon_1.Galactosyl_T.Glyco_transf_29.NDK.TFIIS_C.TAF.Guanylate_cyc.Glyco_transf_7C.Guanylate_kin
+271,1903506,23,regulation of nucleic acid-templated transcription,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP
+272,2000112,23,regulation of cellular macromolecule biosynthetic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP
+273,2001141,23,regulation of RNA biosynthetic process,Hairy_orange.zf-C4.GATA.bZIP_Maf.CSD.SSXRD.bZIP_1.bZIP_2.zf-NF-X1.Pou.PAS.zf-C2HC.MH1.SCAN.MBT.Ets.Hormone_recep.Forkhead.KRAB.HSF_DNA-bind.T-box.Homeobox_KN.E2F_TDP
+274,17076,33,purine nucleotide binding,Myosin_head.Pkinase_C.ResIII.Cpn60_TCP1.tRNA-synt_1.ABC_tran.AAA.SNF2_N.AAA_5.Pkinase.MutS_V.DEAD.ABC_membrane.Kinesin.Myosin_N.Ras.Septin.MMR_HSR1.GBP.Arf.Roc.GTP_EFTU_D2.G-alpha.AAA_11.AAA_12.AAA_17.AAA_18.AAA_33.AAA_6.AAA_7.AAA_8.AAA_9.GTP_EFTU
+275,30554,24,adenyl nucleotide binding,Myosin_head.Pkinase_C.ResIII.Cpn60_TCP1.tRNA-synt_1.ABC_tran.AAA.SNF2_N.AAA_5.Pkinase.MutS_V.DEAD.ABC_membrane.Kinesin.Myosin_N.AAA_11.AAA_12.AAA_17.AAA_18.AAA_33.AAA_6.AAA_7.AAA_8.AAA_9
+276,32553,32,ribonucleotide binding,Myosin_head.Pkinase_C.ResIII.Cpn60_TCP1.tRNA-synt_1.ABC_tran.AAA.SNF2_N.AAA_5.Pkinase.MutS_V.DEAD.ABC_membrane.Kinesin.Myosin_N.Ras.Septin.MMR_HSR1.GBP.Arf.Roc.GTP_EFTU_D2.AAA_11.AAA_12.AAA_17.AAA_18.AAA_33.AAA_6.AAA_7.AAA_8.AAA_9.GTP_EFTU
+277,32555,32,purine ribonucleotide binding,Myosin_head.Pkinase_C.ResIII.Cpn60_TCP1.tRNA-synt_1.ABC_tran.AAA.SNF2_N.AAA_5.Pkinase.MutS_V.DEAD.ABC_membrane.Kinesin.Myosin_N.Ras.Septin.MMR_HSR1.GBP.Arf.Roc.GTP_EFTU_D2.AAA_11.AAA_12.AAA_17.AAA_18.AAA_33.AAA_6.AAA_7.AAA_8.AAA_9.GTP_EFTU
+278,32559,24,adenyl ribonucleotide binding,Myosin_head.Pkinase_C.ResIII.Cpn60_TCP1.tRNA-synt_1.ABC_tran.AAA.SNF2_N.AAA_5.Pkinase.MutS_V.DEAD.ABC_membrane.Kinesin.Myosin_N.AAA_11.AAA_12.AAA_17.AAA_18.AAA_33.AAA_6.AAA_7.AAA_8.AAA_9
+279,35639,32,purine ribonucleoside triphosphate binding,Myosin_head.Pkinase_C.ResIII.Cpn60_TCP1.tRNA-synt_1.ABC_tran.AAA.SNF2_N.AAA_5.Pkinase.MutS_V.DEAD.ABC_membrane.Kinesin.Myosin_N.Ras.Septin.MMR_HSR1.GBP.Arf.Roc.GTP_EFTU_D2.AAA_11.AAA_12.AAA_17.AAA_18.AAA_33.AAA_6.AAA_7.AAA_8.AAA_9.GTP_EFTU
+280,36094,38,small molecule binding,Myosin_head.Pkinase_C.ResIII.Cpn60_TCP1.tRNA-synt_1.ABC_tran.AAA.SNF2_N.AAA_5.Pkinase.MutS_V.DEAD.ABC_membrane.Kinesin.Myosin_N.Ras.Septin.MMR_HSR1.GBP.Arf.Roc.GTP_EFTU_D2.E1-E2_ATPase.Anticodon_1.G-alpha.Aminotran_1_2.Acyl-CoA_dh_N.AAA_11.AAA_12.AAA_17.AAA_18.AAA_33.AAA_6.AAA_7.AAA_8.AAA_9.Acyl-CoA_dh_2.GTP_EFTU
+281,43168,37,anion binding,Myosin_head.Pkinase_C.ResIII.Cpn60_TCP1.tRNA-synt_1.ABC_tran.AAA.SNF2_N.AAA_5.Pkinase.MutS_V.DEAD.ABC_membrane.Kinesin.Myosin_N.Ras.Septin.MMR_HSR1.GBP.Arf.Roc.GTP_EFTU_D2.PX.Annexin.Aminotran_1_2.Acyl-CoA_dh_N.AAA_11.AAA_12.AAA_17.AAA_18.AAA_33.AAA_6.AAA_7.AAA_8.AAA_9.Acyl-CoA_dh_2.GTP_EFTU
+282,97159,78,organic cyclic compound binding,Myosin_head.Pkinase_C.ResIII.Cpn60_TCP1.tRNA-synt_1.ABC_tran.AAA.SNF2_N.AAA_5.Pkinase.MutS_V.DEAD.ABC_membrane.Kinesin.Myosin_N.Hairy_orange.CENP-B_N.Homeobox.bZIP_Maf.CSD.ARID.Linker_histone.Histone.zf-CXXC.Homeobox_KN.CUT.zf-A20.zf-BED.DDE_1.S1.R3H.TFIIS_C.G-patch.THAP.KRAB.RRM_1.zf-CCHC.zf-C4.GATA.bZIP_1.bZIP_2.SAM_PNT.Ets.Forkhead.HSF_DNA-bind.Ras.Septin.MMR_HSR1.GBP.Arf.Roc.GTP_EFTU_D2.S4.PUF.KH_1.MIF4G.E1-E2_ATPase.Anticodon_1.Globin.p450.G-alpha.Ribosomal_S4.Aminotran_1_2.Acyl-CoA_dh_N.AAA_11.AAA_12.AAA_17.AAA_18.AAA_33.AAA_6.AAA_7.AAA_8.AAA_9.Acyl-CoA_dh_2.G-patch_2.GTP_EFTU.Histone_H2A_C.Ribosomal_L7Ae
+283,97367,33,carbohydrate derivative binding,Myosin_head.Pkinase_C.ResIII.Cpn60_TCP1.tRNA-synt_1.ABC_tran.AAA.SNF2_N.AAA_5.Pkinase.MutS_V.DEAD.ABC_membrane.Kinesin.Myosin_N.Ras.Septin.MMR_HSR1.GBP.Arf.Roc.GTP_EFTU_D2.Xlink.AAA_11.AAA_12.AAA_17.AAA_18.AAA_33.AAA_6.AAA_7.AAA_8.AAA_9.GTP_EFTU
+284,1901265,37,nucleoside phosphate binding,Myosin_head.Pkinase_C.ResIII.Cpn60_TCP1.tRNA-synt_1.ABC_tran.AAA.SNF2_N.AAA_5.Pkinase.MutS_V.DEAD.ABC_membrane.Kinesin.Myosin_N.Ras.Septin.MMR_HSR1.GBP.Arf.Roc.GTP_EFTU_D2.E1-E2_ATPase.Anticodon_1.G-alpha.Acyl-CoA_dh_N.AAA_11.AAA_12.AAA_17.AAA_18.AAA_33.AAA_6.AAA_7.AAA_8.AAA_9.Acyl-CoA_dh_2.GTP_EFTU
+285,1901363,78,heterocyclic compound binding,Myosin_head.Pkinase_C.ResIII.Cpn60_TCP1.tRNA-synt_1.ABC_tran.AAA.SNF2_N.AAA_5.Pkinase.MutS_V.DEAD.ABC_membrane.Kinesin.Myosin_N.Hairy_orange.CENP-B_N.Homeobox.bZIP_Maf.CSD.ARID.Linker_histone.Histone.zf-CXXC.Homeobox_KN.CUT.zf-A20.zf-BED.DDE_1.S1.R3H.TFIIS_C.G-patch.THAP.KRAB.RRM_1.zf-CCHC.zf-C4.GATA.bZIP_1.bZIP_2.SAM_PNT.Ets.Forkhead.HSF_DNA-bind.Ras.Septin.MMR_HSR1.GBP.Arf.Roc.GTP_EFTU_D2.S4.PUF.KH_1.MIF4G.E1-E2_ATPase.Anticodon_1.Globin.p450.G-alpha.Ribosomal_S4.Aminotran_1_2.Acyl-CoA_dh_N.AAA_11.AAA_12.AAA_17.AAA_18.AAA_33.AAA_6.AAA_7.AAA_8.AAA_9.Acyl-CoA_dh_2.G-patch_2.GTP_EFTU.Histone_H2A_C.Ribosomal_L7Ae
+286,5623,42,cell,zf-C4.bZIP_Maf.Cyclin_C.Pre-SET.SSXRD.zf-NF-X1.zf-C2HC.Linker_histone.MBT.SAM_PNT.Med26.NAP.HSF_DNA-bind.T-box.Cofilin_ADF.Peptidase_C2.NTF2.MH1.zf-B_box.Ribosomal_S4.KRAB.Myosin_head.Myosin_tail_1.Myosin_N.BAR.CIMR.Involucrin.Keratin_B2_2.MHC_II_alpha.MHC_II_beta.MyTH4.Plectin.E2F_TDP.G-gamma.Proteasome.Dynein_heavy.Filament.Adaptin_N.BAR_3.Cyclin_N.Keratin_2_head.Ribosomal_L7Ae
+287,43231,15,intracellular membrane-bounded organelle,zf-C4.bZIP_Maf.Cyclin_C.Pre-SET.SSXRD.zf-NF-X1.zf-C2HC.Linker_histone.MBT.SAM_PNT.Med26.NAP.HSF_DNA-bind.T-box.Cyclin_N
+288,43226,24,organelle,zf-C4.bZIP_Maf.Cyclin_C.Pre-SET.SSXRD.zf-NF-X1.zf-C2HC.Linker_histone.MBT.SAM_PNT.Med26.NAP.HSF_DNA-bind.T-box.Myosin_head.Myosin_tail_1.Myosin_N.Keratin_B2_2.MyTH4.Plectin.Dynein_heavy.Filament.Cyclin_N.Keratin_2_head
+289,43227,15,membrane-bounded organelle,zf-C4.bZIP_Maf.Cyclin_C.Pre-SET.SSXRD.zf-NF-X1.zf-C2HC.Linker_histone.MBT.SAM_PNT.Med26.NAP.HSF_DNA-bind.T-box.Cyclin_N
+290,43229,24,intracellular organelle,zf-C4.bZIP_Maf.Cyclin_C.Pre-SET.SSXRD.zf-NF-X1.zf-C2HC.Linker_histone.MBT.SAM_PNT.Med26.NAP.HSF_DNA-bind.T-box.Myosin_head.Myosin_tail_1.Myosin_N.Keratin_B2_2.MyTH4.Plectin.Dynein_heavy.Filament.Cyclin_N.Keratin_2_head
+291,44424,32,intracellular part,zf-C4.bZIP_Maf.Cyclin_C.Pre-SET.SSXRD.zf-NF-X1.zf-C2HC.Linker_histone.MBT.SAM_PNT.Med26.NAP.HSF_DNA-bind.T-box.Myosin_head.Myosin_tail_1.Myosin_N.BAR.CIMR.Involucrin.Keratin_B2_2.MyTH4.Plectin.E2F_TDP.G-gamma.Proteasome.Dynein_heavy.Filament.Adaptin_N.BAR_3.Cyclin_N.Keratin_2_head
+292,44464,42,cell part,zf-C4.bZIP_Maf.Cyclin_C.Pre-SET.SSXRD.zf-NF-X1.zf-C2HC.Linker_histone.MBT.SAM_PNT.Med26.NAP.HSF_DNA-bind.T-box.Cofilin_ADF.Peptidase_C2.NTF2.MH1.zf-B_box.Ribosomal_S4.KRAB.Myosin_head.Myosin_tail_1.Myosin_N.BAR.CIMR.Involucrin.Keratin_B2_2.MHC_II_alpha.MHC_II_beta.MyTH4.Plectin.E2F_TDP.G-gamma.Proteasome.Dynein_heavy.Filament.Adaptin_N.BAR_3.Cyclin_N.Keratin_2_head.Ribosomal_L7Ae
+293,1071,13,nucleic acid binding transcription factor activity,zf-C4.GATA.bZIP_1.bZIP_2.zf-NF-X1.Pou.zf-C2HC.SCAN.Ets.Forkhead.HSF_DNA-bind.T-box.E2F_TDP
+294,44699,71,single-organism process,2OG-FeII_Oxy_3.NAD_binding_1.ADH_zinc_N.Pyr_redox_2.Aldedh.Acyl-CoA_dh_N.Acyl-CoA_dh_M.Acyl-CoA_dh_1.p450.ADH_N.PI-PLC-Y.HR1.RA.TIR_2.RhoGAP.Death.PDEase_I.NCD3G.7tm_2.7tm_3.7tm_1.G-alpha.G-gamma.TAS2R.SOCS_box.Guanylate_cyc.DCX.C1_1.DEP.Ras.Roc.RasGEF.APC_r.wnt.tRNA-synt_1.Anticodon_1.Galactosyl_T.Glyco_transf_29.Dynein_heavy.Kinesin.Glutaredoxin.Thioredoxin.Bcl-2.CARD.NDK.IGFBP.Sec7.Sulfate_transp.Spin-Ssty.SNF.Involucrin.RhoGEF.AA_permease_2.Phospholip_A2_1.Xin.MreB_Mbl.Hormone_recep.Frizzled.7TM_GPCR_Srsx.7tm_4.Aa_trans.Acyl-CoA_dh_2.C1-set.Glyco_transf_7C.Guanylate_kin.NAD_binding_8.PI-PLC-X.RasGEF_N.Thioredoxin_6.adh_short.adh_short_C2
+295,44710,25,single-organism metabolic process,2OG-FeII_Oxy_3.NAD_binding_1.ADH_zinc_N.Pyr_redox_2.Aldedh.Acyl-CoA_dh_N.Acyl-CoA_dh_M.Acyl-CoA_dh_1.p450.ADH_N.tRNA-synt_1.Anticodon_1.Galactosyl_T.Glyco_transf_29.NDK.Guanylate_cyc.PI-PLC-Y.Phospholip_A2_1.Acyl-CoA_dh_2.Glyco_transf_7C.Guanylate_kin.NAD_binding_8.PI-PLC-X.adh_short.adh_short_C2
+296,51179,32,localization,EMP24_GP25L.Neur_chan_LBD.MIP.NTF2.SSF.CIMR.AA_permease.OATP.ABC_membrane.MFS_1.Sugar_tr.Na_H_Exchanger.Zip.Ion_trans.Na_Ca_ex.IBN_N.Adaptin_N.Clathrin.Neur_chan_memb.HMA.Sulfate_transp.IRK.SNF.GRIP.AA_permease_2.Phospholip_A2_1.Ran_BP1.Snf7.RYDR_ITPR.Aa_trans.Clathrin_propel.Ion_trans_2
+297,51234,32,establishment of localization,EMP24_GP25L.Neur_chan_LBD.MIP.NTF2.SSF.CIMR.AA_permease.OATP.ABC_membrane.MFS_1.Sugar_tr.Na_H_Exchanger.Zip.Ion_trans.Na_Ca_ex.IBN_N.Adaptin_N.Clathrin.Neur_chan_memb.HMA.Sulfate_transp.IRK.SNF.GRIP.AA_permease_2.Phospholip_A2_1.Ran_BP1.Snf7.RYDR_ITPR.Aa_trans.Clathrin_propel.Ion_trans_2
+298,23052,35,signaling,PI-PLC-Y.HR1.RA.TIR_2.RhoGAP.TIR.Death.PDEase_I.NCD3G.7tm_2.7tm_3.7tm_1.G-alpha.G-gamma.TAS2R.SOCS_box.Guanylate_cyc.DCX.C1_1.DEP.Ras.Roc.RasGEF.APC_r.wnt.Sec7.RhoGEF.Hormone_recep.Frizzled.7TM_GPCR_Srsx.7tm_4.C1-set.Guanylate_kin.PI-PLC-X.RasGEF_N
+299,44700,35,single organism signaling,PI-PLC-Y.HR1.RA.TIR_2.RhoGAP.TIR.Death.PDEase_I.NCD3G.7tm_2.7tm_3.7tm_1.G-alpha.G-gamma.TAS2R.SOCS_box.Guanylate_cyc.DCX.C1_1.DEP.Ras.Roc.RasGEF.APC_r.wnt.Sec7.RhoGEF.Hormone_recep.Frizzled.7TM_GPCR_Srsx.7tm_4.C1-set.Guanylate_kin.PI-PLC-X.RasGEF_N
+300,50896,46,response to stimulus,PI-PLC-Y.HR1.RA.TIR_2.RhoGAP.TIR.Death.PDEase_I.NCD3G.7tm_2.7tm_3.7tm_1.G-alpha.G-gamma.TAS2R.SOCS_box.Guanylate_cyc.DCX.C1_1.DEP.Somatomedin_B.MHC_II_alpha.IL8.MHC_I_C.TNF.MHC_II_beta.Ras.Roc.RasGEF.APC_r.wnt.Defensin_beta_2.Sec7.RhoGEF.Interferon.CD225.Hormone_recep.MutS_V.Frizzled.7TM_GPCR_Srsx.7tm_4.C1-set.Guanylate_kin.MHC_I.PI-PLC-X.RasGEF_N
+301,51716,36,cellular response to stimulus,PI-PLC-Y.HR1.RA.TIR_2.RhoGAP.TIR.Death.PDEase_I.NCD3G.7tm_2.7tm_3.7tm_1.G-alpha.G-gamma.TAS2R.SOCS_box.Guanylate_cyc.DCX.C1_1.DEP.Ras.Roc.RasGEF.APC_r.wnt.Sec7.RhoGEF.Hormone_recep.MutS_V.Frizzled.7TM_GPCR_Srsx.7tm_4.C1-set.Guanylate_kin.PI-PLC-X.RasGEF_N
+302,1882,8,nucleoside binding,Ras.Septin.MMR_HSR1.GBP.Arf.Roc.GTP_EFTU_D2.GTP_EFTU
+303,1883,8,purine nucleoside binding,Ras.Septin.MMR_HSR1.GBP.Arf.Roc.GTP_EFTU_D2.GTP_EFTU
+304,32549,8,ribonucleoside binding,Ras.Septin.MMR_HSR1.GBP.Arf.Roc.GTP_EFTU_D2.GTP_EFTU
+305,32550,8,purine ribonucleoside binding,Ras.Septin.MMR_HSR1.GBP.Arf.Roc.GTP_EFTU_D2.GTP_EFTU
+306,32561,8,guanyl ribonucleotide binding,Ras.Septin.MMR_HSR1.GBP.Arf.Roc.GTP_EFTU_D2.GTP_EFTU
+307,2376,8,immune system process,Somatomedin_B.MHC_II_alpha.IL8.MHC_I_C.TNF.MHC_II_beta.Defensin_beta_2.MHC_I
+308,4872,13,receptor activity,HRM.NCD3G.7tm_2.7tm_3.7tm_1.TAS2R.Lig_chan-Glu_bd.SRCR.Somatomedin_B.Neur_chan_LBD.IRK.7TM_GPCR_Srsx.7tm_4
+309,4888,9,transmembrane signaling receptor activity,HRM.NCD3G.7tm_2.7tm_3.7tm_1.TAS2R.Lig_chan-Glu_bd.7TM_GPCR_Srsx.7tm_4
+310,38023,9,signaling receptor activity,HRM.NCD3G.7tm_2.7tm_3.7tm_1.TAS2R.Lig_chan-Glu_bd.7TM_GPCR_Srsx.7tm_4
+311,60089,13,molecular transducer activity,HRM.NCD3G.7tm_2.7tm_3.7tm_1.TAS2R.Lig_chan-Glu_bd.SRCR.Somatomedin_B.Neur_chan_LBD.IRK.7TM_GPCR_Srsx.7tm_4
+312,99600,11,transmembrane receptor activity,HRM.NCD3G.7tm_2.7tm_3.7tm_1.TAS2R.Lig_chan-Glu_bd.Neur_chan_LBD.IRK.7TM_GPCR_Srsx.7tm_4
+313,19538,30,protein metabolic process,Peptidase_C1.Peptidase_M10.Trypsin.Peptidase_M14.Peptidase_C2.Reprolysin.Pkinase_Tyr.Pkinase_C.tRNA-synt_1.Anticodon_1.Y_phosphatase.DSPc.Galactosyl_T.Glyco_transf_29.UCH.Pre-SET.Transglut_C.TTL.Proteasome.PPTA.Pro_isomerase.Glyco_transf_7C.Peptidase_C14.Pro-rich.Reprolysin_2.Reprolysin_3.Reprolysin_5.Transglut_core.Trypsin_2.UCH_1
+314,15629,3,actin cytoskeleton,Myosin_head.Myosin_tail_1.Myosin_N
+315,32991,12,macromolecular complex,Myosin_head.Myosin_tail_1.Myosin_N.MHC_II_alpha.MHC_II_beta.E2F_TDP.Linker_histone.G-gamma.Proteasome.Dynein_heavy.Adaptin_N.C4
+316,43228,10,non-membrane-bounded organelle,Myosin_head.Myosin_tail_1.Myosin_N.Keratin_B2_2.MyTH4.Plectin.Linker_histone.Dynein_heavy.Filament.Keratin_2_head
+317,43232,10,intracellular non-membrane-bounded organelle,Myosin_head.Myosin_tail_1.Myosin_N.Keratin_B2_2.MyTH4.Plectin.Linker_histone.Dynein_heavy.Filament.Keratin_2_head
+318,43234,11,protein complex,Myosin_head.Myosin_tail_1.Myosin_N.MHC_II_alpha.MHC_II_beta.E2F_TDP.G-gamma.Proteasome.Dynein_heavy.Adaptin_N.C4
+319,44422,8,organelle part,Myosin_head.Myosin_tail_1.Myosin_N.Keratin_B2_2.Linker_histone.Dynein_heavy.Filament.Keratin_2_head
+320,44430,7,cytoskeletal part,Myosin_head.Myosin_tail_1.Myosin_N.Keratin_B2_2.Dynein_heavy.Filament.Keratin_2_head
+321,44446,8,intracellular organelle part,Myosin_head.Myosin_tail_1.Myosin_N.Keratin_B2_2.Linker_histone.Dynein_heavy.Filament.Keratin_2_head
+322,4175,11,endopeptidase activity,Peptidase_M10.Reprolysin.ADAM_spacer1.Peptidase_C2.Proteasome.Trypsin.ADAM_CR.Reprolysin_2.Reprolysin_3.Reprolysin_5.Trypsin_2
+323,70011,16,"peptidase activity, acting on L-amino acid peptides",Peptidase_M10.Reprolysin.ADAM_spacer1.Peptidase_C1.Peptidase_M14.Peptidase_C2.UCH.Proteasome.Trypsin.ADAM_CR.Peptidase_C14.Reprolysin_2.Reprolysin_3.Reprolysin_5.Trypsin_2.UCH_1
+324,17111,21,nucleoside-triphosphatase activity,Myosin_head.Myosin_tail_1.Myosin_N.GBP.G-alpha.Tubulin.Dynein_heavy.Kinesin.ABC_tran.AAA_5.ABC_membrane.HA2.AAA_11.AAA_12.AAA_17.AAA_18.AAA_33.AAA_6.AAA_7.AAA_8.AAA_9
+325,16462,21,pyrophosphatase activity,Myosin_head.Myosin_tail_1.Myosin_N.GBP.G-alpha.Tubulin.Dynein_heavy.Kinesin.ABC_tran.AAA_5.ABC_membrane.HA2.AAA_11.AAA_12.AAA_17.AAA_18.AAA_33.AAA_6.AAA_7.AAA_8.AAA_9
+326,16817,21,"hydrolase activity, acting on acid anhydrides",Myosin_head.Myosin_tail_1.Myosin_N.GBP.G-alpha.Tubulin.Dynein_heavy.Kinesin.ABC_tran.AAA_5.ABC_membrane.HA2.AAA_11.AAA_12.AAA_17.AAA_18.AAA_33.AAA_6.AAA_7.AAA_8.AAA_9
+327,16818,21,"hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides",Myosin_head.Myosin_tail_1.Myosin_N.GBP.G-alpha.Tubulin.Dynein_heavy.Kinesin.ABC_tran.AAA_5.ABC_membrane.HA2.AAA_11.AAA_12.AAA_17.AAA_18.AAA_33.AAA_6.AAA_7.AAA_8.AAA_9
+328,8092,8,cytoskeletal protein binding,WH2.Cofilin_ADF.Xin.Microtub_bd.Kinesin.Tubulin-binding.Fascin.Tubulin_C
+329,8104,5,protein localization,IBN_N.Adaptin_N.Clathrin.GRIP.Clathrin_propel
+330,15031,5,protein transport,IBN_N.Adaptin_N.Clathrin.GRIP.Clathrin_propel
+331,15833,5,peptide transport,IBN_N.Adaptin_N.Clathrin.GRIP.Clathrin_propel
+332,33036,6,macromolecule localization,IBN_N.Adaptin_N.Clathrin.GRIP.Phospholip_A2_1.Clathrin_propel
+333,34613,5,cellular protein localization,IBN_N.Adaptin_N.Clathrin.GRIP.Clathrin_propel
+334,42886,5,amide transport,IBN_N.Adaptin_N.Clathrin.GRIP.Clathrin_propel
+335,45184,5,establishment of protein localization,IBN_N.Adaptin_N.Clathrin.GRIP.Clathrin_propel
+336,51641,6,cellular localization,IBN_N.Adaptin_N.Clathrin.GRIP.Ran_BP1.Clathrin_propel
+337,51649,6,establishment of localization in cell,IBN_N.Adaptin_N.Clathrin.GRIP.Ran_BP1.Clathrin_propel
+338,70727,5,cellular macromolecule localization,IBN_N.Adaptin_N.Clathrin.GRIP.Clathrin_propel
+339,71702,8,organic substance transport,IBN_N.Adaptin_N.Clathrin.GRIP.AA_permease_2.Phospholip_A2_1.Aa_trans.Clathrin_propel
+340,71705,7,nitrogen compound transport,IBN_N.Adaptin_N.Clathrin.GRIP.AA_permease_2.Aa_trans.Clathrin_propel
+341,6793,9,phosphorus metabolic process,Pkinase_Tyr.Pkinase_C.Pkinase.Y_phosphatase.DSPc.NDK.Guanylate_cyc.Phospholip_A2_1.Guanylate_kin
+342,6796,9,phosphate-containing compound metabolic process,Pkinase_Tyr.Pkinase_C.Pkinase.Y_phosphatase.DSPc.NDK.Guanylate_cyc.Phospholip_A2_1.Guanylate_kin
+343,16310,4,phosphorylation,Pkinase_Tyr.Pkinase_C.Pkinase.NDK
+344,36211,17,protein modification process,Pkinase_Tyr.Pkinase_C.Pkinase.Y_phosphatase.DSPc.Galactosyl_T.Glyco_transf_29.UCH.Pre-SET.Transglut_C.TTL.PPTA.Pro_isomerase.Glyco_transf_7C.Pro-rich.Transglut_core.UCH_1
+345,43412,17,macromolecule modification,Pkinase_Tyr.Pkinase_C.Pkinase.Y_phosphatase.DSPc.Galactosyl_T.Glyco_transf_29.UCH.Pre-SET.Transglut_C.TTL.PPTA.Pro_isomerase.Glyco_transf_7C.Pro-rich.Transglut_core.UCH_1
+346,44267,20,cellular protein metabolic process,Pkinase_Tyr.Pkinase_C.Pkinase.tRNA-synt_1.Anticodon_1.Y_phosphatase.DSPc.Galactosyl_T.Glyco_transf_29.UCH.Pre-SET.Transglut_C.TTL.Proteasome.PPTA.Pro_isomerase.Glyco_transf_7C.Pro-rich.Transglut_core.UCH_1
+347,45111,4,intermediate filament cytoskeleton,Keratin_B2_2.Keratin_B2.Filament.Keratin_2_head
+348,99080,4,supramolecular complex,Keratin_B2_2.Keratin_B2.Filament.Keratin_2_head
+349,99081,4,supramolecular polymer,Keratin_B2_2.Keratin_B2.Filament.Keratin_2_head
+350,99512,4,supramolecular fiber,Keratin_B2_2.Keratin_B2.Filament.Keratin_2_head
+351,99513,4,polymeric cytoskeletal fiber,Keratin_B2_2.Keratin_B2.Filament.Keratin_2_head
+352,16740,27,transferase activity,Pkinase_Tyr.Pkinase.DAGK_cat.PI3_PI4_kinase.Sulfotransfer_2.Sulfotransfer_1.Pkinase_C.Pre-SET.Acyltransferase.Glyco_transf_29.Galactosyl_T.Transglut_C.HECT.PPTA.NTP_transf_2.PARP.Methyltransf_11.UDPGT.Acetyltransf_1.NDK.Glyco_transf_7C.Methyltransf_12.Methyltransf_23.Methyltransf_25.Methyltransf_31.Sulfotransfer_3.Transglut_core
+353,16772,7,"transferase activity, transferring phosphorus-containing groups",Pkinase_Tyr.Pkinase.DAGK_cat.PI3_PI4_kinase.Pkinase_C.NTP_transf_2.NDK
+354,16773,3,"phosphotransferase activity, alcohol group as acceptor",Pkinase_Tyr.Pkinase.Pkinase_C
+355,46906,2,tetrapyrrole binding,Globin.p450
+356,51276,3,chromosome organization,Linker_histone.NAP.Pre-SET
+357,6333,2,chromatin assembly or disassembly,Linker_histone.NAP
+358,34728,2,nucleosome organization,Linker_histone.NAP
+359,31497,2,chromatin assembly,Linker_histone.NAP
+360,6323,2,DNA packaging,Linker_histone.NAP
+361,6325,3,chromatin organization,Linker_histone.NAP.Pre-SET
+362,6996,4,organelle organization,Linker_histone.NAP.Pre-SET.Xin
+363,22607,3,cellular component assembly,Linker_histone.NAP.BTB_2
+364,16043,7,cellular component organization,Linker_histone.NAP.IGFBP.BTB_2.Pre-SET.Xin.MreB_Mbl
+365,34622,2,cellular macromolecular complex assembly,Linker_histone.NAP
+366,43933,3,macromolecular complex subunit organization,Linker_histone.NAP.BTB_2
+367,44085,3,cellular component biogenesis,Linker_histone.NAP.BTB_2
+368,65003,3,macromolecular complex assembly,Linker_histone.NAP.BTB_2
+369,65004,2,protein-DNA complex assembly,Linker_histone.NAP
+370,71103,2,DNA conformation change,Linker_histone.NAP
+371,71824,2,protein-DNA complex subunit organization,Linker_histone.NAP
+372,71840,7,cellular component organization or biogenesis,Linker_histone.NAP.IGFBP.BTB_2.Pre-SET.Xin.MreB_Mbl
+373,8066,2,glutamate receptor activity,Lig_chan-Glu_bd.Lig_chan
+374,15075,13,ion transmembrane transporter activity,Lig_chan-Glu_bd.Lig_chan.Ion_trans.Neur_chan_LBD.IRK.RYDR_ITPR.SNF.Sulfate_transp.Zip.AA_permease_2.Na_H_Exchanger.Aa_trans.Ion_trans_2
+375,15267,7,channel activity,Lig_chan-Glu_bd.Lig_chan.Ion_trans.Neur_chan_LBD.IRK.RYDR_ITPR.Ion_trans_2
+376,15276,4,ligand-gated ion channel activity,Lig_chan-Glu_bd.Lig_chan.Neur_chan_LBD.IRK
+377,22803,7,passive transmembrane transporter activity,Lig_chan-Glu_bd.Lig_chan.Ion_trans.Neur_chan_LBD.IRK.RYDR_ITPR.Ion_trans_2
+378,22891,13,substrate-specific transmembrane transporter activity,Lig_chan-Glu_bd.Lig_chan.Ion_trans.Neur_chan_LBD.IRK.RYDR_ITPR.SNF.Sulfate_transp.Zip.AA_permease_2.Na_H_Exchanger.Aa_trans.Ion_trans_2
+379,22824,2,transmitter-gated ion channel activity,Lig_chan-Glu_bd.Lig_chan
+380,22834,4,ligand-gated channel activity,Lig_chan-Glu_bd.Lig_chan.Neur_chan_LBD.IRK
+381,22835,2,transmitter-gated channel activity,Lig_chan-Glu_bd.Lig_chan
+382,22836,4,gated channel activity,Lig_chan-Glu_bd.Lig_chan.Neur_chan_LBD.IRK
+383,22838,7,substrate-specific channel activity,Lig_chan-Glu_bd.Lig_chan.Ion_trans.Neur_chan_LBD.IRK.RYDR_ITPR.Ion_trans_2
+384,22892,13,substrate-specific transporter activity,Lig_chan-Glu_bd.Lig_chan.Ion_trans.Neur_chan_LBD.IRK.RYDR_ITPR.SNF.Sulfate_transp.Zip.AA_permease_2.Na_H_Exchanger.Aa_trans.Ion_trans_2
+385,30594,2,neurotransmitter receptor activity,Lig_chan-Glu_bd.Lig_chan
+386,7267,2,cell-cell signaling,APC_r.wnt
+387,44763,22,single-organism cellular process,APC_r.wnt.tRNA-synt_1.Anticodon_1.Galactosyl_T.Glyco_transf_29.Dynein_heavy.Kinesin.Glutaredoxin.Thioredoxin.Bcl-2.CARD.NDK.IGFBP.Involucrin.Xin.Guanylate_cyc.MreB_Mbl.Phospholip_A2_1.Glyco_transf_7C.Guanylate_kin.Thioredoxin_6
+388,198738,2,cell-cell signaling by wnt,APC_r.wnt
+389,1905114,2,cell surface receptor signaling pathway involved in cell-cell signaling,APC_r.wnt
+390,5886,3,plasma membrane,MHC_II_alpha.MHC_II_beta.G-gamma
+391,42611,2,MHC protein complex,MHC_II_alpha.MHC_II_beta
+392,44459,3,plasma membrane part,MHC_II_alpha.MHC_II_beta.G-gamma
+393,71944,3,cell periphery,MHC_II_alpha.MHC_II_beta.G-gamma
+394,98796,4,membrane protein complex,MHC_II_alpha.MHC_II_beta.G-gamma.Adaptin_N
+395,98797,3,plasma membrane protein complex,MHC_II_alpha.MHC_II_beta.G-gamma
+396,4857,5,enzyme inhibitor activity,A2M.A2M_N.Kunitz_BPTI.WAP.Cystatin
+397,61135,4,endopeptidase regulator activity,A2M.A2M_N.Kunitz_BPTI.Cystatin
+398,30234,7,enzyme regulator activity,A2M.A2M_N.Kunitz_BPTI.WAP.Cystatin.GoLoco.ArfGap
+399,61134,5,peptidase regulator activity,A2M.A2M_N.Kunitz_BPTI.WAP.Cystatin
+400,98772,11,molecular function regulator,A2M.A2M_N.Kunitz_BPTI.WAP.Cystatin.RasGEF.Sec7.RhoGEF.GoLoco.ArfGap.RasGEF_N
+401,6082,2,organic acid metabolic process,tRNA-synt_1.Anticodon_1
+402,6399,3,tRNA metabolic process,tRNA-synt_1.Anticodon_1.tRNA_int_endo
+403,6412,2,translation,tRNA-synt_1.Anticodon_1
+404,6518,2,peptide metabolic process,tRNA-synt_1.Anticodon_1
+405,6520,2,cellular amino acid metabolic process,tRNA-synt_1.Anticodon_1
+406,19752,2,carboxylic acid metabolic process,tRNA-synt_1.Anticodon_1
+407,34660,3,ncRNA metabolic process,tRNA-synt_1.Anticodon_1.tRNA_int_endo
+408,43038,2,amino acid activation,tRNA-synt_1.Anticodon_1
+409,43039,2,tRNA aminoacylation,tRNA-synt_1.Anticodon_1
+410,43043,2,peptide biosynthetic process,tRNA-synt_1.Anticodon_1
+411,43436,2,oxoacid metabolic process,tRNA-synt_1.Anticodon_1
+412,43603,2,cellular amide metabolic process,tRNA-synt_1.Anticodon_1
+413,43604,2,amide biosynthetic process,tRNA-synt_1.Anticodon_1
+414,44281,5,small molecule metabolic process,tRNA-synt_1.Anticodon_1.NDK.Guanylate_cyc.Guanylate_kin
+415,1901564,3,organonitrogen compound metabolic process,tRNA-synt_1.Anticodon_1.NDK
+416,1901566,3,organonitrogen compound biosynthetic process,tRNA-synt_1.Anticodon_1.NDK
+417,44421,5,extracellular region part,Peptidase_M10.ADAM_spacer1.A2M_comp.Serum_albumin.ADAM_CR
+418,16311,2,dephosphorylation,Y_phosphatase.DSPc
+419,9100,3,glycoprotein metabolic process,Galactosyl_T.Glyco_transf_29.Glyco_transf_7C
+420,9101,3,glycoprotein biosynthetic process,Galactosyl_T.Glyco_transf_29.Glyco_transf_7C
+421,43413,3,macromolecule glycosylation,Galactosyl_T.Glyco_transf_29.Glyco_transf_7C
+422,70085,3,glycosylation,Galactosyl_T.Glyco_transf_29.Glyco_transf_7C
+423,1901135,4,carbohydrate derivative metabolic process,Galactosyl_T.Glyco_transf_29.NDK.Glyco_transf_7C
+424,1901137,4,carbohydrate derivative biosynthetic process,Galactosyl_T.Glyco_transf_29.NDK.Glyco_transf_7C
+425,7017,2,microtubule-based process,Dynein_heavy.Kinesin
+426,6928,2,movement of cell or subcellular component,Dynein_heavy.Kinesin
+427,19725,3,cellular homeostasis,Glutaredoxin.Thioredoxin.Thioredoxin_6
+428,42592,3,homeostatic process,Glutaredoxin.Thioredoxin.Thioredoxin_6
+429,65008,3,regulation of biological quality,Glutaredoxin.Thioredoxin.Thioredoxin_6
+430,38024,2,cargo receptor activity,SRCR.Somatomedin_B
+431,16782,3,"transferase activity, transferring sulfur-containing groups",Sulfotransfer_2.Sulfotransfer_1.Sulfotransfer_3
+432,6915,2,apoptotic process,Bcl-2.CARD
+433,8219,2,cell death,Bcl-2.CARD
+434,12501,2,programmed cell death,Bcl-2.CARD
+435,10941,2,regulation of cell death,Bcl-2.CARD
+436,43067,2,regulation of programmed cell death,Bcl-2.CARD
+437,22610,9,biological adhesion,Xlink.TSP_3.Cadherin.Cadherin_C.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail.TSP_1
+438,98609,6,cell-cell adhesion,Cadherin.Cadherin_C.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail
+439,98742,6,cell-cell adhesion via plasma-membrane adhesion molecules,Cadherin.Cadherin_C.Cadherin_2.Cadherin_3.Cadherin_C_2.Cadherin_tail
+440,4620,3,phospholipase activity,Phospholip_A2_1.PI-PLC-Y.PI-PLC-X
+441,16298,3,lipase activity,Phospholip_A2_1.PI-PLC-Y.PI-PLC-X
+442,16788,8,"hydrolase activity, acting on ester bonds",Phospholip_A2_1.Y_phosphatase.PDEase_I.tRNA_int_endo.Sulfatase.PI-PLC-Y.DSPc.PI-PLC-X
+443,52689,1,carboxylic ester hydrolase activity,Phospholip_A2_1
+444,6753,3,nucleoside phosphate metabolic process,NDK.Guanylate_cyc.Guanylate_kin
+445,9117,3,nucleotide metabolic process,NDK.Guanylate_cyc.Guanylate_kin
+446,9132,1,nucleoside diphosphate metabolic process,NDK
+447,19637,4,organophosphate metabolic process,NDK.Guanylate_cyc.Phospholip_A2_1.Guanylate_kin
+448,46939,1,nucleotide phosphorylation,NDK
+449,55086,3,nucleobase-containing small molecule metabolic process,NDK.Guanylate_cyc.Guanylate_kin
+450,16049,1,cell growth,IGFBP
+451,40008,1,regulation of growth,IGFBP
+452,51128,1,regulation of cellular component organization,IGFBP
+453,6950,3,response to stress,Defensin_beta_2.Interferon.MutS_V
+454,32813,1,tumor necrosis factor receptor superfamily binding,TNF
+455,6461,1,protein complex assembly,BTB_2
+456,51259,1,protein oligomerization,BTB_2
+457,70271,1,protein complex biogenesis,BTB_2
+458,71822,1,protein complex subunit organization,BTB_2
+459,7265,2,Ras protein signal transduction,Sec7.RhoGEF
+460,9966,2,regulation of signal transduction,Sec7.RhoGEF
+461,10646,2,regulation of cell communication,Sec7.RhoGEF
+462,23051,2,regulation of signaling,Sec7.RhoGEF
+463,32011,1,ARF protein signal transduction,Sec7
+464,46578,2,regulation of Ras protein signal transduction,Sec7.RhoGEF
+465,48583,2,regulation of response to stimulus,Sec7.RhoGEF
+466,51056,2,regulation of small GTPase mediated signal transduction,Sec7.RhoGEF
+467,1902531,2,regulation of intracellular signal transduction,Sec7.RhoGEF
+468,4721,2,phosphoprotein phosphatase activity,Y_phosphatase.DSPc
+469,16791,2,phosphatase activity,Y_phosphatase.DSPc
+470,42578,5,phosphoric ester hydrolase activity,Y_phosphatase.PDEase_I.PI-PLC-Y.DSPc.PI-PLC-X
+471,6820,4,anion transport,Sulfate_transp.AA_permease_2.Phospholip_A2_1.Aa_trans
+472,15698,1,inorganic anion transport,Sulfate_transp
+473,44765,5,single-organism transport,Sulfate_transp.SNF.AA_permease_2.Phospholip_A2_1.Aa_trans
+474,72348,1,sulfur compound transport,Sulfate_transp
+475,1902578,5,single-organism localization,Sulfate_transp.SNF.AA_permease_2.Phospholip_A2_1.Aa_trans
+476,6213,1,pyrimidine nucleoside metabolic process,NDK
+477,6220,1,pyrimidine nucleotide metabolic process,NDK
+478,6221,1,pyrimidine nucleotide biosynthetic process,NDK
+479,9116,1,nucleoside metabolic process,NDK
+480,9119,1,ribonucleoside metabolic process,NDK
+481,9141,1,nucleoside triphosphate metabolic process,NDK
+482,9142,1,nucleoside triphosphate biosynthetic process,NDK
+483,9147,1,pyrimidine nucleoside triphosphate metabolic process,NDK
+484,9148,1,pyrimidine nucleoside triphosphate biosynthetic process,NDK
+485,9163,1,nucleoside biosynthetic process,NDK
+486,9165,3,nucleotide biosynthetic process,NDK.Guanylate_cyc.Guanylate_kin
+487,9199,1,ribonucleoside triphosphate metabolic process,NDK
+488,9201,1,ribonucleoside triphosphate biosynthetic process,NDK
+489,9208,1,pyrimidine ribonucleoside triphosphate metabolic process,NDK
+490,9209,1,pyrimidine ribonucleoside triphosphate biosynthetic process,NDK
+491,9218,1,pyrimidine ribonucleotide metabolic process,NDK
+492,9220,1,pyrimidine ribonucleotide biosynthetic process,NDK
+493,9259,1,ribonucleotide metabolic process,NDK
+494,9260,1,ribonucleotide biosynthetic process,NDK
+495,19693,1,ribose phosphate metabolic process,NDK
+496,42455,1,ribonucleoside biosynthetic process,NDK
+497,44711,3,single-organism biosynthetic process,NDK.Guanylate_cyc.Guanylate_kin
+498,46051,1,UTP metabolic process,NDK
+499,46131,1,pyrimidine ribonucleoside metabolic process,NDK
+500,46132,1,pyrimidine ribonucleoside biosynthetic process,NDK
+501,46134,1,pyrimidine nucleoside biosynthetic process,NDK
+502,46390,1,ribose phosphate biosynthetic process,NDK
+503,72527,1,pyrimidine-containing compound metabolic process,NDK
+504,72528,1,pyrimidine-containing compound biosynthetic process,NDK
+505,90407,3,organophosphate biosynthetic process,NDK.Guanylate_cyc.Guanylate_kin
+506,1901293,3,nucleoside phosphate biosynthetic process,NDK.Guanylate_cyc.Guanylate_kin
+507,1901657,1,glycosyl compound metabolic process,NDK
+508,1901659,1,glycosyl compound biosynthetic process,NDK
+509,8235,2,metalloexopeptidase activity,Peptidase_M14.Peptidase_C14
+510,4180,2,carboxypeptidase activity,Peptidase_M14.Peptidase_C14
+511,8238,2,exopeptidase activity,Peptidase_M14.Peptidase_C14
+512,32501,4,multicellular organismal process,wnt.Spin-Ssty.Involucrin.TAS2R
+513,32502,4,developmental process,wnt.Involucrin.LCE.MreB_Mbl
+514,44707,2,single-multicellular organism process,wnt.Involucrin
+515,44767,3,single-organism developmental process,wnt.Involucrin.MreB_Mbl
+516,48856,4,anatomical structure development,wnt.Involucrin.LCE.MreB_Mbl
+517,4197,1,cysteine-type endopeptidase activity,Peptidase_C2
+518,8170,1,N-methyltransferase activity,Pre-SET
+519,8276,1,protein methyltransferase activity,Pre-SET
+520,8757,1,S-adenosylmethionine-dependent methyltransferase activity,Pre-SET
+521,16278,1,lysine N-methyltransferase activity,Pre-SET
+522,16279,1,protein-lysine N-methyltransferase activity,Pre-SET
+523,16741,6,"transferase activity, transferring one-carbon groups",Pre-SET.Methyltransf_11.Methyltransf_12.Methyltransf_23.Methyltransf_25.Methyltransf_31
+524,42054,1,histone methyltransferase activity,Pre-SET
+525,3,1,reproduction,Spin-Ssty
+526,19953,1,sexual reproduction,Spin-Ssty
+527,22414,1,reproductive process,Spin-Ssty
+528,32504,1,multicellular organism reproduction,Spin-Ssty
+529,44702,1,single organism reproductive process,Spin-Ssty
+530,44703,1,multi-organism reproductive process,Spin-Ssty
+531,48609,1,multicellular organismal reproductive process,Spin-Ssty
+532,51704,1,multi-organism process,Spin-Ssty
+533,785,1,chromatin,Linker_histone
+534,5694,1,chromosome,Linker_histone
+535,32993,1,protein-DNA complex,Linker_histone
+536,44427,1,chromosomal part,Linker_histone
+537,44815,1,DNA packaging complex,Linker_histone
+538,5231,1,excitatory extracellular ligand-gated ion channel activity,Lig_chan-Glu_bd
+539,5244,1,voltage-gated ion channel activity,IRK
+540,5249,1,voltage-gated potassium channel activity,IRK
+541,5261,2,cation channel activity,IRK.RYDR_ITPR
+542,5267,1,potassium channel activity,IRK
+543,8324,5,cation transmembrane transporter activity,IRK.RYDR_ITPR.SNF.Zip.Na_H_Exchanger
+544,15077,3,monovalent inorganic cation transmembrane transporter activity,IRK.SNF.Na_H_Exchanger
+545,15079,1,potassium ion transmembrane transporter activity,IRK
+546,22832,1,voltage-gated channel activity,IRK
+547,22843,1,voltage-gated cation channel activity,IRK
+548,22890,5,inorganic cation transmembrane transporter activity,IRK.RYDR_ITPR.SNF.Zip.Na_H_Exchanger
+549,99094,1,ligand-gated cation channel activity,IRK
+550,19783,2,ubiquitin-like protein-specific protease activity,UCH.UCH_1
+551,101005,2,ubiquitinyl hydrolase activity,UCH.UCH_1
+552,15085,1,calcium ion transmembrane transporter activity,RYDR_ITPR
+553,72509,1,divalent inorganic cation transmembrane transporter activity,RYDR_ITPR
+554,70646,2,protein modification by small protein removal,UCH.UCH_1
+555,70647,2,protein modification by small protein conjugation or removal,UCH.UCH_1
+556,16570,1,histone modification,Pre-SET
+557,6479,1,protein methylation,Pre-SET
+558,8213,1,protein alkylation,Pre-SET
+559,16569,1,covalent chromatin modification,Pre-SET
+560,16571,1,histone methylation,Pre-SET
+561,18022,1,peptidyl-lysine methylation,Pre-SET
+562,18193,3,peptidyl-amino acid modification,Pre-SET.Pro_isomerase.Pro-rich
+563,18205,1,peptidyl-lysine modification,Pre-SET
+564,32259,1,methylation,Pre-SET
+565,43414,1,macromolecule methylation,Pre-SET
+566,15672,1,monovalent inorganic cation transport,IRK
+567,4112,1,cyclic-nucleotide phosphodiesterase activity,PDEase_I
+568,8081,3,phosphoric diester hydrolase activity,PDEase_I.PI-PLC-Y.PI-PLC-X
+569,16853,2,isomerase activity,Pro_isomerase.Pro-rich
+570,16859,2,cis-trans isomerase activity,Pro_isomerase.Pro-rich
+571,16757,5,"transferase activity, transferring glycosyl groups",Glyco_transf_29.Galactosyl_T.PARP.UDPGT.Glyco_transf_7C
+572,15036,1,disulfide oxidoreductase activity,Glutaredoxin
+573,16667,1,"oxidoreductase activity, acting on a sulfur group of donors",Glutaredoxin
+574,19898,1,extrinsic component of membrane,G-gamma
+575,9898,1,cytoplasmic side of plasma membrane,G-gamma
+576,19897,1,extrinsic component of plasma membrane,G-gamma
+577,31234,1,extrinsic component of cytoplasmic side of plasma membrane,G-gamma
+578,98552,1,side of membrane,G-gamma
+579,98562,1,cytoplasmic side of membrane,G-gamma
+580,1902494,3,catalytic complex,G-gamma.Proteasome.Dynein_heavy
+581,1905360,1,GTPase complex,G-gamma
+582,9888,2,tissue development,Involucrin.LCE
+583,9913,1,epidermal cell differentiation,Involucrin
+584,30154,1,cell differentiation,Involucrin
+585,30216,1,keratinocyte differentiation,Involucrin
+586,30855,1,epithelial cell differentiation,Involucrin
+587,43588,1,skin development,Involucrin
+588,48513,1,animal organ development,Involucrin
+589,48731,1,system development,Involucrin
+590,48869,2,cellular developmental process,Involucrin.MreB_Mbl
+591,60429,1,epithelium development,Involucrin
+592,70003,1,threonine-type peptidase activity,Proteasome
+593,16874,2,ligase activity,tRNA-synt_1.ThiF
+594,16875,1,"ligase activity, forming carbon-oxygen bonds",tRNA-synt_1
+595,16876,1,"ligase activity, forming aminoacyl-tRNA and related compounds",tRNA-synt_1
+596,502,1,proteasome complex,Proteasome
+597,1905368,1,peptidase complex,Proteasome
+598,1905369,1,endopeptidase complex,Proteasome
+599,5326,1,neurotransmitter transporter activity,SNF
+600,15291,2,secondary active transmembrane transporter activity,SNF.Na_H_Exchanger
+601,15081,1,sodium ion transmembrane transporter activity,SNF
+602,15293,1,symporter activity,SNF
+603,15294,1,solute:cation symporter activity,SNF
+604,15370,1,solute:sodium symporter activity,SNF
+605,22804,3,active transmembrane transporter activity,SNF.ABC_membrane.Na_H_Exchanger
+606,4518,1,nuclease activity,tRNA_int_endo
+607,4519,1,endonuclease activity,tRNA_int_endo
+608,4521,1,endoribonuclease activity,tRNA_int_endo
+609,4540,1,ribonuclease activity,tRNA_int_endo
+610,4549,1,tRNA-specific ribonuclease activity,tRNA_int_endo
+611,16892,1,"endoribonuclease activity, producing 3'-phosphomonoesters",tRNA_int_endo
+612,16894,1,"endonuclease activity, active with either ribo- or deoxyribonucleic acids and producing 3'-phosphomonoesters",tRNA_int_endo
+613,5875,1,microtubule associated complex,Dynein_heavy
+614,15630,1,microtubule cytoskeleton,Dynein_heavy
+615,3008,1,system process,TAS2R
+616,50877,1,neurological system process,TAS2R
+617,7600,1,sensory perception,TAS2R
+618,7606,1,sensory perception of chemical stimulus,TAS2R
+619,16755,2,"transferase activity, transferring amino-acyl groups",Transglut_C.Transglut_core
+620,7266,1,Rho protein signal transduction,RhoGEF
+621,19787,1,ubiquitin-like protein transferase activity,HECT
+622,1871,1,pattern binding,Somatomedin_B
+623,60090,1,"binding, bridging",Fascin
+624,394,1,"RNA splicing, via endonucleolytic cleavage and ligation",tRNA_int_endo
+625,6396,1,RNA processing,tRNA_int_endo
+626,8033,1,tRNA processing,tRNA_int_endo
+627,8380,1,RNA splicing,tRNA_int_endo
+628,34470,1,ncRNA processing,tRNA_int_endo
+629,4659,1,prenyltransferase activity,PPTA
+630,16765,1,"transferase activity, transferring alkyl or aryl (other than methyl) groups",PPTA
+631,301,1,"retrograde transport, vesicle recycling within Golgi",GRIP
+632,6605,1,protein targeting,GRIP
+633,6891,1,intra-Golgi vesicle-mediated transport,GRIP
+634,33365,1,protein localization to organelle,GRIP
+635,34067,1,protein localization to Golgi apparatus,GRIP
+636,48193,1,Golgi vesicle transport,GRIP
+637,72594,1,establishment of protein localization to organelle,GRIP
+638,72600,1,establishment of protein localization to Golgi,GRIP
+639,6865,2,amino acid transport,AA_permease_2.Aa_trans
+640,15711,3,organic anion transport,AA_permease_2.Phospholip_A2_1.Aa_trans
+641,15849,3,organic acid transport,AA_permease_2.Phospholip_A2_1.Aa_trans
+642,34220,3,ion transmembrane transport,AA_permease_2.RYDR_ITPR.Aa_trans
+643,46942,3,carboxylic acid transport,AA_permease_2.Phospholip_A2_1.Aa_trans
+644,98656,2,anion transmembrane transport,AA_permease_2.Aa_trans
+645,1903825,2,organic acid transmembrane transport,AA_permease_2.Aa_trans
+646,1905039,2,carboxylic acid transmembrane transport,AA_permease_2.Aa_trans
+647,3690,1,double-stranded DNA binding,MutS_V
+648,8509,3,anion transmembrane transporter activity,Sulfate_transp.AA_permease_2.Aa_trans
+649,15103,1,inorganic anion transmembrane transporter activity,Sulfate_transp
+650,1901682,1,sulfur compound transmembrane transporter activity,Sulfate_transp
+651,42623,1,"ATPase activity, coupled",ABC_membrane
+652,15399,1,primary active transmembrane transporter activity,ABC_membrane
+653,15405,1,P-P-bond-hydrolysis-driven transmembrane transporter activity,ABC_membrane
+654,16820,1,"hydrolase activity, acting on acid anhydrides, catalyzing transmembrane movement of substances",ABC_membrane
+655,43492,1,"ATPase activity, coupled to movement of substances",ABC_membrane
+656,5543,2,phospholipid binding,PX.Annexin
+657,32403,3,protein complex binding,IRS.G-alpha.Fascin
+658,44877,3,macromolecular complex binding,IRS.G-alpha.Fascin
+659,46903,1,secretion,Phospholip_A2_1
+660,6869,1,lipid transport,Phospholip_A2_1
+661,10876,1,lipid localization,Phospholip_A2_1
+662,15718,1,monocarboxylic acid transport,Phospholip_A2_1
+663,15908,1,fatty acid transport,Phospholip_A2_1
+664,15909,1,long-chain fatty acid transport,Phospholip_A2_1
+665,32309,1,icosanoid secretion,Phospholip_A2_1
+666,46717,1,acid secretion,Phospholip_A2_1
+667,71715,1,icosanoid transport,Phospholip_A2_1
+668,1901571,1,fatty acid derivative transport,Phospholip_A2_1
+669,1903963,1,arachidonate transport,Phospholip_A2_1
+670,5342,2,organic acid transmembrane transporter activity,AA_permease_2.Aa_trans
+671,8514,2,organic anion transmembrane transporter activity,AA_permease_2.Aa_trans
+672,46943,2,carboxylic acid transmembrane transporter activity,AA_permease_2.Aa_trans
+673,4629,2,phospholipase C activity,PI-PLC-Y.PI-PLC-X
+674,7010,1,cytoskeleton organization,Xin
+675,30029,1,actin filament-based process,Xin
+676,1902589,1,single-organism organelle organization,Xin
+677,17016,1,Ras GTPase binding,IBN_N
+678,19899,1,enzyme binding,IBN_N
+679,31267,1,small GTPase binding,IBN_N
+680,51020,1,GTPase binding,IBN_N
+681,6163,1,purine nucleotide metabolic process,NDK
+682,42278,1,purine nucleoside metabolic process,NDK
+683,6164,1,purine nucleotide biosynthetic process,NDK
+684,9144,1,purine nucleoside triphosphate metabolic process,NDK
+685,9145,1,purine nucleoside triphosphate biosynthetic process,NDK
+686,9150,1,purine ribonucleotide metabolic process,NDK
+687,9152,1,purine ribonucleotide biosynthetic process,NDK
+688,9205,1,purine ribonucleoside triphosphate metabolic process,NDK
+689,9206,1,purine ribonucleoside triphosphate biosynthetic process,NDK
+690,42451,1,purine nucleoside biosynthetic process,NDK
+691,46039,1,GTP metabolic process,NDK
+692,46128,1,purine ribonucleoside metabolic process,NDK
+693,46129,1,purine ribonucleoside biosynthetic process,NDK
+694,72521,1,purine-containing compound metabolic process,NDK
+695,72522,1,purine-containing compound biosynthetic process,NDK
+696,1901068,1,guanosine-containing compound metabolic process,NDK
+697,1901070,1,guanosine-containing compound biosynthetic process,NDK
+698,19838,1,growth factor binding,IGFBP
+699,9187,2,cyclic nucleotide metabolic process,Guanylate_cyc.Guanylate_kin
+700,16763,1,"transferase activity, transferring pentosyl groups",PARP
+701,9653,1,anatomical structure morphogenesis,MreB_Mbl
+702,32989,1,cellular component morphogenesis,MreB_Mbl
+703,9719,1,response to endogenous stimulus,Hormone_recep
+704,9725,1,response to hormone,Hormone_recep
+705,9755,1,hormone-mediated signaling pathway,Hormone_recep
+706,10033,1,response to organic substance,Hormone_recep
+707,14070,1,response to organic cyclic compound,Hormone_recep
+708,70887,1,cellular response to chemical stimulus,Hormone_recep
+709,32870,1,cellular response to hormone stimulus,Hormone_recep
+710,33993,1,response to lipid,Hormone_recep
+711,42221,1,response to chemical,Hormone_recep
+712,48545,1,response to steroid hormone,Hormone_recep
+713,71310,1,cellular response to organic substance,Hormone_recep
+714,71383,1,cellular response to steroid hormone stimulus,Hormone_recep
+715,71396,1,cellular response to lipid,Hormone_recep
+716,71407,1,cellular response to organic cyclic compound,Hormone_recep
+717,71495,1,cellular response to endogenous stimulus,Hormone_recep
+718,16407,1,acetyltransferase activity,Acetyltransf_1
+719,16410,1,N-acyltransferase activity,Acetyltransf_1
+720,16747,1,"transferase activity, transferring acyl groups other than amino-acyl groups",Acetyltransf_1
+721,9056,1,catabolic process,Proteasome
+722,9057,1,macromolecule catabolic process,Proteasome
+723,30163,1,protein catabolic process,Proteasome
+724,44248,1,cellular catabolic process,Proteasome
+725,44257,1,cellular protein catabolic process,Proteasome
+726,44265,1,cellular macromolecule catabolic process,Proteasome
+727,1901575,1,organic substance catabolic process,Proteasome
+728,6259,1,DNA metabolic process,MutS_V
+729,6281,1,DNA repair,MutS_V
+730,6974,1,cellular response to DNA damage stimulus,MutS_V
+731,33554,1,cellular response to stress,MutS_V
+732,5539,1,glycosaminoglycan binding,Xlink
+733,44444,1,cytoplasmic part,Adaptin_N
+734,48475,1,coated membrane,Adaptin_N
+735,97354,1,prenylation,PPTA
+736,8236,2,serine-type peptidase activity,Trypsin.Trypsin_2
+737,17171,2,serine hydrolase activity,Trypsin.Trypsin_2
+738,16810,2,"hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds",APOBEC_N.APOBEC_C
+739,18208,2,peptidyl-proline modification,Pro_isomerase.Pro-rich
+740,1664,1,G-protein coupled receptor binding,IL8
+741,5125,1,cytokine activity,IL8
+742,42379,1,chemokine receptor binding,IL8
+743,44255,1,cellular lipid metabolic process,Phospholip_A2_1
+744,6816,1,calcium ion transport,RYDR_ITPR
+745,70838,1,divalent metal ion transport,RYDR_ITPR
+746,72511,1,divalent inorganic cation transport,RYDR_ITPR
+747,98655,1,cation transmembrane transport,RYDR_ITPR
+748,98660,1,inorganic ion transmembrane transport,RYDR_ITPR
+749,98662,1,inorganic cation transmembrane transport,RYDR_ITPR
+750,46036,1,CTP metabolic process,NDK
+751,16877,1,"ligase activity, forming carbon-sulfur bonds",ThiF
+752,15078,1,hydrogen ion transmembrane transporter activity,Na_H_Exchanger
+753,15297,1,antiporter activity,Na_H_Exchanger
+754,15298,1,solute:cation antiporter activity,Na_H_Exchanger
+755,16776,1,"phosphotransferase activity, phosphate group as acceptor",NDK
+756,19205,1,nucleobase-containing compound kinase activity,NDK
+757,16798,1,"hydrolase activity, acting on glycosyl bonds",Glyco_hydro_31
+758,16829,2,lyase activity,Guanylate_cyc.Guanylate_kin
+759,19842,1,vitamin binding,Aminotran_1_2
+760,48037,4,cofactor binding,Aminotran_1_2.Acyl-CoA_dh_N.Epimerase.Acyl-CoA_dh_2
+761,70279,1,vitamin B6 binding,Aminotran_1_2
+762,50790,1,regulation of catalytic activity,RasGAP
+763,51336,1,regulation of hydrolase activity,RasGAP
+764,65009,1,regulation of molecular function,RasGAP
+765,5088,1,Ras guanyl-nucleotide exchange factor activity,RhoGEF
+766,60589,2,nucleoside-triphosphatase regulator activity,GoLoco.ArfGap
+767,8047,1,enzyme activator activity,ArfGap
