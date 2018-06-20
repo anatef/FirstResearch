@@ -1,0 +1,5 @@
+The file: "ALL-biolipsummary-mindist.txt" contain all the binding raw information.
+The column "LigandType" contained originally the mmCIF ids.
+Later, Shilpa added rows to the table to indicate groups of ligands.
+The groups can be found in the "LigandType" column, with names containing "_".
+The groups and their heirarchey are described at: "ligand_hierarchy.png". 
