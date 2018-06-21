@@ -4,31 +4,31 @@ import pickle
 # Directories
 files_dir = '/Genomics/grid/users/dtodd/SPIDER2'
 
+SEQ_PER_JOB = 35
+
 # Load genes to aa sequence mapping for each domain
-with open(files_dir+"/gene_dict.pik", 'rb') as handle:
-    gene_dict = pickle.load(handle)
+with open(files_dir+"/sequence_dict.pik", 'rb') as handle:
+    sequence_dict = pickle.load(handle)
 
-# Break up jobs to be no larger than 40 genes
-for i in range(0,703):
-    domain = gene_dict.keys()[i]
-    j = 0
-    while j < len(gene_dict[domain].keys()):
-      hi = min(j+40,len(gene_dict[domain].keys()))
+# Break up jobs to be no larger than 1 gene
+i = 0
+while i < len(sequence_dict.keys()):
+  hi = min(i+SEQ_PER_JOB,len(sequence_dict.keys()))
 
-      # Set memory and time params
-      header ="""#!/bin/bash
-#SBATCH --mem=20480
-#SBATCH --qos=1wk
-#SBATCH --job-name=i{0}_{1}_{2}
+  # Set memory and time params
+  header ="""#!/bin/bash
+#SBATCH --mem=40480
+#SBATCH --qos=1day
+#SBATCH --job-name=i{0}_{1}
 #SBATCH --mail-user=dtodd@princeton.edu
-#SBATCH --mail-type=fail,time_limit\n\n""".format(i,j,hi)
+#SBATCH --mail-type=fail,time_limit\n\n""".format(i,hi)
 
-      script_text = "python spider2.py "+str(i)+" "+str(j)+" "+str(hi)
+  script_text = "python run_job.py "+str(i)+" "+str(hi)
 
-      runscript  = open("idx{0}_{1}_{2}".format(i,j,hi),"w")
-      runscript.write(header)
-      runscript.write(script_text)
-      runscript.close()
-      call(["sbatch","idx{0}_{1}_{2}".format(i,j,hi)])
+  runscript  = open("i{0}_{1}".format(i,hi),"w")
+  runscript.write(header)
+  runscript.write(script_text)
+  runscript.close()
+  call(["sbatch","i{0}_{1}".format(i,hi)])
 
-      j += 40
+  i += SEQ_PER_JOB
