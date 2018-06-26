@@ -1,21 +1,17 @@
 import time
 from subprocess import call
 
-#ligands = ["metabolite", "peptide", "ion", "dna", "dnabase", "dnabackbone", "rna", "rnabase", "rnabackbone"]
-#ligands_names = ["met", "pep", "ion", "dna", "dbs", "dbc", "rna", "rbs", "rbc"]
-ligands = ["dna"]
-ligands_names = ["dna"]
+ligands = ["metabolite", "peptide", "ion", "dna", "dnabase", "dnabackbone", "rna", "rnabase", "rnabackbone", "sm"]
+ligands_names = ["met", "pep", "ion", "dna", "dbs", "dbc", "rna", "rbs", "rbc", "sm"]
 
-#classifiers = ["RF", "KNN", "SVM", "ADA", "Logistic"]
-#classifiers = ["XGB", "ADA-RF", "RF", "SVM", "KNN", "Logistic"]
-classifiers = ["XGB"]
-classifiers_names = ["XB"]
+classifiers = ["XGB", "ADA", "RF", "SVM", "KNN", "Logistic"]
+classifiers_names = ["XB", "AD", "RF", "SV", "KN", "LG"]
 
-
-#down_names = ["RUS", "ND", "IHT", "ENN", "RENN", "NCR", "Tomek", "CC", "NM3", "NM2", "NM1"]
-#down_names = ["ND", "IHT", "ENN", "REN", "NCR", "TL", "RUS"]
-down_names = ["ND"]
-
+#one run params
+#ligands = ["rna"]
+#ligands_names = ["rna"]
+#classifiers = ["RF"]
+#classifiers_names = ["RF"]
 
 for j in range(len(classifiers)):
     classifier = classifiers[j]
@@ -38,4 +34,5 @@ for j in range(len(classifiers)):
             runscript.write(script_text)
             runscript.close()
             call(["sbatch","slurm_run"])
+    #time.sleep(30)
 
