@@ -1,6 +1,21 @@
 import time
 from subprocess import call
 
+#Add: #SBATCH --gres=gpu:1 for running on GPU
+#Add: SBATCH --time=00:00:00 for running on GPU
+
+#Params to run on
+ligands = ["sm", "metabolite", "peptide", "ion", "dna", "rna"]
+ligands_names = ["sm", "met", "pep", "ion", "dna", "rna"]
+classifiers = ["XGB", "RF", "ADA", "SVM", "Logistic", "KNN"]
+classifiers_names = ["XB", "RF", "AD", "SV", "LG", "KN"]
+
+#One run
+# ligands = ["rna"]
+# ligands_names = ["rna"]
+# classifiers = ["KNN"]
+# classifiers_names = ["KN"]
+
 #Hyperparameters ranges dictionaries
 hp_dict = dict()
 hp_dict["XGB"] = {"n_estimators_ub": "1500",
@@ -18,7 +33,7 @@ hp_dict["XGB"] = {"n_estimators_ub": "1500",
                   "learning_rate_ub": "0",
                   "learning_rate_lb": "-4"}
 
-hp_dict["RF"]: {"n_estimators_ub": "1500",
+hp_dict["RF"] = {"n_estimators_ub": "1500",
                 "n_estimators_lb": "100",
                 "max_depth_ub": "20",
                 "max_depth_lb": "2",
@@ -27,27 +42,21 @@ hp_dict["RF"]: {"n_estimators_ub": "1500",
                 "min_samples_split_ub": "50",
                 "min_samples_split_lb": "1"}
 
-hp_dict["ADA"]: {"n_estimators_ub": "1500",
+hp_dict["ADA"] = {"n_estimators_ub": "1500",
                  "n_estimators_lb": "100",
                  "learning_rate_ub": "0",
                  "learning_rate_lb": "-4"}
 
-hp_dict["SVM"]: {"C_ub": "2",
+hp_dict["SVM"] = {"C_ub": "2",
                  "C_lb": "-4",
                  "gamma_ub": "-1",
                  "gamma_lb": "-5"}
 
-hp_dict["Logistic"]: {"C_ub": "0",
+hp_dict["Logistic"] = {"C_ub": "0",
                       "C_lb": "-3"}
 
-hp_dict["KNN"]: {"n_neighbors_ub": "200",
+hp_dict["KNN"] = {"n_neighbors_ub": "200",
                  "n_neighbors_lb": "20"}
-
-#Params to run on
-ligands = ["sm", "metabolite", "peptide", "ion", "dna", "rna"]
-ligands_names = ["sm", "met", "pep", "ion", "dna", "rna"]
-classifiers = ["XGB", "RF", "ADA", "SVM", "Logistic", "KNN"]
-classifiers_names = ["XB", "RF", "AD", "SV", "LG", "KNN"]
 
 
 #Looping over the jobs
@@ -63,51 +72,50 @@ for j in range(len(classifiers)):
             
             header ="""#!/bin/bash
 #SBATCH --mem=40960
-#SBATCH --time=1wk
-#SBATCH --gres=gpu:1
+#SBATCH --qos=1wk
 #SBATCH --job-name={0}_{1}_{2}
 #SBATCH --mail-user=anatf@princeton.edu
 #SBATCH --mail-type=fail,time_limit\n\n""".format(classifiers_names[j],ligands_names[i], fold)
             
             if (classifier == "XGB"):
-                script_text = "cat phase1_models_tuning.ipynb | ligand="+ligand+" fold="+fold+" classifier="+classifier+
-                " n_estimators_ub="+params["n_estimators_ub"]+" n_estimators_lb= "+params["n_estimators_lb"]+
-                " max_depth_ub="+params["max_depth_ub"]+" max_depth_lb="+params["max_depth_lb"]+
-                " min_child_weight_ub="+params["min_child_weight_ub"]+" max_depth_lb="+params["max_depth_lb"]+
-                " colsample_bytree_ub="+params["colsample_bytree_ub"]+" colsample_bytree_lb="+params["colsample_bytree_lb"]+
-                " gamma_ub="+params["gamma_ub"]+" gamma_lb="+params["gamma_lb"]+
-                " learning_rate_ub="+params["learning_rate_ub"]+" learning_rate_lb="+params["learning_rate_lb"]+
-                " runipy --stdout > reports/"+ligand+"_"+classifier+"_"+fold+"_5w.ipynb"
+                script_text = ("cat phase1_models_tuning.ipynb | ligand="+ligand+" fold="+fold+" classifier="+classifier+""
+                " n_estimators_ub="+params["n_estimators_ub"]+" n_estimators_lb="+params["n_estimators_lb"]+""
+                " max_depth_ub="+params["max_depth_ub"]+" max_depth_lb="+params["max_depth_lb"]+""
+                " min_child_weight_ub="+params["min_child_weight_ub"]+" max_depth_lb="+params["max_depth_lb"]+""
+                " colsample_bytree_ub="+params["colsample_bytree_ub"]+" colsample_bytree_lb="+params["colsample_bytree_lb"]+""
+                " gamma_ub="+params["gamma_ub"]+" gamma_lb="+params["gamma_lb"]+""
+                " learning_rate_ub="+params["learning_rate_ub"]+" learning_rate_lb="+params["learning_rate_lb"]+""
+                " runipy --stdout > reports/"+ligand+"_"+classifier+"_"+fold+"_5w.ipynb")
            
             elif (classifier == "RF"):
-                script_text = "cat phase1_models_tuning.ipynb | ligand="+ligand+" fold="+fold+" classifier="+classifier+
-                " n_estimators_ub="+params["n_estimators_ub"]+" n_estimators_lb= "+params["n_estimators_lb"]+
-                " max_depth_ub="+params["max_depth_ub"]+" max_depth_lb="+params["max_depth_lb"]+
-                " min_samples_leaf_ub="+params["min_samples_leaf_ub"]+" min_samples_leaf_lb="+params["min_samples_leaf_lb"]+
-                " min_samples_split_ub="+params["min_samples_split_ub"]+" min_samples_split_lb="+params["min_samples_split_lb"]+
-                " runipy --stdout > reports/"+ligand+"_"+classifier+"_"+fold+"_5w.ipynb"
+                script_text = ("cat phase1_models_tuning.ipynb | ligand="+ligand+" fold="+fold+" classifier="+classifier+""
+                " n_estimators_ub="+params["n_estimators_ub"]+" n_estimators_lb="+params["n_estimators_lb"]+""
+                " max_depth_ub="+params["max_depth_ub"]+" max_depth_lb="+params["max_depth_lb"]+""
+                " min_samples_leaf_ub="+params["min_samples_leaf_ub"]+" min_samples_leaf_lb="+params["min_samples_leaf_lb"]+""
+                " min_samples_split_ub="+params["min_samples_split_ub"]+" min_samples_split_lb="+params["min_samples_split_lb"]+""
+                " runipy --stdout > reports/"+ligand+"_"+classifier+"_"+fold+"_5w.ipynb")
             
             elif (classifier == "ADA"):
-                script_text = "cat phase1_models_tuning.ipynb | ligand="+ligand+" fold="+fold+" classifier="+classifier+
-                " n_estimators_ub="+params["n_estimators_ub"]+" n_estimators_lb= "+params["n_estimators_lb"]+
-                " learning_rate_ub="+params["learning_rate_ub"]+" learning_rate_lb="+params["learning_rate_lb"]+
-                " runipy --stdout > reports/"+ligand+"_"+classifier+"_"+fold+"_5w.ipynb"
+                script_text = ("cat phase1_models_tuning.ipynb | ligand="+ligand+" fold="+fold+" classifier="+classifier+""
+                " n_estimators_ub="+params["n_estimators_ub"]+" n_estimators_lb="+params["n_estimators_lb"]+""
+                " learning_rate_ub="+params["learning_rate_ub"]+" learning_rate_lb="+params["learning_rate_lb"]+""
+                " runipy --stdout > reports/"+ligand+"_"+classifier+"_"+fold+"_5w.ipynb")
             
             elif (classifier == "SVM"):
-                script_text = "cat phase1_models_tuning.ipynb | ligand="+ligand+" fold="+fold+" classifier="+classifier+
-                " C_ub="+C_ub+" C_lb= "+C_lb+
-                " gamma_ub="+params["gamma_ub"]+" gamma_lb="+params["gamma_lb"]+
-                " runipy --stdout > reports/"+ligand+"_"+classifier+"_"+fold+"_5w.ipynb"
+                script_text = ("cat phase1_models_tuning.ipynb | ligand="+ligand+" fold="+fold+" classifier="+classifier+""
+                " C_ub="+C_ub+" C_lb="+C_lb+""
+                " gamma_ub="+params["gamma_ub"]+" gamma_lb="+params["gamma_lb"]+""
+                " runipy --stdout > reports/"+ligand+"_"+classifier+"_"+fold+"_5w.ipynb")
                 
             elif (classifier == "Logistic"):
-                script_text = "cat phase1_models_tuning.ipynb | ligand="+ligand+" fold="+fold+" classifier="+classifier+
-                " C_ub="+params["C_ub"]+" C_lb= "+params["C_lb"]+
-                " runipy --stdout > reports/"+ligand+"_"+classifier+"_"+fold+"_5w.ipynb"
+                script_text = ("cat phase1_models_tuning.ipynb | ligand="+ligand+" fold="+fold+" classifier="+classifier+""
+                " C_ub="+params["C_ub"]+" C_lb="+params["C_lb"]+""
+                " runipy --stdout > reports/"+ligand+"_"+classifier+"_"+fold+"_5w.ipynb")
              
             elif (classifier == "KNN"):
-                script_text = "cat phase1_models_tuning.ipynb | ligand="+ligand+" fold="+fold+" classifier="+classifier+
-                " n_neighbors_ub="+params["n_neighbors_ub"]+" n_neighbors_lb= "+params["n_neighbors_lb"]+
-                " runipy --stdout > reports/"+ligand+"_"+classifier+"_"+fold+"_5w.ipynb"
+                script_text = ("cat phase1_models_tuning.ipynb | ligand="+ligand+" fold="+fold+" classifier="+classifier+""
+                " n_neighbors_ub="+params["n_neighbors_ub"]+" n_neighbors_lb="+params["n_neighbors_lb"]+""
+                " runipy --stdout > reports/"+ligand+"_"+classifier+"_"+fold+"_5w.ipynb")
 
             runscript  = open("slurm_run","w") 
             runscript.write(header)
