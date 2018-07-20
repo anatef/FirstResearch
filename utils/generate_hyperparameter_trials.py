@@ -30,7 +30,8 @@ def generate_trials_NN(no_trials, learning_rate_ub, learning_rate_lb, batch_size
 #====================================================================================================================#
 def generate_trials_XGB(no_trials, n_estimators_ub, n_estimators_lb,
                        max_depth_ub, max_depth_lb, min_child_weight_ub,
-                       min_child_weight_lb, colsample_bytree_ub, colsample_bytree_lb):
+                       min_child_weight_lb, colsample_bytree_ub, colsample_bytree_lb,
+                       gamma_ub, gamma_lb, learning_rate_lb, learning_rate_ub):
     np.random.seed(0)
     hyperparameter_trials = []
     for trial in range(no_trials):
@@ -38,8 +39,10 @@ def generate_trials_XGB(no_trials, n_estimators_ub, n_estimators_lb,
         trial_dict = {
                 "n_estimators": np.random.randint(n_estimators_lb,n_estimators_ub),
                 "max_depth": np.random.randint(max_depth_lb, max_depth_ub),
-                "min_child_weight": np.random.randint(min_child_weight_lb,min_child_weight_ub), 
-                "colsample_bytree": np.random.uniform(colsample_bytree_lb,colsample_bytree_ub),           
+                "min_child_weight": np.random.uniform(min_child_weight_lb,min_child_weight_ub), 
+                "colsample_bytree": np.random.uniform(colsample_bytree_lb,colsample_bytree_ub), 
+                "gamma": 10 ** (np.random.uniform(gamma_lb, gamma_ub)),
+                "learning_rate": 10 ** (np.random.uniform(learning_rate_lb,learning_rate_ub))
                }
         hyperparameter_trials.append(trial_dict)
 
@@ -47,13 +50,18 @@ def generate_trials_XGB(no_trials, n_estimators_ub, n_estimators_lb,
 
 #====================================================================================================================#
 
-def generate_trials_RF(no_trials, n_estimators_ub, n_estimators_lb):
+def generate_trials_RF(no_trials, n_estimators_ub, n_estimators_lb,
+                      max_depth_ub, max_depth_lb, min_samples_leaf_ub,
+                      min_samples_leaf_lb, min_samples_split_ub, min_samples_split_lb):
     np.random.seed(0)
     hyperparameter_trials = []
     for trial in range(no_trials):
 
         trial_dict = {
                 "n_estimators": np.random.randint(n_estimators_lb,n_estimators_ub),
+                "max_depth": np.random.randint(max_depth_lb, max_depth_ub),
+                "min_samples_leaf": np.random.randint(min_samples_leaf_lb, min_samples_leaf_ub),
+                "min_samples_split": np.random.randint(min_samples_split_lb, min_samples_split_ub)
                }
         hyperparameter_trials.append(trial_dict)
 
@@ -85,13 +93,15 @@ def generate_trials_KNN(no_trials, n_neighbors_ub, n_neighbors_lb):
     return hyperparameter_trials
 
 #====================================================================================================================#
-def generate_trials_ADA(no_trials, n_estimators_ub, n_estimators_lb):
+def generate_trials_ADA(no_trials, n_estimators_ub, n_estimators_lb,
+                       learning_rate_lb,learning_rate_ub):
     np.random.seed(0)
     hyperparameter_trials = []
     for trial in range(no_trials):
 
         trial_dict = {
-                "n_estimators": np.random.randint(n_estimators_lb,n_estimators_ub),  
+                "n_estimators": np.random.randint(n_estimators_lb,n_estimators_ub),
+                "learning_rate": 10 ** (np.random.uniform(learning_rate_lb,learning_rate_ub))
                }
         hyperparameter_trials.append(trial_dict)
 
