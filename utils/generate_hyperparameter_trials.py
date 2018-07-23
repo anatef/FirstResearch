@@ -8,7 +8,8 @@ def generate_trials_NN(no_trials, learning_rate_ub, learning_rate_lb, batch_size
     np.random.seed(0)
     random.seed(0)
     hyperparameter_trials = []
-    for trial in range(no_trials):
+    trial_count = 0
+    while trial_count != no_trials:
 
         trial_dict = {
                 # learning_rate: started with 10^-6 to 10^-2
@@ -26,7 +27,9 @@ def generate_trials_NN(no_trials, learning_rate_ub, learning_rate_lb, batch_size
                 "hidden_units_2": np.random.randint(hidden_units_2_lb,hidden_units_2_ub),
                 "weight": random.choice(["balanced", "0.1", "None"])
                }
+        if trial_dict in hyperparameter_trials: continue
         hyperparameter_trials.append(trial_dict)
+        trial_count = trial_count + 1
 
     return hyperparameter_trials
 
@@ -40,7 +43,8 @@ def generate_trials_XGB(no_trials, n_estimators_ub, n_estimators_lb,
     np.random.seed(0)
     random.seed(0)
     hyperparameter_trials = []
-    for trial in range(no_trials):
+    trial_count = 0
+    while trial_count != no_trials:
 
         trial_dict = {
                 "n_estimators": np.random.randint(n_estimators_lb,n_estimators_ub),
@@ -51,7 +55,9 @@ def generate_trials_XGB(no_trials, n_estimators_ub, n_estimators_lb,
                 "learning_rate": 10 ** (np.random.uniform(learning_rate_lb,learning_rate_ub)),
                 "scale_pos_weight": random.choice([1, "balanced", 0.1])
                }
+        if trial_dict in hyperparameter_trials: continue
         hyperparameter_trials.append(trial_dict)
+        trial_count = trial_count + 1
 
     return hyperparameter_trials
 
@@ -64,8 +70,9 @@ def generate_trials_RF(no_trials, n_estimators_ub, n_estimators_lb,
     np.random.seed(0)
     random.seed(0)
     hyperparameter_trials = []
-    for trial in range(no_trials):
-
+    trial_count = 0
+    while trial_count != no_trials:
+    
         trial_dict = {
                 "n_estimators": np.random.randint(n_estimators_lb,n_estimators_ub),
                 "max_depth": np.random.randint(max_depth_lb, max_depth_ub),
@@ -73,7 +80,9 @@ def generate_trials_RF(no_trials, n_estimators_ub, n_estimators_lb,
                 "min_samples_split": np.random.randint(min_samples_split_lb, min_samples_split_ub),
                 "class_weight": random.choice([None, "balanced", {0:10, 1:1}])
                }
+        if trial_dict in hyperparameter_trials: continue
         hyperparameter_trials.append(trial_dict)
+        trial_count = trial_count + 1
 
     return hyperparameter_trials
 #====================================================================================================================#
@@ -82,14 +91,17 @@ def generate_trials_Log(no_trials, C_ub, C_lb):
     np.random.seed(0)
     random.seed(0)
     hyperparameter_trials = []
-    for trial in range(no_trials):
+    trial_count = 0
+    while trial_count != no_trials:
 
         trial_dict = {
                 # logarithimic scale
                 "C": 10 ** (np.random.uniform(C_lb,C_ub)),
                 "class_weight": random.choice([None, "balanced", {0:10, 1:1}])
                }
+        if trial_dict in hyperparameter_trials: continue
         hyperparameter_trials.append(trial_dict)
+        trial_count = trial_count + 1
 
     return hyperparameter_trials
 #====================================================================================================================#
@@ -98,14 +110,18 @@ def generate_trials_KNN(no_trials, n_neighbors_ub, n_neighbors_lb):
     np.random.seed(0)
     random.seed(0)
     hyperparameter_trials = []
-    for trial in range(no_trials):
-
+    trial_count = 0
+    while trial_count != no_trials:
+       
         trial_dict = {
                 "n_neighbors": np.random.randint(n_neighbors_lb,n_neighbors_ub),
                 "weights": random.choice(["uniform", "distance"])
                }
+        
+        if trial_dict in hyperparameter_trials: continue
         hyperparameter_trials.append(trial_dict)
-
+        trial_count = trial_count + 1
+        
     return hyperparameter_trials
 
 #====================================================================================================================#
@@ -114,13 +130,16 @@ def generate_trials_ADA(no_trials, n_estimators_ub, n_estimators_lb,
     
     np.random.seed(0)
     hyperparameter_trials = []
-    for trial in range(no_trials):
+    trial_count = 0
+    while trial_count != no_trials:
 
         trial_dict = {
                 "n_estimators": np.random.randint(n_estimators_lb,n_estimators_ub),
                 "learning_rate": 10 ** (np.random.uniform(learning_rate_lb,learning_rate_ub))
                }
+        if trial_dict in hyperparameter_trials: continue
         hyperparameter_trials.append(trial_dict)
+        trial_count = trial_count + 1
 
     return hyperparameter_trials
 #====================================================================================================================#
@@ -129,7 +148,8 @@ def generate_trials_SVM(no_trials, C_ub, C_lb, gamma_ub, gamma_lb):
     np.random.seed(0)
     random.seed(0)
     hyperparameter_trials = []
-    for trial in range(no_trials):
+    trial_count = 0
+    while trial_count != no_trials:
 
         trial_dict = {
                 "C": 10 ** (np.random.uniform(C_lb,C_ub)), 
@@ -137,6 +157,8 @@ def generate_trials_SVM(no_trials, C_ub, C_lb, gamma_ub, gamma_lb):
             "class_weight": random.choice([None, "balanced", {0:10, 1:1}]),
             "kernel": random.choice(["linear", "poly", "rbf", "sigmoid"])
         }
+        if trial_dict in hyperparameter_trials: continue
         hyperparameter_trials.append(trial_dict)
+        trial_count = trial_count + 1
 
     return hyperparameter_trials
