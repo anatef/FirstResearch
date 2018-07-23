@@ -6,6 +6,7 @@ def generate_trials_NN(no_trials, learning_rate_ub, learning_rate_lb, batch_size
                        hidden_units_1_ub, hidden_units_1_lb, hidden_units_2_ub, hidden_units_2_lb):
     
     np.random.seed(0)
+    random.seed(0)
     hyperparameter_trials = []
     for trial in range(no_trials):
 
@@ -23,7 +24,7 @@ def generate_trials_NN(no_trials, learning_rate_ub, learning_rate_lb, batch_size
                 # hidden units: started with (50, 300), (350,1000)
                 "hidden_units_1": np.random.randint(hidden_units_1_lb,hidden_units_1_ub),
                 "hidden_units_2": np.random.randint(hidden_units_2_lb,hidden_units_2_ub),
-                "weight": random.choice(["balanced", "0.1"])
+                "weight": random.choice(["balanced", "0.1", "None"])
                }
         hyperparameter_trials.append(trial_dict)
 
