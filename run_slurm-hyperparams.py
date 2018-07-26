@@ -13,18 +13,14 @@ trials_num = 100
 # classifiers_names = ["XB", "RF", "AD", "SV", "LG", "KN"]
 
 #One run
-ligands = ["rna"]
-ligands_names = ["rna"]
-classifiers = ["KNN"]
-classifiers_names = ["KN"]
+ligands = ["sm"]
+ligands_names = ["sm"]
+classifiers = ["ADA"]
+classifiers_names = ["AD"]
 
 #Hyperparameters ranges dictionaries
 hp_dict = dict()
-hp_dict["XGB"] = {"n_estimators_ub": "1500",
-                  "n_estimators_lb": "100",
-                  "max_depth_ub": "1500",
-                  "max_depth_lb": "100",
-                  "max_depth_ub": "20",
+hp_dict["XGB"] = {"max_depth_ub": "20",
                   "max_depth_lb": "1",
                   "min_child_weight_ub": "2",
                   "min_child_weight_lb": "0",
@@ -47,7 +43,7 @@ hp_dict["RF"] = {"n_estimators_ub": "1500",
 hp_dict["ADA"] = {"n_estimators_ub": "1500",
                  "n_estimators_lb": "100",
                  "learning_rate_ub": "0",
-                 "learning_rate_lb": "-4"}
+                 "learning_rate_lb": "-3"}
 
 hp_dict["SVM"] = {"C_ub": "2",
                  "C_lb": "-4",
@@ -72,9 +68,6 @@ for j in range(len(classifiers)):
         for k in range(1,folds_num+1):
             fold = str(k)
             
-#             for l in range(trials_num):
-#                 trial_idx = str(l)
-            
             header ="""#!/bin/bash
 #SBATCH --mem=40960
 #SBATCH --qos=1day
@@ -84,7 +77,6 @@ for j in range(len(classifiers)):
 
             if (classifier == "XGB"):
                 script_text = ("cat phase1_models_tuning.ipynb | ligand="+ligand+" fold="+fold+" classifier="+classifier+" trial=${SLURM_ARRAY_TASK_ID}"
-                " n_estimators_ub="+params["n_estimators_ub"]+" n_estimators_lb="+params["n_estimators_lb"]+""
                 " max_depth_ub="+params["max_depth_ub"]+" max_depth_lb="+params["max_depth_lb"]+""
                 " min_child_weight_ub="+params["min_child_weight_ub"]+" max_depth_lb="+params["max_depth_lb"]+""
                 " colsample_bytree_ub="+params["colsample_bytree_ub"]+" colsample_bytree_lb="+params["colsample_bytree_lb"]+""
@@ -108,7 +100,7 @@ for j in range(len(classifiers)):
 
             elif (classifier == "SVM"):
                 script_text = ("cat phase1_models_tuning.ipynb | ligand="+ligand+" fold="+fold+" classifier="+classifier+" trial=${SLURM_ARRAY_TASK_ID}"
-                " C_ub="+C_ub+" C_lb="+C_lb+""
+                " C_ub="+params["C_ub"]+" C_lb="+params["C_lb"]+""
                 " gamma_ub="+params["gamma_ub"]+" gamma_lb="+params["gamma_lb"]+""
                 " runipy --stdout > reports/"+ligand+"_"+classifier+"_"+fold+"_${SLURM_ARRAY_TASK_ID}_5w.ipynb")
 
@@ -127,3 +119,5 @@ for j in range(len(classifiers)):
             runscript.write(script_text)
             runscript.close()
             os.system("sbatch --array=0-"+str(trials_num-1)+" slurm_run")
+
+

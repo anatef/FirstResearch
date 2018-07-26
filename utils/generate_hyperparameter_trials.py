@@ -35,8 +35,7 @@ def generate_trials_NN(no_trials, learning_rate_ub, learning_rate_lb, batch_size
 
 
 #====================================================================================================================#
-def generate_trials_XGB(no_trials, n_estimators_ub, n_estimators_lb,
-                       max_depth_ub, max_depth_lb, min_child_weight_ub,
+def generate_trials_XGB(no_trials, max_depth_ub, max_depth_lb, min_child_weight_ub,
                        min_child_weight_lb, colsample_bytree_ub, colsample_bytree_lb,
                        gamma_ub, gamma_lb, learning_rate_lb, learning_rate_ub):
     
@@ -47,7 +46,6 @@ def generate_trials_XGB(no_trials, n_estimators_ub, n_estimators_lb,
     while trial_count != no_trials:
 
         trial_dict = {
-                "n_estimators": np.random.randint(n_estimators_lb,n_estimators_ub),
                 "max_depth": np.random.randint(max_depth_lb, max_depth_ub),
                 "min_child_weight": np.random.uniform(min_child_weight_lb,min_child_weight_ub), 
                 "colsample_bytree": np.random.uniform(colsample_bytree_lb,colsample_bytree_ub), 
