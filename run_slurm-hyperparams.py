@@ -3,20 +3,20 @@ import os
 
 #Add: #SBATCH --gres=gpu:1 for running on GPU
 #Add: SBATCH --time=00:00:00 for running on GPU
-folds_num = 1
-trials_num = 10
+folds_num = 5
+trials_num = 100
 
 #Params to run on
-#ligands = ["sm", "metabolite", "peptide", "ion", "dna", "rna"]
-#ligands_names = ["sm", "met", "pep", "ion", "dna", "rna"]
+ligands = ["dna","sm", "metabolite", "peptide", "ion", "rna"]
+ligands_names = ["dna","sm", "met", "pep", "ion", "rna"]
 # classifiers = ["XGB", "RF", "ADA", "SVM", "Logistic", "KNN"]
 # classifiers_names = ["XB", "RF", "AD", "SV", "LG", "KN"]
 
 #One run
-ligands = ["dna"]
-ligands_names = ["dna"]
-classifiers = ["XGB"]
-classifiers_names = ["XGB"]
+#ligands = ["dna"]
+#ligands_names = ["dna"]
+classifiers = ["NN"]
+classifiers_names = ["NN"]
 
 #Hyperparameters ranges dictionaries
 hp_dict = dict()
@@ -94,10 +94,12 @@ for j in range(len(classifiers)):
             header ="""#!/bin/bash
 
 #SBATCH --mem=40960
-#SBATCH --qos=1day
+#SBATCH --time=50:00:00
+#SBATCH --gres=gpu:1
 #SBATCH --job-name={0}_{1}_{2}
-#SBATCH --mail-user=anatf@princeton.edu
+#SBATCH --mail-user=ms54@princeton.edu
 #SBATCH --mail-type=fail,time_limit\n\n""".format(classifiers_names[j],ligands_names[i], fold)
+
 
             if (classifier == "XGB"):
                 script_text = ("cat phase1_models_tuning.ipynb | ligand="+ligand+" fold="+fold+" classifier="+classifier+" trial=${SLURM_ARRAY_TASK_ID}"
