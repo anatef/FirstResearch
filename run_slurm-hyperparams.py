@@ -3,33 +3,39 @@ import os
 
 #Add: #SBATCH --gres=gpu:1 for running on GPU
 #Add: SBATCH --time=00:00:00 for running on GPU
-folds_num = 5
-trials_num = 100
+folds_num = 1
+trials_num = 10
 
 #Params to run on
-# ligands = ["sm", "metabolite", "peptide", "ion", "dna", "rna"]
-# ligands_names = ["sm", "met", "pep", "ion", "dna", "rna"]
+#ligands = ["sm", "metabolite", "peptide", "ion", "dna", "rna"]
+#ligands_names = ["sm", "met", "pep", "ion", "dna", "rna"]
 # classifiers = ["XGB", "RF", "ADA", "SVM", "Logistic", "KNN"]
 # classifiers_names = ["XB", "RF", "AD", "SV", "LG", "KN"]
 
 #One run
-ligands = ["sm"]
-ligands_names = ["sm"]
-classifiers = ["ADA"]
-classifiers_names = ["AD"]
+ligands = ["dna"]
+ligands_names = ["dna"]
+classifiers = ["XGB"]
+classifiers_names = ["XGB"]
 
 #Hyperparameters ranges dictionaries
 hp_dict = dict()
-hp_dict["XGB"] = {"max_depth_ub": "20",
-                  "max_depth_lb": "1",
+# XGB test case where just max_depth has a disjoint interval to sample from
+hp_dict["XGB"] = {                 
+                  "max_depth_ub": "1500",
+                  "max_depth_lb": "100",               
+                  "sec_max_depth_ub": "20",
+                  "sec_max_depth_lb": "1",
                   "min_child_weight_ub": "2",
                   "min_child_weight_lb": "0",
                   "colsample_bytree_ub": "1",
                   "colsample_bytree_lb": "0.25",
                   "gamma_ub": "0",
                   "gamma_lb": "-3",
-                  "learning_rate_ub": "-0.5",
-                  "learning_rate_lb": "-3"}
+                  # changed to 0 from -0.5 because casting int("-0.5") leads to error
+                  "learning_rate_ub": "0",
+                  "learning_rate_lb": "-3"
+                  }
 
 hp_dict["RF"] = {"n_estimators_ub": "1500",
                 "n_estimators_lb": "100",
@@ -43,7 +49,7 @@ hp_dict["RF"] = {"n_estimators_ub": "1500",
 hp_dict["ADA"] = {"n_estimators_ub": "1500",
                  "n_estimators_lb": "100",
                  "learning_rate_ub": "0",
-                 "learning_rate_lb": "-3"}
+                 "learning_rate_lb": "-4"}
 
 hp_dict["SVM"] = {"C_ub": "2",
                  "C_lb": "-4",
@@ -55,6 +61,20 @@ hp_dict["Logistic"] = {"C_ub": "0",
 
 hp_dict["KNN"] = {"n_neighbors_ub": "500",
                  "n_neighbors_lb": "10"}
+
+hp_dict["NN"] = {"learning_rate_ub":"-2",
+                "learning_rate_lb":"-6",
+                "batch_size_ub":"300",
+                "batch_size_lb":"30",
+                "weight_decay_ub":"-5",
+                "weight_decay_lb":"-25",
+                "beta_ub":"0.95",
+                "beta_lb":"0.85",
+                "hidden_units_1_ub":"300",
+                "hidden_units_1_lb":"50",
+                "hidden_units_2_ub":"1000",
+                "hidden_units_2_lb":"350"}
+
 
 
 #Looping over the jobs
@@ -68,7 +88,11 @@ for j in range(len(classifiers)):
         for k in range(1,folds_num+1):
             fold = str(k)
             
+#             for l in range(trials_num):
+#                 trial_idx = str(l)
+            
             header ="""#!/bin/bash
+
 #SBATCH --mem=40960
 #SBATCH --qos=1day
 #SBATCH --job-name={0}_{1}_{2}
@@ -78,7 +102,8 @@ for j in range(len(classifiers)):
             if (classifier == "XGB"):
                 script_text = ("cat phase1_models_tuning.ipynb | ligand="+ligand+" fold="+fold+" classifier="+classifier+" trial=${SLURM_ARRAY_TASK_ID}"
                 " max_depth_ub="+params["max_depth_ub"]+" max_depth_lb="+params["max_depth_lb"]+""
-                " min_child_weight_ub="+params["min_child_weight_ub"]+" max_depth_lb="+params["max_depth_lb"]+""
+                " sec_max_depth_ub="+params["sec_max_depth_ub"]+" sec_max_depth_lb="+params["sec_max_depth_lb"]+""
+                " min_child_weight_ub="+params["min_child_weight_ub"]+" min_child_weight_lb="+params["min_child_weight_lb"]+""
                 " colsample_bytree_ub="+params["colsample_bytree_ub"]+" colsample_bytree_lb="+params["colsample_bytree_lb"]+""
                 " gamma_ub="+params["gamma_ub"]+" gamma_lb="+params["gamma_lb"]+""
                 " learning_rate_ub="+params["learning_rate_ub"]+" learning_rate_lb="+params["learning_rate_lb"]+""
@@ -100,7 +125,7 @@ for j in range(len(classifiers)):
 
             elif (classifier == "SVM"):
                 script_text = ("cat phase1_models_tuning.ipynb | ligand="+ligand+" fold="+fold+" classifier="+classifier+" trial=${SLURM_ARRAY_TASK_ID}"
-                " C_ub="+params["C_ub"]+" C_lb="+params["C_lb"]+""
+                " C_ub="+C_ub+" C_lb="+C_lb+""
                 " gamma_ub="+params["gamma_ub"]+" gamma_lb="+params["gamma_lb"]+""
                 " runipy --stdout > reports/"+ligand+"_"+classifier+"_"+fold+"_${SLURM_ARRAY_TASK_ID}_5w.ipynb")
 
@@ -114,10 +139,18 @@ for j in range(len(classifiers)):
                 " n_neighbors_ub="+params["n_neighbors_ub"]+" n_neighbors_lb="+params["n_neighbors_lb"]+""
                 " runipy --stdout > reports/"+ligand+"_"+classifier+"_"+fold+"_${SLURM_ARRAY_TASK_ID}_5w.ipynb")
 
+            elif (classifier == "NN"):
+                script_text = ("cat phase1_models_tuning.ipynb | ligand="+ligand+" fold="+fold+" classifier="+classifier+" trial=${SLURM_ARRAY_TASK_ID}"
+                " learning_rate_ub="+params["learning_rate_ub"]+" learning_rate_lb="+params["learning_rate_lb"]+" batch_size_ub="+params["batch_size_ub"]+""
+                " batch_size_lb="+params["batch_size_lb"]+" weight_decay_ub="+params["weight_decay_ub"]+" weight_decay_lb="+params["weight_decay_lb"]+""
+                " beta_ub="+params["beta_ub"]+" beta_lb="+params["beta_lb"]+" hidden_units_1_ub="+params["hidden_units_1_ub"]+" hidden_units_1_lb="+params["hidden_units_1_lb"]+""
+                " hidden_units_2_ub="+params["hidden_units_2_ub"]+" hidden_units_2_lb="+params["hidden_units_2_lb"]+""
+                " runipy --stdout > reports/"+ligand+"_"+classifier+"_"+fold+"_${SLURM_ARRAY_TASK_ID}_5w.ipynb")
+            
+
+ 
             runscript  = open("slurm_run","w")
             runscript.write(header)
             runscript.write(script_text)
             runscript.close()
             os.system("sbatch --array=0-"+str(trials_num-1)+" slurm_run")
-
-
