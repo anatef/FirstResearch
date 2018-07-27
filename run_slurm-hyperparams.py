@@ -21,8 +21,7 @@ classifiers_names = ["XGB"]
 #Hyperparameters ranges dictionaries
 hp_dict = dict()
 # XGB test case where just max_depth has a disjoint interval to sample from
-hp_dict["XGB"] = {                 
-                  "max_depth_ub": "1500",
+hp_dict["XGB"] = {"max_depth_ub": "1500",
                   "max_depth_lb": "100",               
                   "sec_max_depth_ub": "20",
                   "sec_max_depth_lb": "1",
@@ -32,10 +31,8 @@ hp_dict["XGB"] = {
                   "colsample_bytree_lb": "0.25",
                   "gamma_ub": "0",
                   "gamma_lb": "-3",
-                  # changed to 0 from -0.5 because casting int("-0.5") leads to error
                   "learning_rate_ub": "-0.5",
-                  "learning_rate_lb": "-3"
-                  }
+                  "learning_rate_lb": "-3"}
 
 hp_dict["RF"] = {"n_estimators_ub": "1500",
                 "n_estimators_lb": "100",
@@ -44,12 +41,12 @@ hp_dict["RF"] = {"n_estimators_ub": "1500",
                 "min_samples_leaf_ub": "50",
                 "min_samples_leaf_lb": "1",
                 "min_samples_split_ub": "50",
-                "min_samples_split_lb": "1"}
+                "min_samples_split_lb": "2"}
 
 hp_dict["ADA"] = {"n_estimators_ub": "1500",
                  "n_estimators_lb": "100",
                  "learning_rate_ub": "0",
-                 "learning_rate_lb": "-4"}
+                 "learning_rate_lb": "-3"}
 
 hp_dict["SVM"] = {"C_ub": "2",
                  "C_lb": "-4",
@@ -76,7 +73,6 @@ hp_dict["NN"] = {"learning_rate_ub":"-2",
                 "hidden_units_2_lb":"350"}
 
 
-
 #Looping over the jobs
 for j in range(len(classifiers)):
     classifier = classifiers[j]
@@ -87,9 +83,6 @@ for j in range(len(classifiers)):
         
         for k in range(1,folds_num+1):
             fold = str(k)
-            
-#             for l in range(trials_num):
-#                 trial_idx = str(l)
             
             header ="""#!/bin/bash
 
@@ -147,8 +140,6 @@ for j in range(len(classifiers)):
                 " beta_ub="+params["beta_ub"]+" beta_lb="+params["beta_lb"]+" hidden_units_1_ub="+params["hidden_units_1_ub"]+" hidden_units_1_lb="+params["hidden_units_1_lb"]+""
                 " hidden_units_2_ub="+params["hidden_units_2_ub"]+" hidden_units_2_lb="+params["hidden_units_2_lb"]+""
                 " runipy --stdout > reports/"+ligand+"_"+classifier+"_"+fold+"_${SLURM_ARRAY_TASK_ID}_5w.ipynb")
-            
-
  
             runscript  = open("slurm_run","w")
             runscript.write(header)
