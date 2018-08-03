@@ -1,9 +1,13 @@
 import numpy as np
 import random
 
-
+#Taken from: https://eli.thegreenplace.net/2010/01/22/weighted-random-generation-in-python
 def weighted_choice_sub(weights):
-    "A weighted random.choice function"
+    """
+    A weighted random.choice function.
+    
+    @weights: a list with the weight for each index.
+    return: an index from the list witb probability proportional to the weight"""
     
     rnd = random.random() * sum(weights)
     for i, w in enumerate(weights):
