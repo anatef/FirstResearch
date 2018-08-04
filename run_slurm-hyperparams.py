@@ -25,6 +25,8 @@ hp_dict["XGB"] = {"max_depth_ub": "1500",
                   "max_depth_lb": "100",               
                   "sec_max_depth_ub": "20",
                   "sec_max_depth_lb": "1",
+                  "max_depth_weight_1": "2",
+                  "max_depth_weight_2": "1",
                   "min_child_weight_ub": "2",
                   "min_child_weight_lb": "0",
                   "colsample_bytree_ub": "1",
@@ -87,7 +89,8 @@ for j in range(len(classifiers)):
             header ="""#!/bin/bash
 
 #SBATCH --mem=40960
-#SBATCH --qos=1day
+#SBATCH --time=50:00:00
+#SBATCH --gres=gpu:1
 #SBATCH --job-name={0}_{1}_{2}
 #SBATCH --mail-user=ms54@princeton.edu
 #SBATCH --mail-type=fail,time_limit\n\n""".format(classifiers_names[j],ligands_names[i], fold)
