@@ -26,7 +26,7 @@ class Net(nn.Module):
                  hidden_units_2 = 400, batch_size = 75, 
                  learning_rate = 1e-5, beta = 0.9, 
                  weight_decay = 1e-4, epoch_count = 15, weight="balanced", input_size = 750):
-
+        torch.manual_seed(0)
         super(Net, self).__init__()
         self.input = nn.Linear(input_size, hidden_units_1) 
         self.hidden1 = nn.Linear(hidden_units_1, hidden_units_2)
@@ -55,6 +55,9 @@ class Net(nn.Module):
         return x
     
     def fit(self, train_valid_data, train_valid_labels, weight):
+        # set in training mode
+        self.train()
+        
         # set random seed
         torch.manual_seed(0)
           
