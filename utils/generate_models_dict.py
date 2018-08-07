@@ -6,11 +6,127 @@ import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier 
 from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
 from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import RepeatedStratifiedKFold
 from sklearn.svm import SVC
 from xgboost import XGBClassifier
+from sklearn.utils import shuffle
+
+# Neural Net imports
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import torch.optim as optim
+from torch.optim.lr_scheduler import LambdaLR
 
 
-def generate_models_dict(ligand, ligands, ligands_positives_df, ligands_negatives_df, folds_num):
+
+# define the network 
+class Net(nn.Module):
+    def __init__(self, dropout_parameter = 0.5, hidden_units_1 = 200, 
+                 hidden_units_2 = 400, batch_size = 75, 
+                 learning_rate = 1e-5, beta = 0.9, 
+                 weight_decay = 1e-4, epoch_count = 15, weight="balanced", input_size = 750):
+
+        super(Net, self).__init__()
+        self.input = nn.Linear(input_size, hidden_units_1) 
+        self.hidden1 = nn.Linear(hidden_units_1, hidden_units_2)
+        self.hidden1_bn = nn.BatchNorm1d(hidden_units_2)
+        self.hidden2 = nn.Linear(hidden_units_2, hidden_units_2)
+        self.hidden2_bn = nn.BatchNorm1d(hidden_units_2)
+        self.hidden3 = nn.Linear(hidden_units_2, hidden_units_1)
+        self.hidden3_bn = nn.BatchNorm1d(hidden_units_1)
+        self.dropout = nn.Dropout(p = dropout_parameter)
+        self.output = nn.Linear(hidden_units_1,2)
+        self.learning_rate = learning_rate
+        self.beta = beta
+        self.batch_size = batch_size
+        self.weight_decay = weight_decay
+        self.epoch_count = epoch_count
+        self.weight = weight
+        
+
+    def forward(self, x):
+        sf = nn.Softmax()
+        x = F.rrelu(self.input(x))
+        x = self.dropout(F.rrelu(self.hidden1_bn(self.hidden1(x))))
+        x = self.dropout(F.rrelu(self.hidden2_bn(self.hidden2(x))))
+        x = self.dropout(F.rrelu(self.hidden3_bn(self.hidden3(x))))
+        x = self.output(x)
+        return x
+    
+    def fit(self, train_valid_data, train_valid_labels, weight):
+        # set random seed
+        torch.manual_seed(0)
+          
+        trainset = pd.concat([train_valid_data,train_valid_labels],axis=1)
+        trainset = shuffle(trainset, random_state = 0)
+
+        train_valid_data = trainset.iloc[:,:trainset.shape[1]-1]
+        train_valid_labels = trainset.iloc[:,trainset.shape[1]-1]
+
+        # create loss function
+        loss = nn.BCEWithLogitsLoss(weight = weight)
+        # mini-batching
+        batch_size = self.batch_size
+        
+        BETA_2 = 0.999        
+        no_batch_minus_1 = train_valid_data.shape[0] / batch_size 
+
+        skf_2 = RepeatedStratifiedKFold(n_splits=no_batch_minus_1,n_repeats = self.epoch_count,random_state=0)
+
+        # create adam optimizer for Phase 2
+        optimizer_2 = optim.Adam(self.parameters(), lr=self.learning_rate,betas = (self.beta,BETA_2), 
+                                 weight_decay = self.weight_decay)
+        
+        lambda1 = lambda epoch_count: 0.99 ** epoch_count 
+        scheduler = LambdaLR(optimizer_2, lr_lambda=lambda1)
+        
+        count = 0
+        epoch_count = 0
+        
+        for train,test in skf_2.split(train_valid_data,train_valid_labels):
+            data = train_valid_data.iloc[test,:]
+            data = torch.Tensor(data.values.astype(np.float32))
+            # forward pass          
+            output = self.forward(data)
+            output.data = output.data.view(data.shape[0],2)
+
+            labels = train_valid_labels[test]
+            labels = labels.astype(int)
+            labels = torch.Tensor(np.eye(2)[labels])
+            labels = torch.autograd.Variable(labels, requires_grad = False)
+
+            # zero the gradient buffers
+            optimizer_2.zero_grad()
+            # compute loss and gradients
+            loss_output = loss(output,labels)
+            loss_output.backward()
+            # Does the update
+            optimizer_2.step()
+            
+            count = count + 1
+
+            # Early Stopping
+            if count == no_batch_minus_1 + 1:
+                count = 0
+                epoch_count = epoch_count + 1
+                scheduler.step()
+            
+    #prediction probabilities array
+    def predict_proba(self, X_test):
+        self.eval()
+        #forward pass
+        test = torch.Tensor(X_test.values.astype(np.float32))
+        output = self.forward(test)
+        sf = nn.Softmax()
+        probs = sf(output.data)
+        probs_list = []
+        for i in range(len(probs)):
+            probs_list.append(probs[i][1].item())          
+        return probs_list
+
+
+def generate_models_dict(ligand, ligands, ligands_positives_df, ligands_negatives_df, folds_num, no_features):
     """
     Create a dictionary of models with specific hyperparameters values for every ligand and fold combination.
     The function return the dictionary as output and also saves it in a pickle format.
@@ -316,6 +432,47 @@ def generate_models_dict(ligand, ligands, ligands_positives_df, ligands_negative
     classifiers["KNN"]["sm"][3] = KNeighborsClassifier(n_neighbors=117, n_jobs=-1, weights="distance")
     classifiers["KNN"]["sm"][4] = KNeighborsClassifier(n_neighbors=117, n_jobs=-1, weights="distance")
     classifiers["KNN"]["sm"][5] = KNeighborsClassifier(n_neighbors=117, n_jobs=-1, weights="distance")
+    
+    ###NN###
+    #==dna==#
+    classifiers["NN"]["dna"][1] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11, input_size=no_features)
+    classifiers["NN"]["dna"][2] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)    
+    classifiers["NN"]["dna"][3] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)
+    classifiers["NN"]["dna"][4] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)
+    classifiers["NN"]["dna"][5] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)    
+    #==rna==#
+    classifiers["NN"]["rna"][1] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)
+    classifiers["NN"]["rna"][2] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)    
+    classifiers["NN"]["rna"][3] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)
+    classifiers["NN"]["rna"][4] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)
+    classifiers["NN"]["rna"][5] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)    
+    
+    #==ion==#    
+    classifiers["NN"]["ion"][1] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)
+    classifiers["NN"]["ion"][2] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)    
+    classifiers["NN"]["ion"][3] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)
+    classifiers["NN"]["ion"][4] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)
+    classifiers["NN"]["ion"][5] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)    
+    
+    #==peptide==#
+    classifiers["NN"]["peptide"][1] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)
+    classifiers["NN"]["peptide"][2] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)    
+    classifiers["NN"]["peptide"][3] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)
+    classifiers["NN"]["peptide"][4] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)
+    classifiers["NN"]["peptide"][5] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)  
+    #==metabolite==#
+    classifiers["NN"]["metabolite"][1] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)
+    classifiers["NN"]["metabolite"][2] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)    
+    classifiers["NN"]["metabolite"][3] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)
+    classifiers["NN"]["metabolite"][4] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)
+    classifiers["NN"]["metabolite"][5] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)  
+    
+    #==sm==#
+    classifiers["NN"]["sm"][1] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)
+    classifiers["NN"]["sm"][2] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)    
+    classifiers["NN"]["sm"][3] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)
+    classifiers["NN"]["sm"][4] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)
+    classifiers["NN"]["sm"][5] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)  
     
     with open("hyperparams_dict.pik", 'wb') as handle:
         pickle.dump(classifiers, handle, protocol=pickle.HIGHEST_PROTOCOL)
