@@ -15,8 +15,8 @@ trials_num = 100
 #One run
 ligands = ["dna"]
 ligands_names = ["dna"]
-classifiers = ["XGB"]
-classifiers_names = ["XGB"]
+classifiers = ["NN"]
+classifiers_names = ["NN"]
 
 #Hyperparameters ranges dictionaries
 hp_dict = dict()
@@ -61,8 +61,8 @@ hp_dict["Logistic"] = {"C_ub": "0",
 hp_dict["KNN"] = {"n_neighbors_ub": "500",
                  "n_neighbors_lb": "10"}
 
-hp_dict["NN"] = {"learning_rate_ub":"-2",
-                "learning_rate_lb":"-6",
+hp_dict["NN"] = {"learning_rate_ub":"-4",
+                "learning_rate_lb":"-5",
                 "batch_size_ub":"300",
                 "batch_size_lb":"30",
                 "weight_decay_ub":"-5",
@@ -89,7 +89,7 @@ for j in range(len(classifiers)):
             header ="""#!/bin/bash
 
 #SBATCH --mem=40960
-#SBATCH --time=50:00:00
+#SBATCH --time=100:00:00
 #SBATCH --gres=gpu:1
 #SBATCH --job-name={0}_{1}_{2}
 #SBATCH --mail-user=ms54@princeton.edu
