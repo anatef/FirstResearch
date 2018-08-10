@@ -83,6 +83,37 @@ class Net(nn.Module):
         x = self.output(x)
         return x
     
+    # customised loss function that approximates AUC metric. Refer to Phase1 code for more details
+    class ROC_AUC_Loss(torch.nn.Module):
+        def _init_(self):
+            super(Custom_Loss, self)._init_()
+        def forward(self, output, labels):
+            labels = labels.byte()
+            pos = torch.masked_select(output[:,1], labels)
+
+            if len(pos) == 0:
+                raise ValueError("Batch Size is too small. There are batches with no positives, hence ROC_AUC_Loss metric cannot be optimized with current batch size. Increase Batch Size or Change Loss Function Used.")
+
+            neg_index = []
+            for i in range(len(labels)):
+                if labels[i] == 0:
+                    neg_index.append(1)
+                else:
+                    neg_index.append(0)
+
+            neg_index = torch.Tensor(neg_index).byte()
+            neg = torch.masked_select(output[:,1], neg_index)
+            pos = pos.unsqueeze(0)
+            neg = neg.unsqueeze(1)
+            gamma = 0.2
+            p = 2
+
+            difference = torch.zeros((pos * neg).size()) + pos - neg - gamma
+            diff_index = (difference < 0.0).byte()
+            masked = torch.masked_select(difference, diff_index)
+            masked = (-masked)**p
+            return masked.sum()
+
     def fit(self, train_valid_data, train_valid_labels, weight, cost = "BCE_Loss"):
         # set in training mode
         self.train()
