@@ -18,7 +18,36 @@ import torch.nn.functional as F
 import torch.optim as optim
 from torch.optim.lr_scheduler import LambdaLR
 
+# customised loss function that approximates AUC metric. Refer to Phase1 code for more details
+class ROC_AUC_Loss(torch.nn.Module):
+    def _init_(self):
+        super(Custom_Loss, self)._init_()
+    def forward(self, output, labels):
+        labels = labels.byte()
+        pos = torch.masked_select(output[:,1], labels)
+        
+        if len(pos) == 0:
+            raise ValueError("Batch Size is too small. There are batches with no positives, hence ROC_AUC_Loss metric cannot be optimized with current batch size. Increase Batch Size or Change Loss Function Used.")
 
+        neg_index = []
+        for i in range(len(labels)):
+            if labels[i] == 0:
+                neg_index.append(1)
+            else:
+                neg_index.append(0)
+
+        neg_index = torch.Tensor(neg_index).byte()
+        neg = torch.masked_select(output[:,1], neg_index)
+        pos = pos.unsqueeze(0)
+        neg = neg.unsqueeze(1)
+        gamma = 0.2
+        p = 2
+
+        difference = torch.zeros((pos * neg).size()) + pos - neg - gamma
+        diff_index = (difference < 0.0).byte()
+        masked = torch.masked_select(difference, diff_index)
+        masked = (-masked)**p
+        return masked.sum()
 
 # define the network 
 class Net(nn.Module):
@@ -54,7 +83,7 @@ class Net(nn.Module):
         x = self.output(x)
         return x
     
-    def fit(self, train_valid_data, train_valid_labels, weight):
+    def fit(self, train_valid_data, train_valid_labels, weight, cost = "BCE_Loss"):
         # set in training mode
         self.train()
         
@@ -68,7 +97,11 @@ class Net(nn.Module):
         train_valid_labels = trainset.iloc[:,trainset.shape[1]-1]
 
         # create loss function
-        loss = nn.BCEWithLogitsLoss(weight = weight)
+        if cost == "BCE_Loss":
+            loss = nn.BCEWithLogitsLoss(weight = weight)
+        elif cost == "ROC_AUC_Loss":
+            loss = ROC_AUC_Loss()
+            
         # mini-batching
         batch_size = self.batch_size
         
@@ -81,7 +114,7 @@ class Net(nn.Module):
         optimizer_2 = optim.Adam(self.parameters(), lr=self.learning_rate,betas = (self.beta,BETA_2), 
                                  weight_decay = self.weight_decay)
         
-        lambda1 = lambda epoch_count: 0.99 ** epoch_count 
+        lambda1 = lambda epoch_count: 0.995 ** epoch_count 
         scheduler = LambdaLR(optimizer_2, lr_lambda=lambda1)
         
         count = 0
@@ -95,9 +128,9 @@ class Net(nn.Module):
             output.data = output.data.view(data.shape[0],2)
 
             labels = train_valid_labels[test]
-            labels = labels.astype(int)
-            labels = torch.Tensor(np.eye(2)[labels])
-            labels = torch.autograd.Variable(labels, requires_grad = False)
+            if cost == "BCE_Loss":
+                labels = np.eye(2)[labels]
+            labels = torch.autograd.Variable(torch.Tensor(labels), requires_grad = False)
 
             # zero the gradient buffers
             optimizer_2.zero_grad()
@@ -123,11 +156,7 @@ class Net(nn.Module):
         output = self.forward(test)
         sf = nn.Softmax()
         probs = sf(output.data)
-        probs_list = []
-        for i in range(len(probs)):
-            probs_list.append(probs[i][1].item())          
-        return probs_list
-
+        return probs[:,1]
 
 def generate_models_dict(ligand, ligands, ligands_positives_df, ligands_negatives_df, folds_num, no_features):
     """
@@ -442,7 +471,7 @@ def generate_models_dict(ligand, ligands, ligands_positives_df, ligands_negative
     classifiers["NN"]["dna"][2] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)    
     classifiers["NN"]["dna"][3] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)
     classifiers["NN"]["dna"][4] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)
-    classifiers["NN"]["dna"][5] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)    
+    classifiers["NN"]["dna"][5] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=200, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)    
     #==rna==#
     classifiers["NN"]["rna"][1] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)
     classifiers["NN"]["rna"][2] = Net(dropout_parameter = 0.5, hidden_units_1=204, hidden_units_2=986, batch_size=83, learning_rate=5e-5, beta=0.923169375646, weight_decay=9.66247406555e-11,input_size=no_features)    
