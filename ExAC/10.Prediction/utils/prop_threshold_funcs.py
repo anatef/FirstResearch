@@ -128,6 +128,7 @@ def create_negatives_datasets_combined(zero_prop, no_prop, features_all, feature
             print "No Negatives group chosen. exiting(-1)"
             return -1
         if (verbose): print(ligand+" non-binding #:"+str(len(ligands_negatives_dna[ligand])))
+    
             
     #Combine all the dnas together
     all_dna_idx = set(ligands_negatives_dna["dna"].index) & set(ligands_negatives_dna["dnabase"].index) & set(ligands_negatives_dna["dnabackbone"].index)
@@ -135,7 +136,7 @@ def create_negatives_datasets_combined(zero_prop, no_prop, features_all, feature
     all_dna_idx_list.sort()
     ligands_negatives_df["dna"] = features_all.loc[all_dna_idx_list,features_cols]
     if (verbose): print "dna combined non binding #: "+str(ligands_negatives_df["dna"].shape[0])
-        
+    
     #Create the combined rna negatives
     for ligand in ["rna", "rnabase", "rnabackbone"]:
         
@@ -216,9 +217,9 @@ def create_positives_datasets_combined(features_all, features_cols, all_ligands,
     ligands_prop_th = {"dna": 0.5,
                       "dnabase": 0.5,
                       "dnabackbone": 0.5,
-                      "rna": 0.25,
-                      "rnabase": 0.25,
-                      "rnabackbone": 0.25,
+                      "rna": 0.5,
+                      "rnabase": 0.5,
+                      "rnabackbone": 0.5,
                       "ion": 0.75,
                       "peptide": 0.5,
                       "metabolite": 0.5,
@@ -244,7 +245,7 @@ def create_positives_datasets_combined(features_all, features_cols, all_ligands,
     all_dna_idx_list.sort()
     ligands_positives_df["dna"] = features_all.loc[all_dna_idx_list,features_cols]
     if (verbose): print "dna combined #: "+str(ligands_positives_df["dna"].shape[0])
-        
+    
     #Create the combined rna positives
     for ligand in ["rna", "rnabase", "rnabackbone"]:
 
