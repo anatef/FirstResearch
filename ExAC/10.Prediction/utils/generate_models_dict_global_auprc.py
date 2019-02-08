@@ -3,6 +3,7 @@ import pickle
 from collections import defaultdict
 import pandas as pd
 
+#Import scikit-learn classifiers
 from sklearn.neighbors import KNeighborsClassifier 
 from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
 from sklearn.linear_model import LogisticRegression
@@ -11,122 +12,9 @@ from sklearn.svm import SVC
 from xgboost import XGBClassifier
 from sklearn.utils import shuffle
 
-# Neural Net imports
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
-import torch.optim as optim
-from torch.optim.lr_scheduler import LambdaLR
-
-
-
-# define the network 
-class Net(nn.Module):
-    def __init__(self, dropout_parameter = 0.5, hidden_units_1 = 200, 
-                 hidden_units_2 = 400, batch_size = 75, 
-                 learning_rate = 1e-5, beta = 0.9, 
-                 weight_decay = 1e-4, epoch_count = 15, weight="balanced", input_size = 750):
-        
-        torch.manual_seed(0)
-        super(Net, self).__init__()   
-        self.input = nn.Linear(input_size, hidden_units_1) 
-        self.hidden1 = nn.Linear(hidden_units_1, hidden_units_2)
-        self.hidden1_bn = nn.BatchNorm1d(hidden_units_2)
-        self.hidden2 = nn.Linear(hidden_units_2, hidden_units_2)
-        self.hidden2_bn = nn.BatchNorm1d(hidden_units_2)
-        self.hidden3 = nn.Linear(hidden_units_2, hidden_units_1)
-        self.hidden3_bn = nn.BatchNorm1d(hidden_units_1)
-        self.dropout = nn.Dropout(p = dropout_parameter)
-        self.output = nn.Linear(hidden_units_1,2)
-        self.learning_rate = learning_rate
-        self.beta = beta
-        self.batch_size = batch_size
-        self.weight_decay = weight_decay
-        self.epoch_count = epoch_count
-        self.weight = weight
-        
-    def forward(self, x):
-        sf = nn.Softmax()
-        x = F.rrelu(self.input(x))
-        x = self.dropout(F.rrelu(self.hidden1_bn(self.hidden1(x))))
-        x = self.dropout(F.rrelu(self.hidden2_bn(self.hidden2(x))))
-        x = self.dropout(F.rrelu(self.hidden3_bn(self.hidden3(x))))
-        x = self.output(x)
-        return x
-    
-    def fit(self, train_valid_data, train_valid_labels, weight):
-        # set in training mode
-        self.train()
-        
-        # set random seed
-        torch.manual_seed(0)
-          
-        trainset = pd.concat([train_valid_data,train_valid_labels],axis=1)
-        trainset = shuffle(trainset, random_state = 0)
-
-        train_valid_data = trainset.iloc[:,:trainset.shape[1]-1]
-        train_valid_labels = trainset.iloc[:,trainset.shape[1]-1]
-
-        # create loss function
-        loss = nn.BCEWithLogitsLoss(weight = weight)
-        # mini-batching
-        batch_size = self.batch_size
-        
-        BETA_2 = 0.999        
-        no_batch_minus_1 = train_valid_data.shape[0] / batch_size 
-
-        skf_2 = RepeatedStratifiedKFold(n_splits=no_batch_minus_1,n_repeats = self.epoch_count,random_state=0)
-
-        # create adam optimizer for Phase 2
-        optimizer_2 = optim.Adam(self.parameters(), lr=self.learning_rate,betas = (self.beta,BETA_2), 
-                                 weight_decay = self.weight_decay)
-        
-        lambda1 = lambda epoch_count: 0.99 ** epoch_count 
-        scheduler = LambdaLR(optimizer_2, lr_lambda=lambda1)
-        
-        count = 0
-        epoch_count = 0
-        
-        for train,test in skf_2.split(train_valid_data,train_valid_labels):
-            data = train_valid_data.iloc[test,:]
-            data = torch.Tensor(data.values.astype(np.float32))
-            # forward pass          
-            output = self.forward(data)
-            output.data = output.data.view(data.shape[0],2)
-
-            labels = train_valid_labels[test]
-            labels = labels.astype(int)
-            labels = torch.Tensor(np.eye(2)[labels])
-            labels = torch.autograd.Variable(labels, requires_grad = False)
-
-            # zero the gradient buffers
-            optimizer_2.zero_grad()
-            # compute loss and gradients
-            loss_output = loss(output,labels)
-            loss_output.backward()
-            # Does the update
-            optimizer_2.step()
-            
-            count = count + 1
-
-            # Early Stopping
-            if count == no_batch_minus_1 + 1:
-                count = 0
-                epoch_count = epoch_count + 1
-                scheduler.step()
-            
-    #prediction probabilities array
-    def predict_proba(self, X_test):
-        self.eval()
-        #forward pass
-        test = torch.Tensor(X_test.values.astype(np.float32))
-        output = self.forward(test)
-        sf = nn.Softmax()
-        probs = sf(output.data)
-        probs_list = []
-        for i in range(len(probs)):
-            probs_list.append(probs[i][1].item())          
-        return probs_list
+#Import Net class
+from NN_classes import Net
+#====================================================================================================================#
 
 
 def generate_models_dict(ligand, classifier_method, ligands, ligands_positives_df, ligands_negatives_df, folds_num, no_features):
@@ -350,13 +238,13 @@ def generate_models_dict(ligand, classifier_method, ligands, ligands_positives_d
             classifiers["NN"]["dna"][4] = Net(dropout_parameter = 0.5, hidden_units_1=541, hidden_units_2=732, batch_size=292, learning_rate=0.000052, beta=0.801498,
                                               weight_decay=1.609669e-11, epoch_count=16, weight=0.1, input_size=no_features) #
             classifiers["NN"]["dna"][5] = Net(dropout_parameter = 0.5, hidden_units_1=877, hidden_units_2=887, batch_size=60, learning_rate=0.000006, beta=0.907928,
-                                              weight_decay=9.662474e-11, epoch_count=38, weight="balanced", input_size=no_features) #
+                                              weight_decay=9.662474e-11, epoch_count=37, weight="balanced", input_size=no_features) #
         #==rna==#
         elif (ligand == "rna"):
             classifiers["NN"]["rna"][1] = Net(dropout_parameter = 0.5, hidden_units_1=641, hidden_units_2=512, batch_size=30, learning_rate=0.000005, beta=0.809251, 
                                               weight_decay=1.763482e-08, epoch_count=82, weight=None, input_size=no_features) # 
-            classifiers["NN"]["rna"][2] = Net(dropout_parameter = 0.5, hidden_units_1=557, hidden_units_2=757, batch_size=60, learning_rate=0.000027, beta=0.960465, 
-                                              weight_decay=9.179193e-16, epoch_count=13, weight="balanced", input_size=no_features) #  
+            classifiers["NN"]["rna"][2] = Net(dropout_parameter = 0.5, hidden_units_1=565, hidden_units_2=455, batch_size=50, learning_rate=0.000011, beta=0.900717, 
+                                              weight_decay=5.451840e-18, epoch_count=41, weight=None, input_size=no_features) #  
             classifiers["NN"]["rna"][3] = Net(dropout_parameter = 0.5, hidden_units_1=939, hidden_units_2=723, batch_size=104, learning_rate=0.000022, beta=0.936203, 
                                               weight_decay=4.378871e-23, epoch_count=60, weight="balanced", input_size=no_features) #
             classifiers["NN"]["rna"][4] = Net(dropout_parameter = 0.5, hidden_units_1=877, hidden_units_2=887, batch_size=69, learning_rate=0.000006, beta=0.907928, 
@@ -370,39 +258,36 @@ def generate_models_dict(ligand, classifier_method, ligands, ligands_positives_d
                                               weight_decay=5.590679e-15, epoch_count=19, weight=None, input_size=no_features) #
             classifiers["NN"]["ion"][2] = Net(dropout_parameter = 0.5, hidden_units_1=817, hidden_units_2=487, batch_size=149, learning_rate=0.000106, beta=0.890890,
                                               weight_decay=4.330996e-06, epoch_count=52, weight="balanced", input_size=no_features) #   
-            classifiers["NN"]["ion"][3] = Net(dropout_parameter = 0.5, hidden_units_1=250, hidden_units_2=923, batch_size=52, learning_rate=0.00028766277717993586, beta=0.8707470075441109,
-                                              weight_decay=3.2602759556271237e-25, epoch_count=18, weight="balanced", input_size=no_features) 
-            classifiers["NN"]["ion"][4] = Net(dropout_parameter = 0.5, hidden_units_1=140, hidden_units_2=418, batch_size=263, learning_rate=0.0006838687356454338, beta=0.9460256784374906,
-                                              weight_decay=1.0014770140328751e-23, epoch_count=42, weight=None, input_size=no_features) 
-            classifiers["NN"]["ion"][5] = Net(dropout_parameter = 0.5, hidden_units_1=94, hidden_units_2=438, batch_size=229, learning_rate=0.00028939076697090865, beta=0.9229990562424056,
-                                              weight_decay=1.5832929922838409e-18, epoch_count=8, weight=None, input_size=no_features) 
+            classifiers["NN"]["ion"][3] = Net(dropout_parameter = 0.5, hidden_units_1=250, hidden_units_2=935, batch_size=566, learning_rate=0.000161, beta=0.912266,
+                                              weight_decay=2.507831e-14, epoch_count=23, weight=0.1, input_size=no_features) #
+            classifiers["NN"]["ion"][4] = Net(dropout_parameter = 0.5, hidden_units_1=935, hidden_units_2=566, batch_size=196, learning_rate=0.000161, beta=0.912266,
+                                              weight_decay=2.507831e-14, epoch_count=30, weight=0.1, input_size=no_features) #
+            classifiers["NN"]["ion"][5] = Net(dropout_parameter = 0.5, hidden_units_1=935, hidden_units_2=566, batch_size=196, learning_rate=0.000161, beta=0.912266,
+                                              weight_decay=2.507831e-14, epoch_count=6, weight=0.1, input_size=no_features) #
 
         #==peptide==#
         elif (ligand == "peptide"):
-            classifiers["NN"]["peptide"][1] = Net(dropout_parameter = 0.5, hidden_units_1=866, hidden_units_2=986, batch_size=83, learning_rate=0.0006418587699324594, beta=0.9231693756464692, 
-                                                  weight_decay=9.662474065546658e-11, epoch_count=28, weight="balanced", input_size=no_features) 
-            classifiers["NN"]["peptide"][2] = Net(dropout_parameter = 0.5, hidden_units_1=559, hidden_units_2=359, batch_size=147, learning_rate=0.0001252065381499946, beta=0.9357945617622756, 
-                                                  weight_decay=7.679182193416932e-09, epoch_count=82, weight=None, input_size=no_features)  
-            classifiers["NN"]["peptide"][3] = Net(dropout_parameter = 0.5, hidden_units_1=866, hidden_units_2=986, batch_size=83, learning_rate=0.0006418587699324594, beta=0.9231693756464692, 
-                                                  weight_decay=9.662474065546658e-11, epoch_count=62, weight="balanced", input_size=no_features) 
-            classifiers["NN"]["peptide"][4] = Net(dropout_parameter = 0.5, hidden_units_1=915, hidden_units_2=631, batch_size=43, learning_rate=3.5243908871012604e-05, beta=0.9179879456406768, 
-                                                  weight_decay=5.0904150260183585e-08, epoch_count=34, weight="balanced", input_size=no_features) 
-            classifiers["NN"]["peptide"][5] = Net(dropout_parameter = 0.5, hidden_units_1=923, hidden_units_2=932, batch_size=33, learning_rate=0.00011818138865906221, beta=0.8592027585611957, 
-                                                  weight_decay=9.323094091596805e-24, epoch_count=50, weight="balanced", input_size=no_features) 
+            classifiers["NN"]["peptide"][1] = Net(dropout_parameter = 0.5, hidden_units_1=871, hidden_units_2=943, batch_size=130, learning_rate=0.000123, beta=0.946507, 
+                                                  weight_decay=4.008984e-14, epoch_count=75, weight=None, input_size=no_features) #
+            classifiers["NN"]["peptide"][2] = Net(dropout_parameter = 0.5, hidden_units_1=871, hidden_units_2=943, batch_size=130, learning_rate=0.000123, beta=0.946507, 
+                                                  weight_decay=4.008984e-14, epoch_count=14, weight=None, input_size=no_features) #  
+            classifiers["NN"]["peptide"][3] = Net(dropout_parameter = 0.5, hidden_units_1=877, hidden_units_2=887, batch_size=69, learning_rate=0.000058, beta=0.907928, 
+                                                  weight_decay=3.783541e-15, epoch_count=93, weight="balanced", input_size=no_features) #
+            classifiers["NN"]["peptide"][4] = Net(dropout_parameter = 0.5, hidden_units_1=915, hidden_units_2=631, batch_size=43, learning_rate=0.000035, beta=0.929177, 
+                                                  weight_decay=5.090415e-08, epoch_count=100, weight="balanced", input_size=no_features) #
+            classifiers["NN"]["peptide"][5] = Net(dropout_parameter = 0.5, hidden_units_1=401, hidden_units_2=932, batch_size=733, learning_rate=0.000016, beta=0.810586, 
+                                                  weight_decay=1.557713e-15, epoch_count=134, weight=0.1, input_size=no_features) #
         #==sm==#
         elif (ligand == "sm"):
-            classifiers["NN"]["sm"][1] = Net(dropout_parameter = 0.5, hidden_units_1=248, hidden_units_2=426, batch_size=103, learning_rate=0.00022920868800464477, beta=0.8949291648687738, 
-                                             weight_decay=2.735659121919167e-22, epoch_count=24, weight=None, input_size=no_features) 
-            classifiers["NN"]["sm"][2] = Net(dropout_parameter = 0.5, hidden_units_1=750, hidden_units_2=439, batch_size=201, learning_rate=1.0456259228180203e-05, beta=0.8959855883756007, 
-                                             weight_decay=8.731434565883134e-22, epoch_count=67, weight=0.1, input_size=no_features) 
-            classifiers["NN"]["sm"][3] = Net(dropout_parameter = 0.5, hidden_units_1=641, hidden_units_2=512, batch_size=30, learning_rate=4.645312461081778e-05, beta=0.8548690295975528, 
-                                             weight_decay=1.7634816165605853e-08, epoch_count=44, weight=None, input_size=no_features) 
-            classifiers["NN"]["sm"][4] = Net(dropout_parameter = 0.5, hidden_units_1=307, hidden_units_2=869, batch_size=113, learning_rate=0.0002089679702998887, beta=0.9277407561848752, 
-                                             weight_decay=3.7489350711707085e-10, epoch_count=3, weight=None, input_size=no_features) 
-            classifiers["NN"]["sm"][5] = Net(dropout_parameter = 0.5, hidden_units_1=523, hidden_units_2=858, batch_size=198, learning_rate=2.134952972083124e-05, beta=0.9492396398888632, 
-                                             weight_decay=9.593155724387094e-12, epoch_count=27, weight="balanced", input_size=no_features) 
-
-    with open("hyperparams_dict.pik", 'wb') as handle:
-        pickle.dump(classifiers, handle, protocol=pickle.HIGHEST_PROTOCOL)
-    
+            classifiers["NN"]["sm"][1] = Net(dropout_parameter = 0.5, hidden_units_1=605, hidden_units_2=551, batch_size=113, learning_rate=0.000090, beta=0.804689, 
+                                             weight_decay=3.909071e-22, epoch_count=7, weight=None, input_size=no_features) #38
+            classifiers["NN"]["sm"][2] = Net(dropout_parameter = 0.5, hidden_units_1=554, hidden_units_2=952, batch_size=56, learning_rate=0.000028, beta=0.880998, 
+                                             weight_decay=7.399274e-24, epoch_count=13, weight=0.1, input_size=no_features) #
+            classifiers["NN"]["sm"][3] = Net(dropout_parameter = 0.5, hidden_units_1=821, hidden_units_2=878, batch_size=169, learning_rate=0.000091, beta=0.954622, 
+                                             weight_decay=8.886669e-20, epoch_count=5, weight=None, input_size=no_features) #
+            classifiers["NN"]["sm"][4] = Net(dropout_parameter = 0.5, hidden_units_1=226, hidden_units_2=598, batch_size=198, learning_rate=0.000053, beta=0.848667, 
+                                             weight_decay=8.530848e-24, epoch_count=24, weight=0.1, input_size=no_features) #
+            classifiers["NN"]["sm"][5] = Net(dropout_parameter = 0.5, hidden_units_1=559, hidden_units_2=359, batch_size=147, learning_rate=0.000013, beta=0.963010, 
+                                             weight_decay=7.679182e-09, epoch_count=65, weight=None, input_size=no_features) #
+  
     return classifiers
