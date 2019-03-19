@@ -62,3 +62,27 @@ def calc_CV_idx_iterative(X, splits_dict):
         cv_idx.append({"train": group_train_idx, "test": group_test_idx})
     
     return cv_idx
+#====================================================================================================================#
+
+def calc_CV_whole_domain_iterative(X, splits_dict):
+    """
+    Calculate the train and test indices in each of the folds for whole-domain indices.
+    Returns a dictionary with the test and train indices for each fold.
+    """
+    
+    cv_idx = []
+    #read the CV splits dictionary
+ 
+    all_idx = X.index.tolist()
+    
+    for group_num in splits_dict.keys():
+        
+        #Defining the test idx as the intesrsection of group indices and X indices
+        group_test_idx = list(set(all_idx) & set(splits_dict[group_num]["domains"]))
+            
+        #Adding the complementary indices as the training
+        group_train_idx = [x for x in all_idx if x not in group_test_idx]
+        
+        cv_idx.append({"train": group_train_idx, "test": group_test_idx})
+    
+    return cv_idx

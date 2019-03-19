@@ -24,7 +24,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import auc, roc_auc_score, precision_recall_curve
 from sklearn.utils import shuffle
 
-from CV_funcs import calc_CV_idx_iterative
+from CV_funcs import calc_CV_idx_iterative, calc_CV_whole_domain_iterative
 from NN_classes import Net, Net_tune, curr_device
 #from generate_models_dict_global_auprc import Net
 
@@ -157,7 +157,7 @@ def compute_per_domain_auc(y_test, pred_probs, pred_idx, classifier):
 #Implementing Early Stopping for XGBoost: https://cambridgespark.com/content/tutorials/hyperparameter-tuning-in-xgboost/index.html
 
 def test_model_on_validation(hyperparameters, hyperparameters_dict,ligand_bind_features, ligand_negatives_features, ligand_name, classifier_method, fold,
-                             trial_idx, features=[], xgb_early_stopping_rounds=750, xgb_increase_rounds_limit=2000, final_model=False):
+                             trial_idx, features=[], xgb_early_stopping_rounds=750, xgb_increase_rounds_limit=2000, final_model=False, whole_domain=False):
     
     """
     Test different models in k-folds cross-validation.
@@ -179,7 +179,10 @@ def test_model_on_validation(hyperparameters, hyperparameters_dict,ligand_bind_f
     y_df.columns = ["label"]
     
     #Get the fold indices
-    cv_idx = calc_CV_idx_iterative(X, splits_dict)
+    if (whole_domain):
+        cv_idx = calc_CV_whole_domain_iterative(X, splits_dict)
+    else:
+        cv_idx = calc_CV_idx_iterative(X, splits_dict)
     k = (int(fold)-1)
     
     pred_idx = k+1
@@ -188,7 +191,6 @@ def test_model_on_validation(hyperparameters, hyperparameters_dict,ligand_bind_f
     full_train_index = cv_idx[k]["train"]
         
     # phase 1: testing on validation set, hyperparameter tuning
-    
     if (final_model):
         num_folds_heldout = 0
     else:
@@ -247,6 +249,7 @@ def test_model_on_validation(hyperparameters, hyperparameters_dict,ligand_bind_f
         y_train_sampled_perm = y_train_sampled.reindex(idx_perm_train)
         
         #Shuffle validation data rows
+        np.random.seed(0)
         idx_perm_valid = np.random.permutation(X_valid.index)
         X_valid_perm = X_valid.reindex(idx_perm_valid)
         y_valid_perm = y_valid.reindex(idx_perm_valid)
@@ -308,29 +311,33 @@ def test_model_on_validation(hyperparameters, hyperparameters_dict,ligand_bind_f
             auprc_score = auc(recall, precision)
             auc_score = roc_auc_score(y_valid_perm, probs_list)
             
-        (domain_auc_mean, domain_auprc_mean, domain_auprc_ratio_mean) = compute_per_domain_auc(y_valid_perm, probs_list, pred_idx, classifier)
+        if (whole_domain == False):    
+            (domain_auc_mean, domain_auprc_mean, domain_auprc_ratio_mean) = compute_per_domain_auc(y_valid_perm, probs_list, pred_idx, classifier)
 
         print "AUPRC = "+str(auprc_score)
         print "AUC = "+str(auc_score)
-        print "domain AUC mean = "+str(domain_auc_mean)
-        print "domain AUPRC mean = "+str(domain_auprc_mean)
-        print "domain AUPRC ratio mean = "+str(domain_auprc_ratio_mean)
+        if (whole_domain == False): 
+            print "domain AUC mean = "+str(domain_auc_mean)
+            print "domain AUPRC mean = "+str(domain_auprc_mean)
+            print "domain AUPRC ratio mean = "+str(domain_auprc_ratio_mean)
         
         #Removing from mean calculations the trials with high AUPRC and random AUC
         if (auc_score > 0.51):
             trial_auprc_results[i] = auprc_score 
             trial_auc_results[i] = auc_score 
-            trial_domain_auc_results[i] = domain_auc_mean
-            trial_domain_auprc_results[i] = domain_auprc_mean
-            trial_domain_auprc_ratio_results[i] = domain_auprc_ratio_mean
+            if (whole_domain == False): 
+                trial_domain_auc_results[i] = domain_auc_mean
+                trial_domain_auprc_results[i] = domain_auprc_mean
+                trial_domain_auprc_ratio_results[i] = domain_auprc_ratio_mean
             if classifier == "NN" or classifier == "XGB": 
                 epoch_counts[i] = epoch_count
     
     mean_auprc_result = np.mean(np.array(trial_auprc_results)[np.nonzero(trial_auprc_results)[0].tolist()])
     mean_auc_result = np.mean(np.array(trial_auc_results)[np.nonzero(trial_auc_results)[0].tolist()])
-    mean_domain_auc_result = np.mean(np.array(trial_domain_auc_results)[np.nonzero(trial_domain_auc_results)[0].tolist()])
-    mean_domain_auprc_result = np.mean(np.array(trial_domain_auprc_results)[np.nonzero(trial_domain_auprc_results)[0].tolist()])
-    mean_domain_auprc_ratio_result = np.mean(np.array(trial_domain_auprc_ratio_results)[np.nonzero(trial_domain_auprc_ratio_results)[0].tolist()])
+    if (whole_domain == False): 
+        mean_domain_auc_result = np.mean(np.array(trial_domain_auc_results)[np.nonzero(trial_domain_auc_results)[0].tolist()])
+        mean_domain_auprc_result = np.mean(np.array(trial_domain_auprc_results)[np.nonzero(trial_domain_auprc_results)[0].tolist()])
+        mean_domain_auprc_ratio_result = np.mean(np.array(trial_domain_auprc_ratio_results)[np.nonzero(trial_domain_auprc_ratio_results)[0].tolist()])
     
     
     if classifier == "NN" or classifier == "XGB":
@@ -343,9 +350,10 @@ def test_model_on_validation(hyperparameters, hyperparameters_dict,ligand_bind_f
 
     hyperparameters_dict["mean_AUPRC"] = mean_auprc_result
     hyperparameters_dict["mean_AUC"] = mean_auc_result
-    hyperparameters_dict["mean_dom_AUC"] = mean_domain_auc_result
-    hyperparameters_dict["mean_dom_AUPRC"] = mean_domain_auprc_result
-    hyperparameters_dict["mean_dom_AUPRC_ratio"] = mean_domain_auprc_ratio_result
+    if (whole_domain == False): 
+        hyperparameters_dict["mean_dom_AUC"] = mean_domain_auc_result
+        hyperparameters_dict["mean_dom_AUPRC"] = mean_domain_auprc_result
+        hyperparameters_dict["mean_dom_AUPRC_ratio"] = mean_domain_auprc_ratio_result
     hyperparameters_dict["trial_idx"] = trial_idx
     hyperparameters_dict["num_legal_folds"] = len(np.nonzero(epoch_counts)[0].tolist())
 
@@ -359,7 +367,7 @@ def test_model_on_validation(hyperparameters, hyperparameters_dict,ligand_bind_f
 #====================================================================================================================#
     
 def test_model_on_heldout(hyperparameters_dict, hyperparameters_input, ligand_bind_features, ligand_negatives_features, ligand_name, 
-                          classifier_method, fold, features=[], final_model=False, test_positives=None, test_negatives=None, rseed=0):
+                          classifier_method, fold, features=[], final_model=False, test_positives=None, test_negatives=None, rseed=0, whole_domain=False):
     
     #Default: Exclude no features
     if len(features) == 0:
@@ -379,7 +387,10 @@ def test_model_on_heldout(hyperparameters_dict, hyperparameters_input, ligand_bi
     y_df.columns = ["label"]
     
     #Get the fold indices
-    cv_idx = calc_CV_idx_iterative(X, splits_dict)
+    if (whole_domain):
+        cv_idx = calc_CV_whole_domain_iterative(X, splits_dict)
+    else:
+        cv_idx = calc_CV_idx_iterative(X, splits_dict)
     k = (int(fold)-1)
     
     pred_idx = k+1
@@ -440,6 +451,7 @@ def test_model_on_heldout(hyperparameters_dict, hyperparameters_input, ligand_bi
     y_train_sampled_perm = y_train_sampled.reindex(idx_perm_train)
         
     #Shuffle test data rows
+    np.random.seed(rseed)
     idx_perm_test = np.random.permutation(X_test.index)
     X_test_perm = X_test.reindex(idx_perm_test)
     y_test_perm = y_test.reindex(idx_perm_test)
@@ -460,10 +472,10 @@ def test_model_on_heldout(hyperparameters_dict, hyperparameters_input, ligand_bi
             #weight vector
             neg_weight = float(no_pos) / float(no_neg + no_pos) 
             pos_weight = 1 - neg_weight
-        elif model.weight == "0.1":
+        elif (model.weight == "0.1" or model.weight == 0.1):
             neg_weight = 10
             pos_weight = 1
-        elif model.weight == "None":
+        elif (model.weight == "None" or model.weight == None):
             neg_weight = 1
             pos_weight = 1
         
@@ -493,19 +505,21 @@ def test_model_on_heldout(hyperparameters_dict, hyperparameters_input, ligand_bi
     hyperparameters_dict["test_AUPRC"] = auc(recall, precision)
     
     #Compute per domain AUC and AUPRC
-    (domain_auc_mean, domain_auprc_mean, domain_auprc_ratio_mean) = compute_per_domain_auc(y_test_perm, probs_list, pred_idx, classifier)
-    #Update relevant dictionaries for per-domain folds mean
-    hyperparameters_dict["test_dom_AUC"] = domain_auc_mean
-    hyperparameters_dict["test_dom_AUPRC"] = domain_auprc_mean
-    hyperparameters_dict["test_dom_AUPRC_ratio"] = domain_auprc_ratio_mean
+    if (whole_domain == False):
+        (domain_auc_mean, domain_auprc_mean, domain_auprc_ratio_mean) = compute_per_domain_auc(y_test_perm, probs_list, pred_idx, classifier)
+        #Update relevant dictionaries for per-domain folds mean
+        hyperparameters_dict["test_dom_AUC"] = domain_auc_mean
+        hyperparameters_dict["test_dom_AUPRC"] = domain_auprc_mean
+        hyperparameters_dict["test_dom_AUPRC_ratio"] = domain_auprc_ratio_mean
     
     pred_idx += 1
 
     print "test AUC = "+str(hyperparameters_dict["test_AUC"])
     print "test AUPRC = "+str(hyperparameters_dict["test_AUPRC"])
-    print "test domain AUC mean = "+str(hyperparameters_dict["test_dom_AUC"])
-    print "test domain AUPRC mean = "+str(hyperparameters_dict["test_dom_AUPRC"])
-    print "test domain AUPRC ratio mean = "+str(hyperparameters_dict["test_dom_AUPRC_ratio"])
+    if (whole_domain == False):
+        print "test domain AUC mean = "+str(hyperparameters_dict["test_dom_AUC"])
+        print "test domain AUPRC mean = "+str(hyperparameters_dict["test_dom_AUPRC"])
+        print "test domain AUPRC ratio mean = "+str(hyperparameters_dict["test_dom_AUPRC_ratio"])
 
     print "Finished "+ligand_name+" "+classifier+" fold: "+fold
     
