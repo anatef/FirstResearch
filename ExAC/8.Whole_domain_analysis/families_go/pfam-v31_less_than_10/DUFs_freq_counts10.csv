@@ -1,0 +1,38 @@
+,number,count,name,domains
+1,5634,5,nucleus,DUF1518.DUF1143.DUF1907.DUF382.DUF1744
+2,16020,3,membrane,DUF1681.DUF1170.DUF106
+3,16021,3,integral component of membrane,DUF846.DUF1751.DUF92
+4,5319,2,lipid transporter activity,DUF1081.DUF1943
+5,55114,2,oxidation-reduction process,DUF108.DUF1891
+6,6869,2,lipid transport,DUF1081.DUF1943
+7,4674,1,protein serine/threonine kinase activity,DUF1908
+8,5267,1,potassium channel activity,DUF1211
+9,42138,1,meiotic DNA double-strand break formation,DUF4554
+10,6171,1,cAMP biosynthetic process,DUF1053
+11,287,1,magnesium ion binding,DUF1908
+12,19363,1,pyridine nucleotide biosynthetic process,DUF108
+13,31012,1,extracellular matrix,DUF959
+14,813,1,ESCRT I complex,DUF2464
+15,3887,1,DNA-directed DNA polymerase activity,DUF1744
+16,4016,1,adenylate cyclase activity,DUF1053
+17,16757,1,"transferase activity, transferring glycosyl groups",DUF563
+18,16706,1,"oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen, 2-oxoglutarate as one donor, and incorporation of one atom each of oxygen into both donors",DUF1891
+19,6468,1,protein phosphorylation,DUF1908
+20,4553,1,"hydrolase activity, hydrolyzing O-glycosyl compounds",DUF608
+21,8270,1,zinc ion binding,DUF1744
+22,6355,1,"regulation of transcription, DNA-templated",DUF3371
+23,6742,1,NADP catabolic process,DUF108
+24,32217,1,riboflavin transporter activity,DUF1011
+25,32218,1,riboflavin transport,DUF1011
+26,8168,1,methyltransferase activity,DUF1891
+27,5737,1,cytoplasm,DUF1170
+28,6890,1,"retrograde vesicle-mediated transport, Golgi to ER",DUF1751
+29,16491,1,oxidoreductase activity,DUF108
+30,9966,1,regulation of signal transduction,DUF1170
+31,6897,1,endocytosis,DUF1681
+32,6260,1,DNA replication,DUF1744
+33,4222,1,metalloendopeptidase activity,DUF3377
+34,5524,1,ATP binding,DUF1908
+35,6397,1,mRNA processing,DUF1604
+36,5886,1,plasma membrane,DUF1053
+37,5887,1,integral component of plasma membrane,DUF1011

@@ -1,0 +1,451 @@
+,number,count,name,domains
+1,55114,52,oxidation-reduction process,SelR.Ald_Xan_dh_C2.UDPG_MGDP_dh_C.Fer2_2.Ribonuc_red_lgN.Ribonuc_red_lgC.GDC-P.Cu_amine_oxid.Ldh_1_C.Cu_amine_oxidN3.NO_synthase.NAD_Gly3P_dh_C.2-Hacid_dh.ERO1.Rieske_2.Catalase.Evr1_Alr.AhpC-TSA.Pyr_redox_dim.Cu2_monooxygen.Cu-oxidase.G6PD_C.Mo-co_dimer.Ribonuc_red_sm.GMC_oxred_C.Coprogen_oxidas.Sod_Fe_N.Sod_Fe_C.Gp_dh_C.Sod_Cu.UDPG_MGDP_dh.DHFR_1.Iso_dh.Cu-oxidase_2.Heme_oxygenase.Rieske.ELFV_dehydrog_N.PMSR.Lipoxygenase.FAD_binding_5.FAD_binding_4.FAD_binding_1.3HCDH.Biopterin_H.RPE65.MTHFR.IMPDH.malic.Molybdopterin.6PGD.THF_DHG_CYH.Fe-ADH
+2,3735,46,structural constituent of ribosome,Ribosomal_S7e.Ribosomal_L2_C.ribosomal_L24.Ribosomal_S5_C.Ribosomal_S30.Ribosomal_S8.Ribosomal_L36.Ribosomal_L34.Ribosomal_L39.Ribosomal_S2.Ribosomal_S28e.Ribosomal_L15e.Ribosomal_L35p.Ribosomal_S13.Ribosomal_S11.Ribosomal_S16.Ribosomal_S14.Ribosomal_S15.Ribosomal_S18.Ribosomal_S19.Ribosomal_L28.Ribosomal_L29.Ribosomal_L26.Ribosomal_L27.Ribosomal_L20.Ribosomal_L22.Ribosomal_L23.Ribosomal_L4.Ribosomal_L6.Ribosomal_L3.Ribosomal_L2.Ribosomal_S6e.Ribosomal_S9.Ribosomal_S5.Ribosomal_S6.Ribosomal_L14.Ribosomal_L17.Ribosomal_L16.Ribosomal_L11.Ribosomal_L13.Ribosomal_L19.Ribosomal_L37e.Ribosomal_L21e.Ribosomal_L32e.Ribosomal_L5e.Ribosomal_S19e
+3,6412,45,translation,Ribosomal_S7e.Ribosomal_L2_C.ribosomal_L24.Ribosomal_S5_C.Ribosomal_S30.Ribosomal_S8.Ribosomal_L36.Ribosomal_L34.Ribosomal_L39.Ribosomal_S2.Ribosomal_S28e.Ribosomal_L15e.Ribosomal_L35p.Ribosomal_S13.Ribosomal_S11.Ribosomal_S16.Ribosomal_S14.Ribosomal_S15.Ribosomal_S18.Ribosomal_S19.Ribosomal_L29.Ribosomal_L26.Ribosomal_L27.Ribosomal_L20.Ribosomal_L22.Ribosomal_L23.Ribosomal_L4.Ribosomal_L6.Ribosomal_L3.Ribosomal_L2.Ribosomal_S6e.Ribosomal_S9.Ribosomal_S5.Ribosomal_S6.Ribosomal_L14.Ribosomal_L17.Ribosomal_L16.Ribosomal_L11.Ribosomal_L13.Ribosomal_L19.Ribosomal_L37e.Ribosomal_L21e.Ribosomal_L32e.Ribosomal_L5e.Ribosomal_S19e
+4,5840,45,ribosome,Ribosomal_S7e.Ribosomal_L2_C.ribosomal_L24.Ribosomal_S5_C.Ribosomal_S30.Ribosomal_S8.Ribosomal_L36.Ribosomal_L34.Ribosomal_L39.Ribosomal_S2.Ribosomal_S28e.Ribosomal_L15e.Ribosomal_L35p.Ribosomal_S13.Ribosomal_S11.Ribosomal_S16.Ribosomal_S14.Ribosomal_S15.Ribosomal_S18.Ribosomal_S19.Ribosomal_L29.Ribosomal_L27.Ribosomal_L20.Ribosomal_L22.Ribosomal_L23.Ribosomal_L4.Ribosomal_L6.Ribosomal_L3.Ribosomal_L2.Ribosomal_S6e.Ribosomal_S9.Ribosomal_S5.Ribosomal_S6.Ribosomal_L14.Ribosomal_L17.Ribosomal_L16.Ribosomal_L11.Ribosomal_L13.Ribosomal_L19.Ribosomal_L37e.Ribosomal_L21e.Ribosomal_L21p.Ribosomal_L32e.Ribosomal_L5e.Ribosomal_S19e
+5,5524,35,ATP binding,TPK_catalytic.MutS_III.DnaB_C.Sigma54_activat.Ribonuc_red_lgN.DALR_1.Helicase_C_2.DNA_gyraseB.GSH_synth_ATP.HSP90.tRNA-synt_2.GHMP_kinases_N.DNA_mis_repair.Hexokinase_2.MutL_C.ATP-grasp_3.GMP_synt_C.UPF1_Zn_bind.tRNA_SAD.MutS_IV.Ins_P5_2-kin.Alpha_kinase.MutS_I.Arg_tRNA_synt_N.DNA_ligase_A_M.ProRS-C_1.DNA_topoisoIV.tRNA-synt_1c_C.Furin-like.tRNA-synt_2c.tRNA-synt_2b.tRNA-synt_2d.Fumble.CPSase_L_D2.tRNA-synt_1d
+6,3677,34,DNA binding,Rep-A_N.DNA_pol_B.DNA_pol_A.PCNA_N.PCNA_C.zf-PARP.PC4.RNA_pol_N.DNA_gyraseB.RNA_pol_Rpb2_7.RNA_pol_Rpb2_6.RNA_pol_Rpb2_1.RNA_pol_Rpb2_3.TBP.Topoisom_I_N.UPF1_Zn_bind.RNA_pol_Rpb1_2.RNA_pol_Rpb1_1.RNA_pol_Rpb1_4.RNA_pol_Rpb1_5.ERCC4.RNA_pol_Rpb1_3.Topoisom_bac.RHD_DNA_bind.Topoisom_I.LAG1-DNAbind.DNA_ligase_A_N.RNA_pol.DNA_topoisoIV.STAT_bind.POT1.SRF-TF.Pur_DNA_glyco.HHH
+7,5622,30,intracellular,Ribosomal_S7e.ribosomal_L24.Ribosomal_S30.Peptidase_C12.Peptidase_M17.Ribosomal_L36.Ribosomal_L34.Ribosomal_L39.Ribosomal_S2.Ribosomal_S28e.IP_trans.Ribosomal_L35p.Ribosomal_S13.Ribosomal_S16.Ribosomal_S14.Ribosomal_S15.Ribosomal_S18.Ribosomal_L29.Ribosomal_L27.Ribosomal_L20.Ribosomal_L3.Ribosomal_L2.Ribosomal_S6e.Ribosomal_L17.Ribosomal_L10.Ribosomal_L19.Ribosomal_L37e.Ribosomal_L21e.Ribosomal_L32e.Ribosomal_L5e
+8,5975,26,carbohydrate metabolic process,SIS.Glyco_hydro_18.Glyco_hydro_1.Glyco_hydro_65m.Glyco_hydro_20.NAD_Gly3P_dh_C.Alpha_L_fucos.FGGY_C.FGGY_N.Ribul_P_3_epim.Aldose_epim.Hexokinase_2.GSDH.Glyco_hydro_38.Alpha-amylase.Glucosamine_iso.ADP_PFK_GK.TAL_FSA.Glyco_hydro_2_C.Glyco_hydro_2_N.Melibiase_2.Phosphorylase.PARG_cat.PGM_PMM_III.Alpha-amylase_C.PGM_PMM_I
+9,8152,24,metabolic process,Isochorismatase.DHDPS.Aminotran_4.2-Hacid_dh.PAPS_reduct.Aconitase_C.Glycos_transf_3.Peptidase_M20.MM_CoA_mutase.Ligase_CoA.NAD_kinase.E1_dh.FAA_hydrolase.Acetyltransf_2.AstE_AspA.Alk_phosphatase.Aconitase.Thiolase_N.TIM.CoA_trans.TP_methylase.Tyrosinase.ACT.UDPGP
+10,3824,23,catalytic activity,SpoIIE.HMGL-like.Glyco_hydro_65m.Isochorismatase.FAD-oxidase_C.Flavoprotein.Aminotran_4.CTP_transf_like.PNP_UDP_1.PAPS_reduct.Radical_SAM.Ligase_CoA.CoA_transf_3.TPP_enzyme_C.FAA_hydrolase.DNA_binding_1.Alpha-amylase.HpcH_HpaI.Orn_Arg_deC_N.Orn_DAP_Arg_deC.IMPDH.Alpha-amylase_C.THF_DHG_CYH
+11,16491,15,oxidoreductase activity,Ald_Xan_dh_C2.Fer2_2.AhpC-TSA.Mo-co_dimer.Cu-oxidase_2.Rieske.ELFV_dehydrog_N.FAD_binding_5.FAD_binding_4.FAD_binding_1.3HCDH.Tyrosinase.FMN_red.Molybdopterin.Fe-ADH
+12,3723,15,RNA binding,YTH.Ribonuclease_T2.PUA.eIF-1a.AXH.Ribosomal_S13.SpoU_methylase.Ribosomal_S5.THUMP.Fibrillarin.SLBP_RNA_bind.PseudoU_synth_2.PseudoU_synth_1.IF4E.RNA_helicase
+13,5737,14,cytoplasm,PAD.APG12.GLTP.DHHA2.UPF1_Zn_bind.PAD_M.Pyrophosphatase.Arg_tRNA_synt_N.ProRS-C_1.tRNA-synt_1c_C.tRNA-synt_2d.IF4E.PMM.Tyr_Deacylase
+14,16020,14,membrane,STT3.Voltage_CLC.Na_sulph_symp.Lectin_leg-like.MatE.Glyco_hydro_47.COX2.Plasmod_Pvs28.SecY.PDGF.Furin-like.Ammonium_transp.CDP-OH_P_transf.PTR2
+15,6351,13,"transcription, DNA-templated",RNA_pol_A_bac.RNA_pol_L.RNA_pol_N.RNA_pol_Rpb2_7.RNA_pol_Rpb2_6.RNA_pol_Rpb2_1.RNA_pol_Rpb2_3.RNA_pol_Rpb1_2.RNA_pol_Rpb1_1.RNA_pol_Rpb1_4.RNA_pol_Rpb1_5.RNA_pol_Rpb1_3.RNA_pol
+16,3899,13,DNA-directed RNA polymerase activity,RNA_pol_A_bac.RNA_pol_L.RNA_pol_N.RNA_pol_Rpb2_7.RNA_pol_Rpb2_6.RNA_pol_Rpb2_1.RNA_pol_Rpb2_3.RNA_pol_Rpb1_2.RNA_pol_Rpb1_1.RNA_pol_Rpb1_4.RNA_pol_Rpb1_5.RNA_pol_Rpb1_3.RNA_pol
+17,16787,11,hydrolase activity,Endonuclease_NS.Asparaginase_2.Peptidase_M20.5_nucleotid_C.dUTPase.Ham1p_like.Amidohydro_2.Amidohydro_1.Peptidase_C26.Creatinase_N.DcpS
+18,46872,11,metal ion binding,Fer2_2.Endonuclease_NS.ATP-grasp_3.Sod_Fe_N.Sod_Fe_C.Arginase.Sod_Cu.B12-binding.Lipoxygenase.ALAD.Fe-ADH
+19,8270,10,zinc ion binding,zf-CW.zf-PARP.H2TH.Peptidase_M18.zf-UBR.Alpha-mann_mid.UPF1_Zn_bind.zf-TAZ.zf-dskA_traR.PTE
+20,6355,10,"regulation of transcription, DNA-templated",mTERF.Sigma54_activat.PC4.BTD.YEATS.HAT_KAT11.zf-TAZ.PAH.RHD_DNA_bind.LAG1-DNAbind
+21,6508,10,proteolysis,DPPIV_N.Peptidase_M17.Peptidase_M13.Peptidase_M19.Peptidase_M18.Peptidase_S41.Peptidase_M13_N.Peptidase_S8.Propep_M14.Peptidase_S9
+22,5634,10,nucleus,Rep-A_N.Rad1.BTD.ASF1_hist_chap.zf-TAZ.Cbl_N.ORC5_C.Tyr-DNA_phospho.LAG1-DNAbind.Ssu72
+23,6281,9,DNA repair,IMS.Methyltransf_1N.DNA_binding_1.Tyr-DNA_phospho.DNA_ligase_A_C.DNA_ligase_A_M.DNA_ligase_A_N.RQC.Endonuclease_5
+24,3676,9,nucleic acid binding,tRNA_anti-codon.Endonuclease_NS.DHHA1.Helicase_C_2.Piwi.DNA_pol_A_exo1.RRM_7.RNase_H.Alba
+25,5515,8,protein binding,SWIB.GAF_2.GAF_3.POLO_box.PAZ.AXH.SUFU_C.MATH
+26,16021,8,integral component of membrane,TspO_MBR.CitMHS.Rhomboid.MNNL.UbiA.SDF.Glyco_transf_64.COX2_TM
+27,6260,7,DNA replication,Rep-A_N.DnaB_C.DNA_pol_A.Ribonuc_red_lgN.Ribonuc_red_lgC.ORC5_C.RQC
+28,166,7,nucleotide binding,DNA_pol_B.tRNA-synt_2.Arg_tRNA_synt_N.ProRS-C_1.tRNA-synt_1c_C.tRNA-synt_2c.tRNA-synt_2b
+29,4553,7,"hydrolase activity, hydrolyzing O-glycosyl compounds",Glyco_hydro_18.Glyco_hydro_1.Glyco_hydro_20.Alpha-mann_mid.Glyco_hydro_2_C.Glyco_hydro_2_N.Melibiase_2
+30,5507,6,copper ion binding,Cu_amine_oxid.Cu_amine_oxidN3.Cu2_monooxygen.Cu-oxidase_3.Cu-oxidase_2.COX2
+31,6265,5,DNA topological change,DNA_gyraseB.Topoisom_I_N.Topoisom_bac.Topoisom_I.DNA_topoisoIV
+32,6298,5,mismatch repair,MutS_III.DNA_mis_repair.MutL_C.MutS_IV.MutS_I
+33,16616,5,"oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor",UDPG_MGDP_dh_C.Ldh_1_C.2-Hacid_dh.UDPG_MGDP_dh.Iso_dh
+34,16788,5,"hydrolase activity, acting on ester bonds",VRR_NUC.TatD_DNase.Lipase_GDSL.AstE_AspA.Tyr_Deacylase
+35,9058,5,biosynthetic process,NTP_transferase.CTP_transf_like.Formyl_trans_C.Formyl_trans_N.SQS_PSY
+36,20037,5,heme binding,HNOB.Catalase.Trp_dioxygenase.Cytochrom_C.IDO
+37,8168,5,methyltransferase activity,Methyltransf_PK.Methyltr_RsmB-F.Fibrillarin.TP_methylase.EMG1
+38,51287,4,NAD binding,UDPG_MGDP_dh_C.2-Hacid_dh.UDPG_MGDP_dh.AdoHcyase
+39,6413,4,translational initiation,eIF-5_eIF-2B.eIF-1a.SUI1.IF4E
+40,16773,4,"phosphotransferase activity, alcohol group as acceptor",FGGY_C.FGGY_N.Hexokinase_2.ADP_PFK_GK
+41,8299,4,isoprenoid biosynthetic process,polyprenyl_synt.HMG_CoA_synt_C.IspD.HMG_CoA_synt_N
+42,4812,4,aminoacyl-tRNA ligase activity,tRNA-synt_2.tRNA-synt_1c_C.tRNA-synt_2b.tRNA-synt_2d
+43,5509,4,calcium ion binding,PAD.Cbl_N2.PAD_M.Glyco_hydro_47
+44,5576,4,extracellular region,IL17.Hormone_5.Defensin_1.Insulin
+45,30983,4,mismatched DNA binding,MutS_III.DNA_mis_repair.MutS_IV.MutS_I
+46,3743,4,translation initiation factor activity,eIF-5_eIF-2B.eIF-1a.SUI1.IF4E
+47,55085,4,transmembrane transport,Voltage_CLC.Na_sulph_symp.CitMHS.MatE
+48,6164,3,purine nucleotide biosynthetic process,GMP_synt_C.AICARFT_IMPCHas.Adenylsucc_synt
+49,8312,3,7S RNA binding,SRP_SPB.SRP14.SRP19
+50,4252,3,serine-type endopeptidase activity,Peptidase_S9_N.Rhomboid.Peptidase_S8
+51,6520,3,cellular amino acid metabolic process,OTCace_N.ELFV_dehydrog_N.OTCace
+52,33014,3,tetrapyrrole biosynthetic process,Porphobil_deam.Porphobil_deamC.ALAD
+53,6418,3,tRNA aminoacylation for protein translation,tRNA-synt_2.tRNA-synt_1c_C.tRNA-synt_2b
+54,6420,3,arginyl-tRNA aminoacylation,DALR_1.Arg_tRNA_synt_N.tRNA-synt_1d
+55,287,3,magnesium ion binding,Thg1.ACPS.Pyrophosphatase
+56,6468,3,protein phosphorylation,Alpha_kinase.Furin-like.Focal_AT
+57,51536,3,iron-sulfur cluster binding,Fer2.Radical_SAM.NifU_N
+58,16740,3,transferase activity,SHMT.SQS_PSY.SepSecS
+59,6511,3,ubiquitin-dependent protein catabolic process,Proteasome_A_N.Cullin.Peptidase_C12
+60,4478,3,methionine adenosyltransferase activity,S-AdoMet_synt_C.S-AdoMet_synt_M.S-AdoMet_synt_N
+61,6556,3,S-adenosylmethionine biosynthetic process,S-AdoMet_synt_C.S-AdoMet_synt_M.S-AdoMet_synt_N
+62,16853,3,isomerase activity,Rotamase.Aldose_epim.RbsD_FucU
+63,6614,3,SRP-dependent cotranslational protein targeting to membrane,SRP_SPB.SRP14.SRP19
+64,16868,3,"intramolecular transferase activity, phosphotransferases",PGM_PMM_IV.PGM_PMM_III.PGM_PMM_I
+65,6807,3,nitrogen compound metabolic process,Gln-synt_N.CN_hydrolase.Gln-synt_C
+66,4814,3,arginine-tRNA ligase activity,DALR_1.Arg_tRNA_synt_N.tRNA-synt_1d
+67,48038,3,quinone binding,Cu_amine_oxid.Cu_amine_oxidN3.GSDH
+68,6310,3,DNA recombination,DNA_ligase_A_C.DNA_ligase_A_M.DNA_ligase_A_N
+69,5525,3,GTP binding,EFG_IV.FeoB_N.Adenylsucc_synt
+70,30170,3,pyridoxal phosphate binding,Cys_Met_Meta_PP.Aminotran_3.Pyridoxal_deC
+71,15986,3,ATP synthesis coupled proton transport,ATP-synt_ab_C.ATP-synt_DE_N.ATP-synt
+72,3910,3,DNA ligase (ATP) activity,DNA_ligase_A_C.DNA_ligase_A_M.DNA_ligase_A_N
+73,6801,3,superoxide metabolic process,Sod_Fe_N.Sod_Fe_C.Sod_Cu
+74,46983,3,protein dimerization activity,RNA_pol_A_bac.SRF-TF.AIF_C
+75,8080,3,N-acetyltransferase activity,Acetyltransf_10.Acetyltransf_3.Acetyltransf_7
+76,19843,3,rRNA binding,Ribosomal_L20.Ribosomal_L6.Ribosomal_S6
+77,6096,3,glycolytic process,PGK.PGI.Glycolytic
+78,8199,2,ferric iron binding,Ferritin.Frataxin_Cyay
+79,43039,2,tRNA aminoacylation,tRNA_SAD.tRNA-synt_2d
+80,8236,2,serine-type peptidase activity,Peptidase_S41.Peptidase_S9
+81,4177,2,aminopeptidase activity,Peptidase_M17.Peptidase_M18
+82,6269,2,"DNA replication, synthesis of RNA primer",DNA_primase_lrg.DNA_primase_S
+83,6275,2,regulation of DNA replication,PCNA_N.PCNA_C
+84,6284,2,base-excision repair,HhH-GPD.Pur_DNA_glyco
+85,6289,2,nucleotide-excision repair,OGG_N.H2TH
+86,8408,2,3'-5' exonuclease activity,DNA_pol_A_exo1.DNA_pol_B_exo1
+87,6396,2,RNA processing,Ribonucleas_3_3.SpoU_methylase
+88,6397,2,mRNA processing,mRNA_cap_enzyme.Ssu72
+89,6400,2,tRNA modification,Thg1.TGT
+90,4356,2,glutamate-ammonia ligase activity,Gln-synt_N.Gln-synt_C
+91,4371,2,glycerone kinase activity,Dak1.Dak2
+92,4379,2,glycylpeptide N-tetradecanoyltransferase activity,NMT.NMT_C
+93,4402,2,histone acetyltransferase activity,HAT_KAT11.zf-TAZ
+94,16702,2,"oxidoreductase activity, acting on single donors with incorporation of molecular oxygen, incorporation of two atoms of oxygen",Lipoxygenase.RPE65
+95,6464,2,cellular protein modification process,BPL_LplA_LipB.UEV
+96,4418,2,hydroxymethylbilane synthase activity,Porphobil_deam.Porphobil_deamC
+97,4421,2,hydroxymethylglutaryl-CoA synthase activity,HMG_CoA_synt_C.HMG_CoA_synt_N
+98,6471,2,protein ADP-ribosylation,ART.PARP_reg
+99,51537,2,"2 iron, 2 sulfur cluster binding",zf-CDGSH.Rieske
+100,398,2,"mRNA splicing, via spliceosome",PRO8NT.PROCN
+101,6886,2,intracellular protein transport,Alpha_adaptinC2.VHS
+102,16742,2,"hydroxymethyl-, formyl- and related transferase activity",Formyl_trans_C.Formyl_trans_N
+103,16743,2,carboxyl- or carbamoyltransferase activity,OTCace_N.OTCace
+104,16747,2,"transferase activity, transferring acyl groups other than amino-acyl groups",Thiolase_N.FR47
+105,16765,2,"transferase activity, transferring alkyl or aryl (other than methyl) groups",UbiA.Prenyltransf
+106,16772,2,"transferase activity, transferring phosphorus-containing groups",ATP-gua_PtransN.ATP-gua_Ptrans
+107,6541,2,glutamine metabolic process,Glutaminase.Peptidase_C26
+108,4518,2,nuclease activity,XPG_I.ERCC4
+109,8654,2,phospholipid biosynthetic process,NAD_binding_5.CDP-OH_P_transf
+110,4668,2,protein-arginine deiminase activity,PAD.PAD_M
+111,6779,2,porphyrin-containing compound biosynthetic process,URO-D.Coprogen_oxidas
+112,6810,2,transport,IP_trans.PTR2
+113,4784,2,superoxide dismutase activity,Sod_Fe_N.Sod_Fe_C
+114,15031,2,protein transport,SecY.UEV
+115,31419,2,cobalamin binding,MM_CoA_mutase.B12-binding
+116,4871,2,signal transducer activity,Cbl_N.Focal_AT
+117,9055,2,electron carrier activity,Fer2.Cytochrom_C
+118,9116,2,nucleoside metabolic process,PNP_UDP_1.Pribosyltran
+119,9229,2,thiamine diphosphate biosynthetic process,TPK_catalytic.TPK_B1_binding
+120,9308,2,amine metabolic process,Cu_amine_oxid.Cu_amine_oxidN3
+121,5215,2,transporter activity,Na_sulph_symp.PTR2
+122,42128,2,nitrate assimilation,Oxidored_molyb.Rieske_2
+123,9451,2,RNA modification,PseudoU_synth_2.PseudoU_synth_1
+124,16597,2,amino acid binding,OTCace.ACT
+125,48500,2,signal recognition particle,SRP_SPB.SRP19
+126,50660,2,flavin adenine dinucleotide binding,FAD-oxidase_C.FAD_binding_4
+127,1522,2,pseudouridine synthesis,PseudoU_synth_2.PseudoU_synth_1
+128,30976,2,thiamine pyrophosphate binding,TPP_enzyme_N.TPP_enzyme_C
+129,30246,2,carbohydrate binding,SIS.Gal_Lectin
+130,32324,2,molybdopterin cofactor biosynthetic process,MoeA_C.MoeA_N
+131,3684,2,damaged DNA binding,OGG_N.H2TH
+132,3700,2,"transcription factor activity, sequence-specific DNA binding",RHD_DNA_bind.LAG1-DNAbind
+133,8131,2,primary amine oxidase activity,Cu_amine_oxid.Cu_amine_oxidN3
+134,9982,2,pseudouridine synthase activity,PseudoU_synth_2.PseudoU_synth_1
+135,3896,2,DNA primase activity,DNA_primase_lrg.DNA_primase_S
+136,16192,2,vesicle-mediated transport,Alpha_adaptinC2.Sec1
+137,3917,2,DNA topoisomerase type I activity,Topoisom_I_N.Topoisom_I
+138,3918,2,DNA topoisomerase type II (ATP-hydrolyzing) activity,DNA_gyraseB.DNA_topoisoIV
+139,8033,2,tRNA processing,IPPT.Fibrillarin
+140,16226,2,iron-sulfur cluster assembly,Frataxin_Cyay.NifU_N
+141,8081,2,phosphoric diester hydrolase activity,GDPD.Tyr-DNA_phospho
+142,16301,2,kinase activity,ATP-gua_PtransN.ATP-gua_Ptrans
+143,6071,2,glycerol metabolic process,Dak1.Dak2
+144,10181,2,FMN binding,Flavodoxin_1.Pyridox_oxase_2
+145,6139,2,nucleobase-containing compound metabolic process,Helicase_C_2.DNA_pol_A_exo1
+146,4096,1,catalase activity,Catalase
+147,8193,1,tRNA guanylyltransferase activity,Thg1
+148,6486,1,protein glycosylation,STT3
+149,4109,1,coproporphyrinogen oxidase activity,Coprogen_oxidas
+150,16407,1,acetyltransferase activity,Acetyltransf_2
+151,71704,1,organic substance metabolic process,PGM_PMM_IV
+152,6177,1,GMP biosynthetic process,GMP_synt_C
+153,45,1,autophagosome assembly,APG12
+154,49,1,tRNA binding,tRNA-synt_2d
+155,4146,1,dihydrofolate reductase activity,DHFR_1
+156,2100,1,tRNA wobble adenosine to inosine editing,MafB19-deam
+157,8251,1,tRNA-specific adenosine deaminase activity,MafB19-deam
+158,8253,1,5'-nucleotidase activity,NT5C
+159,6207,1,'de novo' pyrimidine nucleobase biosynthetic process,OMPdecase
+160,77,1,DNA damage checkpoint,Rad9
+161,4175,1,endopeptidase activity,Proteasome_A_N
+162,4180,1,carboxypeptidase activity,Propep_M14
+163,15035,1,protein disulfide oxidoreductase activity,DSBA
+164,8528,1,G-protein coupled peptide receptor activity,7TM_GPCR_Srw
+165,4222,1,metalloendopeptidase activity,Peptidase_M13
+166,43140,1,ATP-dependent 3'-5' DNA helicase activity,RQC
+167,17089,1,glycolipid transporter activity,GLTP
+168,6415,1,translational termination,RF-1
+169,43169,1,cation binding,Alpha-amylase_C
+170,4807,1,triose-phosphate isomerase activity,TIM
+171,30896,1,checkpoint clamp complex,Rad9
+172,184,1,"nuclear-transcribed mRNA catabolic process, nonsense-mediated decay",UPF1_Zn_bind
+173,16573,1,histone acetylation,HAT_KAT11
+174,4129,1,cytochrome-c oxidase activity,COX2
+175,45261,1,"proton-transporting ATP synthase complex, catalytic core F(1)",ATP-synt
+176,16592,1,mediator complex,Med18
+177,6357,1,regulation of transcription from RNA polymerase II promoter,Med18
+178,8410,1,CoA-transferase activity,CoA_trans
+179,6364,1,rRNA processing,Fibrillarin
+180,30942,1,endoplasmic reticulum signal peptide binding,SRP14
+181,43231,1,intracellular membrane-bounded organelle,zf-CDGSH
+182,6370,1,7-methylguanosine mRNA capping,mRNA_cap_enzyme
+183,4325,1,ferrochelatase activity,Ferrochelatase
+184,16614,1,"oxidoreductase activity, acting on CH-OH group of donors",GMC_oxred_C
+185,16620,1,"oxidoreductase activity, acting on the aldehyde or oxo group of donors, NAD or NADP as acceptor",Gp_dh_C
+186,16624,1,"oxidoreductase activity, acting on the aldehyde or oxo group of donors, disulfide as acceptor",E1_dh
+187,16627,1,"oxidoreductase activity, acting on the CH-CH group of donors",Sdh_cyt
+188,8440,1,"inositol-1,4,5-trisphosphate 3-kinase activity",IPK
+189,4345,1,glucose-6-phosphate dehydrogenase activity,G6PD_C
+190,4347,1,glucose-6-phosphate isomerase activity,PGI
+191,30975,1,thiamine binding,TPK_B1_binding
+192,4359,1,glutaminase activity,Glutaminase
+193,4363,1,glutathione synthase activity,GSH_synth_ATP
+194,6189,1,'de novo' IMP biosynthetic process,AIRC
+195,4373,1,glycogen (starch) synthase activity,Glycogen_syn
+196,4375,1,glycine dehydrogenase (decarboxylating) activity,GDC-P
+197,4484,1,mRNA guanylyltransferase activity,mRNA_cap_enzyme
+198,289,1,nuclear-transcribed mRNA poly(A) tail shortening,CAF1
+199,4386,1,helicase activity,UPF1_Zn_bind
+200,8483,1,transaminase activity,Aminotran_3
+201,4392,1,heme oxygenase (decyclizing) activity,Heme_oxygenase
+202,6457,1,protein folding,HSP90
+203,16714,1,"oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen, reduced pteridine as one donor, and incorporation of one atom of oxygen",Biopterin_H
+204,4427,1,inorganic diphosphatase activity,Pyrophosphatase
+205,51539,1,"4 iron, 4 sulfur cluster binding",EndIII_4Fe-2S
+206,8534,1,oxidized purine nucleobase lesion DNA N-glycosylase activity,OGG_N
+207,16746,1,"transferase activity, transferring acyl groups",Carn_acyltransf
+208,22900,1,electron transport chain,COX2_TM
+209,16757,1,"transferase activity, transferring glycosyl groups",Glycos_transf_3
+210,16758,1,"transferase activity, transferring hexosyl groups",Glyco_tran_28_C
+211,4471,1,malate dehydrogenase (decarboxylating) (NAD+) activity,malic
+212,70008,1,serine-type exopeptidase activity,Peptidase_S9_N
+213,16763,1,"transferase activity, transferring pentosyl groups",TGT
+214,6529,1,asparagine biosynthetic process,Asn_synthase
+215,4488,1,methylenetetrahydrofolate dehydrogenase (NADP+) activity,THF_DHG_CYH
+216,4489,1,methylenetetrahydrofolate reductase (NAD(P)H) activity,MTHFR
+217,16779,1,nucleotidyltransferase activity,NTP_transferase
+218,16780,1,"phosphotransferase activity, for other substituted phosphate groups",CDP-OH_P_transf
+219,45454,1,cell redox homeostasis,Pyr_redox_dim
+220,6545,1,glycine biosynthetic process,DHFR_1
+221,6546,1,glycine catabolic process,GDC-P
+222,16791,1,phosphatase activity,Alk_phosphatase
+223,33177,1,"proton-transporting two-sector ATPase complex, proton-transporting domain",ATP-synt_C
+224,6555,1,methionine metabolic process,MTHFR
+225,16798,1,"hydrolase activity, acting on glycosyl bonds",Glyco_hydro_99
+226,16799,1,"hydrolase activity, hydrolyzing N-glycosyl compounds",H2TH
+227,4512,1,inositol-3-phosphate synthase activity,NAD_binding_5
+228,4514,1,nicotinate-nucleotide diphosphorylase (carboxylating) activity,QRPTase_C
+229,8612,1,peptidyl-lysine modification to peptidyl-hypusine,DS
+230,4517,1,nitric-oxide synthase activity,NO_synthase
+231,4519,1,endonuclease activity,Endonuclease_5
+232,16810,1,"hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds",CN_hydrolase
+233,4523,1,RNA-DNA hybrid ribonuclease activity,RNase_H
+234,4525,1,ribonuclease III activity,Ribonucleas_3_3
+235,16817,1,"hydrolase activity, acting on acid anhydrides",RIG-I_C-RD
+236,16818,1,"hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides",Helicase_C_2
+237,4535,1,poly(A)-specific ribonuclease activity,CAF1
+238,16829,1,lyase activity,DHDPS
+239,16831,1,carboxy-lyase activity,Pyridoxal_deC
+240,4555,1,"alpha,alpha-trehalase activity",Trehalase
+241,4559,1,alpha-mannosidase activity,Glyco_hydro_38
+242,4560,1,alpha-L-fucosidase activity,Alpha_L_fucos
+243,16857,1,"racemase and epimerase activity, acting on carbohydrates and derivatives",Ribul_P_3_epim
+244,4571,1,"mannosyl-oligosaccharide 1,2-alpha-mannosidase activity",Glyco_hydro_47
+245,16805,1,dipeptidase activity,Peptidase_M19
+246,4576,1,oligosaccharyl transferase activity,STT3
+247,16866,1,intramolecular transferase activity,MM_CoA_mutase
+248,35299,1,inositol pentakisphosphate 2-kinase activity,Ins_P5_2-kin
+249,6629,1,lipid metabolic process,GDPD
+250,6631,1,fatty acid metabolic process,3HCDH
+251,16874,1,ligase activity,GatB_N
+252,16876,1,"ligase activity, forming aminoacyl-tRNA and related compounds",tRNA_SAD
+253,4590,1,orotidine-5'-phosphate decarboxylase activity,OMPdecase
+254,4594,1,pantothenate kinase activity,Fumble
+255,16901,1,"oxidoreductase activity, acting on the CH-OH group of donors, quinone or similar compound as acceptor",GSDH
+256,4615,1,phosphomannomutase activity,PMM
+257,4616,1,phosphogluconate dehydrogenase (decarboxylating) activity,6PGD
+258,4618,1,phosphoglycerate kinase activity,PGK
+259,8716,1,D-alanine-D-alanine ligase activity,Dala_Dala_lig_C
+260,4643,1,phosphoribosylaminoimidazolecarboxamide formyltransferase activity,AICARFT_IMPCHas
+261,8745,1,N-acetylmuramoyl-L-alanine amidase activity,Amidase_2
+262,4652,1,polynucleotide adenylyltransferase activity,PAP_central
+263,4655,1,porphobilinogen synthase activity,ALAD
+264,4674,1,protein serine/threonine kinase activity,Alpha_kinase
+265,16972,1,thiol oxidase activity,Evr1_Alr
+266,6741,1,NADP biosynthetic process,NAD_kinase
+267,6750,1,glutathione biosynthetic process,GSH_synth_ATP
+268,4713,1,protein tyrosine kinase activity,Focal_AT
+269,4714,1,transmembrane receptor protein tyrosine kinase activity,Furin-like
+270,43631,1,RNA polyadenylation,PAP_central
+271,4721,1,phosphoprotein phosphatase activity,Ssu72
+272,6783,1,heme biosynthetic process,Ferrochelatase
+273,17025,1,TBP-class protein binding,TFIIB
+274,6788,1,heme oxidation,Heme_oxygenase
+275,4748,1,"ribonucleoside-diphosphate reductase activity, thioredoxin disulfide as acceptor",Ribonuc_red_lgN
+276,4751,1,ribose-5-phosphate isomerase activity,Rib_5-P_isom_A
+277,51861,1,glycolipid binding,GLTP
+278,6809,1,nitric oxide biosynthetic process,NO_synthase
+279,6814,1,sodium ion transport,Na_sulph_symp
+280,15012,1,heparan sulfate proteoglycan biosynthetic process,Glyco_transf_64
+281,6821,1,chloride transport,Voltage_CLC
+282,4781,1,sulfate adenylyltransferase (ATP) activity,ATP-sulfurylase
+283,4788,1,thiamine diphosphokinase activity,TPK_catalytic
+284,8897,1,holo-[acyl-carrier-protein] synthase activity,ACPS
+285,6855,1,drug transmembrane transport,MatE
+286,4813,1,alanine-tRNA ligase activity,tRNA-synt_2c
+287,723,1,telomere maintenance,POT1
+288,4827,1,proline-tRNA ligase activity,ProRS-C_1
+289,6879,1,cellular iron ion homeostasis,Ferritin
+290,4833,1,"tryptophan 2,3-dioxygenase activity",Trp_dioxygenase
+291,35556,1,intracellular signal transduction,BTK
+292,15078,1,hydrogen ion transmembrane transporter activity,ATP-synt_C
+293,4843,1,thiol-dependent ubiquitin-specific protease activity,Peptidase_C12
+294,8942,1,nitrite reductase [NAD(P)H] activity,Rieske_2
+295,6952,1,defense response,Defensin_1
+296,4853,1,uroporphyrinogen decarboxylase activity,URO-D
+297,6904,1,vesicle docking involved in exocytosis,Sec1
+298,70403,1,NAD+ binding,SIR2
+299,19211,1,phosphatase activator activity,PTPA
+300,784,1,"nuclear chromosome, telomeric region",POT1
+301,31515,1,tRNA (m1A) methyltransferase complex,Gcd10p
+302,6950,1,response to stress,HSP90
+303,19239,1,deaminase activity,A_deaminase
+304,808,1,origin recognition complex,ORC5_C
+305,16462,1,pyrophosphatase activity,DHHA2
+306,4019,1,adenylosuccinate synthase activity,Adenylsucc_synt
+307,9052,1,"pentose-phosphate shunt, non-oxidative branch",Rib_5-P_isom_A
+308,9056,1,catabolic process,PTE
+309,7017,1,microtubule-based process,Dynein_light
+310,46912,1,"transferase activity, transferring acyl groups, acyl groups converted into alkyl on transfer",Citrate_synt
+311,15238,1,drug transmembrane transporter activity,MatE
+312,31625,1,ubiquitin protein ligase binding,Cullin
+313,48029,1,monosaccharide binding,RbsD_FucU
+314,70569,1,uridylyltransferase activity,UDPGP
+315,15293,1,symporter activity,SDF
+316,15297,1,antiporter activity,MatE
+317,9159,1,deoxyribonucleoside monophosphate catabolic process,Nuc_deoxyrib_tr
+318,9165,1,nucleotide biosynthetic process,DHFR_1
+319,9166,1,nucleotide catabolic process,5_nucleotid_C
+320,33743,1,peptide-methionine (R)-S-oxide reductase activity,SelR
+321,978,1,RNA polymerase II core promoter proximal region sequence-specific DNA binding,BTD
+322,982,1,"transcription factor activity, RNA polymerase II core promoter proximal region sequence-specific binding",BTD
+323,5085,1,guanyl-nucleotide exchange factor activity,Mss4
+324,50144,1,nucleoside deoxyribosyltransferase activity,Nuc_deoxyrib_tr
+325,16209,1,antioxidant activity,AhpC-TSA
+326,19441,1,tryptophan catabolic process to kynurenine,Trp_dioxygenase
+327,7165,1,signal transduction,RBD
+328,7166,1,cell surface receptor signaling pathway,Cbl_N
+329,46080,1,dUTP metabolic process,dUTPase
+330,7169,1,transmembrane receptor protein tyrosine kinase signaling pathway,Furin-like
+331,7172,1,signal complex assembly,Focal_AT
+332,5125,1,cytokine activity,IL17
+333,9231,1,riboflavin biosynthetic process,Flavokinase
+334,19478,1,D-amino acid catabolic process,Tyr_Deacylase
+335,5978,1,glycogen biosynthetic process,Glycogen_syn
+336,9253,1,peptidoglycan catabolic process,Amidase_2
+337,70694,1,deoxyribonucleoside 5'-monophosphate N-glycosidase activity,Nuc_deoxyrib_tr
+338,9264,1,deoxyribonucleotide catabolic process,NT5C
+339,7219,1,Notch signaling pathway,MNNL
+340,19510,1,S-adenosylhomocysteine catabolic process,AdoHcyase
+341,9396,1,folic acid-containing compound biosynthetic process,THF_DHG_CYH
+342,5179,1,hormone activity,Insulin
+343,5185,1,neurohypophyseal hormone activity,Hormone_5
+344,3937,1,IMP cyclohydrolase activity,AICARFT_IMPCHas
+345,1104,1,RNA polymerase II transcription cofactor activity,Med18
+346,9298,1,GDP-mannose biosynthetic process,PMM
+347,7264,1,small GTPase mediated signal transduction,Mss4
+348,33897,1,ribonuclease T2 activity,Ribonuclease_T2
+349,7275,1,multicellular organism development,MNNL
+350,6333,1,chromatin assembly or disassembly,ASF1_hist_chap
+351,5247,1,voltage-gated chloride channel activity,Voltage_CLC
+352,44212,1,transcription regulatory region DNA binding,P53
+353,44237,1,cellular metabolic process,IF-2B
+354,9435,1,NAD biosynthetic process,QRPTase_C
+355,6352,1,"DNA-templated transcription, initiation",TBP
+356,4649,1,poly(ADP-ribose) glycohydrolase activity,PARG_cat
+357,42254,1,ribosome biogenesis,Ribosomal_L10
+358,46373,1,L-arabinose metabolic process,AbfB
+359,19752,1,carboxylic acid metabolic process,Pyridoxal_deC
+360,19773,1,"proteasome core complex, alpha-subunit complex",Proteasome_A_N
+361,15696,1,ammonium transport,Ammonium_transp
+362,6542,1,glutamine biosynthetic process,Gln-synt_N
+363,50518,1,2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase activity,IspD
+364,19799,1,tubulin N-acetyltransferase activity,Acetyltransf_16
+365,5694,1,chromosome,Topoisom_I_N
+366,5506,1,iron ion binding,NifU_N
+367,4332,1,fructose-bisphosphate aldolase activity,Glycolytic
+368,46488,1,phosphatidylinositol metabolic process,PIP5K
+369,42393,1,histone binding,SAD_SRA
+370,30131,1,clathrin adaptor complex,Alpha_adaptinC2
+371,30151,1,molybdenum ion binding,Mo-co_dimer
+372,4497,1,monooxygenase activity,Cu2_monooxygen
+373,71929,1,alpha-tubulin acetylation,Acetyltransf_16
+374,46556,1,alpha-L-arabinofuranosidase activity,AbfB
+375,50661,1,NADP binding,G6PD_C
+376,4013,1,adenosylhomocysteinase activity,AdoHcyase
+377,8113,1,peptide-methionine (S)-S-oxide reductase activity,PMSR
+378,15923,1,mannosidase activity,Glyco_hydro_38C
+379,15934,1,large ribosomal subunit,Ribosomal_L26
+380,15937,1,coenzyme A biosynthetic process,Fumble
+381,30286,1,dynein complex,Dynein_light
+382,4367,1,glycerol-3-phosphate dehydrogenase [NAD+] activity,NAD_Gly3P_dh_C
+383,3678,1,DNA helicase activity,DnaB_C
+384,18024,1,histone-lysine N-methyltransferase activity,DOT1
+385,3690,1,double-stranded DNA binding,mTERF
+386,6419,1,alanyl-tRNA aminoacylation,tRNA-synt_2c
+387,15991,1,ATP hydrolysis coupled proton transport,ATP-synt_C
+388,3712,1,transcription cofactor activity,zf-TAZ
+389,3713,1,transcription coactivator activity,PC4
+390,5057,1,"signal transducer activity, downstream of receptor",RBD
+391,3724,1,RNA helicase activity,RNA_helicase
+392,3725,1,double-stranded RNA binding,Sua5_yciO_yrdC
+393,5783,1,endoplasmic reticulum,ERO1
+394,5786,1,"signal recognition particle, endoplasmic reticulum targeting",SRP14
+395,3747,1,translation release factor activity,RF-1
+396,3756,1,protein disulfide isomerase activity,ERO1
+397,16051,1,carbohydrate biosynthetic process,NeuB
+398,18101,1,protein citrullination,PAD_M
+399,16671,1,"oxidoreductase activity, acting on a sulfur group of donors, disulfide as acceptor",ERO1
+400,6433,1,prolyl-tRNA aminoacylation,ProRS-C_1
+401,290,1,deadenylation-dependent decapping of nuclear-transcribed mRNA,DcpS
+402,5991,1,trehalose metabolic process,Trehalase
+403,5874,1,microtubule,Acetyltransf_16
+404,46836,1,glycolipid transport,GLTP
+405,9986,1,cell surface,Plasmod_Pvs28
+406,46854,1,phosphatidylinositol phosphorylation,Inositol_P
+407,3857,1,3-hydroxyacyl-CoA dehydrogenase activity,3HCDH
+408,3860,1,3-hydroxyisobutyryl-CoA hydrolase activity,ECH_2
+409,30488,1,tRNA methylation,Gcd10p
+410,16153,1,urocanate hydratase activity,Urocanase
+411,5925,1,focal adhesion,Focal_AT
+412,3887,1,DNA-directed DNA polymerase activity,DNA_pol_A
+413,10038,1,response to metal ion,CutA1
+414,3905,1,alkylbase DNA N-glycosylase activity,Pur_DNA_glyco
+415,3906,1,DNA-(apurinic or apyrimidinic site) lyase activity,H2TH
+416,3908,1,methylated-DNA-[protein]-cysteine S-methyltransferase activity,Methyltransf_1N
+417,6796,1,phosphate-containing compound metabolic process,Pyrophosphatase
+418,3916,1,DNA topoisomerase activity,Topoisom_bac
+419,8017,1,microtubule binding,EB1
+420,3922,1,GMP synthase (glutamine-hydrolyzing) activity,GMP_synt_C
+421,46933,1,"proton-transporting ATP synthase activity, rotational mechanism",ATP-synt
+422,8026,1,ATP-dependent helicase activity,Helicase_C_2
+423,5996,1,monosaccharide metabolic process,RbsD_FucU
+424,3950,1,NAD+ ADP-ribosyltransferase activity,PARP_reg
+425,3951,1,NAD+ kinase activity,NAD_kinase
+426,3953,1,NAD+ nucleosidase activity,Rib_hydrolayse
+427,3956,1,NAD(P)+-protein-arginine ADP-ribosyltransferase activity,ART
+428,6006,1,glucose metabolic process,G6PD_C
+429,6012,1,galactose metabolic process,GalP_UDP_transf
+430,6013,1,mannose metabolic process,Glyco_hydro_38C
+431,6021,1,inositol biosynthetic process,NAD_binding_5
+432,6024,1,glycosaminoglycan biosynthetic process,Glyco_transf_64
+433,51082,1,unfolded protein binding,HSP90
+434,8083,1,growth factor activity,PDGF
+435,3993,1,acid phosphatase activity,His_Phos_2
+436,8097,1,5S rRNA binding,Ribosomal_L5e
+437,8519,1,ammonium transmembrane transporter activity,Ammonium_transp
+438,8108,1,UDP-glucose:hexose-1-phosphate uridylyltransferase activity,GalP_UDP_transf
+439,4017,1,adenylate kinase activity,ADK_lid
+440,16307,1,phosphatidylinositol phosphate kinase activity,PIP5K
+441,16715,1,"oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen, reduced ascorbate as one donor, and incorporation of one atom of oxygen",Cu2_monooxygen
+442,8134,1,transcription factor binding,Sigma54_activat
+443,4045,1,aminoacyl-tRNA hydrolase activity,Pept_tRNA_hydro
+444,6094,1,gluconeogenesis,PGI
+445,6098,1,pentose-phosphate shunt,6PGD
+446,6480,1,N-terminal protein amino acid methylation,Methyltransf_PK
+447,4066,1,asparagine synthase (glutamine-hydrolyzing) activity,Asn_synthase
+448,8173,1,RNA methyltransferase activity,SpoU_methylase
+449,8531,1,riboflavin kinase activity,Flavokinase
+450,8184,1,glycogen phosphorylase activity,Phosphorylase
