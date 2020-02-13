@@ -1,0 +1,1 @@
+Cobalamin_bind	0.0514285714286

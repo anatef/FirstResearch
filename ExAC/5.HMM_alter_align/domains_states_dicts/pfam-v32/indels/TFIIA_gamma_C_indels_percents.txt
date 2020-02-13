@@ -1,0 +1,1 @@
+TFIIA_gamma_C	0.0

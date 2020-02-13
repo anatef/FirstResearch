@@ -1,0 +1,1 @@
+STAT1_TAZ2bind	0

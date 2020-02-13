@@ -1,0 +1,1 @@
+BPL_LplA_LipB	0.025

@@ -1,0 +1,1 @@
+betaPIX_CC	0.075

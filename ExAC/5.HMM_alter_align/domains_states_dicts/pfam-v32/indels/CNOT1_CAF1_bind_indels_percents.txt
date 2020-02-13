@@ -1,0 +1,1 @@
+CNOT1_CAF1_bind	0.0

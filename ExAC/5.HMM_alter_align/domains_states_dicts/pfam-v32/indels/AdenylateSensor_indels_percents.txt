@@ -1,0 +1,1 @@
+AdenylateSensor	0.0535714285714

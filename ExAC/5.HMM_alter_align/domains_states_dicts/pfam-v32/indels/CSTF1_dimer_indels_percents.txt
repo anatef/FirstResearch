@@ -1,0 +1,1 @@
+CSTF1_dimer	0.0

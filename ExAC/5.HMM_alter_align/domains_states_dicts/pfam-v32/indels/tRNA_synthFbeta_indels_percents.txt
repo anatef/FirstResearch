@@ -1,0 +1,1 @@
+tRNA_synthFbeta	0.0175438596491

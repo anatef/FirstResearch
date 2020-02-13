@@ -1,0 +1,1 @@
+NAD_binding_3	0.1

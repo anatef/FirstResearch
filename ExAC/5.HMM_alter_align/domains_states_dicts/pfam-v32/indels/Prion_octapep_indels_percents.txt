@@ -1,0 +1,1 @@
+Prion_octapep	0.125

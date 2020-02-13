@@ -1,0 +1,1 @@
+DNA_repr_REX1B	0

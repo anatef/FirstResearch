@@ -1,0 +1,1 @@
+USP8_interact	0.0

@@ -1,0 +1,1 @@
+tRNA_int_endo_N	0.0

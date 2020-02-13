@@ -1,0 +1,1 @@
+DNTTIP1_dimer	0.125

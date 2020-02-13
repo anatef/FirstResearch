@@ -1,0 +1,1 @@
+Thymidylate_kin	0.046511627907

@@ -1,0 +1,1 @@
+Linker_histone	0.0857142857143

@@ -1,0 +1,1 @@
+Peptidase_M76	0.125

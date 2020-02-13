@@ -1,0 +1,1 @@
+PHC2_SAM_assoc	0.0

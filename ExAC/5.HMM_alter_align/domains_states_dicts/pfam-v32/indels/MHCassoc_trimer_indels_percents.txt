@@ -1,0 +1,1 @@
+MHCassoc_trimer	0.0

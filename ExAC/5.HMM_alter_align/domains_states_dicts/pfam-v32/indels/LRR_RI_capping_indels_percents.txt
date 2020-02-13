@@ -1,0 +1,1 @@
+LRR_RI_capping	0.0

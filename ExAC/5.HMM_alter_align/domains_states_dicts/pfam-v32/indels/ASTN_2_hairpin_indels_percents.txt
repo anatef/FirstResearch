@@ -1,0 +1,1 @@
+ASTN_2_hairpin	0.0

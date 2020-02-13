@@ -1,0 +1,1 @@
+ER_lumen_recept	0.114035087719

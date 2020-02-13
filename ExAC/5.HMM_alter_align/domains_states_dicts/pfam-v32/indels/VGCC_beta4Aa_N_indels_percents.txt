@@ -1,0 +1,1 @@
+VGCC_beta4Aa_N	0.0
