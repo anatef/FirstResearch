@@ -1,0 +1,16 @@
+100-way vertebrate whole genome alignment from UCSC genome browser:
+http://hgdownload.cse.ucsc.edu/goldenPath/hg19/multiz100way/
+
+1. Extracted sections corresponding to protein exons.
+2. Stiched the exons together and translated them to proteins -> 100-way protein alignment.
+3. For each column, JSD was calculated on the column and BLOSUM62 background frequency (higher JSD = greater conservation).
+4. Values of JSD were multiplied by the fraction of non-gapped residues in a column (as the JSD was calculated only on the non-gapped residues). 
+
+
+JSD files format:
+=================
+3 tab-delimited columns:
+[0] the 0-index of the protein sequence
+[1] the residue in the human protein (for sanity check)
+[2] the JSD score
+
